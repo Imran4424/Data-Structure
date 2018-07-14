@@ -4,15 +4,29 @@ using namespace std;
 
 int[] selection_sort_ascending(int ar[], int s);
 {
-	int sorted_ar[s];
 
-	int min = 999999999;
+	for(int i = 0;i < s; i++)
+	{
+		int min = 999999999,pos = 0;
+
+		for(int j = i;j < s; j++)
+		{
+			if (ar[j] < min)
+			{
+				min = ar[j];
+				pos = j;
+			}
+		}
+
+		int temp = ar[pos];
+
+	}
 }
 
 
 int main(int argc, char const *argv[])
 {
-	cout<<"enter the size of the array"<<end;
+	cout<<"enter the size of the array"<<endl;
 	int n;
 	cin>>n;
 
