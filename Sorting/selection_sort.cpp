@@ -4,6 +4,8 @@ using namespace std;
 
 int[] selection_sort_ascending(int ar[], int s);
 {
+	int sorted_ar[s];
+
 	
 }
 
