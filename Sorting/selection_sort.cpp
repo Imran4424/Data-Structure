@@ -29,18 +29,18 @@ int* selection_sort_ascending(int ar[], int s)
 	return ar;
 }
 
-int* selection_sort_ascending(int ar[], int s)
+int* selection_sort_decending(int ar[], int s)
 {
 
 	for(int i = 0;i < s; i++)
 	{
-		int min = 999999999,pos = 0;
+		int max = -999999,pos = 0;
 
 		for(int j = i;j < s; j++)
 		{
-			if (ar[j] < min)
+			if (ar[j] > max)
 			{
-				min = ar[j];
+				max = ar[j];
 				pos = j;
 			}
 		}
@@ -82,6 +82,8 @@ int main(int argc, char const *argv[])
 	}
 
 	cout<<endl;
+
+	int sorted_array_decending = selection_sort_decending(ar,n);
 
 	return 0;
 }
