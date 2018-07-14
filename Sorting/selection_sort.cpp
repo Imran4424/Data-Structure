@@ -87,12 +87,12 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout<<sorted_array_decending<<" ";
+		cout<<sorted_array_decending[i]<<" ";
 	}
 
 	cout<<endl;
 
-	
+
 
 	return 0;
 }
