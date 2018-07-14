@@ -6,7 +6,7 @@ int[] selection_sort_ascending(int ar[], int s);
 {
 	int sorted_ar[s];
 
-	
+	int min = 999999999;
 }
 
 
