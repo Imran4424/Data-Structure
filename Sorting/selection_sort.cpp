@@ -40,12 +40,12 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		scanf("%d",&ar[i]);
+		cin>>ar[i];
 	}
 
-	int sorted_array[n];
+	//int sorted_array[n];
 
-	sorted_array = selection_sort_ascending(ar,n);
+	int *sorted_array = selection_sort_ascending(ar,n);
 
 	//Display
 
