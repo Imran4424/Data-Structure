@@ -70,11 +70,11 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
-	//catching a whole array
+	// catching a whole array in form of pointer
 
 	int *sorted_array = selection_sort_ascending(ar,n);
 
-	//Display
+	// Display
 
 	for (int i = 0; i < n; ++i)
 	{
@@ -82,6 +82,8 @@ int main(int argc, char const *argv[])
 	}
 
 	cout<<endl;
+
+	// catching a whole array in form of pointer
 
 	int *sorted_array_decending = selection_sort_decending(ar,n);
 
