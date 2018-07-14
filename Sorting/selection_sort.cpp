@@ -83,7 +83,7 @@ int main(int argc, char const *argv[])
 
 	cout<<endl;
 
-	int sorted_array_decending = selection_sort_decending(ar,n);
+	int *sorted_array_decending = selection_sort_decending(ar,n);
 
 	return 0;
 }
