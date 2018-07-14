@@ -2,6 +2,12 @@
 using namespace std;
 
 
+int[] selection_sort_ascending(int ar[], int s);
+{
+	
+}
+
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the size of the array"<<end;
@@ -17,7 +23,7 @@ int main(int argc, char const *argv[])
 		scanf("%d",&ar[i]);
 	}
 
-	
+
 
 
 	return 0;
