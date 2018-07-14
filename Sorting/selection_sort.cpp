@@ -4,14 +4,14 @@ using namespace std;
 
 // returning a whole array
 
-int* selection_sort_ascending(int ar[], int s)
+int* selection_sort_ascending(int ar[], int size)
 {
 
-	for(int i = 0;i < s; i++)
+	for(int i = 0;i < size; i++)
 	{
 		int min = 999999999,pos = 0;
 
-		for(int j = i;j < s; j++)
+		for(int j = i;j < size; j++)
 		{
 			if (ar[j] < min)
 			{
@@ -29,14 +29,14 @@ int* selection_sort_ascending(int ar[], int s)
 	return ar;
 }
 
-int* selection_sort_decending(int ar[], int s)
+int* selection_sort_decending(int ar[], int size)
 {
 
-	for(int i = 0;i < s; i++)
+	for(int i = 0;i < size; i++)
 	{
 		int max = -999999,pos = 0;
 
-		for(int j = i;j < s; j++)
+		for(int j = i;j < size; j++)
 		{
 			if (ar[j] > max)
 			{
