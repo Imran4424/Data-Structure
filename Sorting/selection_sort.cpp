@@ -29,6 +29,31 @@ int* selection_sort_ascending(int ar[], int s)
 	return ar;
 }
 
+int* selection_sort_ascending(int ar[], int s)
+{
+
+	for(int i = 0;i < s; i++)
+	{
+		int min = 999999999,pos = 0;
+
+		for(int j = i;j < s; j++)
+		{
+			if (ar[j] < min)
+			{
+				min = ar[j];
+				pos = j;
+			}
+		}
+
+		int temp = ar[pos];
+		ar[pos] = ar[i];
+		ar[i] = temp;
+
+	}
+
+	return ar;
+}
+
 
 int main(int argc, char const *argv[])
 {
