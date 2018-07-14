@@ -2,6 +2,8 @@
 using namespace std;
 
 
+// returning a whole array
+
 int* selection_sort_ascending(int ar[], int s)
 {
 
@@ -43,7 +45,7 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
-	//int sorted_array[n];
+	//catching a whole array
 
 	int *sorted_array = selection_sort_ascending(ar,n);
 
