@@ -19,6 +19,8 @@ int[] selection_sort_ascending(int ar[], int s);
 		}
 
 		int temp = ar[pos];
+		ar[pos] = ar[i];
+		ar[i] = temp;
 
 	}
 }
