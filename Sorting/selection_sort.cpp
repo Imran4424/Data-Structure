@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int[] selection_sort_ascending(int ar[], int s);
+int* selection_sort_ascending(int ar[], int s)
 {
 
 	for(int i = 0;i < s; i++)
@@ -43,8 +43,9 @@ int main(int argc, char const *argv[])
 		scanf("%d",&ar[i]);
 	}
 
+	int sorted_array[n];
 
-	int sorted_array[] = selection_sort_ascending(ar,n);
+	sorted_array = selection_sort_ascending(ar,n);
 
 	//Display
 
