@@ -23,6 +23,8 @@ int[] selection_sort_ascending(int ar[], int s);
 		ar[i] = temp;
 
 	}
+
+	return ar;
 }
 
 
@@ -42,7 +44,16 @@ int main(int argc, char const *argv[])
 	}
 
 
+	int sorted_array[] = selection_sort_ascending(ar,n);
 
+	//Display
+
+	for (int i = 0; i < n; ++i)
+	{
+		cout<<sorted_array[i]<<" ";
+	}
+
+	cout<<endl;
 
 	return 0;
 }
