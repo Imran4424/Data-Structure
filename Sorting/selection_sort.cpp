@@ -85,5 +85,14 @@ int main(int argc, char const *argv[])
 
 	int *sorted_array_decending = selection_sort_decending(ar,n);
 
+	for (int i = 0; i < n; ++i)
+	{
+		cout<<sorted_array_decending<<" ";
+	}
+
+	cout<<endl;
+
+	
+
 	return 0;
 }
