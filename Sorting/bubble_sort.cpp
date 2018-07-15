@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 	int ar[n];
 
 	cout<<"enter the array elements"<<endl;
+	
 
 
 	return 0;
