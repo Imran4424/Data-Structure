@@ -3,7 +3,7 @@ using namespace std;
 
 int* bubble_sort(int ar[],int size)
 {
-	for (int i = 0; i < size; ++i)
+	for (int i = 0; i < size-1; ++i)
 	{
 		
 	}
