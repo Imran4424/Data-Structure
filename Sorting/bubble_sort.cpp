@@ -10,7 +10,7 @@ int* bubble_sort(int ar[],int size)
 			if (ar[j] > ar[j+1])
 			{
 				int temp = ar[j];
-				ar[j] = ar[j+1]
+				ar[j] = ar[j+1];
 			}
 		}
 	}
