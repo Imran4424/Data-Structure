@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int* bubble_sort(int ar[],int size)
+{
+	
+}
+
 
 int main(int argc, char const *argv[])
 {
