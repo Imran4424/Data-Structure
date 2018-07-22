@@ -7,7 +7,7 @@ int* bubble_sort(int ar[],int size)
 	{
 		for(int j = 0; j < size-1-j; ++j)
 		{
-			if (/* condition */)
+			if (ar[j] > ar[j+1])
 			{
 				/* code */
 			}
