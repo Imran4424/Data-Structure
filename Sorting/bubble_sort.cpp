@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+
+// returning 
+
 int* bubble_sort(int ar[],int size)
 {
 	for (int i = 0; i < size-1; ++i)
