@@ -8,7 +8,7 @@ int* bubble_sort(int ar[],int size)
 {
 	for (int i = 0; i < size-1; ++i)
 	{
-		for(int j = 0; j < size-1-j; ++j)
+		for(int j = 0; j < size-1-i; ++j)
 		{
 			if (ar[j] > ar[j+1])
 			{
@@ -26,6 +26,8 @@ int* bubble_sort(int ar[],int size)
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the size of the array"<<endl;
+
+	int n;
 	cin>>n;
 	int ar[n];
 
