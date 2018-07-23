@@ -14,6 +14,7 @@ int* bubble_sort(int ar[],int size)
 				ar[j+1] = temp;
 			}
 		}
+		
 	}
 }
 
