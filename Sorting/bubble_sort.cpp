@@ -23,6 +23,10 @@ int* bubble_sort(int ar[],int size)
 	return ar;
 }
 
+/*
+	since array itself a pointer to trying to sort the array decending order and not returning it
+*/
+
 void bubble_sort_decending(int ar[], int size)
 {
 
