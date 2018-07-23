@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// returning the whole 
+// returning the whole array 
 
 int* bubble_sort(int ar[],int size)
 {
