@@ -33,9 +33,11 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
+	// catching the whole array
+
 	int *sorted_array = bubble_sort(ar,n);
 
-	
+
 
 	return 0;
 }
