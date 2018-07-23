@@ -15,7 +15,7 @@ int* bubble_sort(int ar[],int size)
 			}
 		}
 
-		
+		return ar;
 	}
 }
 
