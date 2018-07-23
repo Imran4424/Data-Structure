@@ -23,6 +23,11 @@ int* bubble_sort(int ar[],int size)
 	return ar;
 }
 
+void bubble_sort_decending(int ar[], int size)
+{
+
+}
+
 
 int main(int argc, char const *argv[])
 {
