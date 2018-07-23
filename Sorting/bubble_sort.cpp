@@ -40,7 +40,9 @@ int main(int argc, char const *argv[])
 
 	int *sorted_array = bubble_sort(ar,n);
 
+	// Display
 
+	
 
 	return 0;
 }
