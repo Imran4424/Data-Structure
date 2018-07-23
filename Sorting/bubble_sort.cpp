@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
-	int *sorted_array = bubble_sort(ar)
+	int *sorted_array = bubble_sort(ar,n)
 
 	return 0;
 }
