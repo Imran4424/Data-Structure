@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
 		cout<<sorted_array[i]<<" ";
 	}
 
-	cout<<endl
+	cout<<endl;
 
 	return 0;
 }
