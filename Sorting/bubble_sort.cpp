@@ -33,6 +33,7 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
+	int 
 
 	return 0;
 }
