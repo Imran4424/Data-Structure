@@ -73,5 +73,14 @@ int main(int argc, char const *argv[])
 
 	cout<<endl;
 
+	// bubble sort decending order
+
+	bubble_sort_decending(ar,n);
+
+	for (int i = 0; i < n; ++i)
+	{
+		/* code */
+	}
+
 	return 0;
 }
