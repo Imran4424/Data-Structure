@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
-	int 
+	int *sorted_array = 
 
 	return 0;
 }
