@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout<<
+		cout<<ar[i]
 	}
 
 	return 0;
