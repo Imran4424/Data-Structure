@@ -26,7 +26,7 @@ int* bubble_sort(int ar[],int size)
 /*
 	since array itself a pointer to trying to sort the array decending order and not returning it
 
-	so if you pass an array to a function there's no need to return the 
+	so if you pass an array to a function there's no need to return the same array
 */
 
 void bubble_sort_decending(int ar[], int size)
