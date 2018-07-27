@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void merge(int left[],int size_left,int right[], int size_right, int ar[])
+{
+	int i = 0, j = 0, k = 0;
+
+	while(i < size_left && j < size_right)
+	{
+		
+	}
+}
+
 
 void merge_sort(int ar, int size)
 {
