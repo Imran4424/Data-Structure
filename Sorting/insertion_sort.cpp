@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void insertion_sort()
+void insertion_sort(int ar[], int size)
 {
-	
+
 }
 
 int main(int argc, char const *argv[])
