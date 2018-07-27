@@ -3,7 +3,10 @@ using namespace std;
 
 void insertion_sort(int ar[], int size)
 {
-
+	for (int i = 0; i < size; ++i)
+	{
+		/* code */
+	}
 }
 
 int main(int argc, char const *argv[])
