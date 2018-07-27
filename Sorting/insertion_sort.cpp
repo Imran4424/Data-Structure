@@ -5,16 +5,18 @@ void insertion_sort(int ar[], int size)
 {
 	for (int i = 1; i < size; ++i)
 	{
-		int hole = ar[i];
+		int hole_pos = i;
 		
 
 		for(int j = i-1; j >= 0; --j)
 		{
-			if (ar[j] > hole)
+			if (ar[j] > ar[hole_pos])
 			{
 				int temp = ar[j];
-				ar[j] = hole;
-				hole = temp;
+				ar[j] = ar[hole_pos];
+				ar[hole_pos] = temp;
+
+				hole_pos = j;
 			}
 		}
 	}
