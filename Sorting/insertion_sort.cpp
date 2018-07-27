@@ -81,6 +81,8 @@ int main(int argc, char const *argv[])
 
 	// insertion sort ascending
 
+	insertion_sort_decending(ar,n);
+
 	for (int i = 0; i < n; ++i)
 	{
 		cout<<ar[i]<<" ";
