@@ -79,5 +79,7 @@ int main(int argc, char const *argv[])
 
 	cout<<endl;
 
+	// insertion sort ascending
+
 	return 0;
 }
