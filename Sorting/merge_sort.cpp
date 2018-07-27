@@ -2,6 +2,12 @@
 using namespace std;
 
 
+void merge_sort(int ar)
+{
+	
+}
+
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
