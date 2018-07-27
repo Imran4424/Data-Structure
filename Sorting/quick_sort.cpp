@@ -20,6 +20,10 @@ int partitioning(int ar, int start, int end)
 			pIndex++;
 		}
 	}
+
+	int temp = ar[end];
+	ar[end] = ar[pIndex];
+	ar[pIndex] = temp;
 }
 
 
