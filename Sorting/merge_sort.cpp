@@ -7,7 +7,20 @@ void merge(int left[],int size_left,int right[], int size_right, int ar[])
 
 	while(i < size_left && j < size_right)
 	{
-		
+		if (left[i] <= right[j])
+		{
+			ar[k] = left[i];
+
+			i++;
+		}
+		else
+		{
+			ar[k] = right[j];
+
+			j++;
+		}
+
+		k++;
 	}
 }
 
