@@ -30,6 +30,12 @@ int partitioning(int ar, int start, int end)
 }
 
 
+void quick_sort(int ar[], int size)
+{
+	
+}
+
+
 
 
 int main(int argc, char const *argv[])
