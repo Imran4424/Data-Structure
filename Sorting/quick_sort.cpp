@@ -13,17 +13,17 @@ int partitioning(int ar[], int start, int end)
 	{
 		if (ar[i] <= pivot)
 		{
-			int temp = ar[start];
-			ar[start] = ar[pIndex];
+			int temp = ar[i];
+			ar[i] = ar[pIndex];
 			ar[pIndex] = temp;
 
 			pIndex++;
 		}
 	}
 
-	int var = ar[end];
+	int temp = ar[end];
 	ar[end] = ar[pIndex];
-	ar[pIndex] = var;
+	ar[pIndex] = temp;
 
 
 	return pIndex;
