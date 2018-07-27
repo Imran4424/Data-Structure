@@ -11,5 +11,10 @@ int main(int argc, char const *argv[])
 
 	cout<<"enter the array elements"<<endl;
 
+	for (int i = 0; i < n; ++i)
+	{
+		cin>>ar[i];
+	}
+
 	return 0;
 }
