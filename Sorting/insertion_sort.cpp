@@ -14,7 +14,7 @@ void insertion_sort(int ar[], int size)
 			{
 				int temp = ar[j];
 				ar[j] = hole;
-				hole = ar[j];
+				hole = temp;
 			}
 		}
 	}
