@@ -12,7 +12,9 @@ void insertion_sort(int ar[], int size)
 		{
 			if (ar[j] > hole)
 			{
-				/* code */
+				int temp = ar[j];
+				ar[j] = hole;
+				hole = ar[j];
 			}
 		}
 	}
@@ -32,6 +34,11 @@ int main(int argc, char const *argv[])
 	{
 		cin>>ar[i];
 	}
+
+
+	// insertion sort ascending
+
+	
 
 	return 0;
 }
