@@ -8,7 +8,7 @@ void insertion_sort(int ar[], int size)
 		int hole = ar[i];
 		int hole_pos = i;
 
-		for(int j = i-1; j >= 0; ++j)
+		for(int j = i-1; j >= 0; --j)
 		{
 			if (ar[j] > hole)
 			{
