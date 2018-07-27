@@ -41,7 +41,7 @@ void merge(int left[],int size_left,int right[], int size_right, int ar[])
 }
 
 
-void merge_sort(int ar, int size)
+void merge_sort(int ar[], int size)
 {
 	if (size < 2)
 	{
@@ -65,7 +65,7 @@ void merge_sort(int ar, int size)
 	merge_sort(left,mid);
 	merge_sort(right,size-mid);
 
-	merge(left,mid,right,size-mid);
+	merge(left,mid,right,size-mid,ar);
 }
 
 
