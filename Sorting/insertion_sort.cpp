@@ -81,5 +81,10 @@ int main(int argc, char const *argv[])
 
 	// insertion sort ascending
 
+	for (int i = 0; i < n; ++i)
+	{
+		cout<<ar[i]<<" ";
+	}
+
 	return 0;
 }
