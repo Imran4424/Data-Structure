@@ -11,9 +11,11 @@ int partitioning(int ar, int start, int end)
 
 	for (int i = start; i < end; ++i)
 	{
-		if (/* condition */)
+		if (ar[i] <= pivot)
 		{
-			/* code */
+			int temp = ar[start];
+			ar[start] = ar[pIndex];
+			ar[pIndex] = temp;
 		}
 	}
 }
