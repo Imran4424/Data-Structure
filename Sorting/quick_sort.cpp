@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int partitioning(int ar, int start, int end)
+int partitioning(int ar[], int start, int end)
 {
 
 	int pivot = ar[end];
@@ -30,9 +30,15 @@ int partitioning(int ar, int start, int end)
 }
 
 
-void quick_sort(int ar[], int size)
+void quick_sort(int ar[], int start,int end)
 {
-	
+	if (start < end)
+	{
+		int pIndex = partitioning(ar,start,end);
+
+		quick_sort(ar,start,pIndex-1);
+		quick_sort(ar,pIndex+1,end);
+	}
 }
 
 
