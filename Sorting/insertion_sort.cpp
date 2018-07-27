@@ -5,7 +5,12 @@ void insertion_sort(int ar[], int size)
 {
 	for (int i = 1; i < size; ++i)
 	{
-		
+		int hole = ar[i];
+
+		for(int j = i-1; j >= 0; ++j)
+		{
+			
+		}
 	}
 }
 
