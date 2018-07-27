@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+void insertion_sort()
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
