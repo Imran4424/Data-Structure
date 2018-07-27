@@ -22,6 +22,22 @@ void merge(int left[],int size_left,int right[], int size_right, int ar[])
 
 		k++;
 	}
+
+	while(i < size_left)
+	{
+		ar[k] = left[i];
+		
+		i++;
+		k++;
+	}
+
+	while(j < size_right)
+	{
+		ar[k] = right[j];
+
+		j++;
+		k++;
+	}
 }
 
 
@@ -48,6 +64,8 @@ void merge_sort(int ar, int size)
 
 	merge_sort(left,mid);
 	merge_sort(right,size-mid);
+
+	merge(left,mid,right,size-mid);
 }
 
 
