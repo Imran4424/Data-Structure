@@ -84,5 +84,16 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
+	// merge sort
+
+	merge_sort(ar,n);
+
+	for (int i = 0; i < n; ++i)
+	{
+		cout<<ar[i]<<" ";
+	}
+
+	cout<<endl;
+
 	return 0;
 }
