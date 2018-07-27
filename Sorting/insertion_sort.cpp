@@ -9,7 +9,10 @@ void insertion_sort(int ar[], int size)
 
 		for(int j = i-1; j >= 0; ++j)
 		{
-			
+			if (/* condition */)
+			{
+				/* code */
+			}
 		}
 	}
 }
