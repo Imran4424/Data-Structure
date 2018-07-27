@@ -10,6 +10,13 @@ void merge_sort(int ar, int size)
 	}
 
 	int mid = size/2;
+
+	int left[mid],right[size-mid];
+
+	for (int i = 0; i < mid; ++i)
+	{
+		
+	}
 }
 
 
