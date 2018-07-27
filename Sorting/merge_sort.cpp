@@ -54,7 +54,7 @@ void merge_sort(int ar, int size)
 
 	for (int i = 0; i < mid; ++i)
 	{
-		left[i] = a[i];
+		left[i] = ar[i];
 	}
 
 	for (int i = mid; i < size; ++i)
