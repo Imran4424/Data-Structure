@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
 
+
+/*
+	insertion sort ascending
+
+	but 
+
+	also can be used it for insertion sort but print the array in reverse order
+*/
+
 void insertion_sort(int ar[], int size)
 {
 	for (int i = 1; i < size; ++i)
