@@ -60,6 +60,16 @@ int main(int argc, char const *argv[])
 	}
 
 
+	// calling quick sort
+
+	quick_sort(ar,0,n-1);
+
+	// Display
+
+	for (int i = 0; i < n; ++i)
+	{
+		
+	}
 
 
 	return 0;
