@@ -21,9 +21,9 @@ int partitioning(int ar[], int start, int end)
 		}
 	}
 
-	int temp = ar[end];
+	int var = ar[end];
 	ar[end] = ar[pIndex];
-	ar[pIndex] = temp;
+	ar[pIndex] = var;
 
 
 	return pIndex;
