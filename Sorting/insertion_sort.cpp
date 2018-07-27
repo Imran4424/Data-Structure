@@ -31,6 +31,11 @@ void insertion_sort(int ar[], int size)
 	}
 }
 
+void insertion_sort_decending(int ar[], int size)
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
