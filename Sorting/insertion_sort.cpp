@@ -40,5 +40,10 @@ int main(int argc, char const *argv[])
 
 	insertion_sort(ar,n);
 
+	for (int i = 0; i < n; ++i)
+	{
+		/* code */
+	}
+
 	return 0;
 }
