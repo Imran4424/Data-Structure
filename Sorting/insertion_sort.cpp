@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 
 	// insertion sort ascending
 
-	
+	insertion_sort(ar,n);
 
 	return 0;
 }
