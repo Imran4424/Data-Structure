@@ -2,6 +2,25 @@
 using namespace std;
 
 
+int partitioning(int ar, int start, int end)
+{
+
+	int pivot = ar[end];
+
+	int pIndex = start;
+
+	for (int i = start; i < end; ++i)
+	{
+		if (/* condition */)
+		{
+			/* code */
+		}
+	}
+}
+
+
+
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
@@ -16,6 +35,8 @@ int main(int argc, char const *argv[])
 	{
 		cin>>ar[i];
 	}
+
+
 
 
 	return 0;
