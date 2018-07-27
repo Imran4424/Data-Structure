@@ -2,9 +2,14 @@
 using namespace std;
 
 
-void merge_sort(int ar)
+void merge_sort(int ar, int size)
 {
-	
+	if (size < 2)
+	{
+		return;
+	}
+
+	int mid = size/2;
 }
 
 
