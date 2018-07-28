@@ -71,7 +71,9 @@ void delete_at_nth_position(int value)
 {
 	if (head == NULL)
 	{
-		/* code */
+		cout<<"Underflow, can't delete"<<endl;
+
+		return;
 	}
 
 	node* travel = head;
