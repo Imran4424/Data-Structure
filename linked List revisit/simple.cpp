@@ -8,15 +8,16 @@ struct node
 };
 
 
-node* head = NULL;
+node* head;
 
 void insert_node_at_the_end(int info)
 {
-
+	n
 }
 
 int main(int argc, char const *argv[])
 {
-	
+	head = NULL;
+
 	return 0;
 }
