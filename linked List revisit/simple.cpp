@@ -28,6 +28,13 @@ void insert_node_at_the_end(int value)
 	travel->nextAddress = temp;
 }
 
+void display()
+{
+	node* travel = head;
+
+	while
+}
+
 int main(int argc, char const *argv[])
 {
 	head = NULL;
