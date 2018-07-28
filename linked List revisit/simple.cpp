@@ -64,6 +64,13 @@ void delete_at_the_end()
 
 void delete_at_the_begin()
 {
+	if (head == NULL)
+	{
+		cout<<"Underflow, can't delete"<<endl;
+
+		return;
+	}
+
 	head = head -> nextAddress;
 }
 
