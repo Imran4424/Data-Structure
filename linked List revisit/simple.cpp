@@ -41,7 +41,7 @@ void display()
 
 	while(travel != NULL)
 	{
-		cout<<travel->data
+		cout<<travel->data<<endl;
 	}
 }
 
