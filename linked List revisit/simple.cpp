@@ -62,6 +62,13 @@ void delete_at_the_begin()
 
 }
 
+void delete_at_nth_position(int value)
+{
+	node* travel = head;
+	
+	
+}
+
 void display()
 {
 	node* travel = head;
