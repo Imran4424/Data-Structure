@@ -116,5 +116,9 @@ int main(int argc, char const *argv[])
 		delete_at_the_end();
 	}
 
+	// display again
+
+	display();
+
 	return 0;
 }
