@@ -42,6 +42,8 @@ void display()
 	while(travel != NULL)
 	{
 		cout<<travel->data<<endl;
+
+		travel = travel -> nextAddress;
 	}
 }
 
