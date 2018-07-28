@@ -12,7 +12,17 @@ node* head;
 
 void insert_node_at_the_end(int info)
 {
-	n
+	node* temp;
+
+	temp->data = info;
+	temp->nextAddress = NULL;
+
+	node* travel = head;
+
+	while(head->nextAddress != NULL)
+	{
+		
+	}
 }
 
 int main(int argc, char const *argv[])
