@@ -57,6 +57,10 @@ void insert_node_at_the_nth_position(int value,int target)
 	{
 		travel = travel -> nextAddress;
 	}
+
+	temp -> nextAddress = travel -> nextAddress;
+
+	travel -> nextAddress = temp;
 }
 
 void delete_at_the_end()
