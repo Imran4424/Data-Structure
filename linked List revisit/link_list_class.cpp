@@ -119,7 +119,40 @@ int main(int argc, char const *argv[])
 {
 	Link_list obj = new Link_list();
 
+	cout<<"how many node's you want to insert"<<endl;
 
+	int n;
+	cin>>n;
+
+	cout<<"enter the value of the node"<<endl;
+	
+	for (int i = 0; i < n; ++i)
+	{
+
+		int temp_val;
+		cin>>temp_val;
+
+		obj.insert_node_at_the_end(temp_val);
+	}
+
+
+	// display the node
+
+	obj.display();
+
+	// delete nodes
+
+	cout<<"how many nodes you wnat to delete"<<endl;
+
+	int num;
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		//delete_at_the_end();
+		//delete_at_the_begin();
+		delete_at_nth_position(8);
+	}
 
 	return 0;
 }
