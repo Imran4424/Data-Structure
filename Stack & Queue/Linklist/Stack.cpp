@@ -15,6 +15,16 @@ class Stack
 	{
 		head = NULL;
 	}
+
+	public: bool IsEmpty()
+	{
+		if (head == NULL)
+		{
+			return true;
+		}
+
+		return false;
+	}
 	
 };
 
