@@ -41,10 +41,12 @@ void display()
 
 	while(travel != NULL)
 	{
-		cout<<travel->data<<endl;
+		cout<<travel->data<<" ";
 
 		travel = travel -> nextAddress;
 	}
+
+	cout<<endl;
 }
 
 int main(int argc, char const *argv[])
@@ -56,9 +58,10 @@ int main(int argc, char const *argv[])
 	int n;
 	cin>>n;
 
+	cout<<"enter the value of the node"<<endl;
+	
 	for (int i = 0; i < n; ++i)
 	{
-		cout<<"enter the value of the node"<<endl;
 
 		int temp_val;
 		cin>>temp_val;
