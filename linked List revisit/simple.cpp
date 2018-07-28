@@ -18,6 +18,13 @@ void insert_node_at_the_end(int value)
 	temp->data = value;
 	temp->nextAddress = NULL;
 
+	if (head = NULL)
+	{
+		head = temp;
+
+		return;
+	}
+
 	node* travel = head;
 
 	while(travel->nextAddress != NULL)
