@@ -45,9 +45,18 @@ void insert_node_at_the_begin(int value)
 	head = temp;
 }
 
-void insert_node_at_the_nth_position()
+void insert_node_at_the_nth_position(int value,int target)
 {
+	node* temp = new node();
 
+	temp -> data = value;
+
+	node* travel = head;
+
+	while(travel -> data != target)
+	{
+		travel = travel -> nextAddress;
+	}
 }
 
 void delete_at_the_end()
