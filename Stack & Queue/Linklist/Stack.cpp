@@ -10,7 +10,7 @@ class Stack
 
 	public: Stack()
 	{
-
+		head = NULL;
 	}
 	
 	
