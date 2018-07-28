@@ -96,6 +96,9 @@ public:
 
 int main(int argc, char const *argv[])
 {
+	Link_list obj = new Link_list();
+
 	
+
 	return 0;
 }
