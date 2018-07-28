@@ -13,5 +13,12 @@ class Stack
 		head = NULL;
 	}
 	
-	
 };
+
+
+int main(int argc, char const *argv[])
+{
+	Stack obj = new Stack();
+	
+	return 0;
+}
