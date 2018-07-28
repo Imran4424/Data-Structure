@@ -51,6 +51,43 @@ public:
 		head = temp;
 	}
 
+	void delete_at_the_end()
+	{
+		if (head == NULL)
+		{
+			cout<<"Underflow, can't delete"<<endl;
+
+			return;
+		}
+		else if (head -> nextAddress = NULL)
+		{
+			head = NULL;
+
+			return;
+		}
+
+
+		node* travel = head;
+
+		while(travel -> nextAddress -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
+		}
+
+		travel -> nextAddress = NULL;
+	}
+
+	void delete_at_the_begin()
+	{
+		if (head == NULL)
+		{
+			cout<<"Underflow, can't delete"<<endl;
+
+			return;
+		}
+
+		head = head -> nextAddress;
+	}
 
 };
 
