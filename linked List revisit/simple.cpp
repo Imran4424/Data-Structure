@@ -66,10 +66,17 @@ void delete_at_nth_position(int value)
 {
 	node* travel = head;
 
-	while(travel -> nextAddress -> data == value)
+	while(travel -> nextAddress -> data != value)
 	{
+		travel = travel -> nextAddress;
+	}
+
+	if (travel -> nextAddress -> nextAddress != NULL)
+	{
+		
 		travel -> nextAddress = travel -> nextAddress -> nextAddress;
 	}
+
 }
 
 void display()
@@ -78,7 +85,7 @@ void display()
 
 	while(travel != NULL)
 	{
-		cout<<travel->data<<" ";
+		cout<<travel -> data<<" ";
 
 		travel = travel -> nextAddress;
 	}
