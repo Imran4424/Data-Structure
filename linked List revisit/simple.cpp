@@ -24,7 +24,7 @@ void insert_node_at_the_end(int info)
 		travel = travel->nextAddress;
 	}
 
-
+	travel->nextAddress = temp;
 }
 
 int main(int argc, char const *argv[])
