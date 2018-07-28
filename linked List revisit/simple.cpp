@@ -68,7 +68,9 @@ void delete_at_nth_position(int value)
 
 	if (travel -> data = value)
 	{
-		
+		head = travel -> nextAddress;
+
+		return;
 	}
 
 	while(travel -> nextAddress -> data != value)
