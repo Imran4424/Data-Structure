@@ -3,8 +3,8 @@ using namespace std;
 
 class Link_list
 {
-public:
-	struct node
+
+	public struct node
 	{
 		int data;
 		node* nextAddress;
@@ -12,12 +12,12 @@ public:
 
 	node* head;
 
-	Link_list()
+	public Link_list()
 	{
 		head = NULL;
 	}
 
-	void insert_node_at_the_end(int value)
+	public void insert_node_at_the_end(int value)
 	{
 		node* temp = new node();
 
@@ -41,7 +41,7 @@ public:
 		travel -> nextAddress = temp;
 	}
 
-	void insert_node_at_the_begin(int value)
+	public void insert_node_at_the_begin(int value)
 	{
 		node* temp = new node();
 
@@ -51,7 +51,7 @@ public:
 		head = temp;
 	}
 
-	void delete_at_the_end()
+	public void delete_at_the_end()
 	{
 		if (head == NULL)
 		{
@@ -77,7 +77,7 @@ public:
 		travel -> nextAddress = NULL;
 	}
 
-	void delete_at_the_begin()
+	public void delete_at_the_begin()
 	{
 		if (head == NULL)
 		{
@@ -89,7 +89,7 @@ public:
 		head = head -> nextAddress;
 	}
 
-	void display()
+	public void display()
 	{
 		if (head == NULL)
 		{
