@@ -8,11 +8,12 @@ struct node
 };
 
 
+// the head
 node* head;
 
 void insert_node_at_the_end(int info)
 {
-	node* temp;
+	node* temp = new node();
 
 	temp->data = info;
 	temp->nextAddress = NULL;
@@ -30,6 +31,8 @@ void insert_node_at_the_end(int info)
 int main(int argc, char const *argv[])
 {
 	head = NULL;
+
+	cout<<"how many node's you want to insert"<<endl;
 
 	return 0;
 }
