@@ -149,7 +149,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		
+		obj.delete_at_the_end();
 	}
 
 	return 0;
