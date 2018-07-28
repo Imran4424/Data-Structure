@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Stack
 {
 	public: struct node
@@ -18,7 +21,7 @@ class Stack
 
 int main(int argc, char const *argv[])
 {
-	Stack obj = new Stack();
-	
+	Stack obj;
+
 	return 0;
 }
