@@ -66,6 +66,11 @@ void delete_at_nth_position(int value)
 {
 	node* travel = head;
 
+	if (travel -> data = value)
+	{
+		
+	}
+
 	while(travel -> nextAddress -> data != value)
 	{
 		travel = travel -> nextAddress;
