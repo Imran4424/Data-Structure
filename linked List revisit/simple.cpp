@@ -18,7 +18,7 @@ void insert_node_at_the_end(int value)
 	temp->data = value;
 	temp->nextAddress = NULL;
 
-	if (head = NULL)
+	if (head == NULL)
 	{
 		head = temp;
 
@@ -39,7 +39,10 @@ void display()
 {
 	node* travel = head;
 
-	while
+	while(travel != NULL)
+	{
+		cout<<travel->data
+	}
 }
 
 int main(int argc, char const *argv[])
