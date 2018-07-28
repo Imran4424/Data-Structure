@@ -135,15 +135,19 @@ void delete_at_nth_position(int value)
 		travel = travel -> nextAddress;
 	}
 
-	if (travel -> nextAddress -> nextAddress != NULL)
+	if(travel -> nextAddress -> data == value)
 	{
-		
-		travel -> nextAddress = travel -> nextAddress -> nextAddress;
+		if (travel -> nextAddress -> nextAddress != NULL)
+		{
+			
+			travel -> nextAddress = travel -> nextAddress -> nextAddress;
+		}
+		else
+		{
+			travel -> nextAddress = NULL;
+		}		
 	}
-	else
-	{
-		travel -> nextAddress = NULL;
-	}
+
 
 }
 
