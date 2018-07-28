@@ -11,11 +11,11 @@ struct node
 // the head
 node* head;
 
-void insert_node_at_the_end(int info)
+void insert_node_at_the_end(int value)
 {
 	node* temp = new node();
 
-	temp->data = info;
+	temp->data = value;
 	temp->nextAddress = NULL;
 
 	node* travel = head;
@@ -40,7 +40,16 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < n; ++i)
 	{
 		cout<<"enter the value of the node"<<endl
+
+		int temp_val;
+		cin>>temp_val;
+
+		insert_node_at_the_end(temp_val);
 	}
+
+	// display the node
+
+	display();
 
 	return 0;
 }
