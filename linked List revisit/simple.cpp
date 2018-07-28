@@ -130,7 +130,7 @@ void delete_at_nth_position(int value)
 		return;
 	}
 
-	while(travel -> nextAddress -> data != value)
+	while(travel -> nextAddress -> data != value && travel -> nextAddress != NULL)
 	{
 		travel = travel -> nextAddress;
 	}
