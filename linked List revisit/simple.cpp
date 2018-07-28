@@ -37,7 +37,7 @@ void insert_node_at_the_end(int value)
 
 void insert_node_at_the_begin(int value)
 {
-	
+		
 }
 
 void display()
