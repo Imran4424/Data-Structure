@@ -4,7 +4,7 @@ using namespace std;
 class Link_list
 {
 
-	public struct node
+	public: struct node
 	{
 		int data;
 		node* nextAddress;
@@ -12,12 +12,12 @@ class Link_list
 
 	node* head;
 
-	public Link_list()
+	public: Link_list()
 	{
 		head = NULL;
 	}
 
-	public void insert_node_at_the_end(int value)
+	public: void insert_node_at_the_end(int value)
 	{
 		node* temp = new node();
 
@@ -41,7 +41,7 @@ class Link_list
 		travel -> nextAddress = temp;
 	}
 
-	public void insert_node_at_the_begin(int value)
+	public: void insert_node_at_the_begin(int value)
 	{
 		node* temp = new node();
 
@@ -51,7 +51,7 @@ class Link_list
 		head = temp;
 	}
 
-	public void delete_at_the_end()
+	public: void delete_at_the_end()
 	{
 		if (head == NULL)
 		{
@@ -77,7 +77,7 @@ class Link_list
 		travel -> nextAddress = NULL;
 	}
 
-	public void delete_at_the_begin()
+	public: void delete_at_the_begin()
 	{
 		if (head == NULL)
 		{
@@ -89,7 +89,7 @@ class Link_list
 		head = head -> nextAddress;
 	}
 
-	public void display()
+	public: void display()
 	{
 		if (head == NULL)
 		{
