@@ -89,6 +89,27 @@ public:
 		head = head -> nextAddress;
 	}
 
+	void display()
+	{
+		if (head == NULL)
+		{
+			cout<<"there's nothing to display"<<endl;
+
+			return;
+		}
+
+		node* travel = head;
+
+		while(travel != NULL)
+		{
+			cout<<travel -> data<<" ";
+
+			travel = travel -> nextAddress;
+		}
+
+		cout<<endl;
+	}
+
 };
 
 
@@ -98,7 +119,7 @@ int main(int argc, char const *argv[])
 {
 	Link_list obj = new Link_list();
 
-	
+
 
 	return 0;
 }
