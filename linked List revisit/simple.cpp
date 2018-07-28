@@ -35,6 +35,11 @@ void insert_node_at_the_end(int value)
 	travel->nextAddress = temp;
 }
 
+void insert_node_at_the_begin(int value)
+{
+	
+}
+
 void display()
 {
 	node* travel = head;
