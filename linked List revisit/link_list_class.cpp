@@ -59,7 +59,7 @@ public:
 
 			return;
 		}
-		else if (head -> nextAddress = NULL)
+		else if (head -> nextAddress == NULL)
 		{
 			head = NULL;
 
@@ -117,7 +117,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-	Link_list obj = new Link_list();
+	Link_list obj;
 
 	cout<<"how many node's you want to insert"<<endl;
 

@@ -82,7 +82,7 @@ void delete_at_the_end()
 
 		return;
 	}
-	else if (head -> nextAddress = NULL)
+	else if (head -> nextAddress == NULL)
 	{
 		head = NULL;
 
