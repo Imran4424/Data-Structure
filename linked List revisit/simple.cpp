@@ -19,10 +19,12 @@ void insert_node_at_the_end(int info)
 
 	node* travel = head;
 
-	while(head->nextAddress != NULL)
+	while(travel->nextAddress != NULL)
 	{
 		travel = travel->nextAddress;
 	}
+
+
 }
 
 int main(int argc, char const *argv[])
