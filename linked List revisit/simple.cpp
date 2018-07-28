@@ -57,6 +57,11 @@ void delete_at_the_end()
 	travel -> nextAddress = NULL;
 }
 
+void delete_at_the_begin()
+{
+	
+}
+
 void display()
 {
 	node* travel = head;
