@@ -76,6 +76,10 @@ void delete_at_nth_position(int value)
 		
 		travel -> nextAddress = travel -> nextAddress -> nextAddress;
 	}
+	else
+	{
+		travel -> nextAddress = NULL;
+	}
 
 }
 
