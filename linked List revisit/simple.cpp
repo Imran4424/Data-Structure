@@ -59,7 +59,7 @@ void delete_at_the_end()
 
 void delete_at_the_begin()
 {
-
+	head = head -> nextAddress;
 }
 
 void delete_at_nth_position(int value)
