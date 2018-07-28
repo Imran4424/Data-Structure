@@ -45,6 +45,18 @@ void insert_node_at_the_begin(int value)
 	head = temp;
 }
 
+void delete_at_the_end()
+{
+	node* travel = head;
+
+	while(travel -> nextAddress -> nextAddress != NULL)
+	{
+		travel = travel -> nextAddress;
+	}
+
+	travel -> nextAddress = NULL;
+}
+
 void display()
 {
 	node* travel = head;
