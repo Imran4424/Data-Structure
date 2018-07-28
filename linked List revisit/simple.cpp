@@ -123,7 +123,7 @@ void delete_at_nth_position(int value)
 
 	node* travel = head;
 
-	if (travel -> data = value)
+	if (travel -> data == value)
 	{
 		head = travel -> nextAddress;
 
