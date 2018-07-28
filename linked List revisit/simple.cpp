@@ -59,7 +59,7 @@ void delete_at_the_end()
 
 void delete_at_the_begin()
 {
-	
+
 }
 
 void display()
@@ -80,6 +80,8 @@ int main(int argc, char const *argv[])
 {
 	head = NULL;
 
+	// insert
+
 	cout<<"how many node's you want to insert"<<endl;
 
 	int n;
@@ -97,9 +99,22 @@ int main(int argc, char const *argv[])
 		insert_node_at_the_begin(temp_val);
 	}
 
+
 	// display the node
 
 	display();
+
+	// delete nodes
+
+	cout<<"how many nodes you wnat to delete"<<endl;
+
+	int num;
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		delete_at_the_end();
+	}
 
 	return 0;
 }
