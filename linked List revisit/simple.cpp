@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout<<"enter the value of the node"<<endl
+		cout<<"enter the value of the node"<<endl;
 
 		int temp_val;
 		cin>>temp_val;
