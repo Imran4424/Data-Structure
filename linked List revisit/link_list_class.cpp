@@ -132,7 +132,8 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		obj.insert_node_at_the_end(temp_val);
+		//obj.insert_node_at_the_end(temp_val);
+		obj.insert_node_at_the_begin(temp_val);
 	}
 
 
