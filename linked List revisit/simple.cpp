@@ -125,6 +125,13 @@ void delete_at_nth_position(int value)
 
 void display()
 {
+	if (head == NULL)
+	{
+		cout<<"there's nothing to display"<<endl;
+
+		return;
+	}
+
 	node* travel = head;
 
 	while(travel != NULL)
