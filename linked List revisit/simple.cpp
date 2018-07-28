@@ -21,7 +21,7 @@ void insert_node_at_the_end(int info)
 
 	while(head->nextAddress != NULL)
 	{
-		
+		travel = travel->nextAddress;
 	}
 }
 
