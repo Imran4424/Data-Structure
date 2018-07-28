@@ -52,6 +52,18 @@ void insert_node_at_the_nth_position()
 
 void delete_at_the_end()
 {
+	if (head == NULL)
+	{
+		cout<<"Underflow, can't delete"<<endl;
+
+		return;
+	}
+	else if (head -> nextAddress = NULL)
+	{
+		head = NULL;
+	}
+
+
 	node* travel = head;
 
 	while(travel -> nextAddress -> nextAddress != NULL)
