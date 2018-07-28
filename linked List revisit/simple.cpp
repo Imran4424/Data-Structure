@@ -61,6 +61,8 @@ void delete_at_the_end()
 	else if (head -> nextAddress = NULL)
 	{
 		head = NULL;
+
+		return;
 	}
 
 
