@@ -152,5 +152,7 @@ int main(int argc, char const *argv[])
 		obj.delete_at_the_end();
 	}
 
+	obj.display();
+
 	return 0;
 }
