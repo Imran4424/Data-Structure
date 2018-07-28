@@ -15,8 +15,8 @@ void insert_node_at_the_end(int value)
 {
 	node* temp = new node();
 
-	temp->data = value;
-	temp->nextAddress = NULL;
+	temp -> data = value;
+	temp -> nextAddress = NULL;
 
 	if (head == NULL)
 	{
@@ -27,17 +27,22 @@ void insert_node_at_the_end(int value)
 
 	node* travel = head;
 
-	while(travel->nextAddress != NULL)
+	while(travel -> nextAddress != NULL)
 	{
-		travel = travel->nextAddress;
+		travel = travel -> nextAddress;
 	}
 
-	travel->nextAddress = temp;
+	travel -> nextAddress = temp;
 }
 
 void insert_node_at_the_begin(int value)
 {
-		
+	node* temp = new node();
+
+	temp -> data = value;
+	temp -> nextAddress = head;
+
+	head = temp;
 }
 
 void display()
@@ -71,7 +76,8 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		insert_node_at_the_end(temp_val);
+		//insert_node_at_the_end(temp_val);
+		insert_node_at_the_begin(temp_val);
 	}
 
 	// display the node
