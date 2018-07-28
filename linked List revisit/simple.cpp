@@ -34,5 +34,13 @@ int main(int argc, char const *argv[])
 
 	cout<<"how many node's you want to insert"<<endl;
 
+	int n;
+	cin>>n;
+
+	for (int i = 0; i < n; ++i)
+	{
+		cout<<"enter the value of the node"<<endl
+	}
+
 	return 0;
 }
