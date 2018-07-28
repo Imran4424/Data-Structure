@@ -206,7 +206,8 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		//delete_at_the_end();
-		delete_at_the_begin();
+		//delete_at_the_begin();
+		delete_at_nth_position(8);
 	}
 
 	// display again
