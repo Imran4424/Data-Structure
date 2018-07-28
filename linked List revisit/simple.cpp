@@ -45,6 +45,11 @@ void insert_node_at_the_begin(int value)
 	head = temp;
 }
 
+void insert_node_at_the_nth_position()
+{
+	
+}
+
 void delete_at_the_end()
 {
 	node* travel = head;
