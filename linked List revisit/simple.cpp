@@ -47,7 +47,7 @@ void insert_node_at_the_begin(int value)
 
 void insert_node_at_the_nth_position()
 {
-	
+
 }
 
 void delete_at_the_end()
@@ -69,6 +69,11 @@ void delete_at_the_begin()
 
 void delete_at_nth_position(int value)
 {
+	if (head == NULL)
+	{
+		/* code */
+	}
+
 	node* travel = head;
 
 	if (travel -> data = value)
