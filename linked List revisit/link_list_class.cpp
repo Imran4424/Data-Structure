@@ -110,6 +110,25 @@ class Link_list
 		head = previous;
 	}
 
+	public: void ReverseRecursion(node* travel)
+	{
+		if (travel -> nextAddress == NULL)
+		{
+			head = travel;
+
+			return;
+		}
+
+		ReverseRecursion(travel -> nextAddress);
+
+		node* temp = travel -> nextAddress;
+
+		temp -> nextAddress = travel;
+
+		travel -> nextAddress = NULL;
+
+	}
+
 	public: void display()
 	{
 		if (head == NULL)
