@@ -33,12 +33,18 @@ class Stack
 			return 0;
 		}
 
+		int count = 0;
+
 		node* travel = head;
 
 		while(travel != NULL)
 		{
-			
-		}	
+			travel = travel -> nextAddress;
+
+			count++;
+		}
+
+		return count;	
 	}
 	
 };
