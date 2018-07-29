@@ -158,5 +158,7 @@ int main(int argc, char const *argv[])
 
 	obj.Display();
 
+	cout<<"how many values you want to Pop"<<endl;
+
 	return 0;
 }
