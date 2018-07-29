@@ -141,7 +141,7 @@ int main(int argc, char const *argv[])
 {
 	Stack obj;
 
-	cout<<"how many nodes you want to insert"<<endl;
+	cout<<"how many values you want to Push"<<endl;
 
 	int num;
 	cin>>num;
@@ -155,6 +155,8 @@ int main(int argc, char const *argv[])
 
 		obj.Push(temp_val);
 	}
+
+	obj.Display();
 
 	return 0;
 }
