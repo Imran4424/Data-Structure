@@ -71,7 +71,12 @@ class Stack
 
 	public: void pop()
 	{
-		
+		if (head == NULL)
+		{
+			cout<<"Stack Underflow"<<endl;
+
+			return;
+		}
 	}
 	
 };
