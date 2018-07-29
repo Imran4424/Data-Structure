@@ -33,7 +33,15 @@ class DoublyLinkList
 			return;
 		}
 
-		
+		node* travel = head;
+
+		while(travel -> nextAddress != NULL)
+		{
+			travel = travel -> NULL;
+		}
+
+		temp -> prevAddress = travel;
+		travel -> nextAddress = temp;
 	}
 
 	
