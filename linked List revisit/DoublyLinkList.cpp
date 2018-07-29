@@ -46,7 +46,7 @@ class DoublyLinkList
 
 	public InsertAtBegin(int value)
 	{
-
+		
 	}
 
 	
