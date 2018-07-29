@@ -176,5 +176,7 @@ int main(int argc, char const *argv[])
 
 	obj.Display();
 
+	cout<<"Top: "<<obj.Top()<<endl;
+
 	return 0;
 }
