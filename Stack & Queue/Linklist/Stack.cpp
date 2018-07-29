@@ -98,7 +98,7 @@ class Stack
 	{
 		if (head == NULL)
 		{
-			return;
+			return 0;
 		}
 
 		node* travel = head;
@@ -107,6 +107,8 @@ class Stack
 		{
 			travel = travel -> nextAddress;
 		}
+
+		return travel -> data;
 	}
 	
 };
