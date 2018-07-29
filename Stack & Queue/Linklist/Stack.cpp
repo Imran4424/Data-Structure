@@ -102,6 +102,11 @@ class Stack
 		}
 
 		node* travel = head;
+
+		while(travel -> nextAddress != NULL)
+		{
+			
+		}
 	}
 	
 };
