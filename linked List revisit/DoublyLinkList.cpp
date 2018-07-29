@@ -17,5 +17,10 @@ class DoublyLinkList
 		head = NULL;
 	}
 
+	public: InsertAtEnd(int value)
+	{
+		node* 
+	}
+
 	
 };
