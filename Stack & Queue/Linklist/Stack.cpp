@@ -105,7 +105,7 @@ class Stack
 
 		while(travel -> nextAddress != NULL)
 		{
-			
+			travel = travel -> nextAddress;
 		}
 	}
 	
