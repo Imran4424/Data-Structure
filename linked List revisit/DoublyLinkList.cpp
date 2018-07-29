@@ -46,7 +46,16 @@ class DoublyLinkList
 
 	public InsertAtBegin(int value)
 	{
-		
+		node* temp = new node();
+
+		temp -> data = value;
+		temp -> prevAddress = NULL;
+
+		if (head == NULL)
+		{
+			temp -> nextAddress = NULL;
+			
+		}
 	}
 
 	
