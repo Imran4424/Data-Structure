@@ -94,7 +94,7 @@ class Stack
 		travel -> nextAddress = NULL;
 	}
 
-	public: int top()
+	public: int Top()
 	{
 		if (head == NULL)
 		{
