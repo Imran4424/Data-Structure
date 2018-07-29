@@ -70,5 +70,8 @@ class Queue
 		travel -> nextAddress = temp;
 	}
 
+	public: int pop()
+	{
 		
+	}	
 };
