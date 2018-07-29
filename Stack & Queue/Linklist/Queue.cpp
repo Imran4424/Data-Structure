@@ -60,6 +60,8 @@ class Queue
 		temp -> data = value;
 		temp -> nextAddress = NULL;
 
+		
+
 		node* travel = head;
 
 		while(travel -> nextAddress != NULL)

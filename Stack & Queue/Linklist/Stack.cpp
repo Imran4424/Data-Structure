@@ -62,6 +62,8 @@ class Stack
 		if (head == NULL)
 		{
 			head = temp;
+
+			return;
 		}
 
 		node* travel = head;
