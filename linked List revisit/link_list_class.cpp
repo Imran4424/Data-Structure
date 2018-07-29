@@ -160,9 +160,13 @@ class Link_list
 	{
 		node* travel = head;
 
-		if (/* condition */)
+		if (status)
 		{
-			/* code */
+			displayRecursion(travel);
+		}
+		else
+		{
+			displayReverseRecursion(travel);
 		}
 	}
 
@@ -198,7 +202,7 @@ int main(int argc, char const *argv[])
 	obj.display();
 
 	//Revering the list iteartive method
-	cout<<"Reversed linklist: "
+	cout<<"Reversed linklist: ";
 
 	obj.Reverse();
 
