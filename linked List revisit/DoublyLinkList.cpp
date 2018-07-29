@@ -44,5 +44,10 @@ class DoublyLinkList
 		travel -> nextAddress = temp;
 	}
 
+	public InsertAtBegin(int value)
+	{
+
+	}
+
 	
 };
