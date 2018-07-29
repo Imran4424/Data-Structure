@@ -143,7 +143,9 @@ class Queue
 
 int main(int argc, char const *argv[])
 {
-		cout<<"how many values you want to Push"<<endl;
+	Queue obj;
+
+	cout<<"how many values you want to Push"<<endl;
 
 	int num;
 	cin>>num;
