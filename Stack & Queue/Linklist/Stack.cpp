@@ -96,7 +96,10 @@ class Stack
 
 	public: int top()
 	{
-		
+		if (head == NULL)
+		{
+			return;
+		}
 	}
 	
 };
