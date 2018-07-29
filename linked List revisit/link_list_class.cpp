@@ -133,6 +133,12 @@ class Link_list
 
 	public: void displayRecursion(node* travel)
 	{
+		if (travel == NULL)
+		{
+			return;
+		}
+
+
 		cout<<travel -> data<<" ";
 
 		displayRecursion(travel -> nextAddress);
