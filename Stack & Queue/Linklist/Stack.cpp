@@ -69,7 +69,7 @@ class Stack
 		travel -> nextAddress = temp;
 	}
 
-	public: void pop()
+	public: void Pop()
 	{
 		if (head == NULL)
 		{
