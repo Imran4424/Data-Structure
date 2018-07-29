@@ -146,6 +146,11 @@ class Link_list
 
 	public: void displayReverseRecursion(node* travel)
 	{
+		if (travel == NULL)
+		{
+			return;
+		}
+
 		displayReverseRecursion(travel -> nextAddress);
 
 		cout<<travel -> data<<" ";
