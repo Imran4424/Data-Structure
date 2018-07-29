@@ -112,6 +112,27 @@ class Stack
 
 		return travel -> data;
 	}
+
+	public: void Display()
+	{
+		if (head == NULL)
+		{
+			cout<<"there's nothing to display"<<endl;
+
+			return;
+		}
+
+		node* travel = head;
+
+		while(travel != NULL)
+		{
+			cout<<travel -> data<<" ";
+
+			travel = travel -> nextAddress;
+		}
+
+		cout<<endl;
+	}
 	
 };
 
