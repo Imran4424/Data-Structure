@@ -77,6 +77,12 @@ class Stack
 
 			return;
 		}
+		else if (head -> nextAddress == NULL)
+		{
+			head = NULL;
+
+			return;
+		}
 
 		node* travel = head;
 
