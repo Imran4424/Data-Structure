@@ -59,7 +59,14 @@ class Stack
 		temp -> data = value;
 		temp -> nextAddress = NULL;
 
-		
+		node* travel = head;
+
+		while(travel -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
+		}
+
+		travel -> nextAddress = temp;
 	}
 	
 };
