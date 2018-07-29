@@ -3,13 +3,13 @@ using namespace std;
 
 class Stack
 {
-	public: struct node
+	private: struct node
 	{
 		int data;
 		node* nextAddress;
 	};
 
-	node* head;
+	private: node* head;
 
 	public: Stack()
 	{
@@ -24,6 +24,14 @@ class Stack
 		}
 
 		return false;
+	}
+
+	public: int size()
+	{
+		if (head == NULL)
+		{
+			return 0;
+		}	
 	}
 	
 };
