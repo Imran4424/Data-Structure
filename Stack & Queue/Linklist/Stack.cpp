@@ -98,7 +98,9 @@ class Stack
 	{
 		if (head == NULL)
 		{
-			return;
+			cout<<"Stack is empty"<<endl;
+
+			return 0;
 		}
 
 		node* travel = head;
