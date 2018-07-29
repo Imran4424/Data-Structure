@@ -81,7 +81,7 @@ class Queue
 	{
 		if (head == NULL)
 		{
-			count<<"Queue Underflow"<<endl;
+			cout<<"Queue Underflow"<<endl;
 
 			return 0;
 		}
