@@ -70,7 +70,7 @@ class Queue
 		travel -> nextAddress = temp;
 	}
 
-	public: void pop()
+	public: void Pop()
 	{
 		if (head == NULL)
 		{
@@ -82,7 +82,7 @@ class Queue
 		head = head -> nextAddress;
 	}
 
-	public: int rear()
+	public: int Rear()
 	{
 		if (head == NULL)
 		{
