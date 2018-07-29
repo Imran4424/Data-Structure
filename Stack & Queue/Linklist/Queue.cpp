@@ -95,7 +95,7 @@ class Queue
 		{
 			cout<<"Queue is empty"<<endl;
 
-			return (int)NULL;
+			return false;
 		}
 
 		node* travel = head;
