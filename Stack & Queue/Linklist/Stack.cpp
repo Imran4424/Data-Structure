@@ -101,7 +101,7 @@ class Stack
 			return;
 		}
 
-		
+		node* travel = head;
 	}
 	
 };
