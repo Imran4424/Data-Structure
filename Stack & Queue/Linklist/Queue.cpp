@@ -107,6 +107,8 @@ class Queue
 		{
 			cout<<"Queue is empty"<<endl;
 		}
+
+		
 	}
 	
 };
