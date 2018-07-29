@@ -52,8 +52,13 @@ class Stack
 		head = NULL;
 	}
 
-	public: void push()
+	public: void push(int value)
 	{
+		node* temp = new node();
+
+		temp -> data = value;
+		temp -> nextAddress = NULL;
+
 		
 	}
 	
