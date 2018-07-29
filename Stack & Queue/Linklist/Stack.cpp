@@ -167,5 +167,7 @@ int main(int argc, char const *argv[])
 		obj.Pop();
 	}
 
+	obj.Display();
+
 	return 0;
 }
