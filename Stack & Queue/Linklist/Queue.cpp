@@ -70,5 +70,5 @@ class Queue
 		travel -> nextAddress = temp;
 	}
 
-	
+		
 };
