@@ -83,7 +83,7 @@ class Queue
 		{
 			cout<<"Queue Underflow"<<endl;
 
-			return 0;
+			return;
 		}
 
 		head = head -> nextAddress;
