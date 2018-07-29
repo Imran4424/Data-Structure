@@ -46,6 +46,16 @@ class Stack
 
 		return count;	
 	}
+
+	public: void clear()
+	{
+		head = NULL;
+	}
+
+	public: void push()
+	{
+		
+	}
 	
 };
 
