@@ -138,6 +138,11 @@ class Link_list
 		displayRecursion(travel -> nextAddress);
 	}
 
+	public: void displayReverseRecursion(node* travel)
+	{
+		
+	}
+
 };
 
 
