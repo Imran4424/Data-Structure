@@ -160,5 +160,12 @@ int main(int argc, char const *argv[])
 
 	cout<<"how many values you want to Pop"<<endl;
 
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		obj.Pop();
+	}
+
 	return 0;
 }
