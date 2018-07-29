@@ -108,7 +108,7 @@ class Queue
 			cout<<"Queue is empty"<<endl;
 		}
 
-		
+		return head -> data;
 	}
 	
 };
