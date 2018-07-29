@@ -17,9 +17,23 @@ class DoublyLinkList
 		head = NULL;
 	}
 
-	public: InsertAtEnd(int value)
+	public: void InsertAtEnd(int value)
 	{
-		node* 
+		node* temp = new node();
+
+		temp -> data = value;
+		temp -> nextAddress = NULL;
+
+		if (head == NULL)
+		{
+			temp -> prevAddress = NULL;
+
+			head = temp;
+
+			return;
+		}
+
+		
 	}
 
 	
