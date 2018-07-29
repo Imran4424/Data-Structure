@@ -91,6 +91,8 @@ class Link_list
 
 	public void Reverse()
 	{
+		node* previos,current,next;
+
 		
 	}
 
