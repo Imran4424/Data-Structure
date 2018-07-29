@@ -80,5 +80,25 @@ class Queue
 		}
 
 		head = head -> nextAddress;
-	}	
+	}
+
+	public: int rear()
+	{
+		if (head == NULL)
+		{
+			cout<<"Stack is empty"<<endl;
+
+			return 0;
+		}
+
+		node* travel = head;
+
+		while(travel -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
+		}
+
+		return travel -> data;
+	}
+	
 };
