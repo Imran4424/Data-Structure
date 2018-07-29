@@ -78,7 +78,14 @@ class Stack
 			return;
 		}
 
-		
+		node* travel = head;
+
+		while(travel -> nextAddress -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
+		}
+
+		travel -> nextAddress = NULL;
 	}
 	
 };
