@@ -89,6 +89,11 @@ class Link_list
 		head = head -> nextAddress;
 	}
 
+	public void Reverse()
+	{
+		
+	}
+
 	public: void display()
 	{
 		if (head == NULL)
