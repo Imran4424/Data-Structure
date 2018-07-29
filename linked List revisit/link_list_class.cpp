@@ -131,6 +131,11 @@ class Link_list
 		cout<<endl;
 	}
 
+	public: void displayRecursion(node* travel)
+	{
+		
+	}
+
 };
 
 
