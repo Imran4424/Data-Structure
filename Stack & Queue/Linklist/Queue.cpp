@@ -100,5 +100,13 @@ class Queue
 
 		return travel -> data;
 	}
+
+	public: int Front()
+	{
+		if (head == NULL)
+		{
+			cout<<"Queue is empty"<<endl;
+		}
+	}
 	
 };
