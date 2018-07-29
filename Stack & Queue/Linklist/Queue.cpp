@@ -70,7 +70,7 @@ class Queue
 		travel -> nextAddress = temp;
 	}
 
-	public: int pop()
+	public: void pop()
 	{
 		if (head == NULL)
 		{
