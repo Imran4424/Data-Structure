@@ -86,7 +86,7 @@ class Queue
 	{
 		if (head == NULL)
 		{
-			cout<<"Stack is empty"<<endl;
+			cout<<"Queue is empty"<<endl;
 
 			return 0;
 		}
