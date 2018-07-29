@@ -98,7 +98,7 @@ class Stack
 	{
 		if (head == NULL)
 		{
-			return NULL;
+			return;
 		}
 
 		node* travel = head;
