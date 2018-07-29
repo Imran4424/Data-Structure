@@ -93,6 +93,11 @@ class Stack
 
 		travel -> nextAddress = NULL;
 	}
+
+	public: int top()
+	{
+		
+	}
 	
 };
 
