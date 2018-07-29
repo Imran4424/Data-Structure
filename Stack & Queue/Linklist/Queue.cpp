@@ -113,6 +113,8 @@ class Queue
 		if (head == NULL)
 		{
 			cout<<"Queue is empty"<<endl;
+
+			return 0;
 		}
 
 		return head -> data;
