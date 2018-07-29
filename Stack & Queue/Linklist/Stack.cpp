@@ -47,12 +47,12 @@ class Stack
 		return count;	
 	}
 
-	public: void clear()
+	public: void Clear()
 	{
 		head = NULL;
 	}
 
-	public: void push(int value)
+	public: void Push(int value)
 	{
 		node* temp = new node();
 
