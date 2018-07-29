@@ -92,8 +92,7 @@ class Link_list
 	public void Reverse()
 	{
 
-
-		node* previous,current,next;
+		node *previous,*current,*next;
 
 		previous = NULL;
 		current = head;
