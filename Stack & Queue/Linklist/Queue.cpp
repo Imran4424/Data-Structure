@@ -143,6 +143,40 @@ class Queue
 
 int main(int argc, char const *argv[])
 {
-	
+		cout<<"how many values you want to Push"<<endl;
+
+	int num;
+	cin>>num;
+
+	cout<<"input the nodes values"<<endl;
+
+	for (int i = 0; i < num; ++i)
+	{
+		int temp_val;
+		cin>>temp_val;
+
+		obj.Push(temp_val);
+	}
+
+	obj.Display();
+
+	cout<<"Front: "<<obj.Front()<<endl;
+	cout<<"Rear: "<<obj.Rear()<<endl;
+
+
+	cout<<"how many values you want to Pop"<<endl;
+
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		obj.Pop();
+	}
+
+	obj.Display();
+
+	cout<<"Front: "<<obj.Front()<<endl;
+	cout<<"Rear: "<<obj.Rear()<<endl;
+
 	return 0;
 }
