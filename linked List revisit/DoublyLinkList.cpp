@@ -59,7 +59,7 @@ class DoublyLinkList
 			return;
 		}
 
-		temp -> nextAddress = head -> nextAddress;
+		temp -> nextAddress = head;
 
 		head = temp;
 
