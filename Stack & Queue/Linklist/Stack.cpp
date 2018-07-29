@@ -141,5 +141,15 @@ int main(int argc, char const *argv[])
 {
 	Stack obj;
 
+	cout<<"how many nodes you want to insert"<<endl;
+
+	int num;
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		
+	}
+
 	return 0;
 }
