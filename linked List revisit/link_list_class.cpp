@@ -156,6 +156,16 @@ class Link_list
 		cout<<travel -> data<<" ";
 	}
 
+	public: void displayRecursionHandler(bool status)
+	{
+		node* travel = head;
+
+		if (/* condition */)
+		{
+			/* code */
+		}
+	}
+
 };
 
 
