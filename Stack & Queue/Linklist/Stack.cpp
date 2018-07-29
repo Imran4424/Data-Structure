@@ -165,6 +165,9 @@ int main(int argc, char const *argv[])
 
 	obj.Display();
 
+	cout<<"Top: "<<obj.Top()<<endl;
+
+
 	cout<<"how many values you want to Pop"<<endl;
 
 	cin>>num;
