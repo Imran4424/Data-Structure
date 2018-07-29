@@ -111,7 +111,7 @@ class Queue
 		return head -> data;
 	}
 
-	public: void display()
+	public: void Display()
 	{
 		if (head == NULL)
 		{
