@@ -163,6 +163,11 @@ int main(int argc, char const *argv[])
 
 	obj.display();
 
+	//Revering the list iteartive method
+	obj.Reverse();
+
+	obj.display();
+
 	// delete nodes
 
 	cout<<"how many nodes you wnat to delete"<<endl;
