@@ -129,6 +129,13 @@ class Link_list
 
 	}
 
+	public: void ReverseRecursionHandler()
+	{
+		node* travel = head;
+
+		ReverseRecursion(travel);
+	}
+
 	public: void display()
 	{
 		if (head == NULL)
