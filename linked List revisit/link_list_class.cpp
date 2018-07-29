@@ -104,9 +104,11 @@ class Link_list
 
 			current -> next = previous;
 
-			previous =
-
+			previous = current;
+			current = next;
 		}
+
+		head = previous;
 	}
 
 	public: void display()
