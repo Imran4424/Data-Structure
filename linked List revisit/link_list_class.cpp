@@ -140,7 +140,9 @@ class Link_list
 
 	public: void displayReverseRecursion(node* travel)
 	{
-		
+		displayReverseRecursion(travel -> nextAddress);
+
+		cout<<travel -> data<<" ";
 	}
 
 };
