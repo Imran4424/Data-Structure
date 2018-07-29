@@ -146,6 +146,8 @@ int main(int argc, char const *argv[])
 	int num;
 	cin>>num;
 
+	cout<<"input the nodes values"<<endl;
+
 	for (int i = 0; i < num; ++i)
 	{
 		int temp_val;
