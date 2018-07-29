@@ -92,11 +92,16 @@ class Link_list
 	public void Reverse()
 	{
 
-		
+
 		node* previos,current,next;
 
 		previos = NULL;
 		current = head;
+
+		while(current -> nextAddress != NULL)
+		{
+			
+		}
 	}
 
 	public: void display()
