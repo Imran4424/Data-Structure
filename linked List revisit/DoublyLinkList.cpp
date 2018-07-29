@@ -55,7 +55,12 @@ class DoublyLinkList
 		{
 			temp -> nextAddress = NULL;
 			head == temp;
+
+			return;
 		}
+		
+		
+
 	}
 
 	
