@@ -72,6 +72,11 @@ class Queue
 
 	public: int pop()
 	{
-		
+		if (head == NULL)
+		{
+			count<<"Queue Underflow"<<endl;
+
+			return 0;
+		}
 	}	
 };
