@@ -93,14 +93,19 @@ class Link_list
 	{
 
 
-		node* previos,current,next;
+		node* previous,current,next;
 
-		previos = NULL;
+		previous = NULL;
 		current = head;
 
-		while(current -> nextAddress != NULL)
+		while(current != NULL)
 		{
-			
+			next = current -> nextAddress;
+
+			current -> next = previous;
+
+			previous =
+
 		}
 	}
 
