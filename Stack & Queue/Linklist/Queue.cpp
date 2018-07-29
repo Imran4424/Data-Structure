@@ -79,6 +79,6 @@ class Queue
 			return 0;
 		}
 
-		
+		head = head -> nextAddress;
 	}	
 };
