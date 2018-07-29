@@ -230,7 +230,7 @@ int main(int argc, char const *argv[])
 	//Revering the list iteartive method
 	cout<<"Reversed linklist: ";
 
-	obj.Reverse();
+	obj.ReverseRecursionHandler();
 
 	obj.display();
 
