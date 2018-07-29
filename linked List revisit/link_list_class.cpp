@@ -89,7 +89,7 @@ class Link_list
 		head = head -> nextAddress;
 	}
 
-	public void Reverse()
+	public: void Reverse()
 	{
 
 		node *previous,*current,*next;
@@ -101,7 +101,7 @@ class Link_list
 		{
 			next = current -> nextAddress;
 
-			current -> next = previous;
+			current -> nextAddress = previous;
 
 			previous = current;
 			current = next;
