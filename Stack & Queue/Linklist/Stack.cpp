@@ -68,6 +68,11 @@ class Stack
 
 		travel -> nextAddress = temp;
 	}
+
+	public: void pop()
+	{
+		
+	}
 	
 };
 
