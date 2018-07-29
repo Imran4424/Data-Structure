@@ -3,16 +3,18 @@ using namespace std;
 
 class DoublyLinkList
 {
-	public: struct node
+	private: struct node
 	{
 		int data;
 		node* prevAddress;
 		node* nextAddress;
 	};
 
+	private node* head;
+
 	public: DoublyLinkList()
 	{
-
+		head = NULL;
 	}
 
 	
