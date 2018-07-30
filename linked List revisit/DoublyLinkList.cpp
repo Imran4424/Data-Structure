@@ -111,7 +111,7 @@ class DoublyLinkList
 		{
 			temp = travel -> prevAddress;
 			travel -> prevAddress = travel -> nextAddress;
-			travel -> nextAddress = temp
+			travel -> nextAddress = temp;
 
 			travel = travel -> prevAddress;
 		}
@@ -127,7 +127,7 @@ class DoublyLinkList
 
 			temp = travel -> prevAddress;
 			travel -> prevAddress = travel -> nextAddress;
-			travel -> nextAddress = temp
+			travel -> nextAddress = temp;
 
 			head = travel;
 
@@ -140,7 +140,7 @@ class DoublyLinkList
 
 		temp = travel -> prevAddress;
 		travel -> prevAddress = travel -> nextAddress;
-		travel -> nextAddress = temp
+		travel -> nextAddress = temp;
 	}
 
 	public: void ReverseRecursionHandler(node* travel)
