@@ -23,7 +23,10 @@ node* GetNewNode(int value)
 
 void InsertNode(node* travel, int value)
 {
-
+	if (/* condition */)
+	{
+		/* code */
+	}
 }
 
 int main(int argc, char const *argv[])
