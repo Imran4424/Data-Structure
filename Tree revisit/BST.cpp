@@ -69,9 +69,9 @@ int MaxValue(node* travel)
 	{
 		return travel -> data;
 	}
-	else if (/* condition */)
+	else if (travel -> right == NULL)
 	{
-		/* code */
+		return MaxValue(travel -> left);
 	}
 }
 
