@@ -204,7 +204,8 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		obj.InsertAtEnd(temp_val);
+		//obj.InsertAtEnd(temp_val);
+		obj.InsertAtBegin(temp_val);
 	}
 
 	// Display
@@ -224,7 +225,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		obj.DeleteAtEnd();
+		obj.DeleteAtBegin();
 	}
 
 	// Display
