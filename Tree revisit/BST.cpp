@@ -43,7 +43,12 @@ bool Search(node* travel, int value)
 {
 	if (travel == NULL)
 	{
-		/* code */
+		return false;
+	}
+
+	if (travel -> data == value)
+	{
+		return true;
 	}
 }
 
