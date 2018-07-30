@@ -64,7 +64,7 @@ int main(int argc, char const *argv[])
 {
 	root = NULL;
 
-	
+	cout<<"how many values you want to insert"<<endl;
 
 
 
