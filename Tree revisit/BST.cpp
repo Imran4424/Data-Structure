@@ -141,6 +141,11 @@ void PreOrder(node* travel)
 	PreOrder(travel -> right);
 }
 
+void InOrder(node* travel)
+{
+	InOrder(travel -> left);
+}
+
 bool isRootEmpty(node* root)
 {
 	if (root == NULL)
