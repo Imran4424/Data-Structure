@@ -82,6 +82,10 @@ int main(int argc, char const *argv[])
 {
 	root = NULL;
 
+	bool check = isRootEmpty(root);
+
+	cout<<check<<endl;
+
 	cout<<"how many values you want to insert"<<endl;
 
 	int num;
@@ -96,6 +100,11 @@ int main(int argc, char const *argv[])
 
 		InsertNode(travel,temp_val);
 	}
+
+	bool check = isRootEmpty(root);
+
+	cout<<check<<endl;
+
 
 	cout<<"Enter the number you want to Search"<<endl;
 
