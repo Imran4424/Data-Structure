@@ -8,3 +8,4 @@ struct node
 	node* right;
 };
 
+node* root;
