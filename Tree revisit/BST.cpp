@@ -148,6 +148,12 @@ void PreOrder(node* travel)
 
 void InOrder(node* travel)
 {
+	if (travel == NULL)
+	{
+		return;
+	}
+
+
 	InOrder(travel -> left);
 
 	cout<<travel -> data<<" ";
