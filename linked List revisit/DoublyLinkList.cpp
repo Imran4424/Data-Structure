@@ -83,5 +83,13 @@ class DoublyLinkList
 		travel -> nextAddress = NULL;
 	}
 
+	public: void DeleteAtBegin()
+	{
+		if (head == NULL)
+		{
+			return;
+		}
+	}
+
 	
 };
