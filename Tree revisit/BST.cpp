@@ -50,6 +50,10 @@ bool Search(node* travel, int value)
 	{
 		return true;
 	}
+	else if (/* condition */)
+	{
+		/* code */
+	}
 }
 
 int main(int argc, char const *argv[])
