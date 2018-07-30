@@ -54,12 +54,14 @@ class DoublyLinkList
 		if (head == NULL)
 		{
 			temp -> nextAddress = NULL;
-			head == temp;
+			head = temp;
 
 			return;
 		}
 
+		head -> prevAddress = temp
 		temp -> nextAddress = head;
+
 
 		head = temp;
 
