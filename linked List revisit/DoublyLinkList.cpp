@@ -95,6 +95,12 @@ class DoublyLinkList
 		head -> prevAddress = NULL;
 	}
 
+
+	public: void ReverseIterative()
+	{
+		
+	}
+
 	public: void Display()
 	{
 		if (head == NULL)
