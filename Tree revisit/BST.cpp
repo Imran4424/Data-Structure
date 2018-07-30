@@ -58,10 +58,12 @@ bool Search(node* travel, int value)
 	}
 	else if (value < travel -> data)
 	{
+		cout<<"I am here: "<<travel -> data<<endl;
 		return Search(travel -> left, value);
 	}
 	else if (value > travel -> data)
 	{
+		cout<<"I am here: "<<travel -> data<<endl;
 		return Search(travel -> right, value);
 	}
 }
