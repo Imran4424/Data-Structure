@@ -216,5 +216,9 @@ int main(int argc, char const *argv[])
 		obj.DeleteAtEnd();
 	}
 
+	// Display
+
+	obj.Display()	
+
 	return 0;
 }
