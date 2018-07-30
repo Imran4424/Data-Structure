@@ -123,6 +123,12 @@ class DoublyLinkList
 	{
 		if (travel -> nextAddress == NULL)
 		{
+			node* temp;
+
+			temp = travel -> prevAddress;
+			travel -> prevAddress = travel -> nextAddress;
+			travel -> nextAddress = temp
+
 			head = travel;
 
 			return;
