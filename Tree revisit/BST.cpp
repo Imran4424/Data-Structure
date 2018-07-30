@@ -77,7 +77,7 @@ int main(int argc, char const *argv[])
 		InsertNode(temp_val);
 	}
 
-
+	
 
 	return 0;
 }
