@@ -44,6 +44,8 @@ void InsertNode(node* travel, int value)
 
 bool Search(node* travel, int value)
 {
+	cout<<"I am here: "<<travel -> data<<endl;
+	
 	if (travel == NULL)
 	{
 		return false;
