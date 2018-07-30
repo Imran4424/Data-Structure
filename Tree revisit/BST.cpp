@@ -150,6 +150,8 @@ void InOrder(node* travel)
 	InOrder(travel -> right);
 }
 
+void PostOrder(node)
+
 bool isRootEmpty(node* root)
 {
 	if (root == NULL)
