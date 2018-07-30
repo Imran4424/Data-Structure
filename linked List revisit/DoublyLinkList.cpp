@@ -179,6 +179,14 @@ int main(int argc, char const *argv[])
 {
 	cout<<"how many values you want to inset"<<endl;
 
+	int num;
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		/* code */
+	}
+
 
 	return 0;
 }
