@@ -71,6 +71,11 @@ class DoublyLinkList
 		{
 			return;
 		}
+
+		node* travel = head;
+
+
+		while()
 	}
 
 	
