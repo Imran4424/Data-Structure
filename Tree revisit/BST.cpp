@@ -85,6 +85,14 @@ int MinValue(node* travel)
 	{
 		return travel -> data;
 	}
+	else if (travel -> left == NULL)
+	{
+		return MinValue(travel -> right);
+	}
+	else
+	{
+		return MinValue(travel -> left);
+	}
 }
 
 bool isRootEmpty(node* root)
