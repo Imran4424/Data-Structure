@@ -150,7 +150,10 @@ class DoublyLinkList
 		ReverseRecursion(travel);
 	}
 
-	
+	public: void Clear()
+	{
+		head = NULL;
+	}
 
 	public: void Display()
 	{
