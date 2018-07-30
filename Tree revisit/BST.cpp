@@ -81,7 +81,10 @@ int MaxValue(node* travel)
 
 int MinValue(node* travel)
 {
-	
+	if (travel -> left == NULL && travel -> right == NULL)
+	{
+		return travel -> data;
+	}
 }
 
 bool isRootEmpty(node* root)
