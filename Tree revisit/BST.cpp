@@ -73,6 +73,10 @@ int MaxValue(node* travel)
 	{
 		return MaxValue(travel -> left);
 	}
+	else
+	{
+		return MaxValue(travel -> right);
+	}
 }
 
 bool isRootEmpty(node* root)
