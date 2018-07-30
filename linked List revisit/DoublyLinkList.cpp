@@ -196,6 +196,10 @@ int main(int argc, char const *argv[])
 
 	obj.Display();
 
+	cout<<"Reversed Link List is: ";
+
+	obj.Display();
+
 
 	return 0;
 }
