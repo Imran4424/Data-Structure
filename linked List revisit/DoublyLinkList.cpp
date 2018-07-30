@@ -189,7 +189,7 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-
+		obj.InsertAtEnd();
 	}
 
 
