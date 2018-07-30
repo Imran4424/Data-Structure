@@ -7,3 +7,4 @@ struct node
 	node* left;
 	node* right;
 };
+
