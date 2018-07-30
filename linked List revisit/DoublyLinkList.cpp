@@ -207,6 +207,14 @@ int main(int argc, char const *argv[])
 
 	obj.Display();
 
+	cout<<"How many values you want to delete"<<endl;
+
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		obj.DeleteAtEnd();
+	}
 
 	return 0;
 }
