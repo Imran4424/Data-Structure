@@ -100,9 +100,20 @@ class DoublyLinkList
 		if (head == NULL)
 		{
 			cout<<"there's nothing to Display"<<endl;
+
+			return;
 		}
 
-		
+		node* travel = head;
+
+		while(travel != NULL)
+		{
+			cout<<travel -> data<<" ";
+
+			travel = travel -> nextAddress;
+		}
+
+		cout<<endl;
 	}
 
 	
