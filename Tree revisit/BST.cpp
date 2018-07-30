@@ -21,13 +21,13 @@ node* GetNewNode(int value)
 	return temp;
 }
 
-void InsertNode(node* travel, int value)
+node* InsertNode(node* travel, int value)
 {
 	if (travel == NULL)
 	{
 		travel = GetNewNode(value);
 
-		cout<<"I am here: "<<travel -> data<<endl;
+		//cout<<"I am here: "<<travel -> data<<endl;
 
 		return travel;
 	}
@@ -52,17 +52,13 @@ bool Search(node* travel, int value)
 	if (travel -> data == value)
 	{
 		return true;
-
-		cout<<"I am here: "<<travel -> data<<endl;
 	}
 	else if (value < travel -> data)
-	{
-		cout<<"I am here: "<<travel -> data<<endl;
+	{	
 		return Search(travel -> left, value);
 	}
 	else if (value > travel -> data)
 	{
-		cout<<"I am here: "<<travel -> data<<endl;
 		return Search(travel -> right, value);
 	}
 }
@@ -95,9 +91,9 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		node* travel = root;
+		
 
-		InsertNode(travel,temp_val);
+		root = InsertNode(root,temp_val);
 	}
 
 	check = isRootEmpty(root);
