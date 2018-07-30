@@ -86,6 +86,10 @@ int main(int argc, char const *argv[])
 	{
 		cout<<"target is found"<<endl;
 	}
+	else
+	{
+		cout<<"target is not found"<<endl;
+	}
 
 	return 0;
 }
