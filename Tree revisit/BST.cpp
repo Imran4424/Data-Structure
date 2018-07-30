@@ -126,6 +126,8 @@ void LevelOrderTraversal(node* travel)
 		{
 			list.push(current -> right);
 		}
+
+		list.pop();
 	}
 }
 
