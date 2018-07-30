@@ -218,7 +218,7 @@ int main(int argc, char const *argv[])
 
 	// Display
 
-	obj.Display()	
+	obj.Display();	
 
 	return 0;
 }
