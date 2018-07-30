@@ -26,6 +26,8 @@ void InsertNode(node* travel, int value)
 	if (travel == NULL)
 	{
 		travel = GetNewNode(value);
+
+		return;
 	}
 }
 
