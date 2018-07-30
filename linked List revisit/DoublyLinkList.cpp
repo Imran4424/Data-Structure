@@ -75,7 +75,12 @@ class DoublyLinkList
 		node* travel = head;
 
 
-		while()
+		while(travel -> nextAddress -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
+		}
+
+		travel -> nextAddress = NULL;
 	}
 
 	
