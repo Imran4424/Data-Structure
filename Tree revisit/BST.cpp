@@ -43,7 +43,15 @@ node* InsertNode(node* travel, int value)
 
 int FindHeight(node* travel)
 {
-	
+	if (travel == NULL)
+	{
+		return -1;
+	}
+
+	int leftHeight = FindHeight(travel -> left);
+	int rightHeight= FindHeight(travel -> right);
+
+	return max(leftHeight,rightHeight) + 1;
 }
 
 bool Search(node* travel, int value)
