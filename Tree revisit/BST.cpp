@@ -27,6 +27,8 @@ void InsertNode(node* travel, int value)
 	{
 		travel = GetNewNode(value);
 
+		cout<<"I am here"<<endl;
+
 		return;
 	}
 	else if (value < travel -> data)
