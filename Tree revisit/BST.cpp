@@ -31,11 +31,11 @@ void InsertNode(node* travel, int value)
 	}
 	else if (data < travel -> data)
 	{
-		InsertNode(travel -> left,value);
+		InsertNode(travel -> left, value);
 	}
 	else if (data >= travel -> data)
 	{
-		/* code */
+		InsertNode(travel -> right, value);
 	}
 }
 
