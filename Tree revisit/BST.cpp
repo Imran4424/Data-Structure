@@ -103,7 +103,10 @@ int MinValue(node* travel)
 
 void LevelOrderTraversal(node* travel)
 {
-
+	if (travel == NULL)
+	{
+		return;
+	}
 }
 
 bool isRootEmpty(node* root)
