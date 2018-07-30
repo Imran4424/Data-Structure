@@ -177,6 +177,8 @@ class DoublyLinkList
 
 int main(int argc, char const *argv[])
 {
+	DoublyLinkList obj;
+
 	cout<<"how many values you want to inset"<<endl;
 
 	int num;
@@ -184,7 +186,10 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		/* code */
+		int temp_val;
+		cin>>temp_val;
+
+
 	}
 
 
