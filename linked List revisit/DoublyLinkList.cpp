@@ -109,8 +109,14 @@ class DoublyLinkList
 
 		while(travel != NULL)
 		{
-			
+			temp = travel -> prevAddress;
+			travel -> prevAddress = travel -> nextAddress;
+			travel -> nextAddress = temp
+
+			travel = travel -> prevAddress;
 		}
+
+		head = travel;
 	}
 
 	public: void Display()
