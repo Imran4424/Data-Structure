@@ -65,13 +65,9 @@ bool Search(node* travel, int value)
 
 int MaxValue(node* travel)
 {
-	if (travel -> left == NULL && travel -> right == NULL)
+	if (travel -> right == NULL)
 	{
 		return travel -> data;
-	}
-	else if (travel -> right == NULL)
-	{
-		return MaxValue(travel -> left);
 	}
 	else
 	{
@@ -85,11 +81,7 @@ int MinValue(node* travel)
 	{
 		return travel -> data;
 	}
-	else if (travel -> left == NULL)
-	{
-		return MinValue(travel -> right);
-	}
-	else
+	else if (travel -> left != NULL)
 	{
 		return MinValue(travel -> left);
 	}
