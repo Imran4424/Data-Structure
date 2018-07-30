@@ -29,16 +29,15 @@ void InsertNode(node* travel, int value)
 
 		cout<<"I am here: "<<travel -> data<<endl;
 
-
-		return;
+		return travel;
 	}
 	else if (value < travel -> data)
 	{
-		InsertNode(travel -> left, value);
+		travel -> left = InsertNode(travel -> left, value);
 	}
 	else if (value >= travel -> data)
 	{
-		InsertNode(travel -> right, value);
+		travel -> right = InsertNode(travel -> right, value);
 	}
 }
 
