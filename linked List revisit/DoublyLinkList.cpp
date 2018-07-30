@@ -99,6 +99,10 @@ class DoublyLinkList
 	public: void ReverseIterative()
 	{
 		
+
+		node *travel, *temp;
+
+		travel = head;
 	}
 
 	public: void Display()
