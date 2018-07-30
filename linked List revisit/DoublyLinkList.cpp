@@ -107,7 +107,7 @@ class DoublyLinkList
 
 		travel = head;
 
-		while(travel != NULL)
+		while(travel -> nextAddress != NULL)
 		{
 			temp = travel -> prevAddress;
 			travel -> prevAddress = travel -> nextAddress;
@@ -115,6 +115,10 @@ class DoublyLinkList
 
 			travel = travel -> prevAddress;
 		}
+
+		temp = travel -> prevAddress;
+		travel -> prevAddress = travel -> nextAddress;
+		travel -> nextAddress = temp;
 
 		head = travel;
 	}
