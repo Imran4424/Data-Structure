@@ -23,7 +23,7 @@ node* GetNewNode(int value)
 
 void InsertNode(node* travel, int value)
 {
-	if (/* condition */)
+	if (travel == NULL)
 	{
 		/* code */
 	}
