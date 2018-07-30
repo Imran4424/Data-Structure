@@ -143,6 +143,13 @@ class DoublyLinkList
 		travel -> nextAddress = temp
 	}
 
+	public: void ReverseRecursionHandler(node* travel)
+	{
+		node* travel = head;
+
+		ReverseRecursion(travel);
+	}
+
 	public: void Display()
 	{
 		if (head == NULL)
