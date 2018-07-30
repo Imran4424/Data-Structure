@@ -77,7 +77,15 @@ int main(int argc, char const *argv[])
 		InsertNode(root,temp_val);
 	}
 
+	cout<<"Enter the number you want to Search"<<endl;
 
+	int target;
+	cin>>target;
+
+	if (Search(root,target))
+	{
+		cout<<"target is found"<<endl;
+	}
 
 	return 0;
 }
