@@ -150,6 +150,8 @@ class DoublyLinkList
 		ReverseRecursion(travel);
 	}
 
+	
+
 	public: void Display()
 	{
 		if (head == NULL)
@@ -195,6 +197,8 @@ int main(int argc, char const *argv[])
 	// Display
 
 	obj.Display();
+
+	obj.ReverseIterative();
 
 	cout<<"Reversed Link List is: ";
 
