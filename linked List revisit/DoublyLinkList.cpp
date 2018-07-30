@@ -177,7 +177,7 @@ class DoublyLinkList
 
 int main(int argc, char const *argv[])
 {
-	
+	cout<<"how many values you want to inset"<<endl;
 
 
 	return 0;
