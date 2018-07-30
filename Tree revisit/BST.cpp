@@ -10,6 +10,11 @@ struct node
 
 node* root;
 
+void InsertNode(node* root, int value)
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 	
