@@ -131,6 +131,11 @@ void LevelOrderTraversal(node* travel)
 	}
 }
 
+void PreOrder(node* travel)
+{
+	
+}
+
 bool isRootEmpty(node* root)
 {
 	if (root == NULL)
