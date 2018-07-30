@@ -25,7 +25,7 @@ void InsertNode(node* travel, int value)
 {
 	if (travel == NULL)
 	{
-		/* code */
+		
 	}
 }
 
