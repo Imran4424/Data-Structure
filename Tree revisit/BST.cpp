@@ -66,6 +66,11 @@ int main(int argc, char const *argv[])
 
 	cout<<"how many values you want to insert"<<endl;
 
+	int num;
+	cin>>num;
+
+	
+
 
 
 	return 0;
