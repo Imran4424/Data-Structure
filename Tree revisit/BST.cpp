@@ -52,11 +52,11 @@ bool Search(node* travel, int value)
 	}
 	else if (value < travel -> data)
 	{
-		Search(travel -> left, value);
+		return Search(travel -> left, value);
 	}
 	else if (value > travel -> data)
 	{
-		Search(travel -> right, value);
+		return Search(travel -> right, value);
 	}
 }
 
