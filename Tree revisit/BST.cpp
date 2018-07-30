@@ -77,11 +77,11 @@ int MaxValue(node* travel)
 
 int MinValue(node* travel)
 {
-	if (travel -> left == NULL && travel -> right == NULL)
+	if (travel -> left == NULL)
 	{
 		return travel -> data;
 	}
-	else if (travel -> left != NULL)
+	else
 	{
 		return MinValue(travel -> left);
 	}
