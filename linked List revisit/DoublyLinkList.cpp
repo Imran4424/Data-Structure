@@ -212,9 +212,9 @@ int main(int argc, char const *argv[])
 	obj.Display();
 
 	//obj.ReverseRecursionHandler();
-	//obj.ReverseIterative();
+	obj.ReverseIterative();
 
-	//cout<<"Reversed Link List is: ";
+	cout<<"Reversed Link List is: ";
 
 	obj.Display();
 
