@@ -107,6 +107,15 @@ void LevelOrderTraversal(node* travel)
 	{
 		return;
 	}
+
+	queue<node*> list;
+
+	list.push(travel);
+
+	while(!list.empty())
+	{
+		
+	}
 }
 
 bool isRootEmpty(node* root)
