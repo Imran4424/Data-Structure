@@ -71,9 +71,11 @@ class DoublyLinkList
 		{
 			return;
 		}
-		else if (head -> nextAddress)
+		else if (head -> nextAddress == NULL)
 		{
-			/* code */
+			head = NULL;
+
+			return;
 		}
 
 		node* travel = head;
@@ -210,9 +212,9 @@ int main(int argc, char const *argv[])
 	obj.Display();
 
 	//obj.ReverseRecursionHandler();
-	obj.ReverseIterative();
+	//obj.ReverseIterative();
 
-	cout<<"Reversed Link List is: ";
+	//cout<<"Reversed Link List is: ";
 
 	obj.Display();
 
