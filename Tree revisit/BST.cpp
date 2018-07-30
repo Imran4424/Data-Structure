@@ -163,6 +163,11 @@ void InOrder(node* travel)
 
 void PostOrder(node* travel)
 {
+	if (travel == NULL)
+	{
+		return;
+	}
+	
 	PostOrder(travel -> left);
 	PostOrder(travel -> right);
 
