@@ -114,7 +114,18 @@ void LevelOrderTraversal(node* travel)
 
 	while(!list.empty())
 	{
-		
+		node* current = list.front();
+
+		cout<<current -> data<<" ";
+		if (current -> left != NULL)
+		{
+			list.push(current -> left);
+		}
+
+		if (current -> right != NULL)
+		{
+			list.push(current -> right);
+		}
 	}
 }
 
