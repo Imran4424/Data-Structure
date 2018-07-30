@@ -98,11 +98,16 @@ class DoublyLinkList
 
 	public: void ReverseIterative()
 	{
-		
+		if (head == NULL)
+		{
+			return;
+		}
 
 		node *travel, *temp;
 
 		travel = head;
+
+		while()
 	}
 
 	public: void Display()
