@@ -41,6 +41,11 @@ node* InsertNode(node* travel, int value)
 	}
 }
 
+int FindHeight(node* travel)
+{
+	
+}
+
 bool Search(node* travel, int value)
 {
 	
