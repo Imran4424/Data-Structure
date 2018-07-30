@@ -68,6 +68,16 @@ bool Search(node* travel, int value)
 	}
 }
 
+bool isRootEmpty(node* root)
+{
+	if (root == NULL)
+	{
+		return false;
+	}
+
+	return true;
+}
+
 int main(int argc, char const *argv[])
 {
 	root = NULL;
