@@ -138,7 +138,7 @@ void PreOrder(node* travel)
 	cout<<travel -> data<<" ";
 
 	PreOrder(travel -> left);
-	PreOrder(travel)
+	PreOrder(travel -> right);
 }
 
 bool isRootEmpty(node* root)
