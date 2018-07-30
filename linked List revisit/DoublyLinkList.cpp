@@ -44,7 +44,7 @@ class DoublyLinkList
 		travel -> nextAddress = temp;
 	}
 
-	public InsertAtBegin(int value)
+	public: void InsertAtBegin(int value)
 	{
 		node* temp = new node();
 
@@ -64,6 +64,8 @@ class DoublyLinkList
 		head = temp;
 
 	}
+
+	
 
 	
 };
