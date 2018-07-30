@@ -39,7 +39,10 @@ void InsertNode(node* travel, int value)
 	}
 }
 
-
+bool Search(node* travel, int value)
+{
+	
+}
 
 int main(int argc, char const *argv[])
 {
