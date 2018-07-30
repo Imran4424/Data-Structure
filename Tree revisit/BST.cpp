@@ -155,7 +155,7 @@ void PostOrder(node* travel)
 	PostOrder(travel -> left);
 	PostOrder(travel -> right);
 
-	cout
+	cout<<travel -> data<<" ";
 }
 
 bool isRootEmpty(node* root)
