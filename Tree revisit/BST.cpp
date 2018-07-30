@@ -33,6 +33,10 @@ void InsertNode(node* travel, int value)
 	{
 		InsertNode(travel -> left,value);
 	}
+	else if (data >= travel -> data)
+	{
+		/* code */
+	}
 }
 
 int main(int argc, char const *argv[])
