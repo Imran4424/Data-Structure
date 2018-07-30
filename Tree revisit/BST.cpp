@@ -82,7 +82,9 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		InsertNode(root,temp_val);
+		node* travel = root;
+
+		InsertNode(travel,temp_val);
 	}
 
 	cout<<"Enter the number you want to Search"<<endl;
