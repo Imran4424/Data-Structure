@@ -13,6 +13,12 @@ node* root;
 node* GetNewNode(int value)
 {
 	node* temp = new node();
+
+	temp -> data = value;
+	temp -> left = NULL;
+	temp -> right = NULL;
+
+	return temp;
 }
 
 void InsertNode(node* travel, int value)
