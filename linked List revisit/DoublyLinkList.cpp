@@ -119,6 +119,11 @@ class DoublyLinkList
 		head = travel;
 	}
 
+	public: void ReverseRecursion()
+	{
+		
+	}
+
 	public: void Display()
 	{
 		if (head == NULL)
