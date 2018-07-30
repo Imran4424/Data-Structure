@@ -74,10 +74,10 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		InsertNode(temp_val);
+		InsertNode(root,temp_val);
 	}
 
-	
+
 
 	return 0;
 }
