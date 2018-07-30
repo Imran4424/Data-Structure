@@ -65,7 +65,13 @@ class DoublyLinkList
 
 	}
 
-	
+	public: void DeleteAtEnd()
+	{
+		if (head == NULL)
+		{
+			return;
+		}
+	}
 
 	
 };
