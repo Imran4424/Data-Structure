@@ -71,6 +71,10 @@ class DoublyLinkList
 		{
 			return;
 		}
+		else if (head -> nextAddress)
+		{
+			/* code */
+		}
 
 		node* travel = head;
 
