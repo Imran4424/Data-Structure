@@ -189,8 +189,12 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		obj.InsertAtEnd();
+		obj.InsertAtEnd(temp_val);
 	}
+
+	// Display
+
+	obj.Display();
 
 
 	return 0;
