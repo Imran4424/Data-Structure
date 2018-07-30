@@ -107,7 +107,10 @@ class DoublyLinkList
 
 		travel = head;
 
-		while()
+		while(travel != NULL)
+		{
+			
+		}
 	}
 
 	public: void Display()
