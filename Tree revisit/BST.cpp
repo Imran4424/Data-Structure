@@ -145,12 +145,18 @@ void InOrder(node* travel)
 {
 	InOrder(travel -> left);
 
-	cout<<current -> data<<" ";
+	cout<<travel -> data<<" ";
 
 	InOrder(travel -> right);
 }
 
-void PostOrder(node)
+void PostOrder(node* travel)
+{
+	PostOrder(travel -> left);
+	PostOrder(travel -> right);
+
+	cout
+}
 
 bool isRootEmpty(node* root)
 {
