@@ -101,7 +101,7 @@ int main(int argc, char const *argv[])
 		InsertNode(travel,temp_val);
 	}
 
-	bool check = isRootEmpty(root);
+	check = isRootEmpty(root);
 
 	cout<<check<<endl;
 
