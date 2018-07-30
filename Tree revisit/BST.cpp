@@ -9,3 +9,9 @@ struct node
 };
 
 node* root;
+
+int main(int argc, char const *argv[])
+{
+	
+	return 0;
+}
