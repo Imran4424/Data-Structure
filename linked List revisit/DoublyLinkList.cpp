@@ -59,7 +59,7 @@ class DoublyLinkList
 			return;
 		}
 
-		head -> prevAddress = temp
+		head -> prevAddress = temp;
 		temp -> nextAddress = head;
 
 
@@ -95,6 +95,12 @@ class DoublyLinkList
 	{
 		if (head == NULL)
 		{
+			return;
+		}
+		else if (head -> nextAddress == NULL)
+		{
+			head = NULL;
+
 			return;
 		}
 
