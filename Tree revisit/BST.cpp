@@ -41,7 +41,10 @@ void InsertNode(node* travel, int value)
 
 bool Search(node* travel, int value)
 {
-	
+	if (travel == NULL)
+	{
+		/* code */
+	}
 }
 
 int main(int argc, char const *argv[])
