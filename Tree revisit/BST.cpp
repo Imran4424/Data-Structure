@@ -50,9 +50,9 @@ bool Search(node* travel, int value)
 	{
 		return true;
 	}
-	else if (/* condition */)
+	else if (value < travel -> data)
 	{
-		/* code */
+		Search(travel -> left, value);
 	}
 }
 
