@@ -144,6 +144,10 @@ void PreOrder(node* travel)
 void InOrder(node* travel)
 {
 	InOrder(travel -> left);
+
+	cout<<current -> data<<" ";
+
+	InOrder(travel -> right);
 }
 
 bool isRootEmpty(node* root)
