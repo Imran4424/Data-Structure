@@ -10,7 +10,7 @@ class DoublyLinkList
 		node* nextAddress;
 	};
 
-	private node* head;
+	private: node* head;
 
 	public: DoublyLinkList()
 	{
@@ -37,7 +37,7 @@ class DoublyLinkList
 
 		while(travel -> nextAddress != NULL)
 		{
-			travel = travel -> NULL;
+			travel = travel -> nextAddress;
 		}
 
 		temp -> prevAddress = travel;
