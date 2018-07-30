@@ -135,6 +135,11 @@ void LevelOrderTraversal(node* travel)
 
 void PreOrder(node* travel)
 {
+	if (travel == NULL)
+	{
+		return;
+	}
+
 	cout<<travel -> data<<" ";
 
 	PreOrder(travel -> left);
