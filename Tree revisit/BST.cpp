@@ -63,6 +63,18 @@ bool Search(node* travel, int value)
 	}
 }
 
+int MaxValue(node* travel)
+{
+	if (travel -> left == NULL && travel -> right == NULL)
+	{
+		return travel -> data;
+	}
+	else if (/* condition */)
+	{
+		/* code */
+	}
+}
+
 bool isRootEmpty(node* root)
 {
 	if (root == NULL)
