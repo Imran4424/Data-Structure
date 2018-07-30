@@ -89,8 +89,10 @@ class DoublyLinkList
 		{
 			return;
 		}
-		
-		
+
+		head = head -> nextAddress;
+
+		head -> prevAddress = NULL;
 	}
 
 	
