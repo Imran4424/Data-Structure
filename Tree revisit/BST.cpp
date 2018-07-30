@@ -10,9 +10,9 @@ struct node
 
 node* root;
 
-void InsertNode(node* root, int value)
+void InsertNode(node* travel, int value)
 {
-	
+
 }
 
 int main(int argc, char const *argv[])
