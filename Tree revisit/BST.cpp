@@ -10,6 +10,11 @@ struct node
 
 node* root;
 
+node* GetNewNode(int value)
+{
+	node* temp = new node();
+}
+
 void InsertNode(node* travel, int value)
 {
 
@@ -19,7 +24,7 @@ int main(int argc, char const *argv[])
 {
 	root = NULL;
 
-	
+
 
 	return 0;
 }
