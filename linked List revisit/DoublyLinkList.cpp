@@ -121,10 +121,20 @@ class DoublyLinkList
 
 	public: void ReverseRecursion(node* travel)
 	{
-		if (travel == NULL)
+		if (travel -> nextAddress == NULL)
 		{
 			head = travel;
+
+			return;
 		}
+
+		ReverseRecursion(travel -> nextAddress);
+
+		node* temp;
+
+		temp = travel -> prevAddress;
+		travel -> prevAddress = travel -> nextAddress;
+		travel -> nextAddress = temp
 	}
 
 	public: void Display()
