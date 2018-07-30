@@ -95,5 +95,15 @@ class DoublyLinkList
 		head -> prevAddress = NULL;
 	}
 
+	public: void Display()
+	{
+		if (head == NULL)
+		{
+			cout<<"there's nothing to Display"<<endl;
+		}
+
+		
+	}
+
 	
 };
