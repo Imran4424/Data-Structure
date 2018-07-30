@@ -69,7 +69,13 @@ int main(int argc, char const *argv[])
 	int num;
 	cin>>num;
 
-	
+	for (int i = 0; i < num; ++i)
+	{
+		int temp_val;
+		cin>>temp_val;
+
+		
+	}
 
 
 
