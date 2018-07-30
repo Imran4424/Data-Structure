@@ -129,11 +129,16 @@ void LevelOrderTraversal(node* travel)
 
 		list.pop();
 	}
+
+	cout<<endl;
 }
 
 void PreOrder(node* travel)
 {
-	
+	cout<<travel -> data<<" ";
+
+	PreOrder(travel -> left);
+	PreOrder(travel)
 }
 
 bool isRootEmpty(node* root)
