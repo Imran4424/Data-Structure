@@ -91,9 +91,41 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		
+		/*
+			***
+			In this commented code,
 
-		root = InsertNode(root,temp_val);
+			I am trying to say that, tree just worked like linkedlist
+			
+			So, you don't have return the nodes to root if are using it as global varibale like me
+
+			however,
+			You need to return for the first time , because, first time root will contain nothing just NULL
+
+			and NULL can't have data or left or right field
+
+			And
+
+			if (travel == NULL)
+			{
+				travel = GetNewNode(value);
+
+				return travel;
+			}
+
+			Here, we also return travel for the same case
+			***
+		if (i == 0)
+		{
+			root = InsertNode(root,temp_val);
+		}		
+		else
+		{
+			InsertNode(root,temp_val);
+		}
+
+		*/
+
 	}
 
 	check = isRootEmpty(root);
