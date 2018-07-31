@@ -328,6 +328,10 @@ int main(int argc, char const *argv[])
 	LevelOrderTraversal(root);
 	cout<<endl;
 
+	cout<<"Pre Order: ";
+	PreOrder(root);
+	cout<<endl;
+
 	cout<<"Enter the number you want to Search"<<endl;
 
 	int target;
