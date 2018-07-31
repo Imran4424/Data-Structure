@@ -312,7 +312,9 @@ int main(int argc, char const *argv[])
 	PostOrder(root);
 	cout<<endl;
 
-	cout<<"Insert the num of value to delete"<<endl;
+	cout<<"how many numbers you want to delete"<<endl;
+
+	cin>>num
 
 	cout<<"Enter the number you want to Search"<<endl;
 
