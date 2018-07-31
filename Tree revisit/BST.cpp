@@ -203,7 +203,7 @@ node* Delete(node* travel, int value)
 		// Case 2: One child
 		else if (travel -> left == NULL)
 		{
-			/* code */
+			
 		}	
 	}
 }
