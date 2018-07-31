@@ -4,7 +4,8 @@ using namespace std;
 
 // Template Function
 
-int Sum(int a, int b)
+template <class T>
+T Sum(T a, T b)
 {
 	return a+b;
 }
