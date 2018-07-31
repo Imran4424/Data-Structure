@@ -185,6 +185,10 @@ node* Delete(node* travel, int value)
 	{
 		Delete(travel -> left, value);
 	}
+	else if (value > travel -> data)
+	{
+		/* code */
+	}
 }
 
 bool isRootEmpty(node* root)
