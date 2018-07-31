@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int sum(int a, int b)
+int Sum(int a, int b)
 {
 	return a+b;
 }
@@ -10,7 +10,7 @@ int sum(int a, int b)
 
 int main(int argc, char const *argv[])
 {
-	cout<<"Sum is: "
+	cout<<"Sum is: "<<
 
 	return 0;
 }
