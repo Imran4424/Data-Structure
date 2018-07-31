@@ -183,11 +183,19 @@ node* Delete(node* travel, int value)
 	}
 	else if (value < travel -> data)
 	{
-		Delete(travel -> left, value);
+		return Delete(travel -> left, value);
 	}
 	else if (value > travel -> data)
 	{
-		Delete(travel -> right, value);
+		return Delete(travel -> right, value);
+	}
+	else
+	{
+		// Case 1: No child
+		if (/* condition */)
+		{
+			/* code */
+		}	
 	}
 }
 
