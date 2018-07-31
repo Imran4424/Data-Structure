@@ -321,7 +321,7 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		root = Delete(root, temp_val)
+		root = Delete(root, temp_val);
 	}
 
 	cout<<"Enter the number you want to Search"<<endl;
