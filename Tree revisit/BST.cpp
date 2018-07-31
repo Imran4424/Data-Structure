@@ -316,7 +316,7 @@ int main(int argc, char const *argv[])
 
 	cin>>num;
 
-	for (int i = 0; i < count; ++i)
+	for (int i = 0; i < num; ++i)
 	{
 		/* code */
 	}
