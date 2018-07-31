@@ -312,7 +312,7 @@ int main(int argc, char const *argv[])
 	PostOrder(root);
 	cout<<endl;
 
-	cout<<
+	cout<<"Insert "
 
 	cout<<"Enter the number you want to Search"<<endl;
 
