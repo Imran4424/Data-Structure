@@ -222,7 +222,13 @@ node* Delete(node* travel, int value)
 		// Case 3: Two child
 		else
 		{
+			node* temp = MinValue(travel -> right);
 
+			travel -> data = temp -> data;
+
+			travel -> right = Delete(travel -> right, temp -> data);
+
+			return travel;
 		}
 	}
 }
