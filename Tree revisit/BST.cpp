@@ -319,6 +319,7 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		int temp_val;
+		cin>>temp_val;
 	}
 
 	cout<<"Enter the number you want to Search"<<endl;
