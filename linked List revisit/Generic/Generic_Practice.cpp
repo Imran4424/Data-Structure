@@ -2,7 +2,7 @@
 using namespace std;
 
 
-
+// Template Function
 
 int Sum(int a, int b)
 {
