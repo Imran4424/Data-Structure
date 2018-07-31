@@ -324,6 +324,10 @@ int main(int argc, char const *argv[])
 		root = Delete(root, temp_val);
 	}
 
+	cout<<"Level order traversal: ";
+	LevelOrderTraversal(root);
+	cout<<endl;
+
 	cout<<"Enter the number you want to Search"<<endl;
 
 	int target;
