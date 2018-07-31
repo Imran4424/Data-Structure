@@ -14,12 +14,13 @@ T Sum(T a, T b)
 
 int main(int argc, char const *argv[])
 {
-	
-	
+	string first = "I am a ";
+	string second = "Programmer";
+
 	cout<<"Sum is: "<<Sum(5,7)<<endl;
 	cout<<"Sum is: "<<Sum(5.5, 10.45)<<endl;
 	cout<<"Sum is: "<<Sum('a', 'c')<<endl;
-	cout<<"Sum is: "<<Sum("I am a ","Programmer")<<endl;
+	cout<<"Sum is: "<<Sum(,)<<endl;
 
 	return 0;
 }
