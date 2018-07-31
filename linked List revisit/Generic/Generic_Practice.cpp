@@ -7,7 +7,7 @@ using namespace std;
 template <class T>
 T Sum(T a, T b)
 {
-	return a+b;
+	return a + b;
 }
 
 
