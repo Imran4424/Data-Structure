@@ -336,6 +336,10 @@ int main(int argc, char const *argv[])
 	InOrder(root);
 	cout<<endl;
 
+	cout<<"Post Order: ";
+	PostOrder(root);
+	cout<<endl;
+
 	cout<<"Enter the number you want to Search"<<endl;
 
 	int target;
