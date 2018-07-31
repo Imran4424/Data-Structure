@@ -174,6 +174,19 @@ void PostOrder(node* travel)
 	cout<<travel -> data<<" ";
 }
 
+
+node* Delete(node* travel, int value)
+{
+	if (travel == NULL)
+	{
+		return travel;
+	}
+	else if (value < travel -> data)
+	{
+		Delete(travel -> left, value);
+	}
+}
+
 bool isRootEmpty(node* root)
 {
 	if (root == NULL)
@@ -188,7 +201,7 @@ int main(int argc, char const *argv[])
 {
 	root = NULL;
 
-	cout<<"how many values you want to insert"<<endl;
+	cout<<"how many value you want to insert"<<endl;
 
 	int num;
 	cin>>num;
