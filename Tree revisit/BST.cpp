@@ -308,7 +308,7 @@ int main(int argc, char const *argv[])
 	InOrder(root);
 	cout<<endl;
 
-	cout<<"Post Order: "
+	cout<<"Post Order: ";
 	PostOrder(root);
 	cout<<endl;
 
