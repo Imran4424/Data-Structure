@@ -10,7 +10,7 @@ int sum(int a, int b)
 
 int main(int argc, char const *argv[])
 {
-	
+	cout<<"Sum is: "
 
 	return 0;
 }
