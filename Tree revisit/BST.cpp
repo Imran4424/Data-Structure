@@ -218,7 +218,12 @@ node* Delete(node* travel, int value)
 			delete temp;
 
 			return travel;
-		}	
+		}
+		// Case 3: Two child
+		else
+		{
+
+		}
 	}
 }
 
