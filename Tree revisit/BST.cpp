@@ -316,7 +316,10 @@ int main(int argc, char const *argv[])
 
 	cin>>num;
 
-	
+	for (int i = 0; i < count; ++i)
+	{
+		/* code */
+	}
 
 	cout<<"Enter the number you want to Search"<<endl;
 
