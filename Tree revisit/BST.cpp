@@ -194,6 +194,14 @@ node* Delete(node* travel, int value)
 		// Case 1: No child
 		if (travel -> left == NULL && travel -> right == NULL)
 		{
+			delete travel;
+
+			travel = NULL;
+
+			return travel;
+		}
+		else if (travel -> left == NULL)
+		{
 			/* code */
 		}	
 	}
