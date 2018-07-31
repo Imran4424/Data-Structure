@@ -187,7 +187,7 @@ node* Delete(node* travel, int value)
 	}
 	else if (value > travel -> data)
 	{
-		/* code */
+		
 	}
 }
 
