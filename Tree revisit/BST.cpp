@@ -314,7 +314,7 @@ int main(int argc, char const *argv[])
 
 	cout<<"how many numbers you want to delete"<<endl;
 
-	cin>>num
+	cin>>num;
 
 	cout<<"Enter the number you want to Search"<<endl;
 
