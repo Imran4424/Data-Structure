@@ -209,6 +209,10 @@ node* Delete(node* travel, int value)
 			delete temp;
 
 			return travel;
+		}
+		else if (travel -> right == NULL)
+		{
+			/* code */
 		}	
 	}
 }
