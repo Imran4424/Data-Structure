@@ -104,13 +104,6 @@ class Queue
 
 	public: int Front()
 	{
-		if (head == NULL)
-		{
-			cout<<"Queue is empty"<<endl;
-
-			return false;
-		}
-
 		return head -> data;
 	}
 
