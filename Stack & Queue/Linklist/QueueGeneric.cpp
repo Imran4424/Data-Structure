@@ -5,9 +5,9 @@ using namespace std;
 template <class anyType>
 class Queue
 {
-		private: struct node
+	private: struct node
 	{
-		int data;
+		anyType data;
 		node* nextAddress;
 	};
 
@@ -54,7 +54,7 @@ class Queue
 		head = NULL;
 	}
 
-	public: void Push(int value)
+	public: void Push(anyType value)
 	{
 		node* temp = new node();
 
@@ -92,13 +92,6 @@ class Queue
 
 	public: int Rear()
 	{
-		if (head == NULL)
-		{
-			cout<<"Queue is empty"<<endl;
-
-			return false;
-		}
-
 		node* travel = head;
 
 		while(travel -> nextAddress != NULL)
