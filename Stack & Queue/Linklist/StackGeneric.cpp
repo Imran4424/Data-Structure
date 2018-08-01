@@ -178,7 +178,9 @@ int main(int argc, char const *argv[])
 		obj.Push(temp);
 	}
 
-	
+	Student ar[obj.size()];
+
+	obj.Display(ar);
 
 	cout<<"Top: "<<obj.Top()<<endl;
 
