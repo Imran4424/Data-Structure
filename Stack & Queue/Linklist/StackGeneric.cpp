@@ -213,7 +213,7 @@ int main(int argc, char const *argv[])
 		cout<<ar[i].name<<endl;
 	}
 
-	cout<<endl<<endl<<"Displaying Top:"<<endl<<endl;
+	cout<<endl<<endl<<"Displaying Top:"<<endl;
 
 	stu_temp = obj.Top();
 
