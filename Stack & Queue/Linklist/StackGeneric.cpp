@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 template <class anyType>
@@ -147,7 +148,7 @@ class Stack
 
 struct Student
 {
-	int testData;
+	int ID;
 
 
 };
