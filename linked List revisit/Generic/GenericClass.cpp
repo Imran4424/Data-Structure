@@ -8,7 +8,8 @@ class GenericClass
 	
 	public: GenericClass(T a, T b)
 	{
-
+		first = a;
+		second = b;
 	}
 	
 };
