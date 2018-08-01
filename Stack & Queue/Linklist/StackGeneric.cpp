@@ -207,7 +207,7 @@ int main(int argc, char const *argv[])
 		cout<<ar[i].name<<endl;
 	}
 
-	Student stu_temp = obj.Top();
+	stu_temp = obj.Top();
 
 	cout<<stu_temp.id<<endl;
 	cout<<stu_temp.name<<endl;	
