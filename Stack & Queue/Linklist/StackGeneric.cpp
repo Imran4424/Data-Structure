@@ -153,7 +153,7 @@ int main(int argc, char const *argv[])
 		temp.id = temp_id;
 		temp.name = temp_name;
 
-		obj.Push(temp_val);
+		obj.Push(temp);
 	}
 
 	obj.Display();
