@@ -133,6 +133,12 @@ class Queue
 	
 };
 
+struct Student
+{
+	int id;
+	string name;
+};
+
 int main(int argc, char const *argv[])
 {
 	Queue obj;
