@@ -122,7 +122,9 @@ class Queue
 
 		while(travel != NULL)
 		{
-			cout<<travel -> data<<" ";
+			ar[i] = travel -> data;
+
+			i++;
 
 			travel = travel -> nextAddress;
 		}
