@@ -178,10 +178,14 @@ int main(int argc, char const *argv[])
 
 	cout<<endl<<endl<<"Displaying Top:"<<endl;
 
-	Student stu_temp = obj.Top();
+	Student stu_front = obj.Front();
+	Student stu_rear = obj.Rear();
 
-	cout<<stu_temp.id<<endl;
-	cout<<stu_temp.name<<endl;	
+	cout<<stu_front.id<<endl;
+	cout<<stu_front.name<<endl;
+
+	cout<<stu_rear.id<<endl;
+	cout<<stu_rear.name<<endl;		
 
 
 	cout<<"how many values you want to Pop"<<endl;
