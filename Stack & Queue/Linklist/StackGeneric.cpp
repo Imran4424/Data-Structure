@@ -102,7 +102,7 @@ class Stack
 		travel -> nextAddress = NULL;
 	}
 
-	public: T Top()
+	public: anyType Top()
 	{
 		if (head == NULL)
 		{
