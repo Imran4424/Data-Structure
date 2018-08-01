@@ -145,6 +145,13 @@ class Stack
 };
 
 
+struct Student
+{
+	int testData;
+
+
+};
+
 int main(int argc, char const *argv[])
 {
 	Stack<int> obj;
