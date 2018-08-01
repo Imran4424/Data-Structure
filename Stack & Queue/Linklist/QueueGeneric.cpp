@@ -141,7 +141,7 @@ struct Student
 
 int main(int argc, char const *argv[])
 {
-	Stack <Student> obj;
+	Queue <Student> obj;
 
 	cout<<"how many Student you want to Push"<<endl;
 
