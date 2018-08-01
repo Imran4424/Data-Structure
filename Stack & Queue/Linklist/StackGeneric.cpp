@@ -139,8 +139,6 @@ class Stack
 
 			travel = travel -> nextAddress;
 		}
-
-		cout<<endl;
 	}
 	
 };
