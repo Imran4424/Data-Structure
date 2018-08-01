@@ -125,7 +125,6 @@ class Queue
 			travel = travel -> nextAddress;
 		}
 
-		cout<<endl;
 	}
 	
 };
