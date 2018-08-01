@@ -141,27 +141,47 @@ struct Student
 
 int main(int argc, char const *argv[])
 {
-	Queue obj;
+	Stack <Student> obj;
 
-	cout<<"how many values you want to Push"<<endl;
+	cout<<"how many Student you want to Push"<<endl;
 
 	int num;
 	cin>>num;
 
-	cout<<"input the nodes values"<<endl;
+	cout<<"input Student information"<<endl;
 
 	for (int i = 0; i < num; ++i)
 	{
-		int temp_val;
-		cin>>temp_val;
+		int temp_id;
+		string temp_name;
+		cin>>temp_id>>temp_name;
 
-		obj.Push(temp_val);
+		Student temp;
+
+		temp.id = temp_id;
+		temp.name = temp_name;
+
+		obj.Push(temp);
 	}
 
-	obj.Display();
+	Student ar[obj.size()];
 
-	cout<<"Front: "<<obj.Front()<<endl;
-	cout<<"Rear: "<<obj.Rear()<<endl;
+	obj.Display(ar);
+
+	cout<<endl<<endl<<"Displaying:"<<endl;
+
+	for (int i = 0; i < obj.size(); ++i)
+	{
+		cout<<ar[i].id<<endl;
+		cout<<ar[i].name<<endl;
+	}
+
+	cout<<endl<<endl<<"Displaying Top:"<<endl;
+
+	Student stu_temp = obj.Top();
+
+	cout<<stu_temp.id<<endl;
+	cout<<stu_temp.name<<endl;	
 
 
 	cout<<"how many values you want to Pop"<<endl;
@@ -173,10 +193,20 @@ int main(int argc, char const *argv[])
 		obj.Pop();
 	}
 
-	obj.Display();
+	cout<<endl<<endl<<"Displaying:"<<endl;
 
-	cout<<"Front: "<<obj.Front()<<endl;
-	cout<<"Rear: "<<obj.Rear()<<endl;
+	for (int i = 0; i < obj.size(); ++i)
+	{
+		cout<<ar[i].id<<endl;
+		cout<<ar[i].name<<endl;
+	}
+
+	cout<<endl<<endl<<"Displaying Top:"<<endl;
+
+	stu_temp = obj.Top();
+
+	cout<<stu_temp.id<<endl;
+	cout<<stu_temp.name<<endl;	
 
 	return 0;
 }
