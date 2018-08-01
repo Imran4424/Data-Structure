@@ -148,9 +148,8 @@ class Stack
 
 struct Student
 {
-	int ID;
-
-
+	int id;
+	string name;
 };
 
 int main(int argc, char const *argv[])
