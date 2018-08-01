@@ -180,7 +180,7 @@ int main(int argc, char const *argv[])
 
 	obj.Display(ar);
 
-	cout<<endl<<endl<<"Displaying:"<<endl<<endl;
+	cout<<endl<<endl<<"Displaying:"<<endl;
 
 	for (int i = 0; i < obj.size(); ++i)
 	{
