@@ -107,7 +107,7 @@ class Queue
 		return head -> data;
 	}
 
-	public: void Display()
+	public: void Display(anyType ar[])
 	{
 		if (head == NULL)
 		{
@@ -117,6 +117,8 @@ class Queue
 		}
 
 		node* travel = head;
+
+		int i = 0;
 
 		while(travel != NULL)
 		{
