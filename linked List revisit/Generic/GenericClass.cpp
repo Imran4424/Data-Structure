@@ -22,6 +22,11 @@ class GenericClass
 
 int main(int argc, char const *argv[])
 {
+	GenericClass<int> objInt();
+
+	objInt.Sum(7,8);
+
+	objInt.Sum(10,2.5);
 	
 	return 0;
 }
