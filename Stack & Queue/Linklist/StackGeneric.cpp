@@ -205,11 +205,15 @@ int main(int argc, char const *argv[])
 		obj.Pop();
 	}
 
+	cout<<endl<<endl<<"Displaying:"<<endl<<endl;
+
 	for (int i = 0; i < obj.size(); ++i)
 	{
 		cout<<ar[i].id<<endl;
 		cout<<ar[i].name<<endl;
 	}
+
+	cout<<endl<<endl<<"Displaying Top:"<<endl<<endl;
 
 	stu_temp = obj.Top();
 
