@@ -176,13 +176,15 @@ int main(int argc, char const *argv[])
 		cout<<ar[i].name<<endl;
 	}
 
-	cout<<endl<<endl<<"Displaying Top:"<<endl;
+	cout<<endl<<endl<<"Displaying Front:"<<endl;
 
 	Student stu_front = obj.Front();
 	Student stu_rear = obj.Rear();
 
 	cout<<stu_front.id<<endl;
 	cout<<stu_front.name<<endl;
+
+	cout<<endl<<endl<<"Displaying Rear:"<<endl;
 
 	cout<<stu_rear.id<<endl;
 	cout<<stu_rear.name<<endl;		
