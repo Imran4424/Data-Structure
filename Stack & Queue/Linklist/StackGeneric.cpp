@@ -145,7 +145,13 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		int temp_id;
-		cin>>temp_val;
+		string temp_name;
+		cin>>temp_id>>temp_name;
+
+		Student temp;
+
+		temp.id = temp_id;
+		temp.name = temp_name;
 
 		obj.Push(temp_val);
 	}
