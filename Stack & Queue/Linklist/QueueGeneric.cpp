@@ -90,7 +90,7 @@ class Queue
 		head = head -> nextAddress;
 	}
 
-	public: int Rear()
+	public: anyType Rear()
 	{
 		node* travel = head;
 
@@ -102,7 +102,7 @@ class Queue
 		return travel -> data;
 	}
 
-	public: int Front()
+	public: anyType Front()
 	{
 		return head -> data;
 	}
