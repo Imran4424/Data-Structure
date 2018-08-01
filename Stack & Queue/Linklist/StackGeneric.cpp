@@ -105,12 +105,10 @@ class Stack
 
 	public: anyType Top()
 	{
-		if (head == NULL)
+		/*if (head == NULL)
 		{
-			cout<<"Stack is empty"<<endl;
-
-			return NULL;
-		}
+			throw runtime_error("stack is empty, no top");
+		}*/
 
 		node* travel = head;
 
@@ -182,7 +180,13 @@ int main(int argc, char const *argv[])
 
 	obj.Display(ar);
 
-	cout<<"Top: "<<obj.Top()<<endl;
+	for (int i = 0; i < obj.size; ++i)
+	{
+		cout<<ar[i].id<<endl;
+		cout<<ar[i].name<<endl;
+	}
+
+	//cout<<"Top: "<<obj.Top()<<endl;
 
 
 	cout<<"how many values you want to Pop"<<endl;
@@ -194,9 +198,8 @@ int main(int argc, char const *argv[])
 		obj.Pop();
 	}
 
-	obj.Display();
 
-	cout<<"Top: "<<obj.Top()<<endl;
+	
 
 	return 0;
 }
