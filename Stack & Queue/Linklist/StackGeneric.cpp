@@ -53,7 +53,7 @@ class Stack
 		head = NULL;
 	}
 
-	public: void Push(T value)
+	public: void Push(anyType value)
 	{
 		node* temp = new node();
 
