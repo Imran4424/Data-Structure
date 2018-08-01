@@ -13,7 +13,7 @@ class Queue
 
 	private: node* head;
 
-	public: Stack()
+	public: Queue()
 	{
 		head = NULL;
 	}
