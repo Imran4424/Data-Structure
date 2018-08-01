@@ -180,13 +180,16 @@ int main(int argc, char const *argv[])
 
 	obj.Display(ar);
 
-	for (int i = 0; i < obj.size; ++i)
+	for (int i = 0; i < obj.size(); ++i)
 	{
 		cout<<ar[i].id<<endl;
 		cout<<ar[i].name<<endl;
 	}
 
-	//cout<<"Top: "<<obj.Top()<<endl;
+	Student stu_temp = obj.Top();
+
+	cout<<stu_temp.id<<endl;
+	cout<<stu_temp.name<<endl;	
 
 
 	cout<<"how many values you want to Pop"<<endl;
