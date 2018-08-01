@@ -147,7 +147,7 @@ class Stack
 
 int main(int argc, char const *argv[])
 {
-	Stack obj;
+	Stack<int> obj;
 
 	cout<<"how many values you want to Push"<<endl;
 
