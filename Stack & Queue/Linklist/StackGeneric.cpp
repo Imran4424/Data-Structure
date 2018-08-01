@@ -109,7 +109,7 @@ class Stack
 		{
 			cout<<"Stack is empty"<<endl;
 
-			return 0;
+			return anyType;
 		}
 
 		node* travel = head;
