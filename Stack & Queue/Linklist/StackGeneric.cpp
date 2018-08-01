@@ -121,27 +121,6 @@ class Stack
 
 		return travel -> data;
 	}
-
-	public: void Display()
-	{
-		if (head == NULL)
-		{
-			cout<<"there's nothing to display"<<endl;
-
-			return;
-		}
-
-		node* travel = head;
-
-		while(travel != NULL)
-		{
-			cout<<travel -> data<<" ";
-
-			travel = travel -> nextAddress;
-		}
-
-		cout<<endl;
-	}
 	
 };
 
@@ -154,9 +133,9 @@ struct Student
 
 int main(int argc, char const *argv[])
 {
-	Stack<int> obj;
+	Stack <Student> obj;
 
-	cout<<"how many values you want to Push"<<endl;
+	cout<<"how many Student you want to Push"<<endl;
 
 	int num;
 	cin>>num;
@@ -165,7 +144,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		int temp_val;
+		int temp_id;
 		cin>>temp_val;
 
 		obj.Push(temp_val);
