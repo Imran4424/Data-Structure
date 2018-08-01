@@ -121,6 +121,27 @@ class Stack
 
 		return travel -> data;
 	}
+
+	public: anyType Display()
+	{
+		if (head == NULL)
+		{
+			cout<<"there's nothing to display"<<endl;
+
+			return;
+		}
+
+		node* travel = head;
+
+		while(travel != NULL)
+		{
+			return travel -> data;
+
+			travel = travel -> nextAddress;
+		}
+
+		cout<<endl;
+	}
 	
 };
 
@@ -156,7 +177,7 @@ int main(int argc, char const *argv[])
 		obj.Push(temp);
 	}
 
-	obj.Display();
+	
 
 	cout<<"Top: "<<obj.Top()<<endl;
 
