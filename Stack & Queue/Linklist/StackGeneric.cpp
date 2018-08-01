@@ -122,7 +122,7 @@ class Stack
 		return travel -> data;
 	}
 
-	public: anyType Display()
+	public: void Display(anyType ar[])
 	{
 		if (head == NULL)
 		{
@@ -133,10 +133,13 @@ class Stack
 
 		node* travel = head;
 
+		int i = 0;
+
 		while(travel != NULL)
 		{
-			return travel -> data;
+			ar[i] = travel -> data;
 
+			i++;
 			travel = travel -> nextAddress;
 		}
 	}
