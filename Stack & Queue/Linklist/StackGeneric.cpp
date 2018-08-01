@@ -188,7 +188,7 @@ int main(int argc, char const *argv[])
 		cout<<ar[i].name<<endl;
 	}
 
-	cout<<endl<<endl<<"Displaying Top:"<<endl<<endl;
+	cout<<endl<<endl<<"Displaying Top:"<<endl;
 
 	Student stu_temp = obj.Top();
 
@@ -205,7 +205,7 @@ int main(int argc, char const *argv[])
 		obj.Pop();
 	}
 
-	cout<<endl<<endl<<"Displaying:"<<endl<<endl;
+	cout<<endl<<endl<<"Displaying:"<<endl;
 
 	for (int i = 0; i < obj.size(); ++i)
 	{
