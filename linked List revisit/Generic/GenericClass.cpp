@@ -11,5 +11,10 @@ class GenericClass
 		first = a;
 		second = b;
 	}
+
+	public: T Sum(T x, T y)
+	{
+		return x+y;
+	}
 	
 };
