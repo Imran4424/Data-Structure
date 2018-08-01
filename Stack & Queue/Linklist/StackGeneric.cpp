@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-template <class T>
+template <class anyType>
 class Stack
 {
 	private: struct node
 	{
-		T data;
+		anyType data;
 		node* nextAddress;
 	};
 
@@ -53,7 +53,7 @@ class Stack
 		head = NULL;
 	}
 
-	public: void Push(int value)
+	public: void Push(T value)
 	{
 		node* temp = new node();
 
@@ -102,7 +102,7 @@ class Stack
 		travel -> nextAddress = NULL;
 	}
 
-	public: int Top()
+	public: T Top()
 	{
 		if (head == NULL)
 		{
