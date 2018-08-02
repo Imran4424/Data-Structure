@@ -35,7 +35,10 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 	travel -> nextAddress = temp;
 }
 
-void Search(HashTable*)
+void Search(HashTable* travel,int target)
+{
+	
+}
 
 
 int main(int argc, char const *argv[])
