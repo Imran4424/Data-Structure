@@ -8,7 +8,14 @@ int tree[3*maxx] = {0};
 
 void BuildTree(int node, int begin, int end)
 {
+	if (begin == end)
+	{
+		tree[begin] = ar[begin];
 
+		return;
+	}
+
+	
 }
 
 
