@@ -32,6 +32,11 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 	{
 		return 0;
 	}
+
+	if (begin >= start_index && end <= end_index)
+	{
+		return tree[node];
+	}
 }
 
 
