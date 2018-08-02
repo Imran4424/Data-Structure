@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int HashCode(int number)
+int HashCode(int number, int size)
 {
 	return number % 20;
 }
@@ -17,6 +17,12 @@ struct HashTable
 
 int main(int argc, char const *argv[])
 {
+	cout<<"Enter the size of the table"<<endl;
+
+	int size;
+	cin>>size;
+
+	HashTable hashtable[size];
 	
 	return 0;
 }
