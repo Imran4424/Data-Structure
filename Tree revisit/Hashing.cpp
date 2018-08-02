@@ -80,14 +80,16 @@ int main(int argc, char const *argv[])
 
 		cin>>number>>name;
 
+		int temp_key = HashCode(number,size);
+
 		HashTable *temp;
 
-		temp -> key = HashCode(number,size);
+		temp -> key = temp_key;
 		temp -> number = number;
 		temp -> name = name;
 		temp -> nextAddress = NULL;
 
-		hashtable[HashCode(number,size)] = Insert(hashtable[HashCode(number,size)],temp);
+		hashtable[temp_key] = Insert(hashtable[temp_key],temp);
 	}
 
 	cout<<"Input the target number what you want to find about"<<endl;
