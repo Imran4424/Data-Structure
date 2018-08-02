@@ -40,6 +40,8 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 
 	int left = node*2;
 	int right = node*2 + 1;
+
+	int mid = (begin+end) / 2;
 }
 
 
