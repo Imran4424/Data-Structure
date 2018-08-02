@@ -49,7 +49,10 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 	return left_sum + right_sum;
 }
 
-
+void Update()
+{
+	
+}
 
 
 int main(int argc, char const *argv[])
