@@ -67,6 +67,9 @@ void Update(int node, int begin, int end, int index, int new_value)
 	int right = node*2 + 1;
 
 	int mid = (left+right) / 2;
+
+	Update(left, begin, mid, index, new_value);
+	Update(right, mid+1, end, index, new_value);
 }
 
 
