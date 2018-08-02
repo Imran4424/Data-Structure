@@ -69,7 +69,7 @@ int main(int argc, char const *argv[])
 
 		cout<<"Case 1:"<<endl;
 
-		for (int i = 0; i < count; ++i)
+		for (int i = 0; i < num_queries; ++i)
 		{
 			int x,y;
 			cin>>x>>y;
