@@ -62,6 +62,11 @@ void Update(int node, int begin, int end, int index, int new_value)
 
 		return;
 	}
+
+	int left = node*2;
+	int right = node*2 + 1;
+
+	
 }
 
 
