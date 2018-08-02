@@ -15,7 +15,8 @@ void BuildTree(int node, int begin, int end)
 		return;
 	}
 
-	
+	int left = node*2;
+	int right = node*2 + 1;
 }
 
 
