@@ -26,9 +26,14 @@ int main(int argc, char const *argv[])
 
 	cout<<"enter the informations"<<endl;
 
-	for (int i = 0; i < count; ++i)
+	for (int i = 0; i < size; ++i)
 	{
-		/* code */
+		int number;
+		string name;
+
+		cin>>number>>name;
+
+		hashtable[HashCode(number,size)].key = HashCode(number,size);
 	}
 	
 	return 0;
