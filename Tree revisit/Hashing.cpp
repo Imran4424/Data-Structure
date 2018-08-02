@@ -18,7 +18,12 @@ struct HashTable
 
 HashTable* Insert(HashTable* hashtable[], hashtable* temp)
 {
+	if (hashtable[temp -> key] == NULL)
+	{
+		hashtable[temp -> key] = temp;
 
+		return hashtable;
+	}
 }
 
 
@@ -51,7 +56,7 @@ int main(int argc, char const *argv[])
 		temp -> number = number;
 		temp -> name = name;
 
-		hashtable[HashCode(number,size)] = Insert()
+		hashtable[HashCode(number,size)] = Insert(hashtable,temp);
 	}
 	
 	return 0;
