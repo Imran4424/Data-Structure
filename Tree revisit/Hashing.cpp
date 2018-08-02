@@ -12,6 +12,8 @@ struct HashTable
 	int key;
 	int number;
 	string name;
+
+	HashTable *nextAddress;
 };
 
 
