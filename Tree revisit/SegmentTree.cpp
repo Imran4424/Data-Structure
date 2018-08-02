@@ -18,7 +18,12 @@ void BuildTree(int node, int begin, int end)
 	int left = node*2;
 	int right = node*2 + 1;
 
-	int mid = (left+right)/2;
+	int mid = (left+right) / 2;
+
+	BuildTree(left,begin,mid);
+	BuildTree(right,mid+1,end);
+
+	
 }
 
 
