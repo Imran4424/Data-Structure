@@ -38,7 +38,12 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 		return tree[node];
 	}
 
-	
+	int left = node*2;
+	int right = node*2 + 1;
+
+	int mid = (begin+end) / 2;
+
+	int left_value = Query()
 }
 
 int main(int argc, char const *argv[])
