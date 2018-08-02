@@ -16,9 +16,9 @@ struct HashTable
 	HashTable *nextAddress = NULL;
 };
 
-void Insert(HashTable* hashtable[], int index, hashtable* temp)
+void Insert(HashTable* hashtable[], hashtable* temp)
 {
-	
+
 }
 
 
@@ -45,7 +45,11 @@ int main(int argc, char const *argv[])
 
 		cin>>number>>name;
 
+		HashTable *temp;
 
+		temp -> key = HashCode(number,size);
+		temp -> number = number;
+		temp -> name = name;
 
 		
 
