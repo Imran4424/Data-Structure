@@ -42,6 +42,9 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 	int right = node*2 + 1;
 
 	int mid = (begin+end) / 2;
+
+	int left_sum = Query(left, begin, mid, start_index, end_index);
+	int right_sum = Query(right, mid+1, end, start_index, end_index);
 }
 
 
