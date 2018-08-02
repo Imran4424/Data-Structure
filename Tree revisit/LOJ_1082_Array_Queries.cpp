@@ -43,7 +43,7 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 
 	int mid = (begin+end) / 2;
 
-	int left_value = Query()
+	int left_value = Query(left, begin, mid, start_index, end_index);
 }
 
 int main(int argc, char const *argv[])
