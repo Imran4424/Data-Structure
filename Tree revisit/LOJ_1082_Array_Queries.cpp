@@ -59,13 +59,24 @@ int main(int argc, char const *argv[])
 		int array_size, num_queries;
 		cin>>array_size>>num_queries;
 
-		int que_ar[array_size];
+
+		for (int i = 1; i <= array_size; ++i)
+		{
+			cin>>ar[i];
+		}
+
+		BuidTree(1,1,array_size);
 
 		cout<<"Case 1:"<<endl;
 
 		for (int i = 0; i < count; ++i)
 		{
-			/* code */
+			int x,y;
+			cin>>x>>y;
+
+			int min_value = Query(1,1,array_size,x,y);
+
+			cout
 		}
 	}
 
