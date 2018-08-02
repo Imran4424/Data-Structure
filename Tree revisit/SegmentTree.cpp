@@ -10,7 +10,7 @@ void BuildTree(int node, int begin, int end)
 {
 	if (begin == end)
 	{
-		tree[begin] = ar[begin];
+		tree[node] = ar[begin];
 
 		return;
 	}
