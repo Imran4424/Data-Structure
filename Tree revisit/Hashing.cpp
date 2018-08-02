@@ -13,7 +13,7 @@ struct HashTable
 	int number;
 	string name;
 
-	HashTable *nextAddress;
+	HashTable *nextAddress = NULL;
 };
 
 
@@ -35,9 +35,7 @@ int main(int argc, char const *argv[])
 
 		cin>>number>>name;
 
-		hashtable[HashCode(number,size)].key = HashCode(number,size);
-		hashtable[HashCode(number,size)].number = number;
-		hashtable[HashCode(number,size)].name = name;
+		
 
 	}
 	
