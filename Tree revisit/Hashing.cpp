@@ -95,7 +95,11 @@ int main(int argc, char const *argv[])
 	int target;
 	cin>>target;
 
-	Search(hashtable[HashCode(target,size)],)
+	Search(hashtable[HashCode(target,size)], target);
+	
+	cout<<"Input the target number what you want to find about"<<endl;
+	cin>>target;
+	Search(hashtable[HashCode(target,size)], target);
 	
 	return 0;
 }
