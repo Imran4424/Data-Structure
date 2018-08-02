@@ -40,6 +40,17 @@ void Search(HashTable* travel,int target)
 	if (travel == NULL)
 	{
 		cout<<"target not found"<<endl;
+
+		return;
+	}
+
+	while(travel != NULL)
+	{
+		if (travel -> number == target)
+		{
+			cout<<"Key: "<<travel -> key<<endl;
+			cout<<"number: "<< travel -> number<<endl;
+		}
 	}
 }
 
