@@ -25,6 +25,11 @@ int main(int argc, char const *argv[])
 	HashTable hashtable[size];
 
 	cout<<"enter the informations"<<endl;
+
+	for (int i = 0; i < count; ++i)
+	{
+		/* code */
+	}
 	
 	return 0;
 }
