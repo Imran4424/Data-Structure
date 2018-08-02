@@ -37,21 +37,21 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 
 void Search(HashTable* travel,int target)
 {
-	if (travel == NULL)
-	{
-		cout<<"target not found"<<endl;
-
-		return;
-	}
-
 	while(travel != NULL)
 	{
 		if (travel -> number == target)
 		{
-			cout<<"Key: "<<travel -> key<<endl;
+			cout<<"key: "<<travel -> key<<endl;
 			cout<<"number: "<< travel -> number<<endl;
+			cout<<"name: "<< travel -> name<<endl;
+
+			return;
 		}
+
+		travel = travel -> nextAddress;
 	}
+
+	cout<<"target is not found"<<endl;
 }
 
 
