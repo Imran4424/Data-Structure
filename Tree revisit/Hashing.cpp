@@ -92,7 +92,9 @@ int main(int argc, char const *argv[])
 		temp -> name = name;
 		temp -> nextAddress = NULL;
 
+		cout<<"I am Here"<<endl;
 		hashtable[temp_key] = Insert(hashtable[temp_key],temp);
+		cout<<"I am Here"<<endl;
 	}
 
 	cout<<"Input the target number what you want to find about"<<endl;
