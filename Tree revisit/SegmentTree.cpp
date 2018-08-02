@@ -11,7 +11,15 @@ int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
 
-	
+	int size;
+	cin>>size;
+
+	cout<<"enter the array elements"<<endl;
+
+	for (int i = 1; i <= size; ++i)
+	{
+		cin>>ar[i];
+	}
 
 	return 0;
 }
