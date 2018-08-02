@@ -26,9 +26,9 @@ void BuildTree(int node, int begin, int end)
 	tree[node] = tree[left] + tree[right];
 }
 
-int Query(int node,int begin,int end, int start_index, int end_index)
+int Query(int node, int begin, int end, int start_index, int end_index)
 {
-	
+
 }
 
 
