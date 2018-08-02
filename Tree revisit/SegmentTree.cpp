@@ -55,6 +55,13 @@ void Update(int node, int begin, int end, int index, int new_value)
 	{
 		return;
 	}
+
+	if (begin == index && begin == end)
+	{
+		tree[node] = new_value;
+
+		return;
+	}
 }
 
 
