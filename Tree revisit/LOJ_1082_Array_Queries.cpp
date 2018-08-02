@@ -51,6 +51,13 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 
 int main(int argc, char const *argv[])
 {
-	
+	int test;
+	cin>>test;
+
+	for (int t = 0; t < test; ++t)
+	{
+		/* code */
+	}
+
 	return 0;
 }
