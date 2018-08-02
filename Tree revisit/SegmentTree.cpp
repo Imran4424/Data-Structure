@@ -51,7 +51,10 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 
 void Update(int node, int begin, int end, int index, int new_value)
 {
-	
+	if (index > end || index < begin)
+	{
+		return;
+	}
 }
 
 
