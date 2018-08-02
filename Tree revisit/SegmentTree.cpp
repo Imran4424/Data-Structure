@@ -6,6 +6,11 @@ const int maxx = 1000001;
 int ar[maxx] = {0};
 int tree[3*maxx] = {0};
 
+void BuildTree(int node, int begin, int end)
+{
+
+}
+
 
 int main(int argc, char const *argv[])
 {
