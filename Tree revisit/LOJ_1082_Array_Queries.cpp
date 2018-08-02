@@ -61,7 +61,7 @@ int main(int argc, char const *argv[])
 
 		int que_ar[array_size];
 
-		cout
+		cout<<"Case 1:"<<endl;
 
 		for (int i = 0; i < count; ++i)
 		{
