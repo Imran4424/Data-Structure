@@ -45,6 +45,8 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 
 	int left_value = Query(left, begin, mid, start_index, end_index);
 	int right_value = Query(right, mid+1, end, start_index, end_index);
+
+	return min(left_value, right_value);
 }
 
 int main(int argc, char const *argv[])
