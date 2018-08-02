@@ -37,7 +37,10 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 
 void Search(HashTable* travel,int target)
 {
-	
+	if (travel == NULL)
+	{
+		cout<<"target not found"<<endl;
+	}
 }
 
 
