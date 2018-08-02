@@ -50,6 +50,8 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 }
 
 
+
+
 int main(int argc, char const *argv[])
 {
 	cout<<"enter the array size"<<endl;
