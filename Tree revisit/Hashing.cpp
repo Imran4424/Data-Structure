@@ -16,13 +16,13 @@ struct HashTable
 	HashTable *nextAddress;
 };
 
-HashTable* Insert(HashTable* hashtable, HashTable* temp)
+HashTable* Insert(HashTable* head, HashTable* temp)
 {
-	if (hashtable == NULL)
+	if (head == NULL)
 	{
-		hashtable = temp;
+		head = temp;
 
-		return hashtable;
+		return head;
 	}
 
 	HashTable* travel;
@@ -34,6 +34,8 @@ HashTable* Insert(HashTable* hashtable, HashTable* temp)
 
 	travel -> nextAddress = temp;
 }
+
+void Search(HashTable*)
 
 
 int main(int argc, char const *argv[])
