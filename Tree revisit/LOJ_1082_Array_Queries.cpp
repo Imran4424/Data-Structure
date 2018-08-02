@@ -54,10 +54,19 @@ int main(int argc, char const *argv[])
 	int test;
 	cin>>test;
 
-	for (int t = 0; t < test; ++t)
+	for (int t = 1; t <= test; ++t)
 	{
 		int array_size, num_queries;
 		cin>>array_size>>num_queries;
+
+		int que_ar[array_size];
+
+		cout
+
+		for (int i = 0; i < count; ++i)
+		{
+			/* code */
+		}
 	}
 
 	return 0;
