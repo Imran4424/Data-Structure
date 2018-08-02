@@ -56,7 +56,8 @@ int main(int argc, char const *argv[])
 
 	for (int t = 0; t < test; ++t)
 	{
-		
+		int array_size, num_queries;
+		cin>>array_size>>num_queries;
 	}
 
 	return 0;
