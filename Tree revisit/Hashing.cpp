@@ -71,7 +71,8 @@ int main(int argc, char const *argv[])
 
 	cout<<"Input the target number what you want to find about"<<endl;
 
-	
+	int target;
+	cin>>target;
 	
 	return 0;
 }
