@@ -28,7 +28,10 @@ void BuildTree(int node, int begin, int end)
 
 int Query(int node, int begin, int end, int start_index, int end_index)
 {
-
+	if (begin > end_index || end < start_index)
+	{
+		return 0;
+	}
 }
 
 
