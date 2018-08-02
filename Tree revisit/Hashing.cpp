@@ -90,6 +90,7 @@ int main(int argc, char const *argv[])
 		temp -> key = temp_key;
 		temp -> number = number;
 		temp -> name = name;
+		cout<<"I am Here"<<endl;
 		temp -> nextAddress = NULL;
 
 		cout<<"I am Here"<<endl;
