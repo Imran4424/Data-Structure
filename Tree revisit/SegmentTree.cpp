@@ -91,8 +91,8 @@ int main(int argc, char const *argv[])
 
 	BuildTree(1,1,size);
 
-	
-	
+	Query
+
 
 	return 0;
 }
