@@ -13,17 +13,26 @@ struct HashTable
 	int number;
 	string name;
 
-	HashTable *nextAddress = NULL;
+	HashTable *nextAddress;
 };
 
-HashTable* Insert(HashTable* hashtable[], hashtable* temp)
+HashTable* Insert(HashTable* hashtable, HashTable* temp)
 {
-	if (hashtable[temp -> key] == NULL)
+	if (hashtable == NULL)
 	{
-		hashtable[temp -> key] = temp;
+		hashtable = temp;
 
 		return hashtable;
 	}
+
+	HashTable* travel;
+
+	while(travel -> nextAddress != NULL)
+	{
+		travel = travel -> nextAddress;
+	}
+
+	travel -> nextAddress = temp;
 }
 
 
@@ -55,9 +64,14 @@ int main(int argc, char const *argv[])
 		temp -> key = HashCode(number,size);
 		temp -> number = number;
 		temp -> name = name;
+		temp -> nextAddress = NULL;
 
-		hashtable[HashCode(number,size)] = Insert(hashtable,temp);
+		hashtable[HashCode(number,size)] = Insert(hashtable[HashCode(number,size)],temp);
 	}
+
+	cout<<"Input the target number what you want to find about"<<endl;
+
+	
 	
 	return 0;
 }
