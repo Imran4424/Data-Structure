@@ -11,7 +11,14 @@ void BuidTree(int node, int begin, int end)
 	if (begin == end)
 	{
 		tree[node] = ar[begin];
+
+		return;
 	}
+
+	int left = node*2;
+	int right = node*2 + 1;
+
+	int mid = (begin+end) / 2;
 }
 
 int main(int argc, char const *argv[])
