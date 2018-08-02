@@ -23,7 +23,7 @@ void BuildTree(int node, int begin, int end)
 	BuildTree(left,begin,mid);
 	BuildTree(right,mid+1,end);
 
-	
+	tree[node] = tree[left] + tree[right];
 }
 
 
