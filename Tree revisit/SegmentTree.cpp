@@ -37,6 +37,9 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 	{
 		return tree[node];
 	}
+
+	int left = node*2;
+	int right = node*2 + 1;
 }
 
 
