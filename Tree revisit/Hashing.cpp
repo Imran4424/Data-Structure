@@ -23,6 +23,8 @@ int main(int argc, char const *argv[])
 	cin>>size;
 
 	HashTable hashtable[size];
+
+	cout<<"enter the informations"<<endl;
 	
 	return 0;
 }
