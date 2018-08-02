@@ -41,6 +41,8 @@ void Search(HashTable* travel,int target)
 	{
 		if (travel -> number == target)
 		{
+			cout<<"target is found"<<endl;
+
 			cout<<"key: "<<travel -> key<<endl;
 			cout<<"number: "<< travel -> number<<endl;
 			cout<<"name: "<< travel -> name<<endl;
@@ -92,6 +94,8 @@ int main(int argc, char const *argv[])
 
 	int target;
 	cin>>target;
+
+	Search(hashtable[HashCode(target,size)],)
 	
 	return 0;
 }
