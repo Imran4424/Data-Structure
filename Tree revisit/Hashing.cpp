@@ -16,6 +16,11 @@ struct HashTable
 	HashTable *nextAddress = NULL;
 };
 
+void Insert(HashTable* hashtable[], int index, hashtable* temp)
+{
+	
+}
+
 
 int main(int argc, char const *argv[])
 {
@@ -24,7 +29,12 @@ int main(int argc, char const *argv[])
 	int size;
 	cin>>size;
 
-	HashTable hashtable[size];
+	HashTable *hashtable[size];
+
+	for (int i = 0; i < size; ++i)
+	{
+		hashtable[i] = NULL;
+	}
 
 	cout<<"enter the informations"<<endl;
 
@@ -34,6 +44,8 @@ int main(int argc, char const *argv[])
 		string name;
 
 		cin>>number>>name;
+
+
 
 		
 
