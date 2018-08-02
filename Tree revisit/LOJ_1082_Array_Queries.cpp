@@ -76,7 +76,7 @@ int main(int argc, char const *argv[])
 
 			int min_value = Query(1,1,array_size,x,y);
 
-			cout<<"min_value"<<endl;
+			cout<<min_value<<endl;
 		}
 	}
 
