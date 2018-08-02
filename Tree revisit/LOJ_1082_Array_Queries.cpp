@@ -28,7 +28,10 @@ void BuidTree(int node, int begin, int end)
 
 int Query(int node, int begin, int end, int start_index, int end_index)
 {
-	
+	if (start_index > end || end_index < begin)
+	{
+		return 9999999;
+	}
 }
 
 int main(int argc, char const *argv[])
