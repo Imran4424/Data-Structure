@@ -70,6 +70,8 @@ void Update(int node, int begin, int end, int index, int new_value)
 
 	Update(left, begin, mid, index, new_value);
 	Update(right, mid+1, end, index, new_value);
+
+	tree[node] = tree[left] + tree[right];
 }
 
 
