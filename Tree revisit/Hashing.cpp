@@ -20,11 +20,8 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 {
 	if (head == NULL)
 	{
-		cout<<"I am here"<<endl;
-
 		head = temp;
 
-		cout<<"I am here"<<endl;
 		return head;
 	}
 
