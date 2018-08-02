@@ -41,5 +41,7 @@ int main(int argc, char const *argv[])
 		cin>>ar[i];
 	}
 
+	BuildTree(1,1,size);
+
 	return 0;
 }
