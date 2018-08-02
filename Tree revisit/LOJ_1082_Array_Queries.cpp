@@ -19,6 +19,11 @@ void BuidTree(int node, int begin, int end)
 	int right = node*2 + 1;
 
 	int mid = (begin+end) / 2;
+
+	BuidTree(left, begin, mid);
+	BuidTree(right, mid+1, end);
+
+	tree[node] = min(tree[left],tree[right]);
 }
 
 int main(int argc, char const *argv[])
