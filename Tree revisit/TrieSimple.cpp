@@ -105,7 +105,6 @@ int main(int argc, char const *argv[])
 		char se_str[15];
 		cin>>se_str;
 
-		cout<<"I am here"<<endl;
 		int length = strlen(se_str);
 
 		MakeLower(se_str, length);
