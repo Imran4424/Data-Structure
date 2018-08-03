@@ -92,5 +92,12 @@ int main(int argc, char const *argv[])
 
 	cout<<"how many words you want to Search"<<endl;
 
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		/* code */
+	}
+
 	return 0;
 }
