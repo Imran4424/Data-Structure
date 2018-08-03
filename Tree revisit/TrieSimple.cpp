@@ -53,4 +53,6 @@ bool Search(char* str, int length)
 
 		travel = travel -> next[id];
 	}
+
+	return travel -> endmark;
 }
