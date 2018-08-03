@@ -64,8 +64,8 @@ void MakeLower(char* str, int length)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			
-		}
+			str[i] = str[i] - 32;
+ 		}
 	}
 }
 
