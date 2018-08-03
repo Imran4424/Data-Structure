@@ -124,7 +124,7 @@ class Trie
 		delete(travel);		
 	}
 
-	public: void Delete()
+	public: void Clear()
 	{
 		del(root);
 	}
