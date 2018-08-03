@@ -59,6 +59,11 @@ class Trie
 
 		return travel -> endmark;
 	}
+
+	public: void MakeLower(char* str, int length)
+	{
+		
+	}
 	
 };
 
