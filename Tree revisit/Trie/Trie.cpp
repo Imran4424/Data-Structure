@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
 class Trie
@@ -10,14 +10,14 @@ class Trie
 		char key[15];
 		int count;
 
-		node* next[37+1];
+		node* next[38+1];
 
 		node()
 		{
 			endmark = false;
 			count = 0;
 
-			for (int i = 0; i < 37; ++i)
+			for (int i = 0; i < 39; ++i)
 			{
 				next[i] = NULL;
 			}
