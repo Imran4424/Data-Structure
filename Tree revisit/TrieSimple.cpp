@@ -56,3 +56,9 @@ bool Search(char* str, int length)
 
 	return travel -> endmark;
 }
+
+int main(int argc, char const *argv[])
+{
+	
+	return 0;
+}
