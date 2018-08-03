@@ -7,11 +7,13 @@ class Trie
 	private: struct node
 	{
 		bool endmark;
+		int count;
 		node* next[37+1];
 
 		node()
 		{
 			endmark = false;
+			count = 0;
 
 			for (int i = 0; i < 37; ++i)
 			{
@@ -66,6 +68,8 @@ class Trie
 		}
 
 		travel -> endmark = true;
+
+		travel -> count = travel -> count + 1;
 	}
 
 	public: bool Search(char* str, int length)
@@ -125,6 +129,8 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
+	int test;
+	cin>>test;
 	
 	return 0;
 }
