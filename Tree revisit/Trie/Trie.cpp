@@ -148,7 +148,7 @@ class Trie
 
 	public: void Display()
 	{
-
+		ShowSorted(root);
 	}
 
 	public: bool IsEmpty()
