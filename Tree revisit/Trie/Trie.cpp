@@ -64,7 +64,10 @@ class Trie
 	{
 		for (int i = 0; i < length; ++i)
 		{
-			/* code */
+			if (str[i] > = 'A' && str[i] <= 'Z')
+			{
+				str[i] = str[i] + 32;
+			}
 		}
 	}
 	
