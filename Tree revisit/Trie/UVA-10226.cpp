@@ -128,13 +128,15 @@ class Trie
 		del(root);
 	}
 
-	private: ShowSorted(node* travel)
+	private: ShowSorted(node* travel, int total)
 	{
 		for (int i = 0; i < 37; ++i)
 		{
 			if (travel -> endmark && i == 0)
 			{
-				cout<<travel -> key<<" "<<travel -> count<<endl;
+				double temp = (travel -> count * 100) / (double)total
+
+				cout<<travel -> key<<" "<<<<endl;
 			}
 
 			if (travel -> next[i] != NULL)
@@ -144,9 +146,9 @@ class Trie
 		}
 	}
 
-	public: void Display()
+	public: void Display(int total)
 	{
-		ShowSorted(root);
+		ShowSorted(root,total);
 	}
 
 	public: bool IsEmpty()
