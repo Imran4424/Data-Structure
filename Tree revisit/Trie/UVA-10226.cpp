@@ -2,13 +2,17 @@
 #include <cstring>
 using namespace std;
 
+const int key_size = 30;
+
+typedef long long int lli;
+
 class Trie
 {
 	private: struct node
 	{
 		bool endmark;
 		int count;
-		char key[15];
+		char key[key_size];
 		node* next[37+1];
 
 		node()
@@ -172,6 +176,35 @@ int main(int argc, char const *argv[])
 {
 	int test;
 	cin>>test;
+
+	getchar();
+    getchar();
+
+	while(test--)
+	{
+		Trie lists;
+		lli total = 0;
+
+		char tree[key_size];
+		
+		while(true)
+		{
+			cin>>tree;
+
+			if (tree[0] == '\0')
+			{
+				break;
+			}
+
+			int length = strlen(tree);
+
+			obj.Insertion(tree, length);
+		}
+
+
+
+
+	}
 	
 	return 0;
 }
