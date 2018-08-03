@@ -110,7 +110,7 @@ int main(int argc, char const *argv[])
 		}
 		else
 		{
-			cout<<"The word in not present on the tree"<<endl;
+			cout<<"The word is not present in the tree"<<endl;
 		}
 	}
 
