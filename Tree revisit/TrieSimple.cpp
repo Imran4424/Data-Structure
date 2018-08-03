@@ -103,9 +103,10 @@ int main(int argc, char const *argv[])
 	{
 		cout<<"I am here"<<endl;
 		
-		char* se_str;
+		char se_str[15];
 		cin>>se_str;
 
+		cout<<"I am here"<<endl;
 		int length = strlen(se_str);
 
 
