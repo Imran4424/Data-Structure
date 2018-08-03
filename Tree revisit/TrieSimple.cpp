@@ -38,3 +38,4 @@ void Insertion(char* str, int length)
 	travel -> endmark = true;
 }
 
+bool Search()
