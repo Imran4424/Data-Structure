@@ -40,5 +40,5 @@ void Insertion(char* str, int length)
 
 bool Search(char* str, int length)
 {
-	
+	node* travel = root;
 }
