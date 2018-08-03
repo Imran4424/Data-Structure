@@ -62,5 +62,10 @@ int main(int argc, char const *argv[])
 {
 	cout<<"how many words you want to insert"<<endl;
 
+	int num;
+	cin>>num;
+
+	cout<<
+
 	return 0;
 }
