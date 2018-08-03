@@ -130,6 +130,16 @@ class Trie
 		del(root);
 	}
 
+	private: ShowSorted(node* travel)
+	{
+		
+	}
+
+	public: void Display()
+	{
+
+	}
+
 	public: bool IsEmpty()
 	{
 		node* travel = root;
