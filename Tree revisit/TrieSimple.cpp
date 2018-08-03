@@ -103,16 +103,16 @@ int main(int argc, char const *argv[])
 	{
 		cout<<"I am here"<<endl;
 		
-		char* str;
-		cin>>str;
+		char* se_str;
+		cin>>se_str;
 
-		int length = strlen(str);
-
-
-		MakeLower(str, length);
+		int length = strlen(se_str);
 
 
-		bool status = Search(str, length);
+		MakeLower(se_str, length);
+
+
+		bool status = Search(se_str, length);
 
 		if (status)
 		{
