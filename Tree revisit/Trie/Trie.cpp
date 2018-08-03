@@ -32,7 +32,7 @@ class Trie
 
 			if (travel -> next[id] == NULL)
 			{
-				/* code */
+				travel -> next[id] = new node();
 			}
 		}
 	}
