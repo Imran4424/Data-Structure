@@ -127,6 +127,8 @@ class Trie
 				return false;
 			}
 		}
+
+		return true;
 	}
 
 	public: void Delete()
