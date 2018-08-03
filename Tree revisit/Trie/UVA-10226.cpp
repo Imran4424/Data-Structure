@@ -124,6 +124,21 @@ class Trie
 	{
 		del(root);
 	}
+
+	public: bool IsEmpty()
+	{
+		node* travel = root;
+
+		for (int i = 0; i < 37; ++i)
+		{
+			if (travel -> next[i] != NULL)
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
 };
 
 
