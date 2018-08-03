@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 #include <iomanip>
 using namespace std;
 
@@ -13,7 +13,7 @@ class Trie
 	{
 		bool endmark;
 		int count;
-		char key[key_size];
+		string key[key_size];
 		node* next[37+1];
 
 		node()
@@ -30,7 +30,7 @@ class Trie
 
 	private: node* root = new node();
 
-	private: void MakeLower(char* str, int length)
+	private: void MakeLower(string* str, int length)
 	{
 		for (int i = 0; i < length; ++i)
 		{
@@ -41,9 +41,9 @@ class Trie
 		}
 	}
 
-	public: void Insertion(char* str, int length)
+	public: void Insertion(string* str, int length)
 	{
-		char *original_key = str;
+		string *original_key = str;
 
 		MakeLower(str, length);
 
@@ -82,7 +82,7 @@ class Trie
 		strcpy(travel -> key, original_key);
 	}
 
-	public: bool Search(char* str, int length)
+	public: bool Search(string* str, int length)
 	{
 		MakeLower(str, length);
 
@@ -175,7 +175,7 @@ class Trie
 };
 
 
-int main(int argc, char const *argv[])
+int main(int argc, string const *argv[])
 {
 	int test;
 	cin>>test;
@@ -192,10 +192,10 @@ int main(int argc, char const *argv[])
 		
 		while(true)
 		{
-			char tree[key_size];
+			string tree[key_size] = "";
 			cin>>tree;
 
-			if (tree[0] == '\0')
+			if (strcmp(tree,"0") == 0)
 			{
 				break;
 			}
