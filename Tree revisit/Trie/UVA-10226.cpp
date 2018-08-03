@@ -12,14 +12,14 @@ class Trie
 		bool endmark;
 		int count;
 		string key;
-		node* next[37+1];
+		node* next[38+1];
 
 		node()
 		{
 			endmark = false;
 			count = 0;
 
-			for (int i = 0; i < 37; ++i)
+			for (int i = 0; i < 38; ++i)
 			{
 				next[i] = NULL;
 			}
@@ -45,6 +45,8 @@ class Trie
 
 		MakeLower(str);
 
+		cout<<original_key<<" "<<str<<endl;
+
 		node* travel = root;
 
 		for (int i = 0; i < str.size(); ++i)
@@ -54,6 +56,10 @@ class Trie
 			if (str[i] == '.')
 			{
 				id = 36;
+			}
+			else if (str[i] == ' ')
+			{
+				id = 37
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -93,6 +99,10 @@ class Trie
 			if (str[i] == '.')
 			{
 				id = 36;
+			}
+			else if (str[i] == ' ')
+			{
+				id = 37
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -175,7 +185,7 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
-	int test;
+	lli test;
 	cin>>test;
 
 	getchar();
@@ -185,14 +195,16 @@ int main(int argc, char const *argv[])
 	{
 		Trie lists;
 
-		string tree;
+		
         lli total = 0;
-        
+
         while(true)
         {
+        	string tree;
             getline(cin,tree);
 
-            if(tree.empty()){
+            if(tree.empty())
+            {
                 break;
             }
 
@@ -200,6 +212,8 @@ int main(int argc, char const *argv[])
 
 			total++;
 		}
+
+		//cout<<endl<<"I am here buddy"<<endl;
 
 		lists.Display(total);
 
