@@ -188,10 +188,11 @@ int main(int argc, char const *argv[])
 		Trie lists;
 		lli total = 0;
 
-		char tree[key_size];
+		
 		
 		while(true)
 		{
+			char tree[key_size];
 			cin>>tree;
 
 			if (tree[0] == '\0')
@@ -211,7 +212,7 @@ int main(int argc, char const *argv[])
 		if (test)
 		{
 			cout<<endl;
-			
+
 			lists.Clear();
 			total = 0;
 		}
