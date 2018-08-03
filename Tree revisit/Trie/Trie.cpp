@@ -21,6 +21,11 @@ class Trie
 	};
 
 	private: node* root = new node();
+
+	public: Insertion()
+	{
+		
+	}
 	
 };
 
