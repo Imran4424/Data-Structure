@@ -44,7 +44,7 @@ bool Search(char* str, int length)
 	cout<<"I am here"<<endl;
 	node* travel = root;
 	cout<<"I am here"<<endl;
-	
+
 	for (int i = 0; i < length; ++i)
 	{
 		int id = str[i] - 'a';
@@ -107,6 +107,8 @@ int main(int argc, char const *argv[])
 		int length = strlen(str);
 
 		MakeLower(str, length);
+
+		cout<<"I am here"<<endl;
 
 		bool status = Search(str, length);
 
