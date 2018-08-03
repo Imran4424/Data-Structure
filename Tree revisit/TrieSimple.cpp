@@ -16,3 +16,5 @@ struct node
 		}
 	}
 };
+
+node* root = new node();
