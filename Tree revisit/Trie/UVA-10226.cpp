@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <iomanip>
 using namespace std;
 
 const int key_size = 30;
@@ -42,6 +43,8 @@ class Trie
 
 	public: void Insertion(char* str, int length)
 	{
+		char *original_key = str;
+
 		MakeLower(str, length);
 
 		node* travel = root;
@@ -76,7 +79,7 @@ class Trie
 
 		travel -> count = travel -> count + 1;
 
-		strcpy(travel -> key, str);
+		strcpy(travel -> key, original_key);
 	}
 
 	public: bool Search(char* str, int length)
@@ -132,20 +135,20 @@ class Trie
 		del(root);
 	}
 
-	private: ShowSorted(node* travel, int total)
+	private: void ShowSorted(node* travel, int total)
 	{
 		for (int i = 0; i < 37; ++i)
 		{
 			if (travel -> endmark && i == 0)
 			{
-				double temp = (travel -> count * 100) / (double)total
+				double temp = (travel -> count * 100) / (double)total;
 
 				cout<<travel -> key<<" "<<fixed<<setprecision(4)<<temp<<endl;
 			}
 
 			if (travel -> next[i] != NULL)
 			{
-				ShowSorted(travel -> next[i]);
+				ShowSorted(travel -> next[i], total);
 			}
 		}
 	}
@@ -198,7 +201,7 @@ int main(int argc, char const *argv[])
 
 			int length = strlen(tree);
 
-			obj.Insertion(tree, length);
+			lists.Insertion(tree, length);
 		}
 
 
