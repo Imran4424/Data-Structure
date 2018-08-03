@@ -18,3 +18,8 @@ struct node
 };
 
 node* root = new node();
+
+void Insertion()
+{
+	
+}
