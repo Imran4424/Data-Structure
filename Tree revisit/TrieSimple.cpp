@@ -23,5 +23,13 @@ void Insertion(char* str, int length)
 {
 	node* travel = root;
 
-	
+	for (int i = 0; i < length; ++i)
+	{
+		int id = str[i] - 'a';
+
+		if (travel -> next[id] == NULL)
+		{
+			/* code */
+		}
+	}
 }
