@@ -76,7 +76,21 @@ class Trie
 
 		for (int i = 0; i < length; ++i)
 		{
-			int id = str[i] - 'a';
+			int id;
+
+			if (str[i] == '.')
+			{
+				id = 36;
+			}
+			else if (str[i] >= '0' && str[i] <= '9')
+			{
+				id = str[i] - 22;
+			}
+			else
+			{
+				id = str[i] - 'a';
+			}
+
 
 			if (travel -> next[id] == NULL)
 			{
