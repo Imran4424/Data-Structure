@@ -65,7 +65,7 @@ int main(int argc, char const *argv[])
 	int num;
 	cin>>num;
 
-	cout<<
+	cout<<"enter the words"<<endl;
 
 	return 0;
 }
