@@ -117,11 +117,11 @@ class Trie
 	}
 
 
-	public: void Delete()
+	public: void Clear()
 	{
 		del(root);
 	}
-	
+
 	public: bool IsEmpty()
 	{
 		node* travel = root;
