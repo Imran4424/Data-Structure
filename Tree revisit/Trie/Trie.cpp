@@ -34,7 +34,16 @@ class Trie
 			{
 				travel -> next[id] = new node();
 			}
+
+			travel = travel -> next[id];	
 		}
+
+		travel -> endmark = true;
+	}
+
+	public: bool Search(char* str, int length)
+	{
+		
 	}
 	
 };
