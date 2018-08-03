@@ -53,7 +53,6 @@ class Trie
 			}
 			else
 			{
-
 				id = str[i] - 'a';
 			}
 
