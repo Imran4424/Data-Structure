@@ -31,5 +31,10 @@ void Insertion(char* str, int length)
 		{
 			travel -> next[id] = new node();
 		}
+
+		travel = travel -> next[id];
 	}
+
+	travel -> endmark = true;
 }
+
