@@ -8,12 +8,14 @@ class Trie
 	{
 		bool endmark;
 		int count;
+		char* key;
 		node* next[37+1];
 
 		node()
 		{
 			endmark = false;
 			count = 0;
+			key = NULL;
 
 			for (int i = 0; i < 37; ++i)
 			{
