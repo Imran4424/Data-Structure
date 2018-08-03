@@ -38,4 +38,7 @@ void Insertion(char* str, int length)
 	travel -> endmark = true;
 }
 
-bool Search()
+bool Search(char* str, int length)
+{
+	
+}
