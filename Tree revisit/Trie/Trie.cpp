@@ -116,6 +116,12 @@ class Trie
 		delete(travel);		
 	}
 
+
+	public: void Delete()
+	{
+		del(root);
+	}
+	
 	public: bool IsEmpty()
 	{
 		node* travel = root;
@@ -129,11 +135,6 @@ class Trie
 		}
 
 		return true;
-	}
-
-	public: void Delete()
-	{
-		del(root);
 	}
 };
 
