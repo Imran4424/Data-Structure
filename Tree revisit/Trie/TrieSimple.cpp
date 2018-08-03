@@ -58,6 +58,11 @@ bool Search(char* str, int length)
 	return travel -> endmark;
 }
 
+void del(node* travel)
+{
+	
+}
+
 void MakeLower(char* str, int length)
 {
 	for (int i = 0; i < length; ++i)
