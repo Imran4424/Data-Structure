@@ -141,7 +141,7 @@ class Trie
 		{
 			if (travel -> endmark && i == 0)
 			{
-				double temp = (travel -> count * 100) / (double)total;
+				double temp = (travel -> count * 100.0) / total;
 
 				cout<<travel -> key<<" "<<fixed<<setprecision(4)<<temp<<endl;
 			}
