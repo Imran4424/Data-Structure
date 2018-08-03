@@ -46,11 +46,14 @@ bool Search(char* str, int length)
 	for (int i = 0; i < length; ++i)
 	{
 		int id = str[i] - 'a';
+		cout<<"I am here : "<<id<<endl;
 
 		if (travel -> next[id] == NULL)
 		{
 			return false;
 		}
+
+		cout<<"I am here"<<endl;
 
 		travel = travel -> next[id];
 	}
