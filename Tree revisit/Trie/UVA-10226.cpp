@@ -19,7 +19,7 @@ class Trie
 			endmark = false;
 			count = 0;
 
-			for (int i = 0; i < 38; ++i)
+			for (int i = 0; i < 39; ++i)
 			{
 				next[i] = NULL;
 			}
@@ -28,7 +28,7 @@ class Trie
 
 	private: node* root = new node();
 
-	private: void MakeLower(string str)
+	private: string MakeLower(string str)
 	{
 		for (int i = 0; i < str.size(); ++i)
 		{
@@ -37,15 +37,16 @@ class Trie
 				str[i] = str[i] + 32;
 			}
 		}
+
+		return str;
 	}
 
 	public: void Insertion(string str)
 	{
 		string original_key = str;
 
-		MakeLower(str);
+		str = MakeLower(str);
 
-		cout<<original_key<<" "<<str<<endl;
 
 		node* travel = root;
 
@@ -59,7 +60,7 @@ class Trie
 			}
 			else if (str[i] == ' ')
 			{
-				id = 37
+				id = 37;
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -88,7 +89,7 @@ class Trie
 
 	public: bool Search(string str)
 	{
-		MakeLower(str);
+		str = MakeLower(str);
 
 		node* travel = root;
 
@@ -102,7 +103,7 @@ class Trie
 			}
 			else if (str[i] == ' ')
 			{
-				id = 37
+				id = 37;
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -127,7 +128,7 @@ class Trie
 
 	private: void del(node* travel)
 	{
-		for (int i = 0; i < 27; ++i)
+		for (int i = 0; i < 37; ++i)
 		{
 			if (travel -> next[i])
 			{
