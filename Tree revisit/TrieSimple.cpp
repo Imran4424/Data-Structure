@@ -108,9 +108,7 @@ int main(int argc, char const *argv[])
 		cout<<"I am here"<<endl;
 		int length = strlen(se_str);
 
-
 		MakeLower(se_str, length);
-
 
 		bool status = Search(se_str, length);
 
