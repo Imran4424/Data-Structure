@@ -19,6 +19,8 @@ class Trie
 			}
 		}
 	};
+
+	private: node* root = new node();
 	
 };
 
