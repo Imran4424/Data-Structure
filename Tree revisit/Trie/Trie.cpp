@@ -7,7 +7,7 @@ class Trie
 	private: struct node
 	{
 		bool endmark;
-		char* key;
+		char key[15];
 		int count;
 
 		node* next[37+1];
@@ -15,7 +15,6 @@ class Trie
 		node()
 		{
 			endmark = false;
-			key = NULL;
 			count = 0;
 
 			for (int i = 0; i < 37; ++i)
