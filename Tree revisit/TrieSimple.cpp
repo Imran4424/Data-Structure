@@ -50,5 +50,7 @@ bool Search(char* str, int length)
 		{
 			return false;
 		}
+
+		travel = travel -> next[id];
 	}
 }
