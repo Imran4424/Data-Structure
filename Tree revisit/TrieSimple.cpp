@@ -67,5 +67,10 @@ int main(int argc, char const *argv[])
 
 	cout<<"enter the words"<<endl;
 
+	for (int i = 0; i < num; ++i)
+	{
+		/* code */
+	}
+
 	return 0;
 }
