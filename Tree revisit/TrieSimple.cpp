@@ -60,7 +60,10 @@ bool Search(char* str, int length)
 
 void MakeLower(char* str, int length)
 {
-	
+	for (int i = 0; i < length; ++i)
+	{
+		
+	}
 }
 
 int main(int argc, char const *argv[])
