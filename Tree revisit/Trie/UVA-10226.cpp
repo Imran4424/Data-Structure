@@ -198,9 +198,7 @@ int main(int argc, char const *argv[])
 				break;
 			}
 
-			int length = strlen(tree);
-
-			lists.Insertion(tree, length);
+			lists.Insertion(tree);
 
 			total++;
 		}
