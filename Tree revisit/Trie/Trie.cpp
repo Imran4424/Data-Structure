@@ -71,6 +71,10 @@ class Trie
 		}
 
 		travel -> endmark = true;
+
+		travel -> count = travel -> count + 1;
+
+		strcpy(travel -> key, str);
 	}
 
 	public: bool Search(char* str, int length)
