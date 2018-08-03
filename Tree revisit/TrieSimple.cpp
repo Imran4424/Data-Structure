@@ -102,7 +102,7 @@ int main(int argc, char const *argv[])
 
 		MakeLower(str, length);
 
-		Search(str, length);
+		bool status = Search(str, length);
 	}
 
 	return 0;
