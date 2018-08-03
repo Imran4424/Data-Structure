@@ -77,7 +77,15 @@ class Trie
 
 	private: del(node* travel)
 	{
-		
+		for (int i = 0; i < 27; ++i)
+		{
+			if (travel -> next[i])
+			{
+				del(travel -> next[i]);
+			}
+		}
+
+		delete(travel);		
 	}
 };
 
