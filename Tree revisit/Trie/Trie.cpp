@@ -132,7 +132,18 @@ class Trie
 
 	private: ShowSorted(node* travel)
 	{
-		
+		for (int i = 0; i < 37; ++i)
+		{
+			if (travel -> endmark)
+			{
+				cout<<travel -> key<<" "<<travel -> count<<endl;
+			}
+
+			if (travel -> next[i] != NULL)
+			{
+				ShowSorted(travel -> next[i]);
+			}
+		}
 	}
 
 	public: void Display()
