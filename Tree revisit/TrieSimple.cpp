@@ -60,5 +60,6 @@ bool Search(char* str, int length)
 int main(int argc, char const *argv[])
 {
 	
+	
 	return 0;
 }
