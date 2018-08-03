@@ -62,9 +62,9 @@ void MakeLower(char* str, int length)
 {
 	for (int i = 0; i < length; ++i)
 	{
-		if ()
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			/* code */
+			
 		}
 	}
 }
