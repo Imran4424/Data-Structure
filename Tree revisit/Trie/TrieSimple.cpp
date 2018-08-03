@@ -60,7 +60,10 @@ bool Search(char* str, int length)
 
 void del(node* travel)
 {
-	
+	for (int i = 0; i < 27; ++i)
+	{
+		
+	}
 }
 
 void MakeLower(char* str, int length)
