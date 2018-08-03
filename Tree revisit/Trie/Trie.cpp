@@ -46,7 +46,7 @@ class Trie
 	public: bool Search(char* str, int length)
 	{
 		MakeLower(str, length);
-		
+
 		node* travel = root;
 
 		for (int i = 0; i < length; ++i)
@@ -64,7 +64,7 @@ class Trie
 		return travel -> endmark;
 	}
 
-	public: void MakeLower(char* str, int length)
+	private: void MakeLower(char* str, int length)
 	{
 		for (int i = 0; i < length; ++i)
 		{
