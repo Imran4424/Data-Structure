@@ -29,6 +29,11 @@ class Trie
 		for (int i = 0; i < length; ++i)
 		{
 			int id = str[i] - 'a';
+
+			if (travel -> next[id] == NULL)
+			{
+				/* code */
+			}
 		}
 	}
 	
