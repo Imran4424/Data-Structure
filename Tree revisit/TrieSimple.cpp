@@ -44,6 +44,11 @@ bool Search(char* str, int length)
 
 	for (int i = 0; i < length; ++i)
 	{
-		/* code */
+		int id = str[i] - 'a';
+
+		if (travel -> next[id] == NULL)
+		{
+			return false;
+		}
 	}
 }
