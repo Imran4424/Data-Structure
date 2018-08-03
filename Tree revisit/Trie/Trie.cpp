@@ -120,7 +120,13 @@ class Trie
 	{
 		node* travel = root;
 
-		
+		for (int i = 0; i < 37; ++i)
+		{
+			if (travel -> next[i] !=)
+			{
+				return false;
+			}
+		}
 	}
 
 	public: void Delete()
