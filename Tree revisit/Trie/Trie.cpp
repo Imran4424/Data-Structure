@@ -86,19 +86,23 @@ class Trie
 
 	}
 
-	public: bool Search(char* str, int length)
+	public: bool Search(string str)
 	{
-		MakeLower(str, length);
+		str = MakeLower(str);
 
 		node* travel = root;
 
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			int id;
 
 			if (str[i] == '.')
 			{
 				id = 36;
+			}
+			else if (str[i] == ' ')
+			{
+				id = 37;
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -123,7 +127,7 @@ class Trie
 
 	private: void del(node* travel)
 	{
-		for (int i = 0; i < 27; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> next[i])
 			{
@@ -142,7 +146,7 @@ class Trie
 
 	private: ShowSorted(node* travel)
 	{
-		for (int i = 0; i < 37; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> endmark && i == 0)
 			{
@@ -191,12 +195,11 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		char str[15];
+		string str;
 		cin>>str;
 
-		int length = strlen(str);
 
-		obj.Insertion(str, length);
+		obj.Insertion(str);
 	}
 
 	obj.Display();
@@ -208,13 +211,11 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		
-		char se_str[15];
-		cin>>se_str;
-
-		int length = strlen(se_str);
+		string str;
+		cin>>str;
 
 
-		bool status = obj.Search(se_str, length);
+		bool status = obj.Search(str);
 
 		if (status)
 		{
