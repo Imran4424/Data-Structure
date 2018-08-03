@@ -21,6 +21,17 @@ class Trie
 	};
 
 	private: node* root = new node();
+	
+	private: void MakeLower(char* str, int length)
+	{
+		for (int i = 0; i < length; ++i)
+		{
+			if (str[i] > = 'A' && str[i] <= 'Z')
+			{
+				str[i] = str[i] + 32;
+			}
+		}
+	}
 
 	public: void Insertion(char* str, int length)
 	{
@@ -64,16 +75,6 @@ class Trie
 		return travel -> endmark;
 	}
 
-	private: void MakeLower(char* str, int length)
-	{
-		for (int i = 0; i < length; ++i)
-		{
-			if (str[i] > = 'A' && str[i] <= 'Z')
-			{
-				str[i] = str[i] + 32;
-			}
-		}
-	}
 	
 };
 
