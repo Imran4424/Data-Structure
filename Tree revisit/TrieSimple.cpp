@@ -90,5 +90,7 @@ int main(int argc, char const *argv[])
 		Insertion(str, length);
 	}
 
+	
+
 	return 0;
 }
