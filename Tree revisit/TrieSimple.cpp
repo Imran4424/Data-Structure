@@ -8,6 +8,11 @@ struct node
 
 	node()
 	{
-		
+		endmark = false;
+
+		for (int i = 0; i < 27; ++i)
+		{
+			next[i] = NULL;
+		}
 	}
 };
