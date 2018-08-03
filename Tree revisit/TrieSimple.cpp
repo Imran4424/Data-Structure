@@ -108,6 +108,10 @@ int main(int argc, char const *argv[])
 		{
 			cout<<"the word is found in this tree"<<endl;
 		}
+		else
+		{
+			
+		}
 	}
 
 	return 0;
