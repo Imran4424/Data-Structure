@@ -202,11 +202,19 @@ int main(int argc, char const *argv[])
 			int length = strlen(tree);
 
 			lists.Insertion(tree, length);
+
+			total++;
 		}
 
+		lists.Display(total);
 
-
-
+		if (test)
+		{
+			cout<<endl;
+			
+			lists.Clear();
+			total = 0;
+		}
 	}
 	
 	return 0;
