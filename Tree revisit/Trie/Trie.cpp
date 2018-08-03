@@ -134,7 +134,7 @@ class Trie
 	{
 		for (int i = 0; i < 37; ++i)
 		{
-			if (travel -> endmark)
+			if (travel -> endmark && i == 0)
 			{
 				cout<<travel -> key<<" "<<travel -> count<<endl;
 			}
@@ -188,6 +188,8 @@ int main(int argc, char const *argv[])
 
 		obj.Insertion(str, length);
 	}
+
+	obj.Display();
 
 	cout<<"how many words you want to Search"<<endl;
 
