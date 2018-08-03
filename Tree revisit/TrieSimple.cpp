@@ -106,7 +106,7 @@ int main(int argc, char const *argv[])
 
 		if (status)
 		{
-			
+			cout<<"the word is found in this tree"<<endl;
 		}
 	}
 
