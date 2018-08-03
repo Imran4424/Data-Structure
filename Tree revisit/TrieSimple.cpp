@@ -104,11 +104,12 @@ int main(int argc, char const *argv[])
 		char* str;
 		cin>>str;
 
+		cout<<"I am here"<<endl;
 		int length = strlen(str);
 
+		
 		MakeLower(str, length);
 
-		cout<<"I am here"<<endl;
 
 		bool status = Search(str, length);
 
