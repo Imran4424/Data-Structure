@@ -67,6 +67,8 @@ void del(node* travel)
 			del(travel -> next[i]);
 		}
 	}
+
+	delete(travel);
 }
 
 void MakeLower(char* str, int length)
