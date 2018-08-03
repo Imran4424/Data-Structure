@@ -21,7 +21,7 @@ class Trie
 	};
 
 	private: node* root = new node();
-	
+
 	private: void MakeLower(char* str, int length)
 	{
 		for (int i = 0; i < length; ++i)
@@ -75,7 +75,10 @@ class Trie
 		return travel -> endmark;
 	}
 
-	
+	private: del(node* travel)
+	{
+		
+	}
 };
 
 
