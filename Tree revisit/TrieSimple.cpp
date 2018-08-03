@@ -71,6 +71,8 @@ int main(int argc, char const *argv[])
 	{
 		char* str;
 		int length;
+
+		cin>>str;
 	}
 
 	return 0;
