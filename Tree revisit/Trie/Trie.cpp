@@ -122,7 +122,7 @@ class Trie
 
 		for (int i = 0; i < 37; ++i)
 		{
-			if (travel -> next[i] !=)
+			if (travel -> next[i] != NULL)
 			{
 				return false;
 			}
