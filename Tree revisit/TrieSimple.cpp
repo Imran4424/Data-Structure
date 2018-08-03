@@ -100,7 +100,9 @@ int main(int argc, char const *argv[])
 
 		int length = strlen(str);
 
-		
+		MakeLower(str, length);
+
+		Search(str, length);
 	}
 
 	return 0;
