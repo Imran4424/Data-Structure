@@ -3,8 +3,6 @@
 #include <iomanip>
 using namespace std;
 
-const int key_size = 30;
-
 typedef long long int lli;
 
 class Trie
@@ -13,7 +11,7 @@ class Trie
 	{
 		bool endmark;
 		int count;
-		string key[key_size];
+		string key;
 		node* next[37+1];
 
 		node()
@@ -30,9 +28,9 @@ class Trie
 
 	private: node* root = new node();
 
-	private: void MakeLower(string* str, int length)
+	private: void MakeLower(string str)
 	{
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < string.size(); ++i)
 		{
 			if (str[i] >= 'A' && str[i] <= 'Z')
 			{
@@ -41,15 +39,15 @@ class Trie
 		}
 	}
 
-	public: void Insertion(string* str, int length)
+	public: void Insertion(string str)
 	{
-		string *original_key = str;
+		string original_key = str;
 
-		MakeLower(str, length);
+		MakeLower(str);
 
 		node* travel = root;
 
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < string.size(); ++i)
 		{
 			int id;
 
@@ -79,16 +77,16 @@ class Trie
 
 		travel -> count = travel -> count + 1;
 
-		strcpy(travel -> key, original_key);
+		travel -> key = original_key;
 	}
 
-	public: bool Search(string* str, int length)
+	public: bool Search(string str)
 	{
-		MakeLower(str, length);
+		MakeLower(str);
 
 		node* travel = root;
 
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < string.size(); ++i)
 		{
 			int id;
 
@@ -175,7 +173,7 @@ class Trie
 };
 
 
-int main(int argc, string const *argv[])
+int main(int argc, char const *argv[])
 {
 	int test;
 	cin>>test;
@@ -192,10 +190,10 @@ int main(int argc, string const *argv[])
 		
 		while(true)
 		{
-			string tree[key_size] = "";
+			string tree;
 			cin>>tree;
 
-			if (strcmp(tree,"0") == 0)
+			if (tree.empty())
 			{
 				break;
 			}
