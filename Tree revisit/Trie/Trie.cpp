@@ -141,6 +141,52 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
+	Trie obj;
+
+	cout<<"how many words you want to insert"<<endl;
+
+	int num;
+	cin>>num;
+
+	cout<<"enter the words"<<endl;
+
+	for (int i = 0; i < num; ++i)
+	{
+		char str[15];
+		cin>>str;
+
+		int length = strlen(str);
+
+		MakeLower(str, length);
+
+		Insertion(str, length);
+	}
+
+	cout<<"how many words you want to Search"<<endl;
+
+	cin>>num;
+
+	for (int i = 0; i < num; ++i)
+	{
+		
+		char se_str[15];
+		cin>>se_str;
+
+		int length = strlen(se_str);
+
+		MakeLower(se_str, length);
+
+		bool status = Search(se_str, length);
+
+		if (status)
+		{
+			cout<<"the word is present in the tree"<<endl;
+		}
+		else
+		{
+			cout<<"The word is not present in the tree"<<endl;
+		}
+	}
 	
 	return 0;
 }
