@@ -7,7 +7,7 @@ class Trie
 	private: struct node
 	{
 		bool endmark;
-		char key[15];
+		string key;
 		int count;
 
 		node* next[38+1];
@@ -26,30 +26,39 @@ class Trie
 
 	private: node* root = new node();
 
-	private: void MakeLower(char* str, int length)
+	private: string MakeLower(string str)
 	{
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			if (str[i] >= 'A' && str[i] <= 'Z')
 			{
 				str[i] = str[i] + 32;
 			}
 		}
+
+		return str;
 	}
 
-	public: void Insertion(char* str, int length)
+	public: void Insertion(string str)
 	{
-		MakeLower(str, length);
+		string original_key = str;
+
+		str = MakeLower(str);
+
 
 		node* travel = root;
 
-		for (int i = 0; i < length; ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			int id;
 
 			if (str[i] == '.')
 			{
 				id = 36;
+			}
+			else if (str[i] == ' ')
+			{
+				id = 37;
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -73,7 +82,8 @@ class Trie
 
 		travel -> count = travel -> count + 1;
 
-		strcpy(travel -> key, str);
+		travel -> key = original_key;
+
 	}
 
 	public: bool Search(char* str, int length)
