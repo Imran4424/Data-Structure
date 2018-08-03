@@ -49,7 +49,7 @@ class Trie
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
-				id = str[i] - 12;
+				id = str[i] - 22;
 			}
 			else
 			{
