@@ -29,7 +29,7 @@ void Insertion(char* str, int length)
 
 		if (travel -> next[id] == NULL)
 		{
-			/* code */
+			travel -> next[id] = new node();
 		}
 	}
 }
