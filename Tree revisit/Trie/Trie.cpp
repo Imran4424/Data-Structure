@@ -24,6 +24,8 @@ class Trie
 
 	public: void Insertion(char* str, int length)
 	{
+		MakeLower(str, length);
+
 		node* travel = root;
 
 		for (int i = 0; i < length; ++i)
