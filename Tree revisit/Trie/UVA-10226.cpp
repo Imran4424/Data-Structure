@@ -190,6 +190,9 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
+	// freopen("in.txt","rt",stdin);
+ //    freopen("out.txt","wt",stdout);
+
 	lli test;
 	cin>>test;
 
@@ -218,7 +221,6 @@ int main(int argc, char const *argv[])
 			total++;
 		}
 
-		//cout<<endl<<"I am here buddy"<<endl;
 
 		lists.Display(total);
 

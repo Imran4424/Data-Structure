@@ -1,0 +1,10 @@
+abc 25.0000
+edf 25.0000
+hytg 50.0000
+
+blablabla 16.6667
+dahdahdah 16.6667
+hrhrhr 16.6667
+lalala 16.6667
+papapa 16.6667
+ytytyt 16.6667
