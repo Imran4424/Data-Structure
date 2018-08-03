@@ -84,6 +84,8 @@ int main(int argc, char const *argv[])
 		cin>>str;
 
 		int length = strlen(str);
+
+		MakeLower(str, length);
 	}
 
 	return 0;
