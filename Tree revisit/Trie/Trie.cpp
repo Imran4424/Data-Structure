@@ -118,6 +118,8 @@ class Trie
 
 	public: bool IsEmpty()
 	{
+		node* travel = root;
+
 		
 	}
 
