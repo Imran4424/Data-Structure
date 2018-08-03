@@ -42,7 +42,8 @@ void Insertion(char* str, int length)
 bool Search(char* str, int length)
 {
 	node* travel = root;
-
+	cout<<"I am here"<<endl;
+	
 	for (int i = 0; i < length; ++i)
 	{
 		int id = str[i] - 'a';
