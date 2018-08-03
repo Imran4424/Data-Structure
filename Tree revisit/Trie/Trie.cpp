@@ -75,7 +75,7 @@ class Trie
 		return travel -> endmark;
 	}
 
-	private: del(node* travel)
+	private: void del(node* travel)
 	{
 		for (int i = 0; i < 27; ++i)
 		{
@@ -87,6 +87,8 @@ class Trie
 
 		delete(travel);		
 	}
+
+
 };
 
 
