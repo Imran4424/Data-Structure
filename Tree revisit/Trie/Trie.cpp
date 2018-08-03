@@ -62,7 +62,10 @@ class Trie
 
 	public: void MakeLower(char* str, int length)
 	{
-		
+		for (int i = 0; i < length; ++i)
+		{
+			/* code */
+		}
 	}
 	
 };
