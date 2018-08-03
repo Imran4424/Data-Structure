@@ -128,6 +128,27 @@ class Trie
 		del(root);
 	}
 
+	private: ShowSorted(node* travel)
+	{
+		for (int i = 0; i < 37; ++i)
+		{
+			if (travel -> endmark && i == 0)
+			{
+				cout<<travel -> key<<" "<<travel -> count<<endl;
+			}
+
+			if (travel -> next[i] != NULL)
+			{
+				ShowSorted(travel -> next[i]);
+			}
+		}
+	}
+
+	public: void Display()
+	{
+		ShowSorted(root);
+	}
+
 	public: bool IsEmpty()
 	{
 		node* travel = root;
