@@ -101,7 +101,6 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		cout<<"I am here"<<endl;
 		
 		char se_str[15];
 		cin>>se_str;
