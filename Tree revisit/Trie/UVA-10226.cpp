@@ -30,7 +30,7 @@ class Trie
 
 	private: void MakeLower(string str)
 	{
-		for (int i = 0; i < string.size(); ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			if (str[i] >= 'A' && str[i] <= 'Z')
 			{
@@ -47,7 +47,7 @@ class Trie
 
 		node* travel = root;
 
-		for (int i = 0; i < string.size(); ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			int id;
 
@@ -86,7 +86,7 @@ class Trie
 
 		node* travel = root;
 
-		for (int i = 0; i < string.size(); ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
 			int id;
 
@@ -184,19 +184,17 @@ int main(int argc, char const *argv[])
 	while(test--)
 	{
 		Trie lists;
-		lli total = 0;
 
-		
-		
-		while(true)
-		{
-			string tree;
-			cin>>tree;
+		string tree;
+        lli total = 0;
+        
+        while(true)
+        {
+            getline(cin,tree);
 
-			if (tree.empty())
-			{
-				break;
-			}
+            if(tree.empty()){
+                break;
+            }
 
 			lists.Insertion(tree);
 
