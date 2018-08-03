@@ -21,5 +21,7 @@ node* root = new node();
 
 void Insertion(char* str, int length)
 {
+	node* travel = root;
+
 	
 }
