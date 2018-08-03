@@ -58,6 +58,11 @@ bool Search(char* str, int length)
 	return travel -> endmark;
 }
 
+void MakeLower(char* str, int length)
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 	cout<<"how many words you want to insert"<<endl;
