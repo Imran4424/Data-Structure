@@ -22,7 +22,7 @@ class Trie
 
 	private: node* root = new node();
 
-	public: Insertion()
+	public: Insertion(char* str, int length)
 	{
 		
 	}
