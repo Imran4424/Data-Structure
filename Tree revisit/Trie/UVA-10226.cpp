@@ -61,6 +61,8 @@ class Trie
 			else if (str[i] == ' ')
 			{
 				id = 37;
+
+				//cout<<endl<<"I am here"<<endl;
 			}
 			else if (str[i] >= '0' && str[i] <= '9')
 			{
@@ -85,6 +87,8 @@ class Trie
 		travel -> count = travel -> count + 1;
 
 		travel -> key = original_key;
+
+		//cout<<endl<<travel -> key<<" "<<travel -> endmark<<endl;
 	}
 
 	public: bool Search(string str)
@@ -128,7 +132,7 @@ class Trie
 
 	private: void del(node* travel)
 	{
-		for (int i = 0; i < 37; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> next[i])
 			{
@@ -146,7 +150,7 @@ class Trie
 
 	private: void ShowSorted(node* travel, int total)
 	{
-		for (int i = 0; i < 37; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> endmark && i == 0)
 			{
@@ -171,7 +175,7 @@ class Trie
 	{
 		node* travel = root;
 
-		for (int i = 0; i < 37; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> next[i] != NULL)
 			{
