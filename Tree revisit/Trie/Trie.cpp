@@ -157,9 +157,7 @@ int main(int argc, char const *argv[])
 
 		int length = strlen(str);
 
-		MakeLower(str, length);
-
-		Insertion(str, length);
+		obj.Insertion(str, length);
 	}
 
 	cout<<"how many words you want to Search"<<endl;
@@ -174,9 +172,8 @@ int main(int argc, char const *argv[])
 
 		int length = strlen(se_str);
 
-		MakeLower(se_str, length);
 
-		bool status = Search(se_str, length);
+		bool status = obj.Search(se_str, length);
 
 		if (status)
 		{
