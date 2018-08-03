@@ -102,12 +102,13 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		cout<<"I am here"<<endl;
+		
 		char* str;
 		cin>>str;
 
 		int length = strlen(str);
 
-		
+
 		MakeLower(str, length);
 
 
