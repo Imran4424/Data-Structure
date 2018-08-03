@@ -104,7 +104,7 @@ int main(int argc, char const *argv[])
 
 		bool status = Search(str, length);
 
-		if (/* condition */)
+		if (status)
 		{
 			/* code */
 		}
