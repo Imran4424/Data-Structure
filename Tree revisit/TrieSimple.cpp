@@ -19,7 +19,7 @@ struct node
 
 node* root = new node();
 
-void Insertion()
+void Insertion(char* str, int length)
 {
 	
 }
