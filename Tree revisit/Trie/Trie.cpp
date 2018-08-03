@@ -116,6 +116,11 @@ class Trie
 		delete(travel);		
 	}
 
+	public: bool IsEmpty()
+	{
+		
+	}
+
 	public: void Delete()
 	{
 		del(root);
