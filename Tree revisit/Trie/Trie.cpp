@@ -88,7 +88,10 @@ class Trie
 		delete(travel);		
 	}
 
-
+	public: void Delete()
+	{
+		del(root);
+	}
 };
 
 
