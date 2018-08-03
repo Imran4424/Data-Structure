@@ -90,7 +90,7 @@ int main(int argc, char const *argv[])
 		Insertion(str, length);
 	}
 
-	
+	cout<<"how many words you want to Search"<<endl;
 
 	return 0;
 }
