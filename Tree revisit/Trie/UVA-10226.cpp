@@ -193,8 +193,8 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
-	// freopen("in.txt","rt",stdin);
- //    freopen("out.txt","wt",stdout);
+	freopen("in.txt","rt",stdin);
+ 	freopen("out.txt","wt",stdout);
 
 	lli test;
 	cin>>test;
@@ -208,10 +208,10 @@ int main(int argc, char const *argv[])
 
 		
         lli total = 0;
+    	string tree;
 
         while(true)
         {
-        	string tree;
             getline(cin,tree);
 
             if(tree.empty())
@@ -232,6 +232,7 @@ int main(int argc, char const *argv[])
 			cout<<endl;
 
 			lists.Clear();
+			tree.clear();
 			total = 0;
 		}
 	}
