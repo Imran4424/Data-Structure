@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
 struct node
@@ -20,11 +20,11 @@ struct node
 
 node* root = new node();
 
-void Insertion(char* str, int length)
+void Insertion(string str)
 {
 	node* travel = root;
 
-	for (int i = 0; i < length; ++i)
+	for (int i = 0; i < str.size(); ++i)
 	{
 		int id = str[i] - 'a';
 
@@ -39,11 +39,11 @@ void Insertion(char* str, int length)
 	travel -> endmark = true;
 }
 
-bool Search(char* str, int length)
+bool Search(string str)
 {
 	node* travel = root;
 
-	for (int i = 0; i < length; ++i)
+	for (int i = 0; i < str.size(); ++i)
 	{
 		int id = str[i] - 'a';
 
@@ -71,9 +71,9 @@ void del(node* travel)
 	delete(travel);
 }
 
-void MakeLower(char* str, int length)
+void MakeLower(string str)
 {
-	for (int i = 0; i < length; ++i)
+	for (int i = 0; i < str.size(); ++i)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
@@ -93,14 +93,12 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		char str[15];
+		string str;
 		cin>>str;
 
-		int length = strlen(str);
+		MakeLower(str);
 
-		MakeLower(str, length);
-
-		Insertion(str, length);
+		Insertion(str);
 	}
 
 	cout<<"how many words you want to Search"<<endl;
