@@ -17,6 +17,7 @@ class Trie
 		node()
 		{
 			endmark = false;
+			key.clear();
 			count = 0;
 
 			for (int i = 0; i < 39; ++i)
@@ -76,7 +77,9 @@ class Trie
 
 			if (travel -> next[id] == NULL)
 			{
-				travel -> next[id] = new node();
+				node* temp = new node();
+
+				travel -> next[id] = temp;
 			}
 
 			travel = travel -> next[id];	
