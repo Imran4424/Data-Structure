@@ -108,10 +108,9 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		
-		char se_str[15];
-		cin>>se_str;
+		string str;
+		cin>>str;
 
-		int length = strlen(se_str);
 
 		MakeLower(se_str, length);
 
