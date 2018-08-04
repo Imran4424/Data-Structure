@@ -87,7 +87,7 @@ class Trie
 
 		travel -> endmark = true;
 
-		travel -> count = travel -> count + 1;
+		travel -> count = (travel -> count) + 1;
 
 		travel -> key = original_key;
 
