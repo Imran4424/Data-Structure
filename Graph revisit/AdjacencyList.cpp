@@ -3,5 +3,6 @@ using namespace std;
 
 struct node
 {
-	int 
+	int data;
+	
 };
