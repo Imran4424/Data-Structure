@@ -193,8 +193,8 @@ class Trie
 
 int main(int argc, char const *argv[])
 {
-	freopen("in.txt","rt",stdin);
- 	freopen("out.txt","wt",stdout);
+	//freopen("in.txt","rt",stdin);
+ 	//freopen("out.txt","wt",stdout);
 
 	lli test;
 	cin>>test;
