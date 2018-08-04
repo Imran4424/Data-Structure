@@ -15,6 +15,7 @@ class Trie
 		node()
 		{
 			endmark = false;
+			key.clear();
 			count = 0;
 
 			for (int i = 0; i < 39; ++i)
