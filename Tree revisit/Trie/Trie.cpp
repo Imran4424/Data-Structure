@@ -145,7 +145,7 @@ class Trie
 		del(root);
 	}
 
-	private: ShowSorted(node* travel)
+	private: void ShowSorted(node* travel)
 	{
 		for (int i = 0; i < 39; ++i)
 		{
@@ -170,7 +170,7 @@ class Trie
 	{
 		node* travel = root;
 
-		for (int i = 0; i < 37; ++i)
+		for (int i = 0; i < 39; ++i)
 		{
 			if (travel -> next[i] != NULL)
 			{
