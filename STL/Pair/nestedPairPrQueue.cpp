@@ -1,5 +1,6 @@
 #include <iostream>
 #include <utility>
+#include <queue>
 #include <vector>
 using namespace std;
 
@@ -13,12 +14,16 @@ int main(int argc, char const *argv[])
 
 	int source, destination, weight;
 
+	cout << "enter the source, destination and weight" << endl;
+
 	while(test--)
 	{
 		cin >> source >> destination >> weight;
 
 		weightedList.push(make_pair(weight, make_pair(source, destination)));
 	}
+
+	cout << "pairs in priority_queue are" << endl;
 
 	while(!weightedList.empty())
 	{
