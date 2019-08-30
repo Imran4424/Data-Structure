@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
 		nestedCouple hand = weightedList.top();
 		weightedList.pop();
 
-		cout << hand.first << " " << hand.second.first << " " << hand.second.second << endl;
+		cout << hand.second.first << " " << hand.second.second << " " << hand.first << endl;
 	}
 
 
