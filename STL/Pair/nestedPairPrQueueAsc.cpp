@@ -8,7 +8,7 @@ typedef pair< int, pair<int, int> > nestedCouple;
 
 int main(int argc, char const *argv[])
 {
-	priority_queue < nestedCouple > weightedList;
+	priority_queue < nestedCouple, vector <nestedCouple>, greater <nestedCouple> > weightedList;
 
 	cout << "How many edges?" << endl;
 	int test;
