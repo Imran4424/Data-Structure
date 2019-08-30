@@ -3,7 +3,7 @@
 
 	and here we are using second element for sorting
 
-	This is decending order
+	This is ascending order
 */
 
 #include <iostream>
@@ -14,13 +14,11 @@ using namespace std;
 
 typedef pair <int, int> couple;
 
-struct compare
+
+bool compare(const couple& a, const couple& b)
 {
-	bool operator()(couple& a, couple& b)
-	{
-		return a.second < b.second;
-	}
-};
+	return a.second < b.second;
+}
 
 int main(int argc, char const *argv[])
 {

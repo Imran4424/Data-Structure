@@ -3,7 +3,7 @@
 
 	and here we are using second element for sorting
 
-	This is decending order
+	This is ascending order
 */
 
 #include <iostream>
@@ -18,7 +18,7 @@ struct compare
 {
 	bool operator()(couple& a, couple& b)
 	{
-		return a.second < b.second;
+		return a.second > b.second;
 	}
 };
 
