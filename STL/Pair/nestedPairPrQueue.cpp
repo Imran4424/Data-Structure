@@ -1,3 +1,11 @@
+/*
+	In this code we are implementing pair inside a pair
+
+	here in priority queue, we are considering outer pairs first element
+
+	this code implement default priority queue decending sort
+*/
+
 #include <iostream>
 #include <utility>
 #include <queue>
