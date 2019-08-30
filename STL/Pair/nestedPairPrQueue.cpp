@@ -10,7 +10,9 @@ int main(int argc, char const *argv[])
 {
 	priority_queue < nestedCouple > weightedList;
 
-	int test = 5;
+	cout << "How many edges?" << endl;
+	int test;
+	cin>> test;
 
 	int source, destination, weight;
 
