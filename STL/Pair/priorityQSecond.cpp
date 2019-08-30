@@ -22,12 +22,17 @@ int main(int argc, char const *argv[])
 
 	test = 5;
 
+	cout << "enter the pairs" << endl;
+
 	while(test --)
 	{
 		cin >> id >> price;
 
 		priceList.push(make_pair(id, price));
 	}
+
+
+	cout << "pairs in priority_queue are" << endl;
 
 	while(!priceList.empty())
 	{
