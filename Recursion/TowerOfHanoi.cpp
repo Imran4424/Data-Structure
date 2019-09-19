@@ -7,6 +7,12 @@ int main(int argc, char const *argv[])
 	char auxilary = 'B';
 	char destination = 'C';
 
-	
+	cout << "enter the disk number" << endl;
+
+	int diskNum;
+	cin >> diskNum;
+
+
+
 	return 0;
 }
