@@ -5,6 +5,14 @@ struct node
 {
 	int data;
 	node* nextAddress;
+
+	node() {}
+
+	node(int value)
+	{
+		data = value;
+		nextAddress = NULL;
+	}
 };
 
 
@@ -13,10 +21,7 @@ node* head;
 
 void insert_node_at_the_end(int value)
 {
-	node* temp = new node();
-
-	temp -> data = value;
-	temp -> nextAddress = NULL;
+	node* temp = new node(value);
 
 	if (head == NULL)
 	{
@@ -37,19 +42,16 @@ void insert_node_at_the_end(int value)
 
 void insert_node_at_the_begin(int value)
 {
-	node* temp = new node();
+	node* temp = new node(value);
 
-	temp -> data = value;
 	temp -> nextAddress = head;
 
 	head = temp;
 }
 
-void insert_node_at_the_nth_position(int value, int target)
+void insert_node_at_the_nth_position(int value,int target)
 {
-	node* temp = new node();
-
-	temp -> data = value;
+	node* temp = new node(value);
 
 	node* travel = head;
 
@@ -191,8 +193,8 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		//insert_node_at_the_end(temp_val);
-		insert_node_at_the_begin(temp_val);
+		insert_node_at_the_end(temp_val);
+		//insert_node_at_the_begin(temp_val);
 	}
 
 
@@ -202,10 +204,10 @@ int main(int argc, char const *argv[])
 
 	// delete nodes
 
-	cout<<"how many nodes you wnat to delete"<<endl;
+	cout<<"how many nodes you want to delete"<<endl;
 
 	int num;
-	cin>>num;
+	cin >> num;
 
 	for (int i = 0; i < num; ++i)
 	{
@@ -213,8 +215,8 @@ int main(int argc, char const *argv[])
 		cin>>del_val;
 
 		//delete_at_the_end();
-		//delete_at_the_begin();
-		delete_at_nth_position(del_val);
+		delete_at_the_begin();
+		//delete_at_nth_position(del_val);
 	}
 
 	// display again
