@@ -49,7 +49,7 @@ void InsertAtBegin(int value)
 	head = temp;
 }
 
-void insert_node_at_the_nth_position(int value,int target)
+void InsertAtNthPosition(int value, int target)
 {
 	node* temp = new node(value);
 
