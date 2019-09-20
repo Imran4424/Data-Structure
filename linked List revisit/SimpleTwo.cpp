@@ -40,7 +40,7 @@ void InsertAtEnd(int value)
 	travel -> nextAddress = temp;
 }
 
-void insert_node_at_the_begin(int value)
+void InsertAtBegin(int value)
 {
 	node* temp = new node(value);
 
@@ -194,7 +194,7 @@ int main(int argc, char const *argv[])
 		cin>>temp_val;
 
 		InsertAtEnd(temp_val);
-		//insert_node_at_the_begin(temp_val);
+		//InsertAtBegin(temp_val);
 	}
 
 
