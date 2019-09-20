@@ -153,11 +153,11 @@ void DeleteAtNthPositionByValue(int value)
 
 }
 
-void display()
+void Display()
 {
 	if (head == NULL)
 	{
-		cout<<"there's nothing to display"<<endl;
+		cout<<"there's nothing to Display"<<endl;
 
 		return;
 	}
@@ -198,9 +198,9 @@ int main(int argc, char const *argv[])
 	}
 
 
-	// display the node
+	// Display the node
 
-	display();
+	Display();
 
 	// delete nodes
 
@@ -219,9 +219,9 @@ int main(int argc, char const *argv[])
 		//DeleteAtNthPositionByValue(del_val);
 	}
 
-	// display again
+	// Display again
 
-	display();
+	Display();
 
 	return 0;
 }
