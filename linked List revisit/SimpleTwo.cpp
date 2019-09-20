@@ -102,7 +102,7 @@ void DeleteAtEnd()
 	travel -> nextAddress = NULL;
 }
 
-void delete_at_the_begin()
+void DeleteAtBegin()
 {
 	if (head == NULL)
 	{
@@ -215,7 +215,7 @@ int main(int argc, char const *argv[])
 		cin>>del_val;
 
 		//DeleteAtEnd();
-		delete_at_the_begin();
+		DeleteAtBegin();
 		//delete_at_nth_position(del_val);
 	}
 
