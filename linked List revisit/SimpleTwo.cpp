@@ -19,7 +19,7 @@ struct node
 // the head
 node* head;
 
-void insert_node_at_the_end(int value)
+void InsertAtEnd(int value)
 {
 	node* temp = new node(value);
 
@@ -193,7 +193,7 @@ int main(int argc, char const *argv[])
 		int temp_val;
 		cin>>temp_val;
 
-		insert_node_at_the_end(temp_val);
+		InsertAtEnd(temp_val);
 		//insert_node_at_the_begin(temp_val);
 	}
 
