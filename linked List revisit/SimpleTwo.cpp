@@ -76,7 +76,7 @@ void InsertAtNthPosition(int value, int target)
 
 }
 
-void delete_at_the_end()
+void DeleteAtEnd()
 {
 	if (head == NULL)
 	{
@@ -214,7 +214,7 @@ int main(int argc, char const *argv[])
 		int del_val;
 		cin>>del_val;
 
-		//delete_at_the_end();
+		//DeleteAtEnd();
 		delete_at_the_begin();
 		//delete_at_nth_position(del_val);
 	}
