@@ -114,7 +114,7 @@ void DeleteAtBegin()
 	head = head -> nextAddress;
 }
 
-void delete_at_nth_position(int value)
+void DeleteAtNthPositionByValue(int value)
 {
 	if (head == NULL)
 	{
@@ -216,7 +216,7 @@ int main(int argc, char const *argv[])
 
 		//DeleteAtEnd();
 		DeleteAtBegin();
-		//delete_at_nth_position(del_val);
+		//DeleteAtNthPositionByValue(del_val);
 	}
 
 	// display again
