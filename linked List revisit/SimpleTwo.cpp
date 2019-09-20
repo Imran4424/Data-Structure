@@ -211,8 +211,8 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < num; ++i)
 	{
-		int del_val;
-		cin>>del_val;
+		//int del_val;
+		//cin>>del_val;
 
 		//DeleteAtEnd();
 		DeleteAtBegin();
