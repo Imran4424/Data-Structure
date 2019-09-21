@@ -37,7 +37,7 @@ void InsertNode(node* travel, int value)
 	}
 }
 
-void Delete(node* travel, int value)
+void DeleteNode(node* travel, int value)
 {
 	// base case
 	if (NULL == travel)
@@ -45,5 +45,36 @@ void Delete(node* travel, int value)
 		return;
 	}
 
-	
+	if (value < travel -> data)
+	{
+		DeleteNode(travel -> left, value);
+	}
+	else if(value > travel -> data)
+	{
+		DeleteNode(travel -> right, value);
+	}
+	else
+	{
+		//case one - no child
+		if (NULL == travel -> left && NULL == travel -> right)
+		{
+			travel = NULL;
+
+			return;
+		}
+		// case two - one child
+		else if (NULL == travel -> left)
+		{
+			travel = travel -> right;
+		}
+		else if (NULL == travel -> right)
+		{
+			travel = travel -> left
+		}
+		else // case three - both child
+		{
+
+		}
+
+	}
 }
