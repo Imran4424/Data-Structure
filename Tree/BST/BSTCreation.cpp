@@ -17,3 +17,22 @@ struct node
 	}
 };
 
+node* root;
+
+void InsertNode(node* travel, int value)
+{
+	//base case
+	if (NULL == travel)
+	{
+		travel = new node(value);
+	}
+
+	if (value < travel -> data)
+	{
+		InsertNode(travel -> left, value);
+	}
+	else
+	{
+		InsertNode(travel -> right, value);
+	}
+}
