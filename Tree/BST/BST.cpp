@@ -298,15 +298,15 @@ int main(int argc, char const *argv[])
 
 	cout<<"Level order traversal: ";
 	LevelOrderTraversal(root);
-	cout<<endl;
+	cout << endl;
 
-	cout<<"Pre Order: ";
+	cout << "Pre Order: ";
 	PreOrder(root);
-	cout<<endl;
+	cout << endl;
 
-	cout<<"In Order: ";
+	cout << "In Order: ";
 	InOrder(root);
-	cout<<endl;
+	cout << endl;
 
 	cout<<"Post Order: ";
 	PostOrder(root);
