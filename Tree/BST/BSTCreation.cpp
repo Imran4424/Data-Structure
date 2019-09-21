@@ -37,6 +37,19 @@ void InsertNode(node* travel, int value)
 	}
 }
 
+int MinValue(node* travel)
+{
+	if (travel -> left == NULL)
+	{
+		return travel -> data;
+	}
+	else
+	{
+		return MinValue(travel -> left);
+	}
+}
+
+
 void DeleteNode(node* travel, int value)
 {
 	// base case
