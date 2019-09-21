@@ -37,7 +37,7 @@ void InsertNode(node* travel, int value)
 	}
 }
 
-int MinValue(node* travel)
+int FindMinValue(node* travel)
 {
 	if (travel -> left == NULL)
 	{
@@ -72,8 +72,6 @@ void DeleteNode(node* travel, int value)
 		if (NULL == travel -> left && NULL == travel -> right)
 		{
 			travel = NULL;
-
-			return;
 		}
 		// case two - one child
 		else if (NULL == travel -> left)
@@ -83,11 +81,17 @@ void DeleteNode(node* travel, int value)
 		else if (NULL == travel -> right)
 		{
 			travel = travel -> left
+
 		}
 		else // case three - both child
 		{
+			int minValue = FindMinValue(travel -> right);
 
+			travel -> data = minValue;
+
+			DeleteNode(travel -> right, minValue);
 		}
 
 	}
 }
+
