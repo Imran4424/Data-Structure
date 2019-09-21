@@ -53,10 +53,8 @@ int FindMinValue(node* travel)
 	{
 		return travel -> data;
 	}
-	else
-	{
-		return MinValue(travel -> left);
-	}
+	
+	return FindMinValue(travel -> left);
 }
 
 
