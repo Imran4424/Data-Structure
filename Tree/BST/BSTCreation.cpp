@@ -37,9 +37,19 @@ void InsertNode(node* travel, int value)
 	}
 }
 
+int FindMaxValue(node* travel)
+{
+	if (NULL == travel -> right)
+	{
+		return travel -> data;
+	}
+
+	return FindMaxValue(travel -> right);
+}
+
 int FindMinValue(node* travel)
 {
-	if (travel -> left == NULL)
+	if (NULL == travel -> left)
 	{
 		return travel -> data;
 	}
