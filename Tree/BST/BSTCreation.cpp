@@ -36,3 +36,8 @@ void InsertNode(node* travel, int value)
 		InsertNode(travel -> right, value);
 	}
 }
+
+void Delete(node* travel, int value)
+{
+	
+}
