@@ -39,5 +39,11 @@ void InsertNode(node* travel, int value)
 
 void Delete(node* travel, int value)
 {
+	// base case
+	if (NULL == travel)
+	{
+		return;
+	}
+
 	
 }
