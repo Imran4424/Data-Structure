@@ -103,3 +103,10 @@ void DeleteNode(node* travel, int value)
 	}
 }
 
+void PreOrder(node* travel)
+{
+	if (NULL == travel)
+	{
+		return;
+	}
+}
