@@ -191,5 +191,18 @@ int main(int argc, char const *argv[])
 		DeleteNode(target);
 	}
 
+	cout << "Pre Order Traversal: " ;
+	PreOrder(root);
+	cout << endl << endl;
+
+	cout << "In Order Traversal: " ;
+	InOrder(root);
+	cout << endl << endl;
+
+	cout << "Post Order Traversal: " ;
+	PostOrder(root);
+	cout << endl << endl;
+
+
 	return 0;
 }
