@@ -175,7 +175,7 @@ int main(int argc, char const *argv[])
 	PostOrder(root);
 	cout << endl << endl;
 
-	
+	cout << "How many nodes you want to delete" << endl;
 
 	return 0;
 }
