@@ -130,8 +130,38 @@ void InOrder(node* travel)
 	InOrder(travel -> right);
 }
 
+void PostOrder(node* travel)
+{
+	if (NULL == travel)
+	{
+		return;
+	}
+
+	PostOrder(travel -> left);
+
+	PostOrder(travel -> right);
+
+	cout << travel -> data << " ";
+}
+
 int main(int argc, char const *argv[])
 {
-	
+	root = NULL;
+
+	cout << "How many nodes you wanna insert?" << endl;
+	int num; 
+	cin >> num;
+
+	cout << "enter the values" << endl;
+
+	int inputValue;
+
+	for (int i = 0; i < num; ++i)
+	{
+		cin >> inputValue;
+
+		
+	}
+
 	return 0;
 }
