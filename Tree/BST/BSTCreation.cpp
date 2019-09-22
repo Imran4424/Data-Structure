@@ -177,5 +177,15 @@ int main(int argc, char const *argv[])
 
 	cout << "How many nodes you want to delete" << endl;
 
+	int delNum;
+	cin >> delNum;
+
+	cout << "enter the number you want to delete" << endl;
+
+	for (int i = 0; i < delNum; ++i)
+	{
+		/* code */
+	}
+
 	return 0;
 }
