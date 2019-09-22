@@ -62,28 +62,28 @@ int FindMinValue(node* travel)
 }
 
 
-void DeleteNode(node* travel, int target)
+node* DeleteNode(node* travel, int target)
 {
 	// base case
 	if (NULL == travel)
 	{
-		return;
+		return travel;
 	}
 
 	if (target < travel -> data)
 	{
-		DeleteNode(travel -> left, target);
+		travel -> left = DeleteNode(travel -> left, target);
 	}
 	else if(target > travel -> data)
 	{
-		DeleteNode(travel -> right, target);
+		travel -> right = DeleteNode(travel -> right, target);
 	}
 	else
 	{
 		//case one - no child
 		if (NULL == travel -> left && NULL == travel -> right)
 		{
-			travel = NULL;
+			return NULL;
 		}
 		// case two - one child
 		else if (NULL == travel -> left)
@@ -101,10 +101,12 @@ void DeleteNode(node* travel, int target)
 
 			travel -> data = minValue;
 
-			DeleteNode(travel -> right, minValue);
+			travel -> right = DeleteNode(travel -> right, minValue);
 		}
 
 	}
+
+	return travel;
 }
 
 void PreOrder(node* travel)
@@ -193,7 +195,7 @@ int main(int argc, char const *argv[])
 	{
 		cin >> target;
 
-		DeleteNode(root, target);
+		root = DeleteNode(root, target);
 	}
 
 	cout << "Pre Order Traversal: " ;
