@@ -160,7 +160,15 @@ int main(int argc, char const *argv[])
 	{
 		cin >> inputValue;
 
-		InsertNode(root, inputValue);
+		if (NULL == root)
+		{
+			root = new node(inputValue);
+		}
+		else
+		{
+
+			InsertNode(root, inputValue);
+		}
 	}
 
 	cout << "Pre Order Traversal: " ;
