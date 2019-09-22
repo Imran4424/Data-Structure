@@ -24,7 +24,11 @@ void InsertNode(node* travel, int value)
 	//base case
 	if (NULL == travel)
 	{
-		travel = new node(value);
+		node temp = new node(value)
+
+		travel = temp;
+
+		return;
 	}
 
 	if (value < travel -> data)
@@ -169,6 +173,8 @@ int main(int argc, char const *argv[])
 
 			InsertNode(root, inputValue);
 		}
+
+		cout << "Hi" << endl;
 	}
 
 	cout << "Pre Order Traversal: " ;
