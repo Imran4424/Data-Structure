@@ -109,4 +109,17 @@ void PreOrder(node* travel)
 	{
 		return;
 	}
+
+	cout << travel -> data << " ";
+
+	PreOrder(travel -> left);
+	PreOrder(travel -> right);
+}
+
+
+
+int main(int argc, char const *argv[])
+{
+	
+	return 0;
 }
