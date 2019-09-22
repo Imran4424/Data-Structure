@@ -116,7 +116,19 @@ void PreOrder(node* travel)
 	PreOrder(travel -> right);
 }
 
+void InOrder(node* travel)
+{
+	if (NULL == travel)
+	{
+		return;
+	}
 
+	InOrder(travel -> left);
+
+	cout << travel -> data << " ";
+
+	InOrder(travel -> right);
+}
 
 int main(int argc, char const *argv[])
 {
