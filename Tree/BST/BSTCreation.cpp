@@ -88,7 +88,7 @@ void DeleteNode(node* travel, int target)
 		}
 		else if (NULL == travel -> right)
 		{
-			travel = travel -> left
+			travel = travel -> left;
 
 		}
 		else // case three - both child
@@ -188,7 +188,7 @@ int main(int argc, char const *argv[])
 	{
 		cin >> target;
 
-		DeleteNode(target);
+		DeleteNode(root, target);
 	}
 
 	cout << "Pre Order Traversal: " ;
