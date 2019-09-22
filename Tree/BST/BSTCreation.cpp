@@ -58,7 +58,7 @@ int FindMinValue(node* travel)
 }
 
 
-void DeleteNode(node* travel, int value)
+void DeleteNode(node* travel, int target)
 {
 	// base case
 	if (NULL == travel)
@@ -66,13 +66,13 @@ void DeleteNode(node* travel, int value)
 		return;
 	}
 
-	if (value < travel -> data)
+	if (target < travel -> data)
 	{
-		DeleteNode(travel -> left, value);
+		DeleteNode(travel -> left, target);
 	}
-	else if(value > travel -> data)
+	else if(target > travel -> data)
 	{
-		DeleteNode(travel -> right, value);
+		DeleteNode(travel -> right, target);
 	}
 	else
 	{
@@ -182,9 +182,13 @@ int main(int argc, char const *argv[])
 
 	cout << "enter the number you want to delete" << endl;
 
+	int target;
+
 	for (int i = 0; i < delNum; ++i)
 	{
-		/* code */
+		cin >> target;
+
+		DeleteNode(target);
 	}
 
 	return 0;
