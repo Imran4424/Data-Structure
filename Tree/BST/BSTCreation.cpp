@@ -19,26 +19,26 @@ struct node
 
 node* root;
 
-void InsertNode(node* travel, int value)
+node* InsertNode(node* travel, int value)
 {
 	//base case
 	if (NULL == travel)
 	{
-		node temp = new node(value)
+		travel = new node(value);
 
-		travel = temp;
-
-		return;
+		return travel;
 	}
 
 	if (value < travel -> data)
 	{
-		InsertNode(travel -> left, value);
+		travel -> left = InsertNode(travel -> left, value);
 	}
 	else
 	{
-		InsertNode(travel -> right, value);
+		travel -> right = InsertNode(travel -> right, value);
 	}
+
+	return travel;
 }
 
 int FindMaxValue(node* travel)
@@ -164,17 +164,8 @@ int main(int argc, char const *argv[])
 	{
 		cin >> inputValue;
 
-		if (NULL == root)
-		{
-			root = new node(inputValue);
-		}
-		else
-		{
+		root = InsertNode(root, inputValue);
 
-			InsertNode(root, inputValue);
-		}
-
-		cout << "Hi" << endl;
 	}
 
 	cout << "Pre Order Traversal: " ;
