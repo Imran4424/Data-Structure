@@ -58,13 +58,14 @@ bool Search(string str)
 	return travel -> endmark;
 }
 
+// for deleting all nodes to free memory
 void Delete(node* travel)
 {
 	for (int i = 0; i < 27; ++i)
 	{
 		if (travel -> next[i])
 		{
-			del(travel -> next[i]);
+			Delete(travel -> next[i]);
 		}
 	}
 
