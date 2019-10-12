@@ -71,7 +71,7 @@ void del(node* travel)
 	delete(travel);
 }
 
-void MakeLower(string str)
+string MakeLower(string str)
 {
 	for (int i = 0; i < str.size(); ++i)
 	{
@@ -80,6 +80,8 @@ void MakeLower(string str)
 			str[i] = str[i] + 32;
  		}
 	}
+
+	return str;
 }
 
 int main(int argc, char const *argv[])
@@ -96,9 +98,7 @@ int main(int argc, char const *argv[])
 		string str;
 		cin >> str;
 
-		MakeLower(str);
-
-		cout << str << endl;
+		str = MakeLower(str);
 
 		Insertion(str);
 	}
