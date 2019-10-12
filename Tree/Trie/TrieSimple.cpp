@@ -58,7 +58,7 @@ bool Search(string str)
 	return travel -> endmark;
 }
 
-void del(node* travel)
+void Delete(node* travel)
 {
 	for (int i = 0; i < 27; ++i)
 	{
@@ -111,9 +111,9 @@ int main(int argc, char const *argv[])
 	{
 		
 		string str;
-		cin>>str;
+		cin >> str;
 
-		MakeLower(str);
+		str = MakeLower(str);
 
 		bool status = Search(str);
 
