@@ -37,7 +37,13 @@ int main(int argc, char const *argv[])
 {
 	cout << "how many words you want to insert" << endl;
 
-	
+	int numInsert;
+	cin >> numInsert;
+
+	for (int i = 0; i < numInsert; ++i)
+	{
+		/* code */
+	}
 
 	return 0;
 }
