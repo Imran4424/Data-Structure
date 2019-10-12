@@ -24,7 +24,32 @@ node* root = new node(); // creating empty node
 
 void Insertion(string word)
 {
-	node* travel = 
+	node* travel = root;
+
+	for (int i = 0; i < word.size(); ++i)
+	{
+		int letter = word[i] - 'a';
+
+		if (NULL == travel -> next[letter])
+		{
+			travel -> next[letter] = new node();
+		}
+
+		travel = travel -> next[letter];
+	}
+
+	// marking the last letter as word ending
+	travel -> endMark = true;
+}
+
+bool Search(string word)
+{
+	node* travel = root;
+
+	for (int i = 0; i < word.size(); ++i)
+	{
+		/* code */
+	}
 }
 
 
