@@ -48,8 +48,31 @@ bool Search(string word)
 
 	for (int i = 0; i < word.size(); ++i)
 	{
-		/* code */
+		int letter = word[i] - 'a';
+
+		if(NULL == travel -> next[letter])
+		{
+			return false;
+		}
 	}
+
+	return travel -> endMark;
+}
+
+// for deleting the whole tree
+void DeleteAll()
+{
+	node* travel = root;
+
+	for (int i = 0; i < 27; ++i)
+	{
+		if (NULL != travel -> next[i])
+		{
+			DeleteAll(travel -> next[i]);
+		}
+	}
+
+	delete(travel);
 }
 
 
