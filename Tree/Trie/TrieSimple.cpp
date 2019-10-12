@@ -94,9 +94,11 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < num; ++i)
 	{
 		string str;
-		cin>>str;
+		cin >> str;
 
 		MakeLower(str);
+
+		cout << str << endl;
 
 		Insertion(str);
 	}
