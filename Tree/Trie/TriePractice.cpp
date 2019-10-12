@@ -20,6 +20,14 @@ struct node
 
 node* root = new node(); // creating empty node
 
+
+
+void Insertion(string word)
+{
+	node* travel = 
+}
+
+
 string ToLower(string str)
 {
 	for (int i = 0; i < str.size(); ++i)
@@ -42,7 +50,12 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < numInsert; ++i)
 	{
-		/* code */
+		string word;
+		cin >> word;
+
+		word = ToLower(word);
+
+		Insertion(word);
 	}
 
 	return 0;
