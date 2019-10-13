@@ -14,6 +14,8 @@ struct HashTable
 	string name;
 
 	HashTable *nextAddress;
+
+	HashTable() { }
 };
 
 HashTable* Insert(HashTable* head, HashTable* temp)
@@ -71,14 +73,14 @@ int main(int argc, char const *argv[])
 		hashtable[i] = NULL;
 	}
 
-	cout<<"enter the informations"<<endl;
+	cout << "enter the informations" << endl;
 
 	for (int i = 0; i < 2; ++i)
 	{
 		int number;
 		string name;
 
-		cin>>number>>name;
+		cin >> number >> name;
 
 		int temp_key = HashCode(number,size);
 
