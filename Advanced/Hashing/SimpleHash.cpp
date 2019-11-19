@@ -9,7 +9,7 @@ int HashCode(int number, int size)
 
 struct HashTable
 {
-	int data
+	int data;
 
 	HashTable *nextAddress;
 
@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 
 	cout << "enter the informations" << endl;
 
-	for (int i = 0; i < 2; ++i)
+	for (int i = 0; i < 3; ++i)
 	{
 		int value;
 
