@@ -21,3 +21,22 @@ struct HashTable
 		nextAddress = NULL;
 	}
 };
+
+void Insert(HashTable* head, HashTable* temp)
+{
+	if (NULL == head)
+	{
+		head = temp;
+
+		return;
+	}
+
+	HashTable* travel = head;
+
+	while(travel -> nextAddress != NULL)
+	{
+		travel = travel -> nextAddress;
+	}
+
+	travel -> nextAddress = temp;
+}
