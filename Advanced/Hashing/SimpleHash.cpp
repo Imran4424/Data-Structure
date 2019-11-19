@@ -67,10 +67,11 @@ int main(int argc, char const *argv[])
 	cout<<"Enter the size of the table"<<endl;
 
 	int size;
-	cin>>size;
+	cin >> size;
 
 	HashTable *hashtable[size];
 
+	// initialize
 	for (int i = 0; i < size; ++i)
 	{
 		hashtable[i] = NULL;
