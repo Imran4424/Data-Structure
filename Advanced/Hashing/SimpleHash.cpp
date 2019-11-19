@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 
 	cout << "enter the informations" << endl;
 
-	for (int i = 0; i < 3; ++i)
+	for (int i = 1; i <= 5; ++i)
 	{
 		int value;
 
@@ -92,18 +92,16 @@ int main(int argc, char const *argv[])
 		hashtable[temp_key] = Insert(hashtable[temp_key], temp);
 	}
 
-	cout << "Input the target number what you want to find about" << endl;
 
-	int target;
-	cin >> target;
+	for (int i = 1; i <= 5; ++i)
+	{
+		cout << "Input the target number what you want to find about" << endl;
 
-	Search(hashtable[HashCode(target,size)], target);
-	
-	cout << "Input the target number what you want to find about"<<endl;
-	
-	cin >> target;
+		int target;
+		cin >> target;
 
-	Search(hashtable[HashCode(target,size)], target);
+		Search(hashtable[HashCode(target,size)], target);
+	}
 	
 	return 0;
 }
