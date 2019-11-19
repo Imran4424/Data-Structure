@@ -43,15 +43,13 @@ void Insert(HashTable* head, HashTable* temp)
 
 void Search(HashTable* travel,int target)
 {
-	while(travel != NULL)
+	while(NULL != travel)
 	{
 		if (travel -> data == target)
 		{
-			cout<<"target is found"<<endl;
+			cout << "target is found"<<endl;
 
-			
-			cout<<"number: "<< travel -> number<<endl;
-			cout<<"name: "<< travel -> name<<endl;
+			cout << "Value is: " << travel -> data <<endl;
 
 			return;
 		}
