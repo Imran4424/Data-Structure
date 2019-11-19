@@ -4,7 +4,7 @@ using namespace std;
 
 int HashCode(int number, int size)
 {
-	return number % 20;
+	return number % size;
 }
 
 struct HashTable
