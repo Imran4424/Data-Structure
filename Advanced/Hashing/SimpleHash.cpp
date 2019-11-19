@@ -22,13 +22,13 @@ struct HashTable
 	}
 };
 
-void Insert(HashTable* head, HashTable* temp)
+HashTable* Insert(HashTable* head, HashTable* temp)
 {
 	if (NULL == head)
 	{
 		head = temp;
 
-		return;
+		return head;
 	}
 
 	HashTable* travel = head;
@@ -39,6 +39,8 @@ void Insert(HashTable* head, HashTable* temp)
 	}
 
 	travel -> nextAddress = temp;
+
+	return head;
 }
 
 void Search(HashTable* travel,int target)
@@ -58,4 +60,54 @@ void Search(HashTable* travel,int target)
 	}
 
 	cout<<"target is not found"<<endl;
+}
+
+int main(int argc, char const *argv[])
+{
+	cout<<"Enter the size of the table"<<endl;
+
+	int size;
+	cin>>size;
+
+	HashTable *hashtable[size];
+
+	for (int i = 0; i < size; ++i)
+	{
+		hashtable[i] = NULL;
+	}
+
+	cout << "enter the informations" << endl;
+
+	for (int i = 0; i < 2; ++i)
+	{
+		int number;
+		string name;
+
+		cin >> number >> name;
+
+		int temp_key = HashCode(number,size);
+
+		HashTable *temp = new HashTable();
+
+		temp -> key = temp_key;
+		temp -> number = number;
+		temp -> name = name;
+		temp -> nextAddress = NULL;
+
+	
+		hashtable[temp_key] = Insert(hashtable[temp_key],temp);
+	}
+
+	cout<<"Input the target number what you want to find about"<<endl;
+
+	int target;
+	cin>>target;
+
+	Search(hashtable[HashCode(target,size)], target);
+	
+	cout<<"Input the target number what you want to find about"<<endl;
+	cin>>target;
+	Search(hashtable[HashCode(target,size)], target);
+	
+	return 0;
 }

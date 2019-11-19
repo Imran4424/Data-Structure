@@ -27,7 +27,7 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 		return head;
 	}
 
-	HashTable* travel;
+	HashTable* travel = head;
 
 	while(travel -> nextAddress != NULL)
 	{
@@ -35,6 +35,8 @@ HashTable* Insert(HashTable* head, HashTable* temp)
 	}
 
 	travel -> nextAddress = temp;
+
+	return head;
 }
 
 void Search(HashTable* travel,int target)
