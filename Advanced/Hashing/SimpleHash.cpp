@@ -81,33 +81,28 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < 2; ++i)
 	{
-		int number;
-		string name;
+		int value;
 
-		cin >> number >> name;
+		cin >> value;
 
-		int temp_key = HashCode(number,size);
+		int temp_key = HashCode(value, size);
 
-		HashTable *temp = new HashTable();
+		HashTable *temp = new HashTable(value);
 
-		temp -> key = temp_key;
-		temp -> number = number;
-		temp -> name = name;
-		temp -> nextAddress = NULL;
-
-	
-		hashtable[temp_key] = Insert(hashtable[temp_key],temp);
+		hashtable[temp_key] = Insert(hashtable[temp_key], temp);
 	}
 
-	cout<<"Input the target number what you want to find about"<<endl;
+	cout << "Input the target number what you want to find about" << endl;
 
 	int target;
-	cin>>target;
+	cin >> target;
 
 	Search(hashtable[HashCode(target,size)], target);
 	
-	cout<<"Input the target number what you want to find about"<<endl;
-	cin>>target;
+	cout << "Input the target number what you want to find about"<<endl;
+	
+	cin >> target;
+
 	Search(hashtable[HashCode(target,size)], target);
 	
 	return 0;
