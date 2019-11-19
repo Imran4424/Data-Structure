@@ -40,3 +40,24 @@ void Insert(HashTable* head, HashTable* temp)
 
 	travel -> nextAddress = temp;
 }
+
+void Search(HashTable* travel,int target)
+{
+	while(travel != NULL)
+	{
+		if (travel -> data == target)
+		{
+			cout<<"target is found"<<endl;
+
+			
+			cout<<"number: "<< travel -> number<<endl;
+			cout<<"name: "<< travel -> name<<endl;
+
+			return;
+		}
+
+		travel = travel -> nextAddress;
+	}
+
+	cout<<"target is not found"<<endl;
+}
