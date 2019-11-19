@@ -95,6 +95,8 @@ int main(int argc, char const *argv[])
 
 	for (int i = 1; i <= 5; ++i)
 	{
+		cout << endl;
+
 		cout << "Input the target number what you want to find about" << endl;
 
 		int target;
