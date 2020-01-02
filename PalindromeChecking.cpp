@@ -3,7 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
+}
+
+int main(int argc, char const *argv[])
 {
     int number;
     cin >> number;
