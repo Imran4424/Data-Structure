@@ -47,7 +47,7 @@ bool searchTrie(node* root, char *word) {
 	return travel -> endMark;
 }
 
-
+void displayTrie()
 
 int main(int argc, char const *argv[])
 {
