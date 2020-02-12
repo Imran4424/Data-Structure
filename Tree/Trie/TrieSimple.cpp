@@ -5,13 +5,13 @@ using namespace std;
 struct node
 {
 	bool endmark;
-	node* next[26+1];
+	node* next[26];
 
 	node()
 	{
 		endmark = false;
 
-		for (int i = 0; i < 27; ++i)
+		for (int i = 0; i < 26; ++i)
 		{
 			next[i] = NULL;
 		}
@@ -61,7 +61,7 @@ bool Search(string str)
 // for deleting all nodes to free memory
 void DeleteAll(node* travel)
 {
-	for (int i = 0; i < 27; ++i)
+	for (int i = 0; i < 26; ++i)
 	{
 		if (travel -> next[i])
 		{
@@ -84,6 +84,8 @@ string MakeLower(string str)
 
 	return str;
 }
+
+void displayTrie(node* travel, string word, )
 
 int main(int argc, char const *argv[])
 {
