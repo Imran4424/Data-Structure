@@ -96,8 +96,9 @@ void displayTrie(node* travel, string word) {
 
 	for(int i = 0; i < 26; i++) {
 		if(travel -> next[i]) {
-			word += i + 'a';
+			word = word + (i + 'a');
 			displayTrie(travel -> next[i], word);
+			word = word - (i + 'a'); // backtracking
 		}
 	}
 }
@@ -108,11 +109,11 @@ int main(int argc, char const *argv[])
 	cout<<"how many words you want to insert"<<endl;
 
 	int num;
-	cin>>num;
+	cin >> num;
 
 	cout<<"enter the words"<<endl;
 
-	for (int i = 0; i < num; ++i)
+	for (int i = 0; i < num; i++)
 	{
 		string str;
 		cin >> str;
