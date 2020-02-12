@@ -33,6 +33,18 @@ void trieInsertion(node* root,char *word) {
 
 bool searchTrie(node* root, char *word) {
 	node* travel = root;
+
+	for(int i = 0; word[i]; i++) {
+		int letter = word[i] - 'a';
+
+		if(NULL == travel -> next[letter]) {
+			return false;
+		}
+
+		travel = travel -> next[letter];
+	}
+
+	return travel -> endMark;
 }
 
 int main(int argc, char const *argv[])
