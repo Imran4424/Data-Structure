@@ -96,9 +96,7 @@ void displayTrie(node* travel, string word) {
 
 	for(int i = 0; i < 26; i++) {
 		if(travel -> next[i]) {
-			word = word + (i + 'a');
-			displayTrie(travel -> next[i], word);
-			word = word - (i + 'a'); // backtracking
+			displayTrie(travel -> next[i], word + (i + 'a'));
 		}
 	}
 }
