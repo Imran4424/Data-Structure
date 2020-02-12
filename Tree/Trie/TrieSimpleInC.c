@@ -6,5 +6,10 @@
 typedef struct node {
     bool endMark;
     struct node *next[26];
-    int length;
 } node;
+
+int main(int argc, char const *argv[])
+{
+	
+	return 0;
+}
