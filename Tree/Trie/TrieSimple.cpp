@@ -122,7 +122,8 @@ int main(int argc, char const *argv[])
 		Insertion(str);
 	}
 
-	displayTrie(root);
+	cout << "--------------------------------" << endl;
+	displayTrie(root, "");
 
 	cout<<"how many words you want to Search"<<endl;
 
