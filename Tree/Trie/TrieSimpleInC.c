@@ -55,7 +55,15 @@ void displayTrie(node* travel, char *word, int pos) {
 
 	if(travel -> endMark) {
 		word[pos] = '\0';
-		printf("%s\n", );
+		printf("%s\n", word);
+	}
+
+	for (int i = 0; i < 26; ++i)
+	{
+		if(travel -> next[i]) {
+			word[pos] = i + 'a';
+			displayTrie(travel -> next[i])
+		}
 	}
 }
 
