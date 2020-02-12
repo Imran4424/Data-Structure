@@ -89,6 +89,16 @@ void displayTrie(node* travel, string word) {
 	if(NULL == travel) {
 		return;
 	}
+
+	if(travel -> endmark) {
+		cout << word << endl;
+	}
+
+	for(int i = 0; i < 26; i++) {
+		if(travel -> next[i]) {
+			word += i + 'a';
+		}
+	}
 }
 
 int main(int argc, char const *argv[])
