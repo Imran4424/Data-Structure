@@ -85,7 +85,11 @@ string MakeLower(string str)
 	return str;
 }
 
-void displayTrie(node* travel, string word, )
+void displayTrie(node* travel, string word) {
+	if(NULL == travel) {
+		return;
+	}
+}
 
 int main(int argc, char const *argv[])
 {
