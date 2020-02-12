@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 /*
 	Trie Implementation in C
@@ -47,12 +48,15 @@ bool searchTrie(node* root, char *word) {
 	return travel -> endMark;
 }
 
-void displayTrie(node* root, char *word, int pos) {
-	if(NULL == root) {
+void displayTrie(node* travel, char *word, int pos) {
+	if(NULL == travel) {
 		return;
 	}
 
-	
+	if(travel -> endMark) {
+		word[pos] = '\0';
+		printf("%s\n", );
+	}
 }
 
 int main(int argc, char const *argv[])
