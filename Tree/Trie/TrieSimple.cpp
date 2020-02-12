@@ -97,13 +97,14 @@ void displayTrie(node* travel, string word) {
 	for(int i = 0; i < 26; i++) {
 		if(travel -> next[i]) {
 			word += i + 'a';
-			displayTrie()
+			displayTrie(travel -> next[i], word);
 		}
 	}
 }
 
 int main(int argc, char const *argv[])
 {
+
 	cout<<"how many words you want to insert"<<endl;
 
 	int num;
@@ -120,6 +121,8 @@ int main(int argc, char const *argv[])
 
 		Insertion(str);
 	}
+
+	displayTrie(root);
 
 	cout<<"how many words you want to Search"<<endl;
 
