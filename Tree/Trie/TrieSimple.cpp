@@ -95,10 +95,13 @@ void displayTrie(node* travel, string word) {
 	}
 
 	for(int i = 0; i < 26; i++) {
+		// storing the data 
+		string medium = word;
+
 		if(travel -> next[i]) {
-			string medium = word;
+			
 			medium += (i + 'a');
-			displayTrie(travel -> next[i], word);
+			displayTrie(travel -> next[i], medium);
 		}
 	}
 }
