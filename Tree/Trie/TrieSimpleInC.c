@@ -47,6 +47,8 @@ bool searchTrie(node* root, char *word) {
 	return travel -> endMark;
 }
 
+
+
 int main(int argc, char const *argv[])
 {
 	node* root = malloc(sizeof(node));
