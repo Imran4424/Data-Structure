@@ -31,7 +31,9 @@ void trieInsertion(node* root,char *word) {
     travel -> endMark = true;
 }
 
-bool searchTrie(char *)
+bool searchTrie(node* root, char *word) {
+	node* travel = root;
+}
 
 int main(int argc, char const *argv[])
 {
