@@ -62,7 +62,7 @@ void displayTrie(node* travel, char *word, int pos) {
 	{
 		if(travel -> next[i]) {
 			word[pos] = i + 'a';
-			displayTrie(travel -> next[i])
+			displayTrie(travel -> next[i], word, pos + 1);
 		}
 	}
 }
