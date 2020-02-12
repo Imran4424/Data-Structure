@@ -97,6 +97,7 @@ void displayTrie(node* travel, string word) {
 	for(int i = 0; i < 26; i++) {
 		if(travel -> next[i]) {
 			word += i + 'a';
+			displayTrie()
 		}
 	}
 }
