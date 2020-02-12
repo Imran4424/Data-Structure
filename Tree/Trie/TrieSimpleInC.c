@@ -15,7 +15,7 @@ void initTrieNode(node* current) {
 	}
 }
 
-void trieInsertion(char *word) {
+void trieInsertion(node* root,char *word) {
     node* travel = root;
 
     for(int i = 0; word[i]; i++) {
@@ -30,6 +30,8 @@ void trieInsertion(char *word) {
     /// marking the letters end point
     travel -> endMark = true;
 }
+
+bool searchTrie(char *)
 
 int main(int argc, char const *argv[])
 {
