@@ -2,6 +2,10 @@
 #include <string>
 using namespace std;
 
+/*
+	Trie Implementation in C++
+*/
+
 struct node
 {
 	bool endmark;
