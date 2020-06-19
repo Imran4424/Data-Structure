@@ -82,7 +82,7 @@ int main(int argc, char const *argv[])
 	int size;
 	cin >> size;
 
-	cout<<"enter the array elements"<<endl;
+	cout << "enter the array elements" << endl;
 
 	for (int i = 1; i <= size; ++i)
 	{
