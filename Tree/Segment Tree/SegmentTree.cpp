@@ -4,7 +4,7 @@ using namespace std;
 const int maxx = 1000001;
 
 int ar[maxx] = {0};
-int tree[3*maxx] = {0};
+int tree[3 * maxx] = {0};
 
 void bulidTree(int node, int firstIndex, int lastIndex)
 {
