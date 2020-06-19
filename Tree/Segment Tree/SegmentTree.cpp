@@ -38,6 +38,9 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 		return tree[node];
 	}
 
+	// partially inside the query range
+	// so we need to break down into little pieces
+
 	int left = node*2;
 	int right = node*2 + 1;
 
