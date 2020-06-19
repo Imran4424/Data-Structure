@@ -33,6 +33,7 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 		return 0;
 	}
 
+	// totally inside the query range
 	if (startIndex >= startRange && endIndex <= endRange)
 	{
 		return tree[node];
