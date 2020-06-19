@@ -6,10 +6,10 @@ const int maxx = 1000001;
 int ar[maxx] = {0};
 int tree[3 * maxx] = {0};
 
-void bulidTree(int node, int firstIndex, int lastIndex)
+void bulidTree(int node, int startIndex, int endIndex)
 {
-	if (firstIndex == lastIndex) {
-		tree[node] = ar[firstIndex];
+	if (startIndex == endIndex) {
+		tree[node] = ar[startIndex];
 
 		return;
 	}
@@ -19,20 +19,20 @@ void bulidTree(int node, int firstIndex, int lastIndex)
 
 	int mid = (left + right) / 2;
 
-	bulidTree(left, firstIndex, mid);
-	bulidTree(right, mid + 1, lastIndex);
+	bulidTree(left, startIndex, mid);
+	bulidTree(right, mid + 1, endIndex);
 
 	tree[node] = tree[left] + tree[right];
 }
 
-int Query(int node, int firstIndex, int lastIndex, int start_index, int lastIndex_index)
+int Query(int node, int startIndex, int endIndex, int firstIndex, int lastIndex)
 {
-	if (firstIndex > lastIndex_index || lastIndex < start_index)
+	if (startIndex > lastIndex || endIndex < firstIndex)
 	{
 		return 0;
 	}
 
-	if (firstIndex >= start_index && lastIndex <= lastIndex_index)
+	if (startIndex >= firstIndex && endIndex <= lastIndex)
 	{
 		return tree[node];
 	}
@@ -40,22 +40,22 @@ int Query(int node, int firstIndex, int lastIndex, int start_index, int lastInde
 	int left = node*2;
 	int right = node*2 + 1;
 
-	int mid = (firstIndex+lastIndex) / 2;
+	int mid = (startIndex+endIndex) / 2;
 
-	int left_sum = Query(left, firstIndex, mid, start_index, lastIndex_index);
-	int right_sum = Query(right, mid+1, lastIndex, start_index, lastIndex_index);
+	int left_sum = Query(left, startIndex, mid, firstIndex, lastIndex);
+	int right_sum = Query(right, mid+1, endIndex, firstIndex, lastIndex);
 
 	return left_sum + right_sum;
 }
 
-void Update(int node, int firstIndex, int lastIndex, int index, int new_value)
+void Update(int node, int startIndex, int endIndex, int index, int new_value)
 {
-	if (index > lastIndex || index < firstIndex)
+	if (index > endIndex || index < startIndex)
 	{
 		return;
 	}
 
-	if (firstIndex == index && firstIndex == lastIndex)
+	if (startIndex == index && startIndex == endIndex)
 	{
 		tree[node] = new_value;
 
@@ -67,8 +67,8 @@ void Update(int node, int firstIndex, int lastIndex, int index, int new_value)
 
 	int mid = (left+right) / 2;
 
-	Update(left, firstIndex, mid, index, new_value);
-	Update(right, mid+1, lastIndex, index, new_value);
+	Update(left, startIndex, mid, index, new_value);
+	Update(right, mid+1, endIndex, index, new_value);
 
 	tree[node] = tree[left] + tree[right];
 }
