@@ -47,10 +47,10 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 	int mid = (startIndex + endIndex) / 2;
 
 	// child sums
-	int left_sum = query(left, startIndex, mid, startRange, endRange);
-	int right_sum = query(right, mid+1, endIndex, startRange, endRange);
+	int leftSum = query(left, startIndex, mid, startRange, endRange);
+	int rightSum = query(right, mid+1, endIndex, startRange, endRange);
 
-	return left_sum + right_sum;
+	return leftSum + rightSum;
 }
 
 void Update(int node, int startIndex, int endIndex, int index, int new_value)
