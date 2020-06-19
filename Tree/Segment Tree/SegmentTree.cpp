@@ -8,6 +8,7 @@ int tree[3 * maxx] = {0};
 
 void bulidTree(int node, int startIndex, int endIndex)
 {
+	// when there is only one node remaining
 	if (startIndex == endIndex) {
 		tree[node] = ar[startIndex];
 
