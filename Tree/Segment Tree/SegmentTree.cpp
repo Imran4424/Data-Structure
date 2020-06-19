@@ -26,14 +26,14 @@ void bulidTree(int node, int startIndex, int endIndex)
 	tree[node] = tree[left] + tree[right];
 }
 
-int query(int node, int startIndex, int endIndex, int firstIndex, int lastIndex)
+int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 {
-	if (startIndex > lastIndex || endIndex < firstIndex)
+	if (startIndex > endRange || endIndex < startRange)
 	{
 		return 0;
 	}
 
-	if (startIndex >= firstIndex && endIndex <= lastIndex)
+	if (startIndex >= startRange && endIndex <= endRange)
 	{
 		return tree[node];
 	}
@@ -43,8 +43,8 @@ int query(int node, int startIndex, int endIndex, int firstIndex, int lastIndex)
 
 	int mid = (startIndex+endIndex) / 2;
 
-	int left_sum = query(left, startIndex, mid, firstIndex, lastIndex);
-	int right_sum = query(right, mid+1, endIndex, firstIndex, lastIndex);
+	int left_sum = query(left, startIndex, mid, startRange, endRange);
+	int right_sum = query(right, mid+1, endIndex, startRange, endRange);
 
 	return left_sum + right_sum;
 }
