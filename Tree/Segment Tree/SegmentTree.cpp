@@ -6,7 +6,7 @@ const int maxx = 1000001;
 int ar[maxx] = {0};
 int tree[3*maxx] = {0};
 
-void BuildTree(int node, int begin, int end)
+void bulidTree(int node, int begin, int end)
 {
 	if (begin == end)
 	{
@@ -20,8 +20,8 @@ void BuildTree(int node, int begin, int end)
 
 	int mid = (left+right) / 2;
 
-	BuildTree(left,begin,mid);
-	BuildTree(right,mid+1,end);
+	bulidTree(left,begin,mid);
+	bulidTree(right,mid+1,end);
 
 	tree[node] = tree[left] + tree[right];
 }
@@ -89,7 +89,7 @@ int main(int argc, char const *argv[])
 		cin >> ar[i];
 	}
 
-	BuildTree(1,1,size);
+	bulidTree(1,1,size);
 
 	return 0;
 }
