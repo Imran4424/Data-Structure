@@ -80,7 +80,7 @@ int main(int argc, char const *argv[])
 	cout << "enter the array size" << endl;
 
 	int size;
-	cin>>size;
+	cin >> size;
 
 	cout<<"enter the array elements"<<endl;
 
