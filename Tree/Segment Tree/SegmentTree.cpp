@@ -8,17 +8,16 @@ int tree[3*maxx] = {0};
 
 void bulidTree(int node, int firstIndex, int lastIndex)
 {
-	if (firstIndex == lastIndex)
-	{
+	if (firstIndex == lastIndex) {
 		tree[node] = ar[firstIndex];
 
 		return;
 	}
 
-	int left = node*2;
-	int right = node*2 + 1;
+	int left = node * 2;
+	int right = node * 2 + 1;
 
-	int mid = (left+right) / 2;
+	int mid = (left + right) / 2;
 
 	bulidTree(left,firstIndex,mid);
 	bulidTree(right,mid+1,lastIndex);
