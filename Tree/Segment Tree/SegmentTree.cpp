@@ -48,7 +48,7 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 
 	// child sums
 	int leftSum = query(left, startIndex, mid, startRange, endRange);
-	int rightSum = query(right, mid+1, endIndex, startRange, endRange);
+	int rightSum = query(right, mid + 1, endIndex, startRange, endRange);
 
 	return leftSum + rightSum;
 }
