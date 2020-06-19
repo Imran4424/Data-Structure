@@ -77,7 +77,7 @@ void Update(int node, int begin, int end, int index, int new_value)
 
 int main(int argc, char const *argv[])
 {
-	cout<<"enter the array size"<<endl;
+	cout << "enter the array size" << endl;
 
 	int size;
 	cin>>size;
