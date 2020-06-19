@@ -89,7 +89,7 @@ int main(int argc, char const *argv[])
 		cin >> ar[i];
 	}
 
-	bulidTree(1,1,size);
+	bulidTree( 1, 1, size);
 
 	return 0;
 }
