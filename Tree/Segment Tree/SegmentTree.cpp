@@ -6,11 +6,11 @@ const int maxx = 1000001;
 int ar[maxx] = {0};
 int tree[3*maxx] = {0};
 
-void bulidTree(int node, int begin, int end)
+void bulidTree(int node, int startIndex, int endIndex)
 {
-	if (begin == end)
+	if (startIndex == endIndex)
 	{
-		tree[node] = ar[begin];
+		tree[node] = ar[startIndex];
 
 		return;
 	}
@@ -20,20 +20,20 @@ void bulidTree(int node, int begin, int end)
 
 	int mid = (left+right) / 2;
 
-	bulidTree(left,begin,mid);
-	bulidTree(right,mid+1,end);
+	bulidTree(left,startIndex,mid);
+	bulidTree(right,mid+1,endIndex);
 
 	tree[node] = tree[left] + tree[right];
 }
 
-int Query(int node, int begin, int end, int start_index, int end_index)
+int Query(int node, int startIndex, int endIndex, int start_index, int endIndex_index)
 {
-	if (begin > end_index || end < start_index)
+	if (startIndex > endIndex_index || endIndex < start_index)
 	{
 		return 0;
 	}
 
-	if (begin >= start_index && end <= end_index)
+	if (startIndex >= start_index && endIndex <= endIndex_index)
 	{
 		return tree[node];
 	}
@@ -41,22 +41,22 @@ int Query(int node, int begin, int end, int start_index, int end_index)
 	int left = node*2;
 	int right = node*2 + 1;
 
-	int mid = (begin+end) / 2;
+	int mid = (startIndex+endIndex) / 2;
 
-	int left_sum = Query(left, begin, mid, start_index, end_index);
-	int right_sum = Query(right, mid+1, end, start_index, end_index);
+	int left_sum = Query(left, startIndex, mid, start_index, endIndex_index);
+	int right_sum = Query(right, mid+1, endIndex, start_index, endIndex_index);
 
 	return left_sum + right_sum;
 }
 
-void Update(int node, int begin, int end, int index, int new_value)
+void Update(int node, int startIndex, int endIndex, int index, int new_value)
 {
-	if (index > end || index < begin)
+	if (index > endIndex || index < startIndex)
 	{
 		return;
 	}
 
-	if (begin == index && begin == end)
+	if (startIndex == index && startIndex == endIndex)
 	{
 		tree[node] = new_value;
 
@@ -68,8 +68,8 @@ void Update(int node, int begin, int end, int index, int new_value)
 
 	int mid = (left+right) / 2;
 
-	Update(left, begin, mid, index, new_value);
-	Update(right, mid+1, end, index, new_value);
+	Update(left, startIndex, mid, index, new_value);
+	Update(right, mid+1, endIndex, index, new_value);
 
 	tree[node] = tree[left] + tree[right];
 }
@@ -77,12 +77,12 @@ void Update(int node, int begin, int end, int index, int new_value)
 
 int main(int argc, char const *argv[])
 {
-	cout << "enter the array size" << endl;
+	cout << "enter the array size" << endIndexl;
 
 	int size;
 	cin >> size;
 
-	cout << "enter the array elements" << endl;
+	cout << "enter the array elements" << endIndexl;
 
 	// starting from 1 cause using 1-index tree
 	for (int i = 1; i <= size; ++i) {
