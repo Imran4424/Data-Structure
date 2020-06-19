@@ -40,12 +40,13 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 
 	// partially inside the query range
 	// so we need to break down into little pieces
-
+	// break into two childs
 	int left = node * 2;
 	int right = node * 2 + 1;
 
 	int mid = (startIndex + endIndex) / 2;
 
+	// child sums
 	int left_sum = query(left, startIndex, mid, startRange, endRange);
 	int right_sum = query(right, mid+1, endIndex, startRange, endRange);
 
