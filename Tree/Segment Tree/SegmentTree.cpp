@@ -19,8 +19,8 @@ void bulidTree(int node, int firstIndex, int lastIndex)
 
 	int mid = (left + right) / 2;
 
-	bulidTree(left,firstIndex,mid);
-	bulidTree(right,mid+1,lastIndex);
+	bulidTree(left, firstIndex, mid);
+	bulidTree(right, mid + 1, lastIndex);
 
 	tree[node] = tree[left] + tree[right];
 }
