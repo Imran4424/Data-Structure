@@ -84,9 +84,8 @@ int main(int argc, char const *argv[])
 
 	cout<<"enter the array elements"<<endl;
 
-	for (int i = 1; i <= size; ++i)
-	{
-		cin>>ar[i];
+	for (int i = 1; i <= size; ++i) {
+		cin >> ar[i];
 	}
 
 	BuildTree(1,1,size);
