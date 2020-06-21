@@ -53,8 +53,10 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 	return leftSum + rightSum;
 }
 
+// one node update function
 void Update(int node, int startIndex, int endIndex, int index, int new_value)
 {
+	// outside the range
 	if (index > endIndex || index < startIndex)
 	{
 		return;
