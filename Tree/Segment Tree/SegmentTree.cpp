@@ -54,7 +54,7 @@ int query(int node, int startIndex, int endIndex, int startRange, int endRange)
 }
 
 // one node update function
-void Update(int node, int startIndex, int endIndex, int index, int new_value)
+void Update(int node, int startIndex, int endIndex, int index, int newValue)
 {
 	// outside the range
 	if (index > endIndex || index < startIndex)
@@ -65,7 +65,7 @@ void Update(int node, int startIndex, int endIndex, int index, int new_value)
 	// exact node which is need to be update
 	if (startIndex == index && startIndex == endIndex)
 	{
-		tree[node] = new_value;
+		tree[node] = newValue;
 
 		return;
 	}
@@ -77,8 +77,8 @@ void Update(int node, int startIndex, int endIndex, int index, int new_value)
 
 	int mid = (left + right) / 2;
 
-	Update(left, startIndex, mid, index, new_value);
-	Update(right, mid+1, endIndex, index, new_value);
+	Update(left, startIndex, mid, index, newValue);
+	Update(right, mid+1, endIndex, index, newValue);
 
 	tree[node] = tree[left] + tree[right];
 }
