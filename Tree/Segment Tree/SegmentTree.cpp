@@ -62,6 +62,7 @@ void Update(int node, int startIndex, int endIndex, int index, int new_value)
 		return;
 	}
 
+	// exact node which is need to be update
 	if (startIndex == index && startIndex == endIndex)
 	{
 		tree[node] = new_value;
@@ -69,10 +70,12 @@ void Update(int node, int startIndex, int endIndex, int index, int new_value)
 		return;
 	}
 
-	int left = node*2;
-	int right = node*2 + 1;
+	// otherwise
+	// breaking down into two parts
+	int left = node * 2;
+	int right = node * 2 + 1;
 
-	int mid = (left+right) / 2;
+	int mid = (left + right) / 2;
 
 	Update(left, startIndex, mid, index, new_value);
 	Update(right, mid+1, endIndex, index, new_value);
