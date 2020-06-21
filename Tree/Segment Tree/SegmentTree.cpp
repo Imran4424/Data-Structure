@@ -63,7 +63,7 @@ void Update(int node, int startIndex, int endIndex, int index, int newValue)
 	}
 
 	// exact node which is need to be update
-	if (startIndex == index && startIndex == endIndex)
+	if (startIndex == index && index == endIndex)
 	{
 		tree[node] = newValue;
 
