@@ -70,6 +70,37 @@ class VectorClass
 		current = 0;
 	}
 
+	// return the index element
+	T at(int index) {
+		if(index < current) {
+			return arr[index]
+		}
+		
+		// this will produce out of bound error
+		return arr[-1];
+	}
+
+	// this returns the first element
+	T front() {
+		if(current > 0) {
+			return arr[0];
+		}
+
+		// this will produce out of bound error
+		return arr[-1];
+	}
+
+	// this returns the last element
+	T back() {
+		if (current > 0)
+		{
+			return arr[current - 1];
+		}
+
+		// this will produce out of bound error
+		return arr[-1];	
+	}
+
 	// display all elements
 	void display() {
 		for (int i = 0; i < current; i++) {
