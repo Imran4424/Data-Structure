@@ -65,9 +65,14 @@ class VectorClass
 		return capacity;
 	}
 
+	// removes all element
+	void clear() {
+		current = 0;
+	}
+
 	// display all elements
 	void display() {
-		for (int i = 0; i < elements; i++) {
+		for (int i = 0; i < current; i++) {
 			cout << arr[i] << " ";
 		}
 
@@ -99,6 +104,6 @@ int main(int argc, char const *argv[])
 
 	cout << "Vector elements" << endl;
 	myVector.display();
-	
+
 	return 0;
 }
