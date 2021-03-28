@@ -66,37 +66,30 @@ void Insert(int value)
 
 void BubbleDown(int currentIndex)
 {
-    int leftChild = currentIndex * 2 + 1;
-    int rightChild = currentIndex * 2 + 2;
-
-    if(leftChild > heapIndex)
-    {
-        return;
-    }
-
-    if(rightChild > heapIndex && leftChild <= heapIndex)
-    {
-        if(heap[currentIndex] > heap[leftChild])
-        {
-            SwapNode(currentIndex, leftChild);
+    if (currentIndex > heapIndex) {
+                return;
         }
 
-        return;
-    }
+        int leftChild = currentIndex * 2 + 1;
+        int rightChild = currentIndex * 2 + 2;
 
-    if(heap[currentIndex] > heap[leftChild])
-    {
-        SwapNode(currentIndex, leftChild);
+        if (leftChild > heapIndex) {
+                return;
+        }
 
-        BubbleDown(leftChild);
-    }
+        if (heap[currentIndex] > heap[leftChild]) {
+                swapNode(currentIndex, leftChild);
+                bubbleDown(leftChild);
+        }
 
-    if(heap[currentIndex] > heap[rightChild])
-    {
-        SwapNode(currentIndex, rightChild);
+        if (rightChild > heapIndex) {
+                return;
+        }
 
-        BubbleDown(rightChild);
-    }
+        if (heap[currentIndex] > heap[rightChild]) {
+                swapNode(currentIndex, rightChild);
+                bubbleDown(rightChild);
+        }
 }
 
 int DeleteMinElement()

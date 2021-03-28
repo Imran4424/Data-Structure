@@ -51,41 +51,30 @@ void BubbleUp(int currentIndex)
 
 void BubbleDown(int currentIndex)
 {
+	if (currentIndex > heapIndex) {
+                return;
+        }
 
+        int leftChild = currentIndex * 2;
+        int rightChild = currentIndex * 2 + 1;
 
-	int leftChild = currentIndex * 2;
-	int rightChild = currentIndex * 2 + 1;
+        if (leftChild > heapIndex) {
+                return;
+        }
 
+        if (heap[currentIndex] < heap[leftChild]) {
+                swapNode(currentIndex, leftChild);
+                bubbleDown(leftChild);
+        }
 
-	if (leftChild > heapIndex)
-	{
-		return;
-	}
+        if (rightChild > heapIndex) {
+                return;
+        }
 
-	if (rightChild > heapIndex && leftChild <= heapIndex)
-	{
-		if (heap[currentIndex] < heap[leftChild])
-		{
-			SwapNode(currentIndex, leftChild);
-		}
-
-		return;
-	}
-
-	if (heap[leftChild] > heap[currentIndex])
-	{
-		SwapNode(currentIndex, leftChild);
-
-		BubbleDown(leftChild);
-	}
-
-	if(heap[rightChild] > heap[currentIndex])
-	{
-
-		SwapNode(currentIndex, rightChild);
-
-		BubbleDown(rightChild);
-	}
+        if (heap[currentIndex] < heap[rightChild]) {
+                swapNode(currentIndex, rightChild);
+                bubbleDown(rightChild);
+        }
 }
 
 void Insert(int data)
