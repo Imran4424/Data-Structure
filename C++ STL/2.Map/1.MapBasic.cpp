@@ -11,6 +11,8 @@ void display(map<string, int> objMap) {
 	for(it = objMap.begin(); it != objMap.end(); it++) {
 		cout << it->first << " " << it->second << endl;
 	}
+
+	cout << endl;
 }
 
 int main(int argc, char const *argv[])
@@ -32,7 +34,7 @@ int main(int argc, char const *argv[])
 	cout << "For key Linkon, value is - " << baseMap["Linkon"] << endl;
 
 	// Modify Elements
-	baseMap.at("Imran") = 393
+	baseMap.at("Imran") = 393;
 	baseMap["Nayeem"] = 115;
 	baseMap["Linkon"]++;
 
