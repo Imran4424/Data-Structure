@@ -3,7 +3,6 @@
 #include <vector>
 #include <algorithm>
 #include <map>
-#include <pair>
 using namespace std;
 
 void display(map<string, int> objMap) {
@@ -20,12 +19,29 @@ int main(int argc, char const *argv[])
 	map <string, int> baseMap;
 
 	//Insertion
+	baseMap.insert(pair<string, int> ("Linkon", 28));
 	baseMap.insert(make_pair("Imran", 13));
 	baseMap.insert(make_pair("Munir", 14));
-	// or
+	// or easier one
 	baseMap["Nayeem"] = 17;
+
+	display(baseMap);
+
+	// Access
+	cout << "For key Imran, value is - " << baseMap.at("Imran") << endl;
+	cout << "For key Linkon, value is - " << baseMap["Linkon"] << endl;
+
+	// Modify Elements
+	baseMap.at("Imran") = 393
+	baseMap["Nayeem"] = 115;
+	baseMap["Linkon"]++;
 
 	display(baseMap);
 
 	return 0;
 }
+
+/*
+	Map Basic
+
+*/
