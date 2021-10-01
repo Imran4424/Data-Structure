@@ -18,6 +18,16 @@ int main(int argc, char const *argv[])
 {
 	// declaring 2D dynamic vector
 	vector<vector<int>> arr;
+
+	vector<int> rowOne(5, 25);
+	vector<int> rowTwo(3, 15);
+	vector<int> rowThree(7, 13);
+
+	arr.push_back(rowOne);
+	arr.push_back(rowTwo);
+	arr.push_back(rowThree);
+
+	display(arr);
 	
 	return 0;
 }
