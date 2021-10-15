@@ -46,4 +46,15 @@ int main(int argc, char const *argv[])
 /*
 	Map Basic
 
+	Underlying data structure - Self balancing BST  Red black tree
+	Search time - log(n)
+	Insertion - log(n) + Rebalance
+	Deletetion - log(n) + Rebalance
+
+
+	Use when,
+		You need ordered data.
+		You would have to print/access the data (in sorted order).
+		You need predecessor/successor of elements.
+		https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/
 */

@@ -45,6 +45,20 @@ int main(int argc, char const *argv[])
 
 /*
 	Unordered Map Basic
-	
+
 	unsorted map
+
+	Underlying data structure - Hash Table
+	Search time - Average - O(1)
+		      Worst   - O(n)
+
+	Insertion - Average - O(1)
+		    Worst   - O(n)
+
+	Deletetion - Average - O(1)
+		     Worst   - O(n)
+
+	Use when,
+		You need to keep count of some data (Example – strings) and no ordering is required.
+		You need single element access i.e. no traversal.
 */
