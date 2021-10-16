@@ -15,21 +15,21 @@ void display(stack<int> current) {
 
 int main(int argc, char const *argv[])
 {
-	stack<int> fifoList;
+	stack<int> lifoList;
 
-	fifoList.emplace(128);
-	fifoList.emplace(64);
-	fifoList.emplace(32);
-	fifoList.emplace(16);
-	fifoList.emplace(8);
-	fifoList.emplace(4);
-	fifoList.emplace(2);
-	fifoList.emplace(1);
-	fifoList.emplace(101);
-	fifoList.emplace(111);
-	fifoList.emplace(1011);
+	lifoList.emplace(128);
+	lifoList.emplace(64);
+	lifoList.emplace(32);
+	lifoList.emplace(16);
+	lifoList.emplace(8);
+	lifoList.emplace(4);
+	lifoList.emplace(2);
+	lifoList.emplace(1);
+	lifoList.emplace(101);
+	lifoList.emplace(111);
+	lifoList.emplace(1011);
 	
-	display(fifoList);
+	display(lifoList);
 	
 	return 0;
 }
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 	Stacks are special type of data structures
 
 	work type
-	FIFO - First In First Out
+	LIFO - Last In First Out
 
 	emplace wrok just like push
 */
