@@ -28,6 +28,7 @@ void displayMinHeap(priority_queue<int, vector<int>, greater<int> > minHeapList)
 
 int main(int argc, char const *argv[])
 {
+	// this priority queue sorts in decending order 
 	priority_queue<int> maxHeap;
 
 	maxHeap.push(5);
@@ -40,6 +41,7 @@ int main(int argc, char const *argv[])
 
 	displayMaxHeap(maxHeap);
 
+	// this priority queue sorts in ascending order 
 	priority_queue<int, vector<int>, greater<int> > minHeap;
 
 	minHeap.push(5);
