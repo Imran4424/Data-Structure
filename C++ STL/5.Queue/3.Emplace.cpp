@@ -22,17 +22,17 @@ int main(int argc, char const *argv[])
 {
 	queue<int> fifoList;
 
-	fifoList.push(128);
-	fifoList.push(64);
-	fifoList.push(32);
-	fifoList.push(16);
-	fifoList.push(8);
-	fifoList.push(4);
-	fifoList.push(2);
-	fifoList.push(1);
-	fifoList.push(101);
-	fifoList.push(111);
-	fifoList.push(1011);
+	fifoList.emplace(128);
+	fifoList.emplace(64);
+	fifoList.emplace(32);
+	fifoList.emplace(16);
+	fifoList.emplace(8);
+	fifoList.emplace(4);
+	fifoList.emplace(2);
+	fifoList.emplace(1);
+	fifoList.emplace(101);
+	fifoList.emplace(111);
+	fifoList.emplace(1011);
 	
 	display(fifoList);
 	
