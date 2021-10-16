@@ -3,23 +3,23 @@
 #include <queue>
 using namespace std;
 
-void displayMaxHeap(priority_queue<int> maxHeapList) {
-	cout << "Max heap size - " << maxHeapList.size() << endl; 
+void displayMaxHeap(priority_queue<int> maxHeap) {
+	cout << "Max heap size - " << maxHeap.size() << endl; 
 
-	while(!maxHeapList.empty()) {
-		cout << maxHeapList.top() << " ";
-		maxHeapList.pop();
+	while(!maxHeap.empty()) {
+		cout << maxHeap.top() << " ";
+		maxHeap.pop();
 	}
 
 	cout << endl << endl;
 }
 
-void displayMinHeap(priority_queue<int, vector<int>, greater<int> > minHeapList) {
-	cout << "Min heap size - " << minHeapList.size() << endl; 
+void displayMinHeap(priority_queue<int, vector<int>, greater<int> > minHeap) {
+	cout << "Min heap size - " << minHeap.size() << endl; 
 
-	while(!minHeapList.empty()) {
-		cout << minHeapList.top() << " ";
-		minHeapList.pop();
+	while(!minHeap.empty()) {
+		cout << minHeap.top() << " ";
+		minHeap.pop();
 	}
 
 	cout << endl << endl;
