@@ -42,14 +42,11 @@ int main(int argc, char const *argv[])
 	// inserting values with emplace method
 	// it takes
 	// iterator position
-	// occurence count of values, this can be ignored if count is 1
 	// value
 	doublyLinkedList.emplace(doublyLinkedList.begin(), 5);
 	doublyLinkedList.emplace(doublyLinkedList.begin(), 7);
-	doublyLinkedList.emplace(doublyLinkedList.begin(), 3, 55);
 	doublyLinkedList.emplace(doublyLinkedList.end(), 9);
 	doublyLinkedList.emplace(doublyLinkedList.end(), 12);
-	doublyLinkedList.emplace(doublyLinkedList.end(), 3, 55);
 	cout << "after inserting in front and back using emplace method" << endl;
 	display(doublyLinkedList);
 
