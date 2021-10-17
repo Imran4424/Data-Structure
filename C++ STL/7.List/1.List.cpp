@@ -13,6 +13,19 @@ void display(list<int> current) {
 	cout << endl << endl;
 }
 
+void listInsert(list<int>& current) {
+	for (int i = 1; i <= 5; i++) {
+		current.push_front(i * i);
+		current.push_back(i * i * i);
+	}
+}
+
+// predicate
+// this function predicate returns true if the value is even
+bool even(int& value) {
+	return value % 2 == 0;
+}
+
 int main(int argc, char const *argv[])
 {
 	list <int> doublyLinkedList;
@@ -77,9 +90,42 @@ int main(int argc, char const *argv[])
 	display(doublyLinkedList);
 
 	// deletion of list
+
+	// remove
 	// remove method removes all copies of given data
 	doublyLinkedList.remove(55);
 	cout << "after removing all 55 from list" << endl;
+	display(doublyLinkedList);
+
+	// remove_if
+	// remove_if use a function predicate to remove elements
+	// below we are using a even predicate to remove all even elements
+	doublyLinkedList.remove_if(even);
+	cout << "after removing all even elements" << endl;
+	display(doublyLinkedList);
+
+	// inserting data's for further operations
+	listInsert(doublyLinkedList);
+	cout << "after insertion" << endl;
+	display(doublyLinkedList);
+
+	// erase
+	// erase can take iterator position for deletion
+	doublyLinkedList.erase(doublyLinkedList.begin());
+	doublyLinkedList.erase(doublyLinkedList.end());
+	cout << "after deleting single element in iterator positions" << endl;
+	display(doublyLinkedList);
+
+	// erase can also remove a range of elements
+	// taking a range
+	list<int>::iterator itrStart = doublyLinkedList.begin();
+	list<int>::iterator itrEnd = doublyLinkedList.begin();
+
+	// advancing itrEnd by 5
+	advance(itrEnd, 5);
+
+	doublyLinkedList.erase(itrStart, itrEnd);
+	cout << "after removing a range of values from front" << endl;
 	display(doublyLinkedList);
 
 
@@ -108,9 +154,8 @@ int main(int argc, char const *argv[])
 	cout << "after removing all elements" << endl;
 	display(doublyLinkedList);
 	
-	for (int i = 1; i <= 5; i++) {
-		doublyLinkedList.push_front(i * i);
-	}
+	// inserting data's for further operations
+	listInsert(doublyLinkedList);
 
 	// when we want to copy a list in reverse order
 	// we can use reverse iterator 
