@@ -77,6 +77,10 @@ int main(int argc, char const *argv[])
 	display(doublyLinkedList);
 
 	// deletion of list
+	// remove method removes all copies of given data
+	doublyLinkedList.remove(55);
+	cout << "after removing all 55 from list" << endl;
+	display(doublyLinkedList);
 
 
 	// when you try to insert values using assign
