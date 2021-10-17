@@ -17,6 +17,7 @@ int main(int argc, char const *argv[])
 {
 	list <int> doublyLinkedList;
 
+	/*----------------------------Insertion Front--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.emplace_back(i * 2);
 	}
@@ -24,6 +25,7 @@ int main(int argc, char const *argv[])
 	cout << "after insertion in back" << endl;
 	display(doublyLinkedList);
 
+	/*----------------------------Insertion Back--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.emplace_front(i * i);
 	}
@@ -36,26 +38,39 @@ int main(int argc, char const *argv[])
 
 	cout << endl;
 
+	/*----------------------------Insertion Using emplace--------------------------------*/
+	// inserting values with emplace method
+	// it takes
+	// iterator position
+	// occurence count of values, this can be ignored if count is 1
+	// value
+	doublyLinkedList.emplace(doublyLinkedList.begin(), 5);
+	doublyLinkedList.emplace(doublyLinkedList.begin(), 7);
+	doublyLinkedList.emplace(doublyLinkedList.begin(), 3, 55);
+	doublyLinkedList.emplace(doublyLinkedList.end(), 9);
+	doublyLinkedList.emplace(doublyLinkedList.end(), 12);
+	doublyLinkedList.emplace(doublyLinkedList.end(), 3, 55);
+	cout << "after inserting in front and back using emplace method" << endl;
+	display(doublyLinkedList);
+
+	/*----------------------------Reverse--------------------------------*/
 	doublyLinkedList.reverse();
 	cout << "after reversing the linked list" << endl;
 	display(doublyLinkedList);
 
+	/*----------------------------Sorting--------------------------------*/
 	doublyLinkedList.sort();
 	cout << "after sorting the linked list" << endl;
 	display(doublyLinkedList);
 
-
+	/*----------------------------Removing in Two sides--------------------------------*/
+	
 	doublyLinkedList.pop_back();
 	cout << "after popping one element from back" << endl;
 	display(doublyLinkedList);
 
 	doublyLinkedList.pop_front();
 	cout << "after popping one element from front" << endl;
-	display(doublyLinkedList);
-
-
-	doublyLinkedList.unique();
-	cout << "after removing all duplicate elements" << endl;
 	display(doublyLinkedList);
 
 	return 0;

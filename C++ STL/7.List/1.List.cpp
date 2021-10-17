@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 {
 	list <int> doublyLinkedList;
 
-	// insertion in front
+	/*----------------------------Insertion Front--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.push_back(i * 2);
 	}
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 	cout << "after insertion in back" << endl;
 	display(doublyLinkedList);
 
-	// insertion in back
+	/*----------------------------Insertion Back--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.push_front(i * i);
 	}
@@ -51,16 +51,18 @@ int main(int argc, char const *argv[])
 
 	cout << endl;
 
-	// reversing the list
+	/*----------------------------Reverse--------------------------------*/
 	doublyLinkedList.reverse();
 	cout << "after reversing the linked list" << endl;
 	display(doublyLinkedList);
 
-	// sorting the list
+	/*----------------------------Sorting--------------------------------*/
 	doublyLinkedList.sort();
 	cout << "after sorting the linked list" << endl;
 	display(doublyLinkedList);
 
+
+	/*----------------------------Removing in Two sides--------------------------------*/
 
 	doublyLinkedList.pop_back();
 	cout << "after popping one element from back" << endl;
@@ -71,11 +73,15 @@ int main(int argc, char const *argv[])
 	display(doublyLinkedList);
 
 
-	// removing duplicate elements of the list
+	/*----------------------------Removing Duplicate elements--------------------------------*/
 	doublyLinkedList.unique();
 	cout << "after removing all duplicate elements" << endl;
 	display(doublyLinkedList);
 
+
+	/*----------------------------Insertion Again--------------------------------*/
+
+	// inserting values with insert method
 	// it takes
 	// iterator position
 	// occurence count of values, this can be ignored if count is 1
@@ -89,7 +95,7 @@ int main(int argc, char const *argv[])
 	cout << "after inserting in front and back using insert method" << endl;
 	display(doublyLinkedList);
 
-	// deletion of list
+	/*----------------------------Deletion of list--------------------------------*/
 
 	// remove
 	// remove method removes all copies of given data
@@ -112,7 +118,11 @@ int main(int argc, char const *argv[])
 	// erase
 	// erase can take iterator position for deletion
 	doublyLinkedList.erase(doublyLinkedList.begin());
-	doublyLinkedList.erase(doublyLinkedList.end());
+
+	// warning
+	// don't try to delete with end iterator, it will stop your program
+	// doublyLinkedList.erase(doublyLinkedList.end());
+	
 	cout << "after deleting single element in iterator positions" << endl;
 	display(doublyLinkedList);
 
@@ -128,6 +138,7 @@ int main(int argc, char const *argv[])
 	cout << "after removing a range of values from front" << endl;
 	display(doublyLinkedList);
 
+	/*----------------------------Assign--------------------------------*/
 
 	// when you try to insert values using assign
 	// firstly assign remove all elemnets from list
