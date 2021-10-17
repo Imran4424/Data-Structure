@@ -13,6 +13,13 @@ void display(list<int> current) {
 	cout << endl << endl;
 }
 
+// predicate
+// comparator function for list merge
+bool ascendingComp(int numOne, int numTwo)
+{
+    return numOne < numTwo;
+}
+
 int main(int argc, char const *argv[])
 {
 	list<int> listOne, listTwo;
@@ -33,14 +40,29 @@ int main(int argc, char const *argv[])
 	cout << "List Two - after insertion in front" << endl;
 	display(listTwo);
 
-	// swap the elements of two list
-	listOne.swap(listTwo);
+	/*----------------------------merging the sorted elements of two list--------------------------------*/
+	// merging with prior sorting in ascending order
+	
+	// first sort two list
+	listOne.sort();
+	listTwo.sort();
 
-	cout << "List one elements after swap" << endl;
+	// now merge two list
+	listOne.merge(listTwo);
+	cout << "after merging two sorted list"
+	cout << "listOne now holds all contents of two list" << endl;
 	display(listOne);
 
-	cout << "List two elements after swap" << endl;
-	display(listTwo);
+
+	// merging with a help of comparator
+	// first let's destroy sorted structure
+	listOne.insertion(listOne.begin(), 3, 101);
+	listTwo.insertion(listOne.end(), 3, 1);
+
+	listOne.merge(listTwo, ascendingComp);
+	cout << "after merging two lists with a comparator"
+	cout << "listOne now holds all contents of two list" << endl;
+	display(listOne);
 	
 	return 0;
 }
