@@ -49,18 +49,27 @@ int main(int argc, char const *argv[])
 
 	// now merge two list
 	listOne.merge(listTwo);
-	cout << "after merging two sorted list"
+	cout << "after merging two sorted list" << endl;
 	cout << "listOne now holds all contents of two list" << endl;
 	display(listOne);
 
+	cout << "and list two is empty now" << endl;
+	display(listTwo);
+
+
+	/*-------------------TODO-------------------*/
+	// comparator not working
+	// fixing the comparator
 
 	// merging with a help of comparator
 	// first let's destroy sorted structure
-	listOne.insertion(listOne.begin(), 3, 101);
-	listTwo.insertion(listOne.end(), 3, 1);
+	listOne.insert(listOne.begin(), 3, 101);
+
+	// now copying listOne to listTwo
+	listTwo = listOne;
 
 	listOne.merge(listTwo, ascendingComp);
-	cout << "after merging two lists with a comparator"
+	cout << "after merging two lists with a comparator" << endl;
 	cout << "listOne now holds all contents of two list" << endl;
 	display(listOne);
 	
