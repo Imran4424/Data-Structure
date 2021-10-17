@@ -21,11 +21,57 @@ int main(int argc, char const *argv[])
 		doublyLinkedList.push_back(i * 2);
 	}
 
+	cout << "after insertion in back" << endl;
 	display(doublyLinkedList);
 
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.push_front(i * i);
 	}
+
+	cout << "after insertion in front" << endl;
+	display(doublyLinkedList);
+
+	cout << "front of the list is - " << doublyLinkedList.front() << endl;
+	cout << "back of the list is - " << doublyLinkedList.back() << endl;
+
+	cout << endl;
+
+	doublyLinkedList.reverse();
+	cout << "after reversing the linked list" << endl;
+	display(doublyLinkedList);
+
+	doublyLinkedList.sort();
+	cout << "after sorting the linked list" << endl;
+	display(doublyLinkedList);
+
+
+	doublyLinkedList.pop_back();
+	cout << "after popping one element from back" << endl;
+	display(doublyLinkedList);
+
+	doublyLinkedList.pop_front();
+	cout << "after popping one element from front" << endl;
+	display(doublyLinkedList);
+
+
+	doublyLinkedList.unique();
+	cout << "after removing all duplicate elements" << endl;
+	display(doublyLinkedList);
+
+	// it takes
+	// iterator position
+	// occurence count of values, this can be ignored if count is 1
+	// value
+	doublyLinkedList.insert(doublyLinkedList.begin(), 5);
+	doublyLinkedList.insert(doublyLinkedList.begin(), 7);
+	doublyLinkedList.insert(doublyLinkedList.begin(), 3, 55);
+	doublyLinkedList.insert(doublyLinkedList.end(), 9);
+	doublyLinkedList.insert(doublyLinkedList.end(), 12);
+	doublyLinkedList.insert(doublyLinkedList.end(), 3, 55);
+	cout << "after inserting in front and back using insert method" << endl;
+	display(doublyLinkedList);
+
+	
 
 	return 0;
 }
