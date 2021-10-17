@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 {
 	list <int> doublyLinkedList;
 
-	/*----------------------------Insertion Front--------------------------------*/
+	/*----------------------------Insertion Back--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.push_back(i * 2);
 	}
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 	cout << "after insertion in back" << endl;
 	display(doublyLinkedList);
 
-	/*----------------------------Insertion Back--------------------------------*/
+	/*----------------------------Insertion Front--------------------------------*/
 	for (int i = 1; i <= 5; i++) {
 		doublyLinkedList.push_front(i * i);
 	}
