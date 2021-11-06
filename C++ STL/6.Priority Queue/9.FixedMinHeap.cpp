@@ -1,13 +1,14 @@
 #include <iostream>
+#include <vector>
 #include <string>
 #include <queue>
 using namespace std;
 
-class FixedMaxHeap {
+class FixedMinHeap {
 	int size;
-	priority_queue<int> maxHeap;
+	priority_queue<int, vector<int>, greater<int> > minHeap;
 public:
-	FixedMaxHeap(int size = 1) {
+	FixedMinHeap(int size = 1) {
 		this -> size = size;
 	}
 
@@ -16,27 +17,27 @@ public:
 	}
 
 	void insert(int value) {
-		if (maxHeap.size() == size) {
-			if (value > maxHeap.top()) {
+		if (minHeap.size() == size) {
+			if (value < minHeap.top()) {
 				return;
 			}
 
-			maxHeap.pop();
+			minHeap.pop();
 		}
 
-		maxHeap.push(value);
+		minHeap.push(value);
 	}
 
 	int topElement() {
-		return maxHeap.top();
+		return minHeap.top();
 	}
 
 	void removeElement() {
-		maxHeap.pop();
+		minHeap.pop();
 	}
 
 	bool isEmpty() {
-		return maxHeap.empty();
+		return minHeap.empty();
 	}
 };
 
