@@ -39,3 +39,12 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+
+/*
+	Custom comparator for priority queue C++ STL
+
+	https://stackoverflow.com/questions/16111337/declaring-a-priority-queue-in-c-with-a-custom-comparator
+
+	http://neutrofoton.github.io/blog/2016/12/29/c-plus-plus-priority-queue-with-comparator/
+
+*/
