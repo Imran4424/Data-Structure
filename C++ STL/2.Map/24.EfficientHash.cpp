@@ -48,13 +48,15 @@ struct CompareHash
 };
 
 
+typedef pair<int, int> position;
+
 int main(int argc, char const *argv[])
 {
-	unordered_map<Point, int, CompareHash, CompareEqual> mapGrid;
+	unordered_map<position, int> mapGrid;
 
-	mapGrid[Point(4, 8)] = 25;
-	mapGrid[Point(2, 7)] = 13;
-	mapGrid[Point(2, 7)] = 1;
+	mapGrid[{4, 8}] = 25;
+	mapGrid[{2, 7}] = 13;
+	/*mapGrid[Point(2, 7)] = 1;
 	mapGrid[Point(1, 2)] = 7;
 	mapGrid[Point(2, 5)] = 12;
 	mapGrid[Point(4, 5)] = 25;
@@ -62,13 +64,13 @@ int main(int argc, char const *argv[])
 
 	for (auto it = mapGrid.begin(); it != mapGrid.end(); it++) {
 		cout << "x = " << it->first.row << ", y = " << it->first.col << ". val = " << it->second << endl;
-	}
+	}*/
 	
 	return 0;
 }
 
 /*
-	https://stackoverflow.com/questions/17016175/c-unordered-map-using-a-custom-class-type-as-the-key
+	This one will show error
 
-	https://stackoverflow.com/questions/8623172/c-unordered-map-iterators-not-comparable
+	This is still in development
 */
