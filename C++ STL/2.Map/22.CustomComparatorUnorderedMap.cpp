@@ -64,6 +64,8 @@ int main(int argc, char const *argv[])
 		cout << "x = " << it->first.row << ", y = " << it->first.col << ". val = " << it->second << endl;
 	}
 	
+	//cout << char(196) << endl;
+
 	return 0;
 }
 
