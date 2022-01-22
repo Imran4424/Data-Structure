@@ -162,8 +162,5 @@ int removeWord(string word) {
 int main(int argc, char const *argv[])
 {
 	
-
-	
-	
 	return 0;
 }
