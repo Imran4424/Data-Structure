@@ -24,6 +24,8 @@ class Trie {
 				deleteAll(travel -> next[i]);
 			}
 		}
+
+		delete travel;
 	}
 
 	void displayTrie(Node *travel, string word) {
