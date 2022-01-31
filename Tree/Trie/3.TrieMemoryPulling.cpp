@@ -2,20 +2,23 @@
 #include <string>
 using namespace std;
 
-class Trie {
-	struct Node
-	{
-		int count;
-		Node *next[26];
+struct Node
+{
+	int count;
+	Node *next[26];
 
-		Node() {
-			count = 0;
-			for (int i = 0; i < 26; i++) {
-				next[i] = NULL;
-			}
+	Node() {
+		count = 0;
+		for (int i = 0; i < 26; i++) {
+			next[i] = NULL;
 		}
-	};
+	}
+};
 
+Node myNode[600000];
+int nodeIndex;
+
+class Trie {
 	Node* root;
 	string givenWord;
 	int wCount;
@@ -50,7 +53,10 @@ class Trie {
 		} else {
 			int letter = givenWord[index] - 'a';
 
-			searchAll(travel->next[letter], index + 1);
+			if (NULL != travel->next[letter]) {
+				searchAll(travel->next[letter], index + 1);
+			}
+			
 		}
 	}
 
@@ -75,7 +81,9 @@ class Trie {
 		} else {
 			int letter = givenWord[index] - 'a';
 
-			removeAll(travel->next[letter], index + 1);
+			if (NULL != travel->next[letter]) {
+				removeAll(travel->next[letter], index + 1);
+			}
 		}
 	}
 
@@ -107,7 +115,7 @@ public:
 			int letter = word[i] - 'a';
 
 			if (NULL == travel -> next[letter]) {
-				travel -> next[letter] = new Node();
+				travel -> next[letter] = &myNode[nodeIndex++];
 			}
 
 			travel = travel -> next[letter];
@@ -148,23 +156,25 @@ public:
 Trie myTrie[31];
 
 void init() {
+	nodeIndex = 0;
 
+	for (int i = 1; i < 31; i++) {
+		myTrie[i].reset();
+	}
 }
 
 int addWord(string word) {
-
-	// return how many same words added
-	return 0;
+	return myTrie[word.size()].insert(word);
 }
 
 int searchWord(string word) {
 	// return how many same words are searched
-	return 0;
+	return myTrie[word.size()].search(word);
 }
 
 int removeWord(string word) {
 	// return how many same words are deleted
-	return 0;
+	return myTrie[word.size()].remove(word);
 }
 
 int main(int argc, char const *argv[])

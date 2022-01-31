@@ -1,37 +1,26 @@
 #include <iostream>
 #include <string>
+#include <unordered_map>
 using namespace std;
 
 struct Node
 {
 	int count;
-	Node *next[26];
+	unordered_map<char, Node*> child;
 
-	Node() {
+	Node () {
 		count = 0;
-		for (int i = 0; i < 26; i++) {
-			next[i] = NULL;
-		}
 	}
 };
 
 Node myNode[600000];
 int nodeIndex;
 
-class Trie {
+class Trie
+{
 	Node* root;
 	string givenWord;
 	int wCount;
-
-	void deleteAll(Node* travel) {
-		for (int i = 0 ; i < 26; i++) {
-			if (NULL != travel -> next[i]) {
-				deleteAll(travel -> next[i]);
-			}
-		}
-
-		delete travel;
-	}
 
 	void searchAll(Node* travel, int index) {
 		// base case
@@ -45,15 +34,15 @@ class Trie {
 
 		// here ? is the wild char
 		if ('?' == givenWord[index]) {
-			for (int i = 0; i < 26; i++) {
-				if (NULL != travel->next[i]) {
-					searchAll(travel->next[i], index + 1);
-				}
+			for (auto itr : travel->child) {
+				searchAll(travel->child[itr.first], index + 1);
+				// alternative call
+				// searchAll(itr.second, index + 1);
 			}
 		} else {
-			int letter = givenWord[index] - 'a';
-
-			searchAll(travel->next[letter], index + 1);
+			if (travel->child.count(givenWord[index])) {
+				searchAll(travel->child[givenWord[index]], index + 1);
+			}
 		}
 	}
 
@@ -70,15 +59,15 @@ class Trie {
 
 		// here ? is the wild char
 		if ('?' == givenWord[index]) {
-			for (int i = 0; i < 26; i++) {
-				if (NULL != travel->next[i]) {
-					removeAll(travel->next[i], index + 1);
-				}
+			for (auto itr : travel->child) {
+				removeAll(travel->child[itr.first], index + 1);
+				// alternative call
+				// removeAll(itr.second, index + 1);
 			}
 		} else {
-			int letter = givenWord[index] - 'a';
-
-			removeAll(travel->next[letter], index + 1);
+			if (travel->child.count(givenWord[index])) {
+				removeAll(travel->child[givenWord[index]], index + 1);
+			}
 		}
 	}
 
@@ -87,10 +76,8 @@ class Trie {
 			cout << word << endl;
 		}
 
-		for (int i = 0; i < 26; i++) {
-			if (NULL != travel -> next[i]) {
-				displayTrie(travel -> next[i], word + string(1, i + 'a'));
-			}
+		for (auto itr : travel->child) {
+			displayTrie(travel->child[itr.first], word + string(1, itr.first));
 		}
 	}
 
@@ -98,22 +85,20 @@ public:
 	Trie() {
 		root = new Node();
 	}
-
+	
 	void reset() {
 		root = new Node();
 	}
-
+	
 	int insert(string word) {
 		Node* travel = root;
 
 		for (int i = 0; word[i]; i++) {
-			int letter = word[i] - 'a';
-
-			if (NULL == travel -> next[letter]) {
-				travel -> next[letter] = &myNode[nodeIndex++];
+			if (!travel->child.count(word[i])) {
+				travel->child[word[i]] = &myNode[nodeIndex++];
 			}
 
-			travel = travel -> next[letter];
+			travel = travel->child[word[i]];
 		}
 
 		travel->count++;
@@ -122,6 +107,20 @@ public:
 	}
 
 	int search(string word) {
+		Node* travel = root;
+
+		for (int i = 0; word[i]; i++) {
+			if (!travel->child.count(word[i])) {
+				return false;
+			}
+
+			travel = travel->child[word[i]];
+		}
+
+		return travel->count;
+	}
+
+	int searchWild(string word) {
 		wCount = 0;
 		givenWord = word;
 		searchAll(root, 0);
@@ -129,7 +128,7 @@ public:
 		return wCount;
 	}
 
-	int remove(string word) {
+	int removeWild(string word) {
 		wCount = 0;
 		givenWord = word;
 		removeAll(root, 0);
@@ -137,15 +136,20 @@ public:
 		return wCount;
 	}
 
-	void clear() {
-		deleteAll(root);
-	}
+	bool startsWith(string prefix) {
+		Node* travel = root;
 
-	void printAllString() {
-		displayTrie(root, "");
+		for (int i = 0; prefix[i]; i++) {
+			if (!travel->child.count(prefix[i])) {
+				return false;
+			}
+
+			travel = travel->child[prefix[i]];
+		}
+
+		return true;
 	}
 };
-
 
 // length wise trie
 Trie myTrie[31];
@@ -164,12 +168,12 @@ int addWord(string word) {
 
 int searchWord(string word) {
 	// return how many same words are searched
-	return myTrie[word.size()].search(word);
+	return myTrie[word.size()].searchWild(word);
 }
 
 int removeWord(string word) {
 	// return how many same words are deleted
-	return myTrie[word.size()].remove(word);
+	return myTrie[word.size()].removeWild(word);
 }
 
 int main(int argc, char const *argv[])
