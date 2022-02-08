@@ -68,6 +68,6 @@ public:
 
 int main(int argc, char const *argv[])
 {
-	
+	Trie myTrie;
 	return 0;
 }
