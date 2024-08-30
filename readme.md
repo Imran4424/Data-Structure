@@ -4,7 +4,7 @@
 
 ### 1.1 One-Dimensional Array
 
-#### 1.1.1 Basic Operations
+#### 1. Basic Operations
 
 1. **Read and Display:**
    - Write a program that reads and displays an array.
@@ -17,7 +17,7 @@
 5. **Minimum Element:**
    - Write a program that reads an array and finds the minimum element.
 
-#### 1.1.2 Insertion and Deletion
+#### 2. Insertion and Deletion
 
 1. **Insert at Specific Position:**
    - Write a program that inserts a number at a specific position in an array.
@@ -46,14 +46,14 @@
 13. **Delete All Occurrences from Sorted Array:**
     - Write a program that deletes all occurrences of a number from a sorted array, maintaining the sorted order.
 
-#### 1.1.3 Search Operations
+#### 3. Search Operations
 
 1. **Linear Search:**
    - Write a program that searches for a number in an array using linear search.
 2. **Binary Search:**
    - Write a program that searches for a number in a sorted array using binary search.
 
-#### 1.1.4 Sorting
+#### 4. Sorting
 
 1. **Ascending Order:**
    - Write a program that sorts an array in ascending order.
@@ -72,7 +72,7 @@
 8. **Mergesort:**
    - Write a program that sorts an array using mergesort.
 
-#### 1.1.5 Advanced Operations
+#### 5. Advanced Operations
 
 1. **Find Median:**
    - Write a program that reads an array and displays the median.
@@ -87,7 +87,7 @@
 6. **Left Rotation:**
    - Write a program that reads an array and rotates it to the left by `n` positions.
 
-#### 1.1.6 Mathematical Operations
+#### 6. Mathematical Operations
 
 1. **Fibonacci Sequence:**
    - Write a program that displays the first `n` Fibonacci numbers using an array.
@@ -102,7 +102,7 @@
 
 ### 1.2 Two-Dimensional Array
 
-#### 1.2.1 Basic Operations
+#### 1. Basic Operations
 
 1. **Read and Display:**
    - Write a program that reads and displays a 2D array (matrix).
@@ -113,7 +113,7 @@
 4. **Transpose Matrix:**
    - Write a program that reads a 2D array and transposes it.
 
-#### 1.2.2 Matrix Operations
+#### 2. Matrix Operations
 
 1. **Matrix Multiplication:**
    - Write a program that multiplies two matrices.
@@ -126,7 +126,7 @@
 5. **Inverse Matrix:**
    - Write a program that calculates the inverse of a matrix.
 
-#### 1.2.3 Advanced 2D Array Operations
+#### 3. Advanced 2D Array Operations
 
 1. **Row-wise and Column-wise Sum:**
    - Write a program that performs a row-wise and column-wise sum of a matrix.
