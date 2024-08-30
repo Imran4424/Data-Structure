@@ -141,16 +141,7 @@
 
 ### 1.3 Dynamic Arrays
 
-#### 1.3.1 Implementation
-
 1. **Dynamic Array Creation:**
    - Write a program that implements a dynamic array (using pointers).
 2. **Resizing Dynamic Array:**
    - Write a program that resizes a dynamic array when it gets full.
-
-#### 1.3.2 Applications
-
-1. **Stack Implementation:**
-   - Write a program that implements a stack using a dynamic array.
-2. **Queue Implementation:**
-   - Write a program that implements a queue using a dynamic array.
