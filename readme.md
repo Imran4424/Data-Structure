@@ -156,26 +156,24 @@
 
 #### 1. Basic Operations
 
-1. **Create a Linked List:**
-   - Write a program to create a singly linked list.
-2. **Display Linked List:**
-   - Write a program to traverse and display elements of a singly linked list.
-3. **Insert at Beginning:**
+1. **Create a Linked List and Display it:**
+   - Write a program to create a singly linked list and traverse and display elements of the list.
+2. **Insert at Beginning:**
    - Write a program to insert a node at the beginning of a singly linked list.
-4. **Insert at End:**
+3. **Insert at End:**
    - Write a program to insert a node at the end of a singly linked list.
-5. **Insert at Specific Position:**
+4. **Insert at Specific Position:**
    - Write a program to insert a node at a specific position in a singly linked list.
-6. **Delete from Beginning:**
+5. **Delete from Beginning:**
    - Write a program to delete a node from the beginning of a singly linked list.
-7. **Delete from End:**
+6. **Delete from End:**
    - Write a program to delete a node from the end of a singly linked list.
-8. **Delete from Specific Position:**
+7. **Delete from Specific Position:**
    - Write a program to delete a node from a specific position in a singly linked list.
-9. **Search in Linked List:**
+8. **Search in Linked List:**
    - Write a program to search for a specific element in a singly linked list.
-10. **Count Nodes:**
-    - Write a program to count the number of nodes in a singly linked list.
+9. **Count Nodes:**
+   - Write a program to count the number of nodes in a singly linked list.
 
 #### 2. Advanced Operations
 
