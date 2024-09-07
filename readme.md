@@ -1,5 +1,7 @@
 # 📚 Data Structures Problem List in C++
 
+<!-- Array -->
+
 ## 1. Array
 
 ### 1.1 One-Dimensional Array
@@ -145,3 +147,107 @@
    - Write a program that implements a dynamic array (using pointers).
 2. **Resizing Dynamic Array:**
    - Write a program that resizes a dynamic array when it gets full.
+
+<!-- linked list -->
+
+## 2. Linked List
+
+### 2.1 Singly Linked List
+
+#### 1. Basic Operations
+
+1. **Create a Linked List:**
+   - Write a program to create a singly linked list.
+2. **Display Linked List:**
+   - Write a program to traverse and display elements of a singly linked list.
+3. **Insert at Beginning:**
+   - Write a program to insert a node at the beginning of a singly linked list.
+4. **Insert at End:**
+   - Write a program to insert a node at the end of a singly linked list.
+5. **Insert at Specific Position:**
+   - Write a program to insert a node at a specific position in a singly linked list.
+6. **Delete from Beginning:**
+   - Write a program to delete a node from the beginning of a singly linked list.
+7. **Delete from End:**
+   - Write a program to delete a node from the end of a singly linked list.
+8. **Delete from Specific Position:**
+   - Write a program to delete a node from a specific position in a singly linked list.
+9. **Search in Linked List:**
+   - Write a program to search for a specific element in a singly linked list.
+10. **Count Nodes:**
+    - Write a program to count the number of nodes in a singly linked list.
+
+#### 2. Advanced Operations
+
+1. **Reverse Linked List:**
+   - Write a program to reverse a singly linked list.
+2. **Detect Loop:**
+   - Write a program to detect if there is a loop in a singly linked list.
+3. **Find Middle Element:**
+   - Write a program to find the middle element of a singly linked list.
+4. **Remove Duplicates:**
+   - Write a program to remove duplicate nodes from a singly linked list.
+5. **Merge Two Linked Lists:**
+   - Write a program to merge two sorted singly linked lists.
+6. **Intersection Point of Two Linked Lists:**
+   - Write a program to find the intersection point of two singly linked lists.
+7. **Nth Node from End:**
+   - Write a program to find the nth node from the end of a singly linked list.
+
+### 2.2 Doubly Linked List
+
+#### 1. Basic Operations
+
+1. **Create a Doubly Linked List:**
+   - Write a program to create a doubly linked list.
+2. **Display Doubly Linked List (Forward):**
+   - Write a program to traverse and display elements of a doubly linked list in the forward direction.
+3. **Display Doubly Linked List (Backward):**
+   - Write a program to traverse and display elements of a doubly linked list in the backward direction.
+4. **Insert at Beginning:**
+   - Write a program to insert a node at the beginning of a doubly linked list.
+5. **Insert at End:**
+   - Write a program to insert a node at the end of a doubly linked list.
+6. **Insert at Specific Position:**
+   - Write a program to insert a node at a specific position in a doubly linked list.
+7. **Delete from Beginning:**
+   - Write a program to delete a node from the beginning of a doubly linked list.
+8. **Delete from End:**
+   - Write a program to delete a node from the end of a doubly linked list.
+9. **Delete from Specific Position:**
+   - Write a program to delete a node from a specific position in a doubly linked list.
+10. **Count Nodes:**
+    - Write a program to count the number of nodes in a doubly linked list.
+
+#### 2. Advanced Operations
+
+1. **Reverse Doubly Linked List:**
+   - Write a program to reverse a doubly linked list.
+2. **Find Middle Element:**
+   - Write a program to find the middle element of a doubly linked list.
+3. **Remove Duplicates:**
+   - Write a program to remove duplicate nodes from a doubly linked list.
+
+### 2.3 Circular Linked List
+
+#### 1. Basic Operations
+
+1. **Create a Circular Linked List:**
+   - Write a program to create a circular linked list.
+2. **Display Circular Linked List:**
+   - Write a program to traverse and display elements of a circular linked list.
+3. **Insert at Beginning:**
+   - Write a program to insert a node at the beginning of a circular linked list.
+4. **Insert at End:**
+   - Write a program to insert a node at the end of a circular linked list.
+5. **Delete from Beginning:**
+   - Write a program to delete a node from the beginning of a circular linked list.
+6. **Delete from End:**
+   - Write a program to delete a node from the end of a circular linked list.
+
+#### 2. Advanced Operations
+
+1. **Detect Loop in Circular Linked List:**
+   - Write a program to detect a loop in a circular linked list.
+2. **Find Length of Circular Linked List:**
+   - Write a program to find the length of a circular linked list.
