@@ -33,53 +33,29 @@ struct Node
 // it will alive in entire code from this line
 Node* head;
 
-void display() {
-	// helper pointer to traverse
-	Node* travel = head;
-
-	while(NULL != travel) {
-		cout << travel -> data << " ";
-		travel = travel -> next;
-	}
+void insertAtEnd(int value) {
+	// first create the node
+	
 }
 
 int main(int argc, char const *argv[])
 {
 	head = NULL;
 
-	// add first node
+	// this num variable's scope is the main function
+	// after main function is finished variable will be deleted or dead
+	int num;
+	cout << "How many nodes you want to insert in the linked list: ";
+	cin >> num;
+	
+	for (int i = 0; i < num; ++i) {
+		// value's scope is inside this for loop
+		// after loop is finished variable will be deleted or dead
+		int value;
+		cin >> value;
 
-	// create it first
-	Node firstNode;
-	firstNode.data = 5;
-	firstNode.next = NULL;
-
-	// link it to the linked list
-	if (NULL == head) {
-		head = &firstNode;
+		insertAtEnd(value);
 	}
-
-	// add the second node
-	// create the second node
-	Node secondNode;
-	secondNode.data = 12;
-	secondNode.next = NULL;
-
-	// now let's add it to the first node's end
-	firstNode.next = &secondNode;
-
-
-	// add the third node
-	// create the third node
-	Node thirdNode;
-	thirdNode.data = 7;
-	thirdNode.next = NULL;
-
-	// link to second node's end
-	secondNode.next = &thirdNode;
-
-	// now display the linked list
-	display();
-
+	
 	return 0;
 }

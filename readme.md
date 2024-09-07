@@ -158,10 +158,10 @@
 
 1. **Create a Linked List and Display it:**
    - Write a program to create a singly linked list and traverse and display elements of the list.
-2. **Insert at Beginning:**
-   - Write a program to insert a node at the beginning of a singly linked list.
-3. **Insert at End:**
+2. **Insert at End:**
    - Write a program to insert a node at the end of a singly linked list.
+3. **Insert at Beginning:**
+   - Write a program to insert a node at the beginning of a singly linked list.
 4. **Insert at Specific Position:**
    - Write a program to insert a node at a specific position in a singly linked list.
 5. **Delete from Beginning:**
@@ -171,7 +171,9 @@
 7. **Delete from Specific Position:**
    - Write a program to delete a node from a specific position in a singly linked list.
 8. **Search in Linked List:**
+
    - Write a program to search for a specific element in a singly linked list.
+
 9. **Count Nodes:**
    - Write a program to count the number of nodes in a singly linked list.
 
