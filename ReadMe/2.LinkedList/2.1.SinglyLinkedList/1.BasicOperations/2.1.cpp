@@ -34,12 +34,16 @@ Node* head;
 
 void insertAtEnd(int value) {
 	// first create the node
-	Node tempNode;
-	tempNode.data = value;
-	tempNode.next = NULL;
+	// this doesn't solve the problem
+	// although this is a pointer variable now
+	// still this is a locally allocated variable
+	// not dynamically allocated variable
+	Node *tempNode;
+	tempNode -> data = value;
+	tempNode -> next = NULL;
 	
 	if (NULL == head) {
-		head = &tempNode;
+		head = tempNode;
 		return;
 	}
 
@@ -55,7 +59,7 @@ void insertAtEnd(int value) {
 	}
 
 	// adding the new node at the end of last node
-	travel -> next = &tempNode;
+	travel -> next = tempNode;
 }
 
 void display() {

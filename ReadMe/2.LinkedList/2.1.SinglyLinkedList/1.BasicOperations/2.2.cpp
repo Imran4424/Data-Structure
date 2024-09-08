@@ -34,12 +34,14 @@ Node* head;
 
 void insertAtEnd(int value) {
 	// first create the node
-	Node tempNode;
-	tempNode.data = value;
-	tempNode.next = NULL;
+	// dynamically allocated variable
+	// this new Node() will work since implicit constructor is working
+	Node *tempNode = new Node();
+	tempNode -> data = value;
+	tempNode -> next = NULL;
 	
 	if (NULL == head) {
-		head = &tempNode;
+		head = tempNode;
 		return;
 	}
 
@@ -55,7 +57,7 @@ void insertAtEnd(int value) {
 	}
 
 	// adding the new node at the end of last node
-	travel -> next = &tempNode;
+	travel -> next = tempNode;
 }
 
 void display() {
@@ -93,13 +95,3 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
-
-/*
-	This code will run infinitely cause we are declaring nodes as local variables
-
-	which will be deleted after end of scope
-
-	and linked list will be poiting to the garbae address
-
-	and it will run infinitely since it does not have any valid address
-*/
