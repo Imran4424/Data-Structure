@@ -590,5 +590,6 @@
    - Write a program that finds the first non-repeating character in a string using a hash map.
 9. **Longest Substring Without Repeating Characters:**
    - Write a program that finds the length of the longest substring without repeating characters using hashing.
-10. **Count Distinct Elements in Every Window of Size K:**
-    - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
+10. **Count Distinct Elements in Every Window of Size K:** - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
+
+<!-- Binary Tree -->
