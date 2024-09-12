@@ -252,6 +252,8 @@
 2. **Find Length of Circular Linked List:**
    - Write a program to find the length of a circular linked list.
 
+<!-- Stack -->
+
 ## 3. Stack
 
 ### 3.1 Stack Using Array
@@ -327,3 +329,266 @@
    - Write a program to solve the stock span problem using a stack.
 3. **Celebrity Problem:**
    - Write a program to find the celebrity in a group using a stack.
+4. **Depth-First Search (DFS):**
+   - Write a program to implement DFS for graph traversal using a stack.
+
+<!-- Queue -->
+
+## 4. Queue
+
+### 4.1 Queue Using Array
+
+#### 1. Basic Operations
+
+1. **Enqueue Operation:**
+   - Write a program to implement the enqueue operation in a queue using an array.
+2. **Dequeue Operation:**
+   - Write a program to implement the dequeue operation in a queue using an array.
+3. **Front Operation:**
+   - Write a program to implement the front operation (view the front element) in a queue using an array.
+4. **Rear Operation:**
+   - Write a program to implement the rear operation (view the rear element) in a queue using an array.
+5. **Check if Empty:**
+   - Write a program to check if the queue is empty using an array.
+6. **Check if Full:**
+   - Write a program to check if the queue is full using an array.
+7. **Display Queue:**
+   - Write a program to display all elements in a queue using an array.
+
+#### 2. Advanced Operations
+
+1. **Circular Queue:**
+   - Write a program to implement a circular queue using an array.
+2. **Priority Queue:**
+   - Write a program to implement a priority queue using an array.
+3. **Double-Ended Queue (Deque):**
+   - Write a program to implement a deque using an array.
+
+### 4.2 Queue Using Linked List
+
+#### 1. Basic Operations
+
+1. **Enqueue Operation:**
+   - Write a program to implement the enqueue operation in a queue using a linked list.
+2. **Dequeue Operation:**
+   - Write a program to implement the dequeue operation in a queue using a linked list.
+3. **Front Operation:**
+   - Write a program to implement the front operation (view the front element) in a queue using a linked list.
+4. **Rear Operation:**
+   - Write a program to implement the rear operation (view the rear element) in a queue using a linked list.
+5. **Check if Empty:**
+   - Write a program to check if the queue is empty using a linked list.
+6. **Display Queue:**
+   - Write a program to display all elements in a queue using a linked list.
+
+#### 2. Advanced Operations
+
+1. **Priority Queue:**
+   - Write a program to implement a priority queue using a linked list.
+2. **Circular Queue:**
+   - Write a program to implement a circular queue using a linked list.
+3. **Deque:**
+   - Write a program to implement a deque using a linked list.
+
+### 4.3 Applications of Queue
+
+#### 1. Mathematical Applications
+
+1. **Queue Reversal:**
+   - Write a program to reverse a queue using a stack.
+2. **Generate Binary Numbers:**
+   - Write a program to generate binary numbers from 1 to `n` using a queue.
+3. **First Non-Repeating Character:**
+   - Write a program to find the first non-repeating character in a stream of characters using a queue.
+
+#### 2. Real-World Applications
+
+1. **Task Scheduling:**
+   - Write a program to implement task scheduling using a queue.
+2. **Breadth-First Search (BFS):**
+   - Write a program to implement BFS for graph traversal using a queue.
+3. **Hot Potato Game Simulation:**
+   - Write a program to simulate the Hot Potato game using a queue.
+
+<!-- Deque -->
+
+## 5. Deque (Double-Ended Queue)
+
+### 5.1 Array-Based Deque
+
+#### 1. Basic Operations
+
+1. **Insert at Front (Array-Based):**
+   - Write a program that inserts an element at the front of the deque (using array-based implementation).
+2. **Insert at Rear (Array-Based):**
+   - Write a program that inserts an element at the rear of the deque (using array-based implementation).
+3. **Delete from Front (Array-Based):**
+   - Write a program that deletes an element from the front of the deque (using array-based implementation).
+4. **Delete from Rear (Array-Based):**
+   - Write a program that deletes an element from the rear of the deque (using array-based implementation).
+5. **Peek Front (Array-Based):**
+   - Write a program that retrieves the front element of the deque without deleting it (using array-based implementation).
+6. **Peek Rear (Array-Based):**
+   - Write a program that retrieves the rear element of the deque without deleting it (using array-based implementation).
+7. **Check if Deque is Full (Array-Based):**
+   - Write a program that checks if the deque is full (using array-based implementation).
+8. **Check if Deque is Empty (Array-Based):**
+   - Write a program that checks if the deque is empty (using array-based implementation).
+
+### 5.2 Linked List-Based Deque
+
+#### 1. Basic Operations
+
+1. **Insert at Front (Linked List-Based):**
+   - Write a program that inserts an element at the front of the deque (using linked list-based implementation).
+2. **Insert at Rear (Linked List-Based):**
+   - Write a program that inserts an element at the rear of the deque (using linked list-based implementation).
+3. **Delete from Front (Linked List-Based):**
+   - Write a program that deletes an element from the front of the deque (using linked list-based implementation).
+4. **Delete from Rear (Linked List-Based):**
+   - Write a program that deletes an element from the rear of the deque (using linked list-based implementation).
+5. **Peek Front (Linked List-Based):**
+   - Write a program that retrieves the front element of the deque without deleting it (using linked list-based implementation).
+6. **Peek Rear (Linked List-Based):**
+   - Write a program that retrieves the rear element of the deque without deleting it (using linked list-based implementation).
+7. **Check if Deque is Empty (Linked List-Based):**
+   - Write a program that checks if the deque is empty (using linked list-based implementation).
+
+### 5.3 Advanced Operations
+
+1. **Circular Deque:**
+   - Write a program that implements a circular deque (elements wrap around the array).
+2. **Double-Ended Priority Queue:**
+   - Write a program that implements a double-ended priority queue (deque with priority).
+3. **Reversing a Deque:**
+   - Write a program that reverses the elements of a deque.
+4. **Deque Rotation:**
+   - Write a program that rotates a deque by `n` positions to the right.
+5. **Palindrome Check Using Deque:**
+   - Write a program that uses a deque to check if a given string is a palindrome.
+
+<!-- Priority Queue -->
+
+## 6. Priority Queue
+
+### 6.1 Array-Based Priority Queue
+
+#### 1. Basic Operations
+
+1. **Insert with Priority (Array-Based):**
+   - Write a program that inserts an element into a priority queue based on its priority (using array-based implementation).
+2. **Remove Highest Priority Element (Array-Based):**
+   - Write a program that removes the element with the highest priority from the priority queue (using array-based implementation).
+3. **Peek Highest Priority Element (Array-Based):**
+   - Write a program that retrieves the element with the highest priority without removing it from the queue (using array-based implementation).
+4. **Check if Priority Queue is Empty (Array-Based):**
+   - Write a program that checks if the priority queue is empty (using array-based implementation).
+
+### 6.2 Linked List-Based Priority Queue
+
+#### 1. Basic Operations
+
+1. **Insert with Priority (Linked List-Based):**
+   - Write a program that inserts an element into a priority queue based on its priority (using linked list-based implementation).
+2. **Remove Highest Priority Element (Linked List-Based):**
+   - Write a program that removes the element with the highest priority from the priority queue (using linked list-based implementation).
+3. **Peek Highest Priority Element (Linked List-Based):**
+   - Write a program that retrieves the element with the highest priority without removing it from the queue (using linked list-based implementation).
+4. **Check if Priority Queue is Empty (Linked List-Based):**
+   - Write a program that checks if the priority queue is empty (using linked list-based implementation).
+
+### 6.3 Heap-Based Priority Queue
+
+#### 1. Basic Operations
+
+1. **Insert with Priority (Heap-Based):**
+   - Write a program that inserts an element into a priority queue based on its priority (using heap-based implementation).
+2. **Remove Highest Priority Element (Heap-Based):**
+   - Write a program that removes the element with the highest priority from the priority queue (using heap-based implementation).
+3. **Peek Highest Priority Element (Heap-Based):**
+   - Write a program that retrieves the element with the highest priority without removing it from the queue (using heap-based implementation).
+4. **Check if Priority Queue is Empty (Heap-Based):**
+   - Write a program that checks if the priority queue is empty (using heap-based implementation).
+
+### 6.4 Advanced Operations
+
+1. **Merge Two Priority Queues:**
+   - Write a program that merges two priority queues into one.
+2. **Change Priority of an Element:**
+   - Write a program that changes the priority of a specific element in the priority queue.
+3. **Implement Dijkstra's Algorithm:**
+   - Write a program that implements Dijkstra's algorithm using a priority queue.
+4. **Kth Largest Element in a Stream:**
+   - Write a program that finds the Kth largest element in a stream of integers using a priority queue.
+5. **Implement Huffman Coding:**
+   - Write a program that implements Huffman coding using a priority queue.
+
+<!-- Hash -->
+
+## 7. Hashing
+
+### 7.1 Hash Table (Array-Based)
+
+#### 1. Basic Operations
+
+1. **Insert Key-Value Pair (Array-Based):**
+   - Write a program that inserts a key-value pair into a hash table using array-based implementation.
+2. **Delete Key-Value Pair (Array-Based):**
+   - Write a program that deletes a key-value pair from the hash table using array-based implementation.
+3. **Search for Key (Array-Based):**
+   - Write a program that searches for a key in a hash table and retrieves the corresponding value (array-based implementation).
+4. **Handle Collisions using Separate Chaining:**
+   - Write a program that handles hash collisions using separate chaining (linked list).
+5. **Handle Collisions using Linear Probing:**
+   - Write a program that handles hash collisions using linear probing.
+6. **Check if Hash Table is Empty (Array-Based):**
+   - Write a program that checks if the hash table is empty (array-based implementation).
+
+### 7.2 Hash Map (Linked List-Based)
+
+#### 1. Basic Operations
+
+1. **Insert Key-Value Pair (Linked List-Based):**
+   - Write a program that inserts a key-value pair into a hash map using a linked list-based implementation.
+2. **Delete Key-Value Pair (Linked List-Based):**
+   - Write a program that deletes a key-value pair from a hash map using a linked list-based implementation.
+3. **Search for Key (Linked List-Based):**
+   - Write a program that searches for a key in a hash map and retrieves the corresponding value (linked list-based implementation).
+4. **Handle Collisions using Separate Chaining (Linked List-Based):**
+   - Write a program that handles hash collisions using separate chaining in a linked list-based hash map.
+
+### 7.3 Hash Set (Array-Based)
+
+#### 1. Basic Operations
+
+1. **Insert Element (Hash Set):**
+   - Write a program that inserts an element into a hash set.
+2. **Delete Element (Hash Set):**
+   - Write a program that deletes an element from a hash set.
+3. **Search for Element (Hash Set):**
+   - Write a program that searches for an element in a hash set.
+4. **Handle Collisions using Open Addressing (Hash Set):**
+   - Write a program that handles collisions in a hash set using open addressing.
+
+### 7.4 Advanced Operations
+
+1. **Rehashing:**
+   - Write a program that resizes and rehashes a hash table when it becomes too full.
+2. **Find Duplicate Elements using a Hash Set:**
+   - Write a program that reads an array and finds all duplicate elements using a hash set.
+3. **Find Missing Element in a Range:**
+   - Write a program that finds the missing element in an array of consecutive numbers using hashing.
+4. **Group Anagrams:**
+   - Write a program that groups a list of strings into sets of anagrams using a hash table.
+5. **Implement LRU Cache:**
+   - Write a program that implements an LRU (Least Recently Used) cache using a hash map and doubly linked list.
+6. **Two Sum Problem:**
+   - Write a program that finds two numbers in an array that sum up to a target value using a hash table.
+7. **Check if Two Strings are Isomorphic:**
+   - Write a program that checks if two strings are isomorphic (can be transformed into each other by mapping characters) using a hash table.
+8. **Find First Non-Repeating Character:**
+   - Write a program that finds the first non-repeating character in a string using a hash map.
+9. **Longest Substring Without Repeating Characters:**
+   - Write a program that finds the length of the longest substring without repeating characters using hashing.
+10. **Count Distinct Elements in Every Window of Size K:**
+    - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
