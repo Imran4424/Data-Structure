@@ -251,3 +251,79 @@
    - Write a program to detect a loop in a circular linked list.
 2. **Find Length of Circular Linked List:**
    - Write a program to find the length of a circular linked list.
+
+## 3. Stack
+
+### 3.1 Stack Using Array
+
+#### 1. Basic Operations
+
+1. **Push Operation:**
+   - Write a program to implement the push operation in a stack using an array.
+2. **Pop Operation:**
+   - Write a program to implement the pop operation in a stack using an array.
+3. **Peek Operation:**
+   - Write a program to implement the peek operation (view the top element) in a stack using an array.
+4. **Check if Empty:**
+   - Write a program to check if the stack is empty using an array.
+5. **Check if Full:**
+   - Write a program to check if the stack is full using an array.
+6. **Display Stack:**
+   - Write a program to display all elements in a stack using an array.
+
+#### 2. Advanced Operations
+
+1. **Reverse a String:**
+   - Write a program to reverse a string using a stack implemented with an array.
+2. **Balanced Parentheses:**
+   - Write a program to check if the parentheses in an expression are balanced using a stack implemented with an array.
+3. **Postfix Evaluation:**
+   - Write a program to evaluate a postfix expression using a stack implemented with an array.
+4. **Infix to Postfix Conversion:**
+   - Write a program to convert an infix expression to postfix using a stack implemented with an array.
+5. **Infix to Prefix Conversion:**
+   - Write a program to convert an infix expression to prefix using a stack implemented with an array.
+
+### 3.2 Stack Using Linked List
+
+#### 1. Basic Operations
+
+1. **Push Operation:**
+   - Write a program to implement the push operation in a stack using a linked list.
+2. **Pop Operation:**
+   - Write a program to implement the pop operation in a stack using a linked list.
+3. **Peek Operation:**
+   - Write a program to implement the peek operation (view the top element) in a stack using a linked list.
+4. **Check if Empty:**
+   - Write a program to check if the stack is empty using a linked list.
+5. **Display Stack:**
+   - Write a program to display all elements in a stack using a linked list.
+
+#### 2. Advanced Operations
+
+1. **Reverse a Linked List:**
+   - Write a program to reverse a linked list using a stack implemented with a linked list.
+2. **Sort a Stack:**
+   - Write a program to sort a stack using a temporary stack (linked list-based stack).
+3. **Stack with Min Function:**
+   - Write a program to implement a stack with a function `getMin()` that retrieves the minimum element in constant time using a linked list-based stack.
+
+### 3.3 Applications of Stack
+
+#### 1. Mathematical Applications
+
+1. **Check Palindrome:**
+   - Write a program to check if a string is a palindrome using a stack.
+2. **Next Greater Element:**
+   - Write a program to find the next greater element for each element in an array using a stack.
+3. **Sort Stack:**
+   - Write a program to sort a stack using another temporary stack.
+
+#### 2. Real-World Applications
+
+1. **Undo/Redo Functionality:**
+   - Write a program to implement undo and redo functionality using two stacks.
+2. **Stock Span Problem:**
+   - Write a program to solve the stock span problem using a stack.
+3. **Celebrity Problem:**
+   - Write a program to find the celebrity in a group using a stack.
