@@ -270,8 +270,6 @@
    - Write a program to check if the stack is empty using an array.
 5. **Check if Full:**
    - Write a program to check if the stack is full using an array.
-6. **Display Stack:**
-   - Write a program to display all elements in a stack using an array.
 
 #### 2. Advanced Operations
 
@@ -298,8 +296,6 @@
    - Write a program to implement the peek operation (view the top element) in a stack using a linked list.
 4. **Check if Empty:**
    - Write a program to check if the stack is empty using a linked list.
-5. **Display Stack:**
-   - Write a program to display all elements in a stack using a linked list.
 
 #### 2. Advanced Operations
 
@@ -352,8 +348,6 @@
    - Write a program to check if the queue is empty using an array.
 6. **Check if Full:**
    - Write a program to check if the queue is full using an array.
-7. **Display Queue:**
-   - Write a program to display all elements in a queue using an array.
 
 #### 2. Advanced Operations
 
@@ -378,8 +372,6 @@
    - Write a program to implement the rear operation (view the rear element) in a queue using a linked list.
 5. **Check if Empty:**
    - Write a program to check if the queue is empty using a linked list.
-6. **Display Queue:**
-   - Write a program to display all elements in a queue using a linked list.
 
 #### 2. Advanced Operations
 
