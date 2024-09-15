@@ -1,7 +1,6 @@
 /*
-	3.Peek Operation:
-	Write a program to implement the peek operation (view the top element) 
-	in a stack using a linked list.
+	4.Check if Empty:
+	Write a program to check if the stack is empty using a linked list.
 */
 
 #include <iostream>
@@ -126,12 +125,20 @@ int top() {
 	return travel -> data;
 }
 
+bool isEmpty() {
+	return head == NULL ? true : false;
+}
+
 int main(int argc, char const *argv[])
 {
 	// head = NULL;
 	int num;
 	cout << "How many nodes you want to push in the stack: ";
 	cin >> num;
+
+	if (isEmpty()) {
+		cout << "Stack is empty" << endl;
+	}
 
 	for(int i = 0; i < num; ++i) {
 		// value's scope is inside this for loop
@@ -145,6 +152,10 @@ int main(int argc, char const *argv[])
 
 	pop();
 	cout << "top value is: " << top() << endl;
+
+	if (isEmpty()) {
+		cout << "Stack is empty" << endl;
+	}
 
 	return 0;
 }

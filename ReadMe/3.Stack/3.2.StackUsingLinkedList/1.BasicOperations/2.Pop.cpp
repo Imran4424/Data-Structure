@@ -1,6 +1,6 @@
 /*
-	1.Push Operation:
-	Write a program to implement the push operation in a stack using a linked list.
+	2.Pop Operation:
+	Write a program to implement the pop operation in a stack using a linked list.
 */
 
 #include <iostream>
