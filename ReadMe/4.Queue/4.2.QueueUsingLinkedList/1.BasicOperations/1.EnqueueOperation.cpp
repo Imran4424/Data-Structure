@@ -1,6 +1,6 @@
 /*
-	2.Pop Operation:
-	Write a program to implement the pop operation in a stack using a linked list.
+	1.Enqueue Operation(Push)
+	Write a program to implement the enqueue operation in a queue using a linked list.
 */
 
 #include <iostream>
@@ -33,11 +33,10 @@ struct Node
 	}
 };
 
-
 // global head
 // variable named head's scope is global
 // it will alive in entire code from this line
-Node* head = NULL;
+Node* head;
 
 // push operation
 // push operation is nothing but insert at End
@@ -66,49 +65,11 @@ void push(int value) {
 	travel -> next = tempNode;
 }
 
-// pop operation
-// pop operation is nothing but delete at End
-void pop() {
-	// linklist has no nodes
-	if (NULL == head){
-		cout << "Error! There is no node in queue" << endl;
-		return;
-	}
-
-	// linklist has only one node
-	if (NULL == head -> next) {
-		head = NULL;
-		// cause after deleting the last node there won't be any nodes in the linked list
-	}
-
-	// linked has multiple nodes
-
-	// first we need to find the pointer of last node
-	// pointer of last node is residing inside last node's previous node
-	// so for deleting from end, first we need to find last node's previous node
-
-	// find last node's previous node
-
-	// helper pointer to traverse
-	Node* travel = head;
-
-	// travel -> next -> next will be NULL
-	// when we are in node's previous node
-	while(NULL != travel -> next -> next) {
-		// this statment will change the pointer's pointing to the next node
-		travel = travel -> next;
-	}
-
-	// now we found the last node's previous node
-	// delete the last node
-	travel -> next = NULL;
-}
-
 int main(int argc, char const *argv[])
 {
 	// head = NULL;
 	int num;
-	cout << "How many nodes you want to push in the stack: ";
+	cout << "How many nodes you want to push in the queue: ";
 	cin >> num;
 
 	for(int i = 0; i < num; ++i) {
@@ -119,8 +80,6 @@ int main(int argc, char const *argv[])
 
 		push(value);
 	}
-
-	pop();
 
 	return 0;
 }

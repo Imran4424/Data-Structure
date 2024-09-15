@@ -107,6 +107,11 @@ void pop() {
 // peek operation
 // peek operations is also called top
 int top() {
+	if (NULL == head){
+		cout << "Error! There is no node in stack" << endl;
+		return -404;
+	}
+
 	// helper pointer to traverse
 	Node* travel = head;
 

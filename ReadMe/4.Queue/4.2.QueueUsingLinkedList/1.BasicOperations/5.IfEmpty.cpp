@@ -1,7 +1,6 @@
 /*
-	3.Peek Operation:
-	Write a program to implement the peek operation (view the top element) 
-	in a stack using a linked list.
+	5.Check if Empty
+	Write a program to check if the queue is empty using a linked list.
 */
 
 #include <iostream>
@@ -34,11 +33,10 @@ struct Node
 	}
 };
 
-
 // global head
 // variable named head's scope is global
 // it will alive in entire code from this line
-Node* head = NULL;
+Node* head;
 
 // push operation
 // push operation is nothing but insert at End
@@ -68,7 +66,7 @@ void push(int value) {
 }
 
 // pop operation
-// pop operation is nothing but delete at End
+// pop operation is nothing but delete at Begin
 void pop() {
 	// linklist has no nodes
 	if (NULL == head){
@@ -83,31 +81,25 @@ void pop() {
 	}
 
 	// linked has multiple nodes
-
-	// first we need to find the pointer of last node
-	// pointer of last node is residing inside last node's previous node
-	// so for deleting from end, first we need to find last node's previous node
-
-	// find last node's previous node
-
-	// helper pointer to traverse
-	Node* travel = head;
-
-	// travel -> next -> next will be NULL
-	// when we are in node's previous node
-	while(NULL != travel -> next -> next) {
-		// this statment will change the pointer's pointing to the next node
-		travel = travel -> next;
-	}
-
-	// now we found the last node's previous node
-	// delete the last node
-	travel -> next = NULL;
+	// delete the first node
+	head = head -> next;
 }
 
-// peek operation
-// peek operations is also called top
-int top() {
+// front
+// will display the front of the queue
+int front() {
+	// queue is empty or not
+	if (NULL == head) {
+		cout << "Error!!! Queue is empty" << endl;
+		return -404;
+	}
+
+	return head -> data;
+}
+
+// rear
+// will display the back of the queue
+int rear() {
 	if (NULL == head){
 		cout << "Error! There is no node in stack" << endl;
 		return -404;
@@ -132,12 +124,20 @@ int top() {
 	return travel -> data;
 }
 
+bool isEmpty() {
+	return head == NULL ? true : false;
+}
+
 int main(int argc, char const *argv[])
 {
 	// head = NULL;
 	int num;
-	cout << "How many nodes you want to push in the stack: ";
+	cout << "How many nodes you want to push in the queue: ";
 	cin >> num;
+
+	if (isEmpty()) {
+		cout << "Queue is empty" << endl;
+	}
 
 	for(int i = 0; i < num; ++i) {
 		// value's scope is inside this for loop
@@ -146,11 +146,18 @@ int main(int argc, char const *argv[])
 		cin >> value;
 
 		push(value);
-		cout << "top value is: " << top() << endl;
+		cout << "Front value is: " << front() << endl;
+		cout << "Rear value is: " << rear() << endl;
 	}
 
 	pop();
-	cout << "top value is: " << top() << endl;
+
+	cout << "Front value is: " << front() << endl;
+	cout << "Rear value is: " << rear() << endl;
+
+	if (isEmpty()) {
+		cout << "Queue is empty" << endl;
+	}
 
 	return 0;
 }

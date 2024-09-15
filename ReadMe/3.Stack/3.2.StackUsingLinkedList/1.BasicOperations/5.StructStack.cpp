@@ -94,6 +94,11 @@ struct Stack
 	// peek operation
 	// peek operations is also called top
 	int top() {
+		if (isEmpty()){
+			cout << "Error! There is no node in stack" << endl;
+			return -404;
+		}
+
 		// helper pointer to traverse
 		Node* travel = head;
 

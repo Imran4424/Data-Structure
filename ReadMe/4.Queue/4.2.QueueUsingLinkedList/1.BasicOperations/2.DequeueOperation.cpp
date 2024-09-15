@@ -1,7 +1,6 @@
 /*
-	3.Peek Operation:
-	Write a program to implement the peek operation (view the top element) 
-	in a stack using a linked list.
+	2.Dequeue Operation(Pop)
+	Write a program to implement the dequeue operation in a queue using a linked list.
 */
 
 #include <iostream>
@@ -34,11 +33,10 @@ struct Node
 	}
 };
 
-
 // global head
 // variable named head's scope is global
 // it will alive in entire code from this line
-Node* head = NULL;
+Node* head;
 
 // push operation
 // push operation is nothing but insert at End
@@ -68,7 +66,7 @@ void push(int value) {
 }
 
 // pop operation
-// pop operation is nothing but delete at End
+// pop operation is nothing but delete at Begin
 void pop() {
 	// linklist has no nodes
 	if (NULL == head){
@@ -83,60 +81,15 @@ void pop() {
 	}
 
 	// linked has multiple nodes
-
-	// first we need to find the pointer of last node
-	// pointer of last node is residing inside last node's previous node
-	// so for deleting from end, first we need to find last node's previous node
-
-	// find last node's previous node
-
-	// helper pointer to traverse
-	Node* travel = head;
-
-	// travel -> next -> next will be NULL
-	// when we are in node's previous node
-	while(NULL != travel -> next -> next) {
-		// this statment will change the pointer's pointing to the next node
-		travel = travel -> next;
-	}
-
-	// now we found the last node's previous node
-	// delete the last node
-	travel -> next = NULL;
-}
-
-// peek operation
-// peek operations is also called top
-int top() {
-	if (NULL == head){
-		cout << "Error! There is no node in stack" << endl;
-		return -404;
-	}
-
-
-	// helper pointer to traverse
-	Node* travel = head;
-
-	// travel -> next will be NULL
-	// when we are in last node
-	while(NULL != travel -> next) {
-		// this statement will change the pointer's pointing to the next node
-		// why we are doing this
-		// cause we need to find the last node
-		// so we gonna do this until we find the last node
-		travel = travel -> next;
-	}
-
-	// now we are at last node
-	// just return the last node value
-	return travel -> data;
+	// delete the first node
+	head = head -> next;
 }
 
 int main(int argc, char const *argv[])
 {
 	// head = NULL;
 	int num;
-	cout << "How many nodes you want to push in the stack: ";
+	cout << "How many nodes you want to push in the queue: ";
 	cin >> num;
 
 	for(int i = 0; i < num; ++i) {
@@ -146,11 +99,9 @@ int main(int argc, char const *argv[])
 		cin >> value;
 
 		push(value);
-		cout << "top value is: " << top() << endl;
 	}
 
 	pop();
-	cout << "top value is: " << top() << endl;
 
 	return 0;
 }
