@@ -519,50 +519,96 @@
 
 ## 7. Hashing
 
-### 7.1 Hash Table (Array-Based)
+### 7.1 Learning Hash
 
-#### 1. Basic Operations
+1. **Basic Hashing with Direct Indexing:**
 
-1. **Insert Key-Value Pair (Array-Based):**
-   - Write a program that inserts a key-value pair into a hash table using array-based implementation.
-2. **Delete Key-Value Pair (Array-Based):**
-   - Write a program that deletes a key-value pair from the hash table using array-based implementation.
-3. **Search for Key (Array-Based):**
-   - Write a program that searches for a key in a hash table and retrieves the corresponding value (array-based implementation).
-4. **Handle Collisions using Separate Chaining:**
-   - Write a program that handles hash collisions using separate chaining (linked list).
-5. **Handle Collisions using Linear Probing:**
-   - Write a program that handles hash collisions using linear probing.
-6. **Check if Hash Table is Empty (Array-Based):**
-   - Write a program that checks if the hash table is empty (array-based implementation).
+   - **Problem:** Write a program to implement basic hashing by directly mapping keys to array indices using a simple hash function \( h(k) = k \). Store the keys in an array and display the resulting array. Example: Counting the letter count of a string
 
-### 7.2 Hash Map (Linked List-Based)
+2. **Understanding Collisions:**
 
-#### 1. Basic Operations
+   - **Problem:** Using the hash function \( h(k) = k \mod 5 \), insert the keys `5, 10, 15` into an array of size `5`. Observe what happens when multiple keys hash to the same index and explain the concept of collisions.
 
-1. **Insert Key-Value Pair (Linked List-Based):**
-   - Write a program that inserts a key-value pair into a hash map using a linked list-based implementation.
-2. **Delete Key-Value Pair (Linked List-Based):**
-   - Write a program that deletes a key-value pair from a hash map using a linked list-based implementation.
-3. **Search for Key (Linked List-Based):**
-   - Write a program that searches for a key in a hash map and retrieves the corresponding value (linked list-based implementation).
-4. **Handle Collisions using Separate Chaining (Linked List-Based):**
-   - Write a program that handles hash collisions using separate chaining in a linked list-based hash map.
+3. **Handling Collisions with Linear Probing:**
 
-### 7.3 Hash Set (Array-Based)
+   - **Problem:** Modify the previous program to handle collisions using linear probing. Insert the keys `5, 10, 15` into the hash table and demonstrate how collisions are resolved. Display the final hash table.
 
-#### 1. Basic Operations
+4. **Handling Collisions with Quadratic Probing:**
 
-1. **Insert Element (Hash Set):**
-   - Write a program that inserts an element into a hash set.
-2. **Delete Element (Hash Set):**
-   - Write a program that deletes an element from a hash set.
-3. **Search for Element (Hash Set):**
-   - Write a program that searches for an element in a hash set.
-4. **Handle Collisions using Open Addressing (Hash Set):**
-   - Write a program that handles collisions in a hash set using open addressing.
+   - **Problem:** Write a program to handle collisions using quadratic probing with the probing sequence \( h(k, i) = (h(k) + i^2) \mod n \). Insert the keys `5, 10, 15` into a hash table of size `7` and show how quadratic probing handles collisions differently from linear probing.
 
-### 7.4 Advanced Operations
+5. **Importance of a Good Hash Function:**
+
+   - **Problem:** Explain why the choice of a hash function is crucial in a hash table. Provide an example where a poor hash function leads to many collisions. Then, design a better hash function for the same set of keys and compare the results.
+
+6. **Implementing a Custom Hash Function:**
+
+   - **Problem:** Write a program to implement a custom hash function that distributes a given set of keys more uniformly across the hash table. Use your hash function to insert keys and display the hash table to show improved distribution.
+
+7. **Bucket Hashing Using a 2D Array:**
+
+   - **Problem:** Implement bucket hashing using a 2D array (array of arrays). Use the hash function \( h(k) = k \mod 3 \) and insert the keys `5, 8, 11, 14` into the hash table. Store colliding keys in the same bucket and display the contents of each bucket.
+
+8. **Hashing with Linked Lists (Chaining):**
+
+   - Write a program to implement a hash table where each array index contains a linked list to handle collisions (chaining). Use a hash function to insert keys into the hash table and demonstrate how the linked lists store colliding keys.
+
+9. **Implementing Chaining to Resolve Collisions:**
+
+   - Write a program to implement chaining in a hash table to resolve collisions. Insert a set of keys into the hash table, where each collision results in a new node being added to a linked list at that index. Display the hash table with the linked lists.
+
+10. **Search Operation in a Hash Table with Chaining:**
+
+- Write a program to search for a specific key in a hash table that uses chaining. Implement the search function that traverses the linked list at the hashed index to find the key.
+
+10. **Deletion in a Hash Table with Chaining:**
+
+    - Write a program to delete a specific key from a hash table that uses chaining. Implement the deletion function that removes the key from the linked list at the hashed index.
+
+11. **Rehashing in Hash Tables:**
+
+    - Write a program to implement rehashing in a hash table when the load factor exceeds a certain threshold. Show how to rehash the existing keys into a larger hash table with a new hash function.
+
+12. **Double Hashing for Collision Resolution:**
+
+    - Write a program to implement a hash table using double hashing for collision resolution. Use two hash functions \( h_1(k) = k \mod n \) and \( h_2(k) = 1 + (k \mod (n-1)) \). Insert keys into the hash table and demonstrate how double hashing resolves collisions.
+
+13. **Implementing a Custom Hash Function:**
+
+    - Write a program to implement a custom hash function for string keys. The function should convert a string into an integer hash value that is uniformly distributed across the hash table indices.
+
+14. **Performance Analysis of Hash Tables:**
+
+    - Analyze the time complexity of various operations (insertion, search, deletion) in a hash table using different collision resolution methods (linear probing, quadratic probing, chaining). Write a report summarizing your findings.
+
+15. **Comparing Collision Resolution Strategies:**
+
+    - Write programs to implement hash tables using linear probing, quadratic probing, and chaining. Insert the same set of keys into each hash table and compare their performance in terms of collisions, search time, and load factors.
+
+16. **Implementing Open Addressing Techniques:**
+
+    - Write a program to implement a hash table using open addressing techniques (linear probing, quadratic probing, and double hashing). Demonstrate how each technique handles collisions and analyze their efficiency.
+
+17. **Designing a Hash Table for a Real-world Application:**
+
+    - Design and implement a hash table for a real-world application, such as a phonebook or dictionary. Choose an appropriate hash function and collision resolution method. Ensure efficient insertion, search, and deletion operations.
+
+18. **Implementing a Hash Map (Associative Array):**
+
+    - Write a program to implement a hash map that associates keys with values. Use a hash table with chaining to handle collisions. Implement functions to insert, search, and delete key-value pairs.
+
+19. **Handling Deletions in Open Addressing:**
+
+    - Write a program to correctly handle deletions in a hash table that uses open addressing (e.g., linear probing). Implement lazy deletion or special markers to maintain the integrity of the probing sequence.
+
+20. **Dynamic Resizing of a Hash Table:**
+
+    - Write a program to implement a hash table that dynamically resizes (expands or contracts) based on the load factor. Ensure that all elements are rehashed correctly after resizing.
+
+21. **Hashing and Load Factors:**
+    - Experiment with different load factors in a hash table using chaining and open addressing. Write a report on how the load factor affects the performance of the hash table operations.
+
+### 7.2 Advanced Operations
 
 1. **Rehashing:**
    - Write a program that resizes and rehashes a hash table when it becomes too full.
