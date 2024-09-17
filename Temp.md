@@ -77,4 +77,7 @@
     - Write a program to implement a hash table that dynamically resizes (expands or contracts) based on the load factor. Ensure that all elements are rehashed correctly after resizing.
 
 20. **Hashing and Load Factors:**
+
     - Experiment with different load factors in a hash table using chaining and open addressing. Write a report on how the load factor affects the performance of the hash table operations.
+
+21. **Hash**
