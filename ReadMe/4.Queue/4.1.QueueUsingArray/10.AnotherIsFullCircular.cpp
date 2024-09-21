@@ -9,7 +9,7 @@ using namespace std;
 // in circular queue
 // we need to big size array
 // also need to be efficient
-const int SIZE = 7;
+const int SIZE = 33033;
 
 struct Queue
 {
