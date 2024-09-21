@@ -1,11 +1,14 @@
 /*
-	8.Struct Queue:
-	Write a program to implement a queue within struct using an array.
+	8.Is Empty logic in circular queue:
+	Write a program to implement is empty logic in a circular queue using an array.
 */
 
 #include <iostream>
 using namespace std;
 
+// in circular queue
+// we need to big size array
+// also need to be efficient
 const int SIZE = 7;
 
 struct Queue
@@ -26,7 +29,7 @@ struct Queue
 	}
 
 	bool isFull() {
-		if (rear % SIZE == front) {
+		if (count == SIZE && rear % SIZE == front) {
 			return true;
 		}
 
@@ -58,17 +61,18 @@ struct Queue
 	// pop operaion in queue never returns anything
 	// it just deletes the front element
 	void pop() {
-		if (SIZE == rear) {
-			if (isEmpty()) {
-				cout << "Error!!! Queue is empty" << endl;
-				return;
-			}
-
-			// resetting the front
-			front = 0;
+		if (isEmpty()) {
+			cout << "Error!!! Queue is empty" << endl;
+			return;
 		}
 
 		front++;
+
+		// order is important
+		if (SIZE == front) {
+			// resetting the front
+			front = 0;
+		}
 
 		// decrementing the count
 		count--;
@@ -119,11 +123,24 @@ int main(int argc, char const *argv[])
 		pritha.push(value);
 		cout << "Front value is: " << pritha.frontOperation() << endl;
 		cout << "Rear value is: " << pritha.rearOperation() << endl;
+		cout << endl;
+	}
+
+	for (int i = 0; i < SIZE; ++i) {
+		pritha.pop();
+
+		cout << "Front value is: " << pritha.frontOperation() << endl;
+		cout << "Rear value is: " << pritha.rearOperation() << endl;
+		cout << endl;
 	}
 
 	pritha.pop();
+	
+	cout << "Pushing 101" << endl;
+	pritha.push(101);
 	cout << "Front value is: " << pritha.frontOperation() << endl;
 	cout << "Rear value is: " << pritha.rearOperation() << endl;
+	cout << endl;
 
 	if (pritha.isEmpty()) {
 		cout << "Queue is empty" << endl;

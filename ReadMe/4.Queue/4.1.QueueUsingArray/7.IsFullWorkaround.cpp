@@ -6,6 +6,9 @@
 #include <iostream>
 using namespace std;
 
+// in circular queue
+// we need to big size array
+// also need to be efficient
 const int SIZE = 7;
 
 // global array for queue
@@ -52,6 +55,12 @@ void push(int value) {
 	prevRear = rear;
 	rear++;
 
+	// circular workaround codes
+	if (SIZE == front) {
+		// resetting the front
+		front = 0;
+	} 
+
 	// queue[rear++] = value;
 }
 
@@ -59,17 +68,16 @@ void push(int value) {
 // pop operaion in queue never returns anything
 // it just deletes the front element
 void pop() {
-	if (SIZE == rear) {
-		if (isEmpty()) {
-			cout << "Error!!! Queue is empty" << endl;
-			return;
-		}
+	if (isEmpty()) {
+		cout << "Error!!! Queue is empty" << endl;
+		return;
+	}
 
+	if (SIZE == front) {
 		// resetting the front
 		front = 0;
 	}
 
-	// prevFront = front;
 	prevRear = rear;
 	front++;
 }
@@ -115,11 +123,24 @@ int main(int argc, char const *argv[])
 		push(value);
 		cout << "Front value is: " << frontOperation() << endl;
 		cout << "Rear value is: " << rearOperation() << endl;
+		cout << endl;
+	}
+
+	for (int i = 0; i < SIZE; ++i) {
+		pop();
+
+		cout << "Front value is: " << frontOperation() << endl;
+		cout << "Rear value is: " << rearOperation() << endl;
+		cout << endl;
 	}
 
 	pop();
+
+	cout << "Pushing 101" << endl;
+	push(101);
 	cout << "Front value is: " << frontOperation() << endl;
 	cout << "Rear value is: " << rearOperation() << endl;
+	cout << endl;
 
 	if (isEmpty()) {
 		cout << "Queue is empty" << endl;

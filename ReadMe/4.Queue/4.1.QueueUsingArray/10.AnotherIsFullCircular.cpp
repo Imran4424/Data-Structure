@@ -1,6 +1,6 @@
 /*
-	8.Struct Queue:
-	Write a program to implement a queue within struct using an array.
+	8.Is Full logic in circular queue:
+	Write a program to implement is full logic in a circular queue using an array.
 */
 
 #include <iostream>
@@ -21,23 +21,25 @@ struct Queue
 	int rear = 0;
 
 	// these are for checking if queue is empty or not
-	// in circular array based queue situation
-	int prevRear = 0;
+	// count is for tracking the queue element count
+	int count = 0;
 
 	bool isEmpty() {
-		if (prevRear == rear && front == rear) {
-			return true;
-		}
-
-		return false;
+		return count == 0 ? true : false;
 	}
 
-	bool isFull() {
-		if (rear % SIZE == front) {
-			return true;
-		}
+	// this one also works
+	// bool isFull() {
+	// 	if (count == SIZE && rear % SIZE == front) {
+	// 		return true;
+	// 	}
 
-		return false;
+	// 	return false;
+	// }
+
+	// but this one liner is much easier
+	bool isFull() {
+		return count == SIZE ? true : false;
 	}
 
 	// push for queue in array
@@ -53,14 +55,10 @@ struct Queue
 		}
 
 		queue[rear] = value;
-		prevRear = rear;
 		rear++;
 
-		// circular workaround codes
-		if (SIZE == front) {
-			// resetting the front
-			front = 0;
-		} 
+		// incrementing the count
+		count++;
 
 		// queue[rear++] = value;
 	}
@@ -74,13 +72,16 @@ struct Queue
 			return;
 		}
 
+		front++;
+
+		// order is important
 		if (SIZE == front) {
 			// resetting the front
 			front = 0;
 		}
 
-		prevRear = rear;
-		front++;
+		// decrementing the count
+		count--;
 	}
 
 	// front
@@ -128,11 +129,24 @@ int main(int argc, char const *argv[])
 		pritha.push(value);
 		cout << "Front value is: " << pritha.frontOperation() << endl;
 		cout << "Rear value is: " << pritha.rearOperation() << endl;
+		cout << endl;
+	}
+
+	for (int i = 0; i < SIZE; ++i) {
+		pritha.pop();
+
+		cout << "Front value is: " << pritha.frontOperation() << endl;
+		cout << "Rear value is: " << pritha.rearOperation() << endl;
+		cout << endl;
 	}
 
 	pritha.pop();
+	
+	cout << "Pushing 101" << endl;
+	pritha.push(101);
 	cout << "Front value is: " << pritha.frontOperation() << endl;
 	cout << "Rear value is: " << pritha.rearOperation() << endl;
+	cout << endl;
 
 	if (pritha.isEmpty()) {
 		cout << "Queue is empty" << endl;
