@@ -79,4 +79,3 @@
 20. **Hashing and Load Factors:**
 
     - Experiment with different load factors in a hash table using chaining and open addressing. Write a report on how the load factor affects the performance of the hash table operations.
-    -
