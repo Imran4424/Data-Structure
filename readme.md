@@ -525,39 +525,44 @@
 
    - **Problem:** Write a program to check if two strings are anagrams of each other. Two strings are called anagrams if they use the same characters in the same frequency, but in any order. For example, "listen" and "silent" are anagrams. Use an array to count the frequency of each character in both strings to determine if they are anagrams.
 
-2. **Understanding Collisions:**
+2. **Hash Functions**
+
+   - **Problem:** Write a program to check if two strings are anagrams of each other. Two strings are called anagrams if they use the same characters in the same frequency, but in any order. For example, "listen" and "silent" are anagrams. Use an array to count the frequency of each character in both strings to determine if they are anagrams.
+   - Use Hash Function
+
+3. **Understanding Collisions:**
 
    - **Problem:** Write a program to implement basic hashing using the hash function \( h(k) = k \mod 5 \), insert the keys `5, 10, 15` into an array of size `5`. Observe what happens when multiple keys hash to the same index and explain the concept of collisions.
 
-3. **Handling Collisions with Linear Probing:**
+4. **Handling Collisions with Linear Probing:**
 
    - **Problem:** Modify the previous program to handle collisions using linear probing. Insert the keys `5, 10, 15` into the hash table and demonstrate how collisions are resolved. Display the final hash table.
 
-4. **Handling Collisions with Quadratic Probing:**
+5. **Handling Collisions with Quadratic Probing:**
 
    - **Problem:** Write a program to handle collisions using quadratic probing with the probing sequence \( h(k, i) = (h(k) + i^2) \mod n \). Insert the keys `5, 10, 15` into a hash table of size `7` and show how quadratic probing handles collisions differently from linear probing.
 
-5. **Importance of a Good Hash Function:**
+6. **Importance of a Good Hash Function:**
 
    - **Problem:** Explain why the choice of a hash function is crucial in a hash table. Provide an example where a poor hash function leads to many collisions. Then, design a better hash function for the same set of keys and compare the results.
 
-6. **Implementing a Custom Hash Function:**
+7. **Implementing a Custom Hash Function:**
 
    - **Problem:** Write a program to implement a custom hash function that distributes a given set of keys more uniformly across the hash table. Use your hash function to insert keys and display the hash table to show improved distribution.
 
-7. **Bucket Hashing Using a 2D Array:**
+8. **Bucket Hashing Using a 2D Array:**
 
    - **Problem:** Implement bucket hashing using a 2D array (array of arrays). Use the hash function \( h(k) = k \mod 3 \) and insert the keys `5, 8, 11, 14` into the hash table. Store colliding keys in the same bucket and display the contents of each bucket.
 
-8. **Hashing with Linked Lists (Chaining):**
+9. **Hashing with Linked Lists (Chaining):**
 
-   - Write a program to implement a hash table where each array index contains a linked list to handle collisions (chaining). Use a hash function to insert keys into the hash table and demonstrate how the linked lists store colliding keys.
+- Write a program to implement a hash table where each array index contains a linked list to handle collisions (chaining). Use a hash function to insert keys into the hash table and demonstrate how the linked lists store colliding keys.
 
-9. **Implementing Chaining to Resolve Collisions:**
+10. **Implementing Chaining to Resolve Collisions:**
 
-   - Write a program to implement chaining in a hash table to resolve collisions. Insert a set of keys into the hash table, where each collision results in a new node being added to a linked list at that index. Display the hash table with the linked lists.
+    - Write a program to implement chaining in a hash table to resolve collisions. Insert a set of keys into the hash table, where each collision results in a new node being added to a linked list at that index. Display the hash table with the linked lists.
 
-10. **Search Operation in a Hash Table with Chaining:**
+11. **Search Operation in a Hash Table with Chaining:**
 
 - Write a program to search for a specific key in a hash table that uses chaining. Implement the search function that traverses the linked list at the hashed index to find the key.
 
