@@ -636,3 +636,25 @@
 10. **Count Distinct Elements in Every Window of Size K:** - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
 
 <!-- Binary Tree -->
+
+## 8. Binary Tree
+
+<!-- Binary Search Tree -->
+
+## 9. Binary Search Tree
+
+<!-- Self Balancing Binary Search Tree -->
+
+## 10. Self Balancing Binary Search Tree
+
+<!-- Heap -->
+
+## 11. Heap
+
+<!-- Segment Tree -->
+
+## 12. Segment Tree
+
+<!-- Trie(Prefix Tree) -->
+
+## 13. Trie(Prefix Tree)
