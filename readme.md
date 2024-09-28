@@ -523,11 +523,11 @@
 
 1. **Basic Hashing with Direct Indexing:**
 
-   - **Problem:** Write a program to implement basic hashing by directly mapping keys to array indices using a simple hash function \( h(k) = k \). Store the keys in an array and display the resulting array. Example: Counting the letter count of a string
+   - **Problem:** Write a program to check if two strings are anagrams of each other. Two strings are called anagrams if they use the same characters in the same frequency, but in any order. For example, "listen" and "silent" are anagrams. Use an array to count the frequency of each character in both strings to determine if they are anagrams.
 
 2. **Understanding Collisions:**
 
-   - **Problem:** Using the hash function \( h(k) = k \mod 5 \), insert the keys `5, 10, 15` into an array of size `5`. Observe what happens when multiple keys hash to the same index and explain the concept of collisions.
+   - **Problem:** Write a program to implement basic hashing using the hash function \( h(k) = k \mod 5 \), insert the keys `5, 10, 15` into an array of size `5`. Observe what happens when multiple keys hash to the same index and explain the concept of collisions.
 
 3. **Handling Collisions with Linear Probing:**
 

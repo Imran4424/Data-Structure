@@ -11,13 +11,52 @@
 #include <iostream>
 using namespace std;
 
-bool isAnagram(string source, string target) {
+int sCount[26];
+int tCount[26];
 
+bool isAnagram(string source, string target) {
+	// first init both frequency count array
+	for (int i = 0; i < 26; ++i) {
+		sCount[i] = 0;
+		tCount[i] = 0;
+	}
+
+	// counting frequency of source
+	for (int i = 0; i < source.size(); ++i) {
+		// type casting
+		int mapIndex = int(source[i] - 'a');
+		sCount[mapIndex] += 1;
+	}
+
+	// couting the frequecy of target
+	for (int i = 0; i < target.size(); ++i) {
+		// type casting
+		int mapIndex = int(target[i] - 'a');
+		tCount[mapIndex]++;
+	}
+
+	// let's compare
+	// if they anagram or not
+	for (int i = 0; i < 26; ++i) {
+		if (sCount[i] != tCount[i]) {
+			return false;
+		}
+	}
+
+	return true;
 }
 
 int main(int argc, char const *argv[])
 {
-	
+	string source = "pritha";
+	string target = "ahtirp";
+
+	if (isAnagram(source, target)) {
+		cout << "Both are anagram" << endl;
+	} else {
+		cout << "They are not anagram of each other" << endl;
+	}
+
 	return 0;
 }
 
@@ -84,6 +123,21 @@ int main(int argc, char const *argv[])
 */
 
 /*
-	But we can also 
+	We can also solve this using hash, hash is a datastructure also works on key value pair.
 
+	But we are gonna used a array based hash which is the most basic hash.
+
+	for that we need to map a - z to array indexes
+	we can map 
+	a to 0
+	b to 1
+	c to 3
+	......
+	......
+	......
+	z to 25
+
+	this mapping is reconized as hashing technique
+
+	hash introduced to solve the shortcoming of array and use the benefits of array
 */
