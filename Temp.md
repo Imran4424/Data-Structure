@@ -1,83 +1,100 @@
-### Hash Data Structure Problems
+### Binary Tree Problems
 
-1. **Hashing with Array Index:**
+1. **Basic Binary Tree Creation:**
 
-   - Write a program to implement basic hashing by directly mapping keys to array indices using a simple hash function \( h(k) = k \). Store the keys in an array and display the resulting array. Example: Counting the letter count of a string
+   - **Problem:** Write a program to create a basic binary tree with nodes containing the values `10, 20, 30, 40, 50`. Display the structure of the tree.
 
-2. **Handling Collisions with Linear Probing:**
+2. **Inorder, Preorder, and Postorder Traversal:**
 
-   - Write a program to implement a hash table using linear probing to resolve collisions. Use the hash function \( h(k) = k \mod n \), where \( n \) is the size of the array. Insert a set of keys into the hash table and demonstrate how collisions are resolved using linear probing.
+   - **Problem:** Write a program to implement the inorder, preorder, and postorder traversal algorithms for a binary tree. Use the tree created in the previous problem and print the results of each traversal.
 
-3. **Handling Collisions with Quadratic Probing:**
+3. **Insert a Node in a Binary Tree:**
 
-   - Write a program to implement a hash table using quadratic probing for collision resolution. Use the probing sequence \( h(k, i) = (h(k) + i^2) \mod n \). Insert keys into the hash table and show how quadratic probing handles collisions.
+   - **Problem:** Write a program to insert a node into a binary tree at the first available position (level order insertion). Insert the value `60` into the binary tree created in the first problem.
 
-4. **Understanding and Implementing Hash Functions:**
+4. **Find the Height of a Binary Tree:**
 
-   - Explain why the choice of a hash function is crucial in a hash table. Provide examples of good and poor hash functions. Then, write a program to implement a hash function that distributes keys uniformly across the hash table.
+   - **Problem:** Write a function to calculate the height of a binary tree. Use the tree from the previous problems and determine its height.
 
-5. **Bucket Hashing Using a 2D Array:**
+5. **Level Order Traversal:**
 
-   - Write a program to implement bucket hashing using a 2D array (an array of arrays). Use a hash function to assign keys to buckets (rows of the 2D array) and store colliding keys in the same bucket. Display the contents of each bucket.
+   - **Problem:** Write a program to implement level order traversal of a binary tree using a queue. Print the nodes level by level.
 
-6. **Hashing with Linked Lists (Chaining):**
+6. **Find the Maximum Element in a Binary Tree:**
 
-   - Write a program to implement a hash table where each array index contains a linked list to handle collisions (chaining). Use a hash function to insert keys into the hash table and demonstrate how the linked lists store colliding keys.
+   - **Problem:** Write a function to find the maximum element in a binary tree. Use recursion to compare the values of nodes and find the maximum.
 
-7. **Implementing Chaining to Resolve Collisions:**
+7. **Count the Number of Nodes in a Binary Tree:**
 
-   - Write a program to implement chaining in a hash table to resolve collisions. Insert a set of keys into the hash table, where each collision results in a new node being added to a linked list at that index. Display the hash table with the linked lists.
+   - **Problem:** Write a function to count the total number of nodes in a binary tree. Use the tree from the previous problems and print the result.
 
-8. **Search Operation in a Hash Table with Chaining:**
+8. **Count Leaf Nodes in a Binary Tree:**
 
-   - Write a program to search for a specific key in a hash table that uses chaining. Implement the search function that traverses the linked list at the hashed index to find the key.
+   - **Problem:** Write a function to count the number of leaf nodes (nodes with no children) in a binary tree. Test this function using the tree created previously.
 
-9. **Deletion in a Hash Table with Chaining:**
+9. **Check if Two Trees are Identical:**
 
-   - Write a program to delete a specific key from a hash table that uses chaining. Implement the deletion function that removes the key from the linked list at the hashed index.
+   - **Problem:** Write a function to check if two binary trees are identical in terms of structure and node values. Create two identical trees and one different tree to test your function.
 
-10. **Rehashing in Hash Tables:**
+10. **Find the Depth of a Specific Node:**
 
-    - Write a program to implement rehashing in a hash table when the load factor exceeds a certain threshold. Show how to rehash the existing keys into a larger hash table with a new hash function.
+    - **Problem:** Write a function to find the depth (distance from the root) of a specific node in a binary tree. Use the tree created in the previous problems and find the depth of node `40`.
 
-11. **Double Hashing for Collision Resolution:**
+11. **Mirror a Binary Tree:**
 
-    - Write a program to implement a hash table using double hashing for collision resolution. Use two hash functions \( h_1(k) = k \mod n \) and \( h_2(k) = 1 + (k \mod (n-1)) \). Insert keys into the hash table and demonstrate how double hashing resolves collisions.
+    - **Problem:** Write a function to convert a binary tree into its mirror image. Apply this function to the tree from earlier problems and display the mirrored structure.
 
-12. **Implementing a Custom Hash Function:**
+12. **Check if a Binary Tree is Balanced:**
 
-    - Write a program to implement a custom hash function for string keys. The function should convert a string into an integer hash value that is uniformly distributed across the hash table indices.
+    - **Problem:** Write a function to check if a binary tree is balanced. A balanced tree is one in which the height difference between the left and right subtrees of any node is at most `1`.
 
-13. **Performance Analysis of Hash Tables:**
+13. **Find the Lowest Common Ancestor (LCA):**
 
-    - Analyze the time complexity of various operations (insertion, search, deletion) in a hash table using different collision resolution methods (linear probing, quadratic probing, chaining). Write a report summarizing your findings.
+    - **Problem:** Write a function to find the lowest common ancestor (LCA) of two nodes in a binary tree. Use the tree from previous problems to find the LCA of nodes `20` and `40`.
 
-14. **Comparing Collision Resolution Strategies:**
+14. **Print All Paths from Root to Leaf:**
 
-    - Write programs to implement hash tables using linear probing, quadratic probing, and chaining. Insert the same set of keys into each hash table and compare their performance in terms of collisions, search time, and load factors.
+    - **Problem:** Write a program to print all the paths from the root node to the leaf nodes of a binary tree. Use the tree from earlier problems to list all such paths.
 
-15. **Implementing Open Addressing Techniques:**
+15. **Check if a Binary Tree is Symmetric:**
 
-    - Write a program to implement a hash table using open addressing techniques (linear probing, quadratic probing, and double hashing). Demonstrate how each technique handles collisions and analyze their efficiency.
+    - **Problem:** Write a function to check if a binary tree is symmetric around its center (i.e., it is a mirror of itself). Test your function with both symmetric and asymmetric trees.
 
-16. **Designing a Hash Table for a Real-world Application:**
+16. **Convert a Binary Tree to a Doubly Linked List:**
 
-    - Design and implement a hash table for a real-world application, such as a phonebook or dictionary. Choose an appropriate hash function and collision resolution method. Ensure efficient insertion, search, and deletion operations.
+    - **Problem:** Write a function to convert a binary tree into a doubly linked list using in-order traversal. Display the resulting doubly linked list.
 
-17. **Implementing a Hash Map (Associative Array):**
+17. **Find the Diameter of a Binary Tree:**
 
-    - Write a program to implement a hash map that associates keys with values. Use a hash table with chaining to handle collisions. Implement functions to insert, search, and delete key-value pairs.
+    - **Problem:** Write a function to determine the diameter of a binary tree (the longest path between two leaf nodes). Use the tree from earlier problems and calculate its diameter.
 
-18. **Handling Deletions in Open Addressing:**
+18. **Print Nodes at K Distance from the Root:**
 
-    - Write a program to correctly handle deletions in a hash table that uses open addressing (e.g., linear probing). Implement lazy deletion or special markers to maintain the integrity of the probing sequence.
+    - **Problem:** Write a function to print all nodes at a distance `k` from the root of a binary tree. Use the tree created earlier and print nodes at distance `2`.
 
-19. **Dynamic Resizing of a Hash Table:**
+19. **Zigzag (Spiral) Level Order Traversal:**
 
-    - Write a program to implement a hash table that dynamically resizes (expands or contracts) based on the load factor. Ensure that all elements are rehashed correctly after resizing.
+    - **Problem:** Write a program to perform a zigzag level order traversal of a binary tree. Alternate the traversal direction for each level of the tree.
 
-20. **Hashing and Load Factors:**
+20. **Convert a Binary Tree to its Sum Tree:**
 
-    - Experiment with different load factors in a hash table using chaining and open addressing. Write a report on how the load factor affects the performance of the hash table operations.
+    - **Problem:** Write a function to convert a binary tree into its sum tree, where each node contains the sum of the values of its left and right subtrees. Use the original tree and display the new tree structure.
 
-21. **Hashing**
+21. **Check if a Binary Tree is a Subtree of Another Tree:**
+
+    - **Problem:** Write a function to check if a given binary tree is a subtree of another binary tree. Create a main tree and a subtree to test this function.
+
+22. **Boundary Traversal of a Binary Tree:**
+
+    - **Problem:** Write a program to perform the boundary traversal of a binary tree. Print the boundary nodes in anti-clockwise direction starting from the root.
+
+23. **Serialize and Deserialize a Binary Tree:**
+
+    - **Problem:** Write a function to serialize a binary tree (convert it into a string) and another function to deserialize the string back into the original binary tree. Test both functions to ensure they are working correctly.
+
+24. **Find All Nodes at Distance K from a Given Node:**
+
+    - **Problem:** Write a function to find all nodes that are at distance `k` from a given node in a binary tree. Use the tree from earlier problems and find nodes at distance `2` from node `20`.
+
+25. **Flatten a Binary Tree to a Linked List:**
+    - **Problem:** Write a function to flatten a binary tree to a linked list in-place following preorder traversal. Use the tree from earlier problems and display the linked list.
