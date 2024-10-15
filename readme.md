@@ -635,9 +635,13 @@
    - Write a program that finds the length of the longest substring without repeating characters using hashing.
 10. **Count Distinct Elements in Every Window of Size K:** - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
 
+<!-- Recursion -->
+
+## 8. Recursion
+
 <!-- Binary Tree -->
 
-## 8. Binary Tree
+## 9. Binary Tree
 
 1. **Basic Binary Tree Creation:**
 
@@ -740,32 +744,32 @@
 
 <!-- Complete Binary Tree -->
 
-## 9. Binary Search Tree
+## 10. Binary Search Tree
 
 <!-- Binary Search Tree -->
 
-## 10. Binary Search Tree
+## 11. Binary Search Tree
 
 <!-- Self Balancing Binary Search Tree -->
 
-## 11. Self Balancing Binary Search Tree
+## 12. Self Balancing Binary Search Tree
 
 <!-- Complete Binary Tree -->
 
-## 12. Complete Binary Tree
+## 13. Complete Binary Tree
 
 <!-- Heap -->
 
-## 13. Heap
+## 14. Heap
 
 <!-- Segment Tree -->
 
-## 14. Segment Tree
+## 15. Segment Tree
 
 <!-- Trie(Prefix Tree) -->
 
-## 15. Trie(Prefix Tree)
+## 16. Trie(Prefix Tree)
 
 <!-- Graph -->
 
-## 16. Graph
+## 17. Graph
