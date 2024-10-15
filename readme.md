@@ -750,14 +750,22 @@
 
 ## 11. Self Balancing Binary Search Tree
 
+<!-- Complete Binary Tree -->
+
+## 12. Complete Binary Tree
+
 <!-- Heap -->
 
-## 12. Heap
+## 13. Heap
 
 <!-- Segment Tree -->
 
-## 13. Segment Tree
+## 14. Segment Tree
 
 <!-- Trie(Prefix Tree) -->
 
-## 14. Trie(Prefix Tree)
+## 15. Trie(Prefix Tree)
+
+<!-- Graph -->
+
+## 16. Graph
