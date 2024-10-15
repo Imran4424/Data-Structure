@@ -742,33 +742,33 @@
 25. **Flatten a Binary Tree to a Linked List:**
     - **Problem:** Write a function to flatten a binary tree to a linked list in-place following preorder traversal. Use the tree from earlier problems and display the linked list.
 
-<!-- Complete Binary Tree -->
+<!-- Binary Search Tree -->
 
 ## 10. Binary Search Tree
 
-<!-- Binary Search Tree -->
-
-## 11. Binary Search Tree
-
 <!-- Self Balancing Binary Search Tree -->
 
-## 12. Self Balancing Binary Search Tree
+## 11. Self Balancing Binary Search Tree
 
 <!-- Complete Binary Tree -->
 
-## 13. Complete Binary Tree
+## 12. Complete Binary Tree
 
 <!-- Heap -->
 
-## 14. Heap
+## 13. Heap
 
 <!-- Segment Tree -->
 
-## 15. Segment Tree
+## 14. Segment Tree
 
 <!-- Trie(Prefix Tree) -->
 
-## 16. Trie(Prefix Tree)
+## 15. Trie(Prefix Tree)
+
+<!-- Binary Index Tree -->
+
+## 16. Binary Indexed Tree
 
 <!-- Graph -->
 
