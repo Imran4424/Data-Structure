@@ -148,6 +148,8 @@
 2. **Resizing Dynamic Array:**
    - Write a program that resizes a dynamic array when it gets full.
 
+---
+
 <!-- linked list -->
 
 ## 2. Linked List
@@ -252,6 +254,8 @@
 2. **Find Length of Circular Linked List:**
    - Write a program to find the length of a circular linked list.
 
+---
+
 <!-- Stack -->
 
 ## 3. Stack
@@ -328,6 +332,8 @@
 4. **Depth-First Search (DFS):**
    - Write a program to implement DFS for graph traversal using a stack.
 
+---
+
 <!-- Queue -->
 
 ## 4. Queue
@@ -402,6 +408,8 @@
 3. **Hot Potato Game Simulation:**
    - Write a program to simulate the Hot Potato game using a queue.
 
+---
+
 <!-- Deque -->
 
 ## 5. Deque (Double-Ended Queue)
@@ -459,6 +467,8 @@
 5. **Palindrome Check Using Deque:**
    - Write a program that uses a deque to check if a given string is a palindrome.
 
+---
+
 <!-- Priority Queue -->
 
 ## 6. Priority Queue
@@ -514,6 +524,8 @@
    - Write a program that finds the Kth largest element in a stream of integers using a priority queue.
 5. **Implement Huffman Coding:**
    - Write a program that implements Huffman coding using a priority queue.
+
+---
 
 <!-- Hash -->
 
@@ -635,9 +647,13 @@
    - Write a program that finds the length of the longest substring without repeating characters using hashing.
 10. **Count Distinct Elements in Every Window of Size K:** - Write a program that counts the number of distinct elements in every window of size K in an array using a hash table.
 
+---
+
 <!-- Recursion -->
 
 ## 8. Recursion
+
+---
 
 <!-- Binary Tree -->
 
@@ -741,6 +757,8 @@
 
 25. **Flatten a Binary Tree to a Linked List:**
     - **Problem:** Write a function to flatten a binary tree to a linked list in-place following preorder traversal. Use the tree from earlier problems and display the linked list.
+
+---
 
 <!-- Binary Search Tree -->
 
@@ -846,6 +864,8 @@
 
     - **Problem:** Write a program to create Binary Search Tree(BST) to hold unique elements like Set.
 
+---
+
 <!-- Self Balancing Binary Search Tree -->
 
 ## 11. Self Balancing Binary Search Tree
@@ -950,6 +970,8 @@
 
     - **Problem:** Write a function to check if a given AVL tree or Red-Black Tree is balanced. The AVL tree should satisfy the balance factor property, and the Red-Black Tree should satisfy its balancing rules. Use the trees created earlier to test this function.
 
+---
+
 <!-- Complete Binary Tree -->
 
 ## 12. Complete Binary Tree
@@ -1053,6 +1075,8 @@
 25. **Find the Lowest Common Ancestor (LCA) in a Complete Binary Tree:**
 
     - **Problem:** Write a function to find the lowest common ancestor (LCA) of two nodes in a complete binary tree. Use the tree created earlier to find the LCA of two nodes.
+
+---
 
 <!-- Heap -->
 
@@ -1186,6 +1210,8 @@
    - **Problem:** Write a program to implement the heapsort algorithm to sort an array in **descending order** using a **max-heap**. Use the array `[10, 20, 30, 40, 50, 60, 70]` and sort it in descending order using the heapsort algorithm.
    - **Approach:** The max-heap guarantees that the maximum element is always at the root. You can repeatedly extract the maximum element from the max-heap and store it in the sorted array to achieve descending order.
 
+---
+
 <!-- Segment Tree -->
 
 ## 14. Segment Tree
@@ -1289,6 +1315,8 @@
 25. **Find the Number of Elements Less Than a Given Value in a Range:**
 
     - **Problem:** Write a function to count the number of elements less than a given value `x` in a specific range using a segment tree. Use the array `[10, 20, 30, 40, 50, 60]` and find how many elements are less than `35` between index `0` and `4`.
+
+---
 
 <!-- Trie(Prefix Tree) -->
 
@@ -1394,6 +1422,8 @@
 
     - **Problem:** Write a function to implement lazy deletion in a Trie. Mark words as deleted without removing nodes. Use the Trie from previous problems and delete `"bat"` using lazy deletion.
 
+---
+
 <!-- Binary Indexed Tree (BIT) -->
 
 ## 16. Binary Indexed Tree (BIT)
@@ -1497,6 +1527,8 @@
 25. **Convert a Binary Indexed Tree to a Segment Tree:**
 
     - **Problem:** Write a function to convert a Binary Indexed Tree into a Segment Tree. Use the array `[1, 2, 3, 4, 5]` to build a BIT and convert it into a Segment Tree.
+
+---
 
 <!-- Graph -->
 
