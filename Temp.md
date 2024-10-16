@@ -1,100 +1,107 @@
-### Binary Tree Problems
+<!-- Binary Search Tree (BST) -->
 
-1. **Basic Binary Tree Creation:**
+## 10. Binary Search Tree (BST)
 
-   - **Problem:** Write a program to create a basic binary tree with nodes containing the values `10, 20, 30, 40, 50`. Display the structure of the tree.
+1. **Basic Binary Search Tree Creation:**
 
-2. **Inorder, Preorder, and Postorder Traversal:**
+   - **Problem:** Write a program to create a binary search tree with the following values: `50, 30, 20, 40, 70, 60, 80`. Display the structure of the tree.
 
-   - **Problem:** Write a program to implement the inorder, preorder, and postorder traversal algorithms for a binary tree. Use the tree created in the previous problem and print the results of each traversal.
+2. **Insert a Node in a Binary Search Tree:**
 
-3. **Insert a Node in a Binary Tree:**
+   - **Problem:** Write a program to insert a node into a binary search tree. Insert the value `65` into the binary search tree created in the previous problem.
 
-   - **Problem:** Write a program to insert a node into a binary tree at the first available position (level order insertion). Insert the value `60` into the binary tree created in the first problem.
+3. **Search for a Node in a Binary Search Tree:**
 
-4. **Find the Height of a Binary Tree:**
+   - **Problem:** Write a function to search for a node with a specific value in a binary search tree. Use the tree created in the first problem to search for the value `40`.
 
-   - **Problem:** Write a function to calculate the height of a binary tree. Use the tree from the previous problems and determine its height.
+4. **Delete a Node from a Binary Search Tree:**
 
-5. **Level Order Traversal:**
+   - **Problem:** Write a function to delete a node from a binary search tree. Use the tree from the previous problem and delete the node with the value `70`.
 
-   - **Problem:** Write a program to implement level order traversal of a binary tree using a queue. Print the nodes level by level.
+5. **Find the Minimum and Maximum in a Binary Search Tree:**
 
-6. **Find the Maximum Element in a Binary Tree:**
+   - **Problem:** Write functions to find the minimum and maximum values in a binary search tree. Use the BST from the previous problems to find both.
 
-   - **Problem:** Write a function to find the maximum element in a binary tree. Use recursion to compare the values of nodes and find the maximum.
+6. **Find the Height of a Binary Search Tree:**
 
-7. **Count the Number of Nodes in a Binary Tree:**
+   - **Problem:** Write a function to find the height of a binary search tree. Use the BST created earlier and determine its height.
 
-   - **Problem:** Write a function to count the total number of nodes in a binary tree. Use the tree from the previous problems and print the result.
+7. **Inorder Successor in a Binary Search Tree:**
 
-8. **Count Leaf Nodes in a Binary Tree:**
+   - **Problem:** Write a function to find the inorder successor of a given node in a binary search tree. Use the tree created earlier and find the inorder successor of node `60`.
 
-   - **Problem:** Write a function to count the number of leaf nodes (nodes with no children) in a binary tree. Test this function using the tree created previously.
+8. **Check if a Tree is a Binary Search Tree:**
 
-9. **Check if Two Trees are Identical:**
+   - **Problem:** Write a function to check if a given binary tree is a binary search tree. Create a sample tree and test this function.
 
-   - **Problem:** Write a function to check if two binary trees are identical in terms of structure and node values. Create two identical trees and one different tree to test your function.
+9. **Find the Lowest Common Ancestor (LCA) in a Binary Search Tree:**
 
-10. **Find the Depth of a Specific Node:**
+   - **Problem:** Write a function to find the lowest common ancestor of two nodes in a binary search tree. Use the tree from earlier problems to find the LCA of nodes `20` and `40`.
 
-    - **Problem:** Write a function to find the depth (distance from the root) of a specific node in a binary tree. Use the tree created in the previous problems and find the depth of node `40`.
+10. **Find the Kth Smallest Element in a Binary Search Tree:**
 
-11. **Mirror a Binary Tree:**
+    - **Problem:** Write a function to find the k-th smallest element in a binary search tree. Use the tree created earlier and find the 3rd smallest element.
 
-    - **Problem:** Write a function to convert a binary tree into its mirror image. Apply this function to the tree from earlier problems and display the mirrored structure.
+11. **Check if a Binary Search Tree is Balanced:**
 
-12. **Check if a Binary Tree is Balanced:**
+    - **Problem:** Write a function to check if a binary search tree is balanced. A balanced tree is one where the height difference between left and right subtrees is at most `1`. Use the tree from the previous problems.
 
-    - **Problem:** Write a function to check if a binary tree is balanced. A balanced tree is one in which the height difference between the left and right subtrees of any node is at most `1`.
+12. **Convert a Binary Search Tree to a Doubly Linked List:**
 
-13. **Find the Lowest Common Ancestor (LCA):**
+    - **Problem:** Write a function to convert a binary search tree into a doubly linked list using in-order traversal. Display the resulting linked list.
 
-    - **Problem:** Write a function to find the lowest common ancestor (LCA) of two nodes in a binary tree. Use the tree from previous problems to find the LCA of nodes `20` and `40`.
+13. **Find the Closest Value to a Given Target in a Binary Search Tree:**
 
-14. **Print All Paths from Root to Leaf:**
+    - **Problem:** Write a function to find the value in a binary search tree that is closest to a given target value. Use the tree created earlier and find the closest value to `55`.
 
-    - **Problem:** Write a program to print all the paths from the root node to the leaf nodes of a binary tree. Use the tree from earlier problems to list all such paths.
+14. **Find the Mode (Most Frequent Element) in a Binary Search Tree:**
 
-15. **Check if a Binary Tree is Symmetric:**
+    - **Problem:** Write a function to find the mode (the value that appears most frequently) in a binary search tree. Create a BST with duplicate values and find the mode.
 
-    - **Problem:** Write a function to check if a binary tree is symmetric around its center (i.e., it is a mirror of itself). Test your function with both symmetric and asymmetric trees.
+15. **Convert a Binary Search Tree to a Balanced BST:**
 
-16. **Convert a Binary Tree to a Doubly Linked List:**
+    - **Problem:** Write a function to convert an unbalanced binary search tree into a balanced binary search tree. Use the tree created earlier and convert it into a balanced BST.
 
-    - **Problem:** Write a function to convert a binary tree into a doubly linked list using in-order traversal. Display the resulting doubly linked list.
+16. **Inorder Predecessor in a Binary Search Tree:**
 
-17. **Find the Diameter of a Binary Tree:**
+    - **Problem:** Write a function to find the inorder predecessor of a given node in a binary search tree. Use the tree created earlier and find the inorder predecessor of node `40`.
 
-    - **Problem:** Write a function to determine the diameter of a binary tree (the longest path between two leaf nodes). Use the tree from earlier problems and calculate its diameter.
+17. **Merge Two Binary Search Trees:**
 
-18. **Print Nodes at K Distance from the Root:**
+    - **Problem:** Write a program to merge two binary search trees into one binary search tree. Create two sample BSTs and merge them.
 
-    - **Problem:** Write a function to print all nodes at a distance `k` from the root of a binary tree. Use the tree created earlier and print nodes at distance `2`.
+18. **Print All Elements in a Given Range in a Binary Search Tree:**
 
-19. **Zigzag (Spiral) Level Order Traversal:**
+    - **Problem:** Write a function to print all elements in a binary search tree that lie within a given range `[low, high]`. Use the tree created earlier to print elements within the range `[30, 70]`.
 
-    - **Problem:** Write a program to perform a zigzag level order traversal of a binary tree. Alternate the traversal direction for each level of the tree.
+19. **Find the Floor and Ceiling of a Value in a Binary Search Tree:**
 
-20. **Convert a Binary Tree to its Sum Tree:**
+    - **Problem:** Write a function to find the floor (largest value smaller than or equal to the target) and ceiling (smallest value larger than or equal to the target) of a given value in a binary search tree. Use the tree created earlier to find the floor and ceiling of `65`.
 
-    - **Problem:** Write a function to convert a binary tree into its sum tree, where each node contains the sum of the values of its left and right subtrees. Use the original tree and display the new tree structure.
+20. **Check if Two Binary Search Trees are Identical:**
 
-21. **Check if a Binary Tree is a Subtree of Another Tree:**
+    - **Problem:** Write a function to check if two binary search trees are identical in terms of structure and node values. Create two identical trees and one different tree to test your function.
 
-    - **Problem:** Write a function to check if a given binary tree is a subtree of another binary tree. Create a main tree and a subtree to test this function.
+21. **Convert a Sorted Array to a Binary Search Tree:**
 
-22. **Boundary Traversal of a Binary Tree:**
+    - **Problem:** Write a function to convert a sorted array into a balanced binary search tree. Use the sorted array `[10, 20, 30, 40, 50, 60, 70, 80]` and create a balanced BST.
 
-    - **Problem:** Write a program to perform the boundary traversal of a binary tree. Print the boundary nodes in anti-clockwise direction starting from the root.
+22. **Find the Diameter of a Binary Search Tree:**
 
-23. **Serialize and Deserialize a Binary Tree:**
+    - **Problem:** Write a function to calculate the diameter (the longest path between two leaf nodes) of a binary search tree. Use the tree from earlier problems and calculate its diameter.
 
-    - **Problem:** Write a function to serialize a binary tree (convert it into a string) and another function to deserialize the string back into the original binary tree. Test both functions to ensure they are working correctly.
+23. **Find All Nodes at a Given Distance from a Node in a Binary Search Tree:**
 
-24. **Find All Nodes at Distance K from a Given Node:**
+    - **Problem:** Write a function to find all nodes that are at a distance `k` from a given node in a binary search tree. Use the tree created earlier and find nodes at distance `2` from node `30`.
 
-    - **Problem:** Write a function to find all nodes that are at distance `k` from a given node in a binary tree. Use the tree from earlier problems and find nodes at distance `2` from node `20`.
+24. **Print Nodes at K Distance from the Root in a Binary Search Tree:**
 
-25. **Flatten a Binary Tree to a Linked List:**
-    - **Problem:** Write a function to flatten a binary tree to a linked list in-place following preorder traversal. Use the tree from earlier problems and display the linked list.
+    - **Problem:** Write a function to print all nodes at a distance `k` from the root of a binary search tree. Use the tree created earlier and print nodes at distance `2`.
+
+25. **Serialize and Deserialize a Binary Search Tree:**
+
+    - **Problem:** Write functions to serialize a binary search tree (convert it into a string) and deserialize the string back into the original tree. Test both functions to ensure they are working correctly.
+
+26. **Build a BST to hold only unique elements (Set):**
+
+    - **Problem:** Write a program to create Binary Search Tree(BST) to hold unique elements like Set.
