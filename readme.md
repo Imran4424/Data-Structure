@@ -1,5 +1,23 @@
 # 📚 Data Structures Problem List in C++
 
+1. [Array](#1-array)
+2. [Linked List](#2-linked-list)
+3. [Stack](#3-stack)
+4. [Queue](#4-queue)
+5. [Deque (Double-Ended Queue)](#5-deque-double-ended-queue)
+6. [Priority Queue](#6-priority-queue)
+7. [Hashing](#7-hashing)
+8. [Recursion](#8-recursion)
+9. [Binary Tree](#9-binary-tree)
+10. [Binary Search Tree](#10-binary-search-tree)
+11. [Self Balancing Binary Search Tree](#11-self-balancing-binary-search-tree)
+12. [Complete Binary Tree](#12-complete-binary-tree)
+13. [Heap](#13-heap)
+14. [Segment Tree](#14-segment-tree)
+15. [Trie(Prefix Tree)](#15-trieprefix-tree)
+16. [Binary Indexed Tree (BIT)](#16-binary-indexed-tree-bit)
+17. [Graph](#17-graph)
+
 <!-- Array -->
 
 ## 1. Array

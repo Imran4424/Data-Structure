@@ -1,8 +1,3 @@
-## Table of contets example
-
-- [10. Binary Search Tree (BST)](## 10. Binary Search Tree (BST))
-- [11. Self-Balancing Binary Search Tree (AVL/Red-Black Trees)](## 11. Self-Balancing Binary Search Tree (AVL/Red-Black Trees))
-
 <!-- Binary Search Tree (BST) -->
 
 ## 10. Binary Search Tree (BST)
