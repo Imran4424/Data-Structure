@@ -1,7 +1,8 @@
 /*
-	1. Basic Max-Heap Creation:
-	Write a program to create a max-heap from the following 
-	values: 10, 20, 30, 40, 50, 60, 70. Display the structure of the heap.
+	5. Implement Heapsort for Descending Order using a Max-Heap:
+	Write a program to implement the heapsort algorithm to sort an array in descending order 
+	using a max-heap. Use the array [10, 20, 30, 40, 50, 60, 70] and sort it in descending 
+	order using the heapsort algorithm.
 */
 
 /*
@@ -52,6 +53,21 @@ void swapNode(int source, int destination) {
 	heap[destination] = storeValue;
 }
 
+void bubbleUp(int currentIndex) {
+	int parentIndex = currentIndex / 2;
+
+	// checking if this is outside of the tree or not
+	if (parentIndex < topIndex) {
+		return;
+	}
+
+	if (heap[parentIndex] < heap[currentIndex]) {
+		swapNode(parentIndex, currentIndex);
+
+		bubbleUp(parentIndex);
+	}
+}
+
 void bubbleDown(int parentIndex) {
 	// checking if this is outside of the tree or not
 	if (parentIndex > heapIndex) {
@@ -61,7 +77,6 @@ void bubbleDown(int parentIndex) {
 	int leftChildIndex = parentIndex * 2;
 	int rightChildIndex = parentIndex * 2 + 1;
 
-	// checking if this is outside of the tree or not
 	if (leftChildIndex > heapIndex) {
 		return;
 	}
@@ -82,6 +97,29 @@ void bubbleDown(int parentIndex) {
 
 		bubbleDown(rightChildIndex);
 	}
+}
+
+void insert(int data) {
+	if (heapIndex >= heapSize) {
+		cout << "Error!!! heap is full" << endl;
+		return;
+	}
+
+	heapIndex++;
+	heap[heapIndex] = data;
+
+	// heap[++heapIndex] = data;
+
+	bubbleUp(heapIndex);
+}
+
+int deleteMaxElement() {
+	swapNode(topIndex, heapIndex);
+	heapIndex--;
+
+	bubbleDown(topIndex);
+
+	return heap[heapIndex + 1];
 }
 
 void displayHeap() {
@@ -109,14 +147,23 @@ int main(int argc, char const *argv[])
         	int input;
                 cin >> input;
 
-                heap[++heapIndex] = input;
+                insert(input);
         }
 
-        for (int i = 1; i * i <= elementSize; ++i) {
-        	bubbleDown(topIndex);
+        // decending heapsort
+        int arr[elementSize];
+
+        for (int i = 0; i < elementSize; ++i) {
+        	arr[i] = deleteMaxElement();
         }
 
-        displayHeap();
-	
+        cout << "sorted array: ";
+
+        for (int i = 0; i < elementSize; ++i) {
+        	cout << arr[i] << " ";
+        }
+
+        cout << endl;
+        
 	return 0;
 }

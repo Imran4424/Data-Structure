@@ -1,7 +1,7 @@
 /*
-	1. Basic Max-Heap Creation:
-	Write a program to create a max-heap from the following 
-	values: 10, 20, 30, 40, 50, 60, 70. Display the structure of the heap.
+	6. Extract the Minimum Element from a Min-Heap:
+	Write a function to extract (remove and return) the minimum element from a min-heap. 
+	Ensure that the heap property is maintained after the extraction.
 */
 
 /*
@@ -52,6 +52,21 @@ void swapNode(int source, int destination) {
 	heap[destination] = storeValue;
 }
 
+void bubbleUp(int currentIndex) {
+	int parentIndex = currentIndex / 2;
+
+	// checking if this is outside of the tree or not
+	if (parentIndex < topIndex) {
+		return;
+	}
+
+	if (heap[parentIndex] > heap[currentIndex]) {
+		swapNode(parentIndex, currentIndex);
+
+		bubbleUp(parentIndex);
+	}
+}
+
 void bubbleDown(int parentIndex) {
 	// checking if this is outside of the tree or not
 	if (parentIndex > heapIndex) {
@@ -66,7 +81,7 @@ void bubbleDown(int parentIndex) {
 		return;
 	}
 
-	if (heap[parentIndex] < heap[leftChildIndex]) {
+	if (heap[parentIndex] > heap[leftChildIndex]) {
 		swapNode(parentIndex, leftChildIndex);
 
 		bubbleDown(leftChildIndex);
@@ -77,11 +92,34 @@ void bubbleDown(int parentIndex) {
 		return;
 	}
 
-	if (heap[parentIndex] < heap[rightChildIndex]) {
+	if (heap[parentIndex] > heap[rightChildIndex]) {
 		swapNode(parentIndex, rightChildIndex);
 
 		bubbleDown(rightChildIndex);
 	}
+}
+
+void insert(int data) {
+	if (heapIndex >= heapSize) {
+		cout << "Error!!! heap is full" << endl;
+		return;
+	}
+
+	heapIndex++;
+	heap[heapIndex] = data;
+
+	// heap[++heapIndex] = data;
+
+	bubbleUp(heapIndex);
+}
+
+int deleteMinElement() {
+	swapNode(topIndex, heapIndex);
+	heapIndex--;
+
+	bubbleDown(topIndex);
+
+	return heap[heapIndex + 1];
 }
 
 void displayHeap() {
@@ -109,14 +147,14 @@ int main(int argc, char const *argv[])
         	int input;
                 cin >> input;
 
-                heap[++heapIndex] = input;
-        }
-
-        for (int i = 1; i * i <= elementSize; ++i) {
-        	bubbleDown(topIndex);
+                insert(input);
         }
 
         displayHeap();
+
+        cout << "Min element from min heap is: " << deleteMinElement() << endl;
 	
+        displayHeap();
+        
 	return 0;
 }

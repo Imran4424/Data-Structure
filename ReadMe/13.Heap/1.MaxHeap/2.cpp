@@ -1,8 +1,9 @@
 /*
-	1. Basic Max-Heap Creation:
-	Write a program to create a max-heap from the following 
-	values: 10, 20, 30, 40, 50, 60, 70. Display the structure of the heap.
+	2. Insert a Node into a Max-Heap:
+	Write a function to insert a new node into a max-heap. Insert the value 
+	80 into the max-heap created earlier and ensure that the heap property is maintained.
 */
+
 
 /*
         this is 0 index based heap
@@ -52,6 +53,21 @@ void swapNode(int source, int destination) {
 	heap[destination] = storeValue;
 }
 
+void bubbleUp(int currentIndex) {
+	int parentIndex = currentIndex / 2;
+
+	// checking if this is outside of the tree or not
+	if (parentIndex < topIndex) {
+		return;
+	}
+
+	if (heap[parentIndex] < heap[currentIndex]) {
+		swapNode(parentIndex, currentIndex);
+
+		bubbleUp(parentIndex);
+	}
+}
+
 void bubbleDown(int parentIndex) {
 	// checking if this is outside of the tree or not
 	if (parentIndex > heapIndex) {
@@ -84,6 +100,20 @@ void bubbleDown(int parentIndex) {
 	}
 }
 
+void insert(int data) {
+	if (heapIndex >= heapSize) {
+		cout << "Error!!! heap is full" << endl;
+		return;
+	}
+
+	heapIndex++;
+	heap[heapIndex] = data;
+
+	// heap[++heapIndex] = data;
+
+	bubbleUp(heapIndex);
+}
+
 void displayHeap() {
 	cout << "current heap elements" << endl;
 
@@ -109,11 +139,7 @@ int main(int argc, char const *argv[])
         	int input;
                 cin >> input;
 
-                heap[++heapIndex] = input;
-        }
-
-        for (int i = 1; i * i <= elementSize; ++i) {
-        	bubbleDown(topIndex);
+                insert(input);
         }
 
         displayHeap();
