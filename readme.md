@@ -18,6 +18,8 @@
 16. [Binary Indexed Tree (BIT)](#16-binary-indexed-tree-bit)
 17. [Graph](#17-graph)
 
+---
+
 <!-- Array -->
 
 ## 1. Array
