@@ -790,7 +790,7 @@
 
 2. **Insert a Node in a Binary Search Tree:**
 
-   - **Problem:** Write a program to insert a node into a binary search tree. Insert the value `65` into the binary search tree created in the previous problem.
+   - **Problem:** Insert the value `65` into the binary search tree created in the previous problem.
 
 3. **Search for a Node in a Binary Search Tree:**
 
