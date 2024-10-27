@@ -796,13 +796,13 @@
 
    - **Problem:** Write a function to search for a node with a specific value in a binary search tree. Use the tree created in the first problem to search for the value `40`.
 
-4. **Delete a Node from a Binary Search Tree:**
-
-   - **Problem:** Write a function to delete a node from a binary search tree. Use the tree from the previous problem and delete the node with the value `70`.
-
-5. **Find the Minimum and Maximum in a Binary Search Tree:**
+4. **Find the Minimum and Maximum in a Binary Search Tree:**
 
    - **Problem:** Write functions to find the minimum and maximum values in a binary search tree. Use the BST from the previous problems to find both.
+
+5. **Delete a Node from a Binary Search Tree:**
+
+   - **Problem:** Write a function to delete a node from a binary search tree. Use the tree from the previous problem and delete the node with the value `70`.
 
 6. **Find the Height of a Binary Search Tree:**
 
