@@ -54,7 +54,7 @@ bool search(Node* root, int target) {
 	bool leftTreeReturn = false, rightTreeReturn = false;
 
 	// left sub tree
-	if (value < root -> data) {
+	if (target < root -> data) {
 		leftTreeReturn = search(root -> left, target);
 	} else {
 		// right sub tree
@@ -66,6 +66,46 @@ bool search(Node* root, int target) {
 	}
 
 	return false;
+}
+
+// pre order traversal
+// root -> left -> right
+void preOrder(Node* root) {
+	if (NULL == root) {
+		return;
+	}
+
+	cout << root -> data << " ";
+
+	preOrder(root -> left);
+	preOrder(root -> right);
+}
+
+// in order traversal
+// left -> root -> right
+void inOrder(Node* root) {
+	if (NULL == root) {
+		return;
+	}
+
+	inOrder(root -> left);
+
+	cout << root -> data << " ";
+
+	inOrder(root -> right);
+}
+
+// post order traversal
+// left -> right -> root
+void postOrder(Node* root) {
+	if (root == NULL) {
+		return;
+	}
+
+	postOrder(root -> left);
+	postOrder(root -> right);
+
+	cout << root -> data << " ";
 }
 
 int main(int argc, char const *argv[])

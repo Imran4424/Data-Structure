@@ -43,6 +43,46 @@ Node* insert(Node* root, int value) {
 	return root;
 }
 
+// pre order traversal
+// root -> left -> right
+void preOrder(Node* root) {
+	if (NULL == root) {
+		return;
+	}
+
+	cout << root -> data << " ";
+
+	preOrder(root -> left);
+	preOrder(root -> right);
+}
+
+// in order traversal
+// left -> root -> right
+void inOrder(Node* root) {
+	if (NULL == root) {
+		return;
+	}
+
+	inOrder(root -> left);
+
+	cout << root -> data << " ";
+
+	inOrder(root -> right);
+}
+
+// post order traversal
+// left -> right -> root
+void postOrder(Node* root) {
+	if (root == NULL) {
+		return;
+	}
+
+	postOrder(root -> left);
+	postOrder(root -> right);
+
+	cout << root -> data << " ";
+}
+
 int main(int argc, char const *argv[])
 {
 	// at first there is no node in the tree

@@ -1,7 +1,7 @@
 /*
-	3. Search for a Node in a Binary Search Tree:
-	Problem: Write a function to search for a node with a specific value in a binary search tree. 
-	Use the tree created in the first problem to search for the value 40
+	3. Find the Minimum and Maximum in a Binary Search Tree:
+	Problem: Write functions to find the minimum and maximum values in a binary search tree. 
+	Use the BST from the previous problems to find both.
 */
 #include <iostream>
 using namespace std;
@@ -51,17 +51,48 @@ bool search(Node* root, int target) {
 		return true;
 	}
 
-	bool leftTreeReturn = false, rightTreeReturn = false;
-
 	// left sub tree
 	if (target < root -> data) {
-		leftTreeReturn = search(root -> left, target);
+		return search(root -> left, target);
 	} else {
 		// right sub tree
-		rightTreeReturn = search(root -> right, target);
+		return search(root -> right, target);
 	}
 
-	return leftTreeReturn || rightTreeReturn;
+}
+
+int findMinValue(Node *root) {
+	// this is a safety check
+	// in real scenario
+	// this condition will not check
+	if (NULL == root) {
+		// Indication of error
+		return -404;
+	}
+
+	// base condition
+	if (NULL == root -> left) {
+		return root -> data;
+	}
+
+	return findMinValue(root -> left);
+}
+
+int findMaxValue(Node *root) {
+	// this is a safety check
+	// in real scenario
+	// this condition will not check
+	if (NULL == root) {
+		// Indication of error
+		return -404;
+	}
+
+	// base condition
+	if (NULL == root -> right) {
+		return root -> data;
+	}
+
+	return findMaxValue(root -> right);
 }
 
 // pre order traversal
